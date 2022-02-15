@@ -20,7 +20,7 @@ wp-content/*
 
 
 # ignore these plugins
-// wp-content/plugins/index.php
+wp-content/plugins/index.php
 // wp-content/plugins/hello.php
 !wp-content/plugins/*
 
