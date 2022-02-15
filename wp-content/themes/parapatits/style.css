@@ -1,0 +1,93 @@
+/*
+Theme Name: Parapatits
+Author: Markus Tritremmel | Media Lab Tritremmel GmbH
+Author URI: https://www.media-lab.at/
+Description: Ein auf Bulma-Basis (bulma.io) entwickeltes Wordpress Theme für die Firma Parapatits.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: parapatits
+*/
+
+
+
+/* --- FARB-DEFINITIONEN ---
+
+Dunkelgrau - #707070
+Mittelgrau - #979797 (Footer-Background)
+Hellgrau - #92918D
+
+*/
+
+
+/* --- FONTS ---
+
+Überschriften Zeile 1 - ClanOT Bold - 76px
+
+Navigationsmenü - Links 1. Ordnung  - ClanOT Bold - 20px
+
+----- WEG -----
+Breadcrumb Standard - Roboto Slab Light - 16px
+Breadcrumb Standard - Roboto Slab Regular - 16px
+----- WEG -----
+
+
+H2 - Hero Überschrift - ClanOT Bold - 40px
+H3 - Überschriften im Fließtext - ClanOT News - 48px
+
+Standard-Fließtext - ClanOT News - 24px
+Links im Fließtext -  - px
+
+Button Regular State - ??? - 27px
+
+Footermenü - Text - ClanOT News - 30px
+Footermenü - Links  - ClanOT News - underlined - 30px
+
+Copyright - ClanOT Book - 32px
+
+*/
+
+
+/* Font Awesome Solid */
+@font-face {
+	font-family: 'FontAwesome Solid';
+	font-style: normal;
+	font-weight: normal;
+	src: url('assets/fonts/FontAwesome/fa-solid-900.eot'); /* IE9 Compact Modes */
+	src: local(''),
+			 url('assets/fonts/FontAwesome/fa-solid-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			 url('assets/fonts/FontAwesome/fa-solid-900.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('assets/fonts/FontAwesome/fa-solid-900.woff') format('woff'), /* Modern Browsers */
+			 url('assets/fonts/FontAwesome/fa-solid-900.ttf') format('truetype'), /* Safari, Android, iOS */
+			 url('assets/fonts/FontAwesome/fa-solid-900.svg#AbrilFatface') format('svg'); /* Legacy iOS */
+}
+
+
+/* Font Awesome Brands */
+@font-face {
+	font-family: 'FontAwesome Brands';
+	font-style: normal;
+	font-weight: normal;
+	src: url('assets/fonts/FontAwesome/fa-brands-400.eot'); /* IE9 Compact Modes */
+	src: local(''),
+			 url('assets/fonts/FontAwesome/fa-brands-400.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			 url('assets/fonts/FontAwesome/fa-brands-400.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('assets/fonts/FontAwesome/fa-brands-400.woff') format('woff'), /* Modern Browsers */
+			 url('assets/fonts/FontAwesome/fa-brands-400.ttf') format('truetype'), /* Safari, Android, iOS */
+			 url('assets/fonts/FontAwesome/fa-brands-400.svg#AbrilFatface') format('svg'); /* Legacy iOS */
+}
+
+
+/* ClanOT Bold */
+@font-face {
+	font-family: 'ClanOT Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: url('assets/fonts/ClanOT-Bold/ClanOT-Bold.eot'); /* IE9 Compact Modes */
+	src: local(''),
+			 url('assets/fonts/ClanOT-Bold/ClanOT-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			 url('assets/fonts/ClanOT-Bold/ClanOT-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('assets/fonts/ClanOT-Bold/ClanOT-Bold.woff') format('woff'), /* Modern Browsers */
+			 url('assets/fonts/ClanOT-Bold/ClanOT-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+			 url('assets/fonts/ClanOT-Bold/ClanOT-Bold.svg#AbrilFatface') format('svg'); /* Legacy iOS */
+}
