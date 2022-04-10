@@ -2,12 +2,12 @@
 
 /* --- PARAPATITS CUSTOM POST TYPES --- */
 
-function bauschild_post_types() {
+function parapatits_post_types() {
 
 	add_post_type_support( 'team', 'thumbnail' );
 	add_post_type_support( 'team', 'excerpt' );
 
-	add_filter( 'bauschild_gallery_metabox_post_types', function( $types ) {
+	add_filter( 'parapatits_gallery_metabox_post_types', function( $types ) {
 		$types[] = 'gallery';
 		return $types;
 	} );
@@ -149,9 +149,9 @@ function bauschild_post_types() {
 
 
 
-/* --- BAUSCHILD CUSTOM TAXONOMIES --- */
+/* --- PARAPATITS CUSTOM TAXONOMIES --- */
 
-function bauschild_taxonomies() {
+function parapatits_taxonomies() {
 
 	/* Custom Taxonomie "PRODUKT-KATEGORIE" */
 
@@ -181,8 +181,8 @@ function bauschild_taxonomies() {
 
 }
 
-add_action('init', 'bauschild_post_types');
+add_action('init', 'parapatits_post_types');
 
-add_action( 'init', 'bauschild_taxonomies', 0 );
+add_action( 'init', 'parapatits_taxonomies', 0 );
 
 ?>
