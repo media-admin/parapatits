@@ -1,48 +1,30 @@
-# ignore everything in the root except the "wp-content" directory.
-wp-admin/
-wp-includes/
-LICENSE
-README.md
-license.txt
-liesmich.html
-readme.html
-/*.php
-!wp-content/
-
-
-# ignore everything in the "wp-content" directory, except:
-# "mu-plugins", "plugins", "themes" directory
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/mu-plugins/*
-!wp-content/plugins/
-!wp-content/themes/
-
-
-# ignore these plugins
-wp-content/plugins/index.php
-// wp-content/plugins/hello.php
-!wp-content/plugins/*
-
-
-# ignore specific themes
-wp-content/themes/twenty*/
-
-
-# ignore node dependency directories
-node_modules/
-
-
-# ignore nova directory
-.nova/
-
-
-# ignore every DS_Store File on any location
-*.DS_Store
-*/*.DS_Store
-
-
-# ignore log files and databases
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
 *.log
-*.sql
-*.sqlite
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+node_modules/
+.tmp/
+
+# OS or Editor folders
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+.nova
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.komodotools
+_notes
+dwsync.xml
