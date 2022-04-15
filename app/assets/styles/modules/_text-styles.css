@@ -1,0 +1,70 @@
+
+
+.h1 {
+
+	&__title {
+		font-size: 1.4rem;
+		font-weight: 700;
+		line-height: 1.4rem;
+		text-transform: lowercase;
+		margin: 0;
+	}
+
+	&__title--right-aligned {
+		text-align: right;
+	}
+
+
+	&__subtitle {
+		font-size: 1.0rem;
+		font-weight: 500;
+		line-height: 1.4rem;
+		letter-spacing: 0.1rem;
+		color: $mainRed;
+		margin: 0;
+	}
+
+	&__subtitle--right-aligned {
+		text-align: right;
+	}
+
+}
+
+
+
+.h2 {
+
+	&__title {
+		font-size: 31px;
+		font-size: 1.2rem;
+		font-weight: 700;
+		line-height: 40px;
+		letter-spacing: 0.1rem;
+		text-transform: lowercase;
+
+		margin: 0;
+
+	}
+
+
+	&__title--right-aligned {
+		text-align: right;
+	}
+
+}
+
+
+.h3 {
+
+	&__title {
+		font-size: 25px;
+		font-size: 1.1rem;
+		font-weight: 700;
+		margin: 0;
+
+		line-height: 32px;
+		letter-spacing: 10px;
+		text-transform: lowercase;
+	}
+
+}

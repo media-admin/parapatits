@@ -1,0 +1,39 @@
+/* === FOOTER === */
+.site-footer {
+	font-size: 0.9rem;
+	line-height: 1.6rem;
+	text-align: center;
+	letter-spacing: 0.05rem;
+	margin-top: 4.0rem;
+}
+
+.footer-contact__data {
+	margin-top: 3.0rem;
+	margin-bottom: 3.0rem;
+}
+
+.footer-contact__data a {
+	font-weight: 600;
+	color: $mainGray;
+}
+
+.footer-contact__social-media-area {
+	position: relative;
+	display: grid;
+	width: 42%;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin: 2.0rem auto;
+}
+
+.footer-navigation {
+	font-weight: 700;
+	line-height: 2.0rem;
+	color: $mainGray;
+}
+
+.copyright {
+	position: relative;
+	width: 60%;
+	margin: 2.0rem auto;
+}

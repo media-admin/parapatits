@@ -1,9 +1,27 @@
+/* === GLOBAL STYLES === */
+
 body {
-	font-family: 'Roboto', sans-serif;
-	color: $mainGrey;
+	font-family: 'Open Sans', sans-serif;
+	color: $mainGray;
 }
 
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+
+/* === Button Styles === */
+.btn {
+
+	&--red {
+		font-size: 0.9rem;
+		font-weight: 700;
+		text-transform: lowercase;
+		color: $white;
+		background-color: $mainRed;
+		border: none;
+		margin: 0;
+	}
+
 }
