@@ -1,22 +1,38 @@
 .large-hero {
 	position: relative;
 
-	&__title {
-		font-weight: 300;
+	&__img {
+		position: relative;
+		width: 100%;
+		height: auto;
+		z-index: 0;
 		margin: 0;
-		font-size: 1.1rem;
+	}
+
+	&__title {
+		position: relative;
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 1.8rem;
+		text-transform: lowercase;
+		z-index: 10;
+		margin: 0;
+		margin-top: -11.0rem;
 	}
 
 	@mixin atSmall {
 		font-size: 4.8rem;
 	}
 
-	&__title h2 {
-		font-size: 2.8rem;
-		background-color: yellow;
+
+	&__text {
+		font-size: 1.1rem;
 	}
 
 	@mixin atSmall {
 		font-size: 2.2rem;
 	}
+
+
+
 }

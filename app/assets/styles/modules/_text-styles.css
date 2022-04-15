@@ -3,9 +3,9 @@
 .h1 {
 
 	&__title {
-		font-size: 1.4rem;
+		font-size: 1.8rem;
 		font-weight: 700;
-		line-height: 1.4rem;
+		line-height: 2.0rem;
 		text-transform: lowercase;
 		margin: 0;
 	}
@@ -16,10 +16,10 @@
 
 
 	&__subtitle {
-		font-size: 1.0rem;
+		font-size: 0.8rem;
 		font-weight: 500;
 		line-height: 1.4rem;
-		letter-spacing: 0.1rem;
+		letter-spacing: 0.05rem;
 		color: $mainRed;
 		margin: 0;
 	}

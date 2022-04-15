@@ -7,49 +7,58 @@
 		<link href="" rel="stylesheet">
 	</head>
 	<body class="home">
-		<header class="site-header">
-			<div class="header-logo wrapper">
-				<a class="header-logo__link" href="home">
+			<div class="header-logo">
+				<a class="header-logo__link wrapper" href="home">
 					<img class="header-logo__img" src="assets/images/logo_parapatits-peter.svg" alt="Logo Paraptits Peter">
 				</a>
 			</div>
 
 			<menu class="site-menu">
 				<div class="burger-menu">
-					<span></span>
-					<span></span>
-					<span></span>
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
 				</div>
 			</menu>
+			<!-- Hamburger Menu Toggle -->
+			<script>
+				 var hamburger = document.querySelector(".burger-menu");
+				 hamburger.onclick = function () {
+						this.classList.toggle ("checked");
+				 }
+			</script>
 
-			<section class="carousel-slider">
-				<div class="carousel-slider__item">
-					<img class="carousel-slider__item-img" src="assets/images/home/hero-home.png" alt="Hero Image">
-					<p class="carousel-slider__item-head wrapper">Slider Headline</p>
-					<p class="carousel-slider__item-text wrapper">Slider Text</p>
-				</div>
+
+			<section class="large-hero">
+				<img class="large-hero__img" src="assets/images/home/hero-home.png" alt="Hero Image">
+				<p class="large-hero__title wrapper">Willkommen, hereinspaziert</p>
+				<p class="large-hero__text wrapper"></p>
 			</section>
 
 		</header>
 
 		<main class="site-main">
-			<section class="introduction__headline wrapper">
-				<h1 class="h1__title h1__title--left-aligned">Willkommen, hereinspaziert</h1>
-				<p class="h1__subtitle h1__subtitle--left-aligned">Abteilung wählen</p>
+			<section class="intro wrapper">
+				<h1 class="intro__headline h1__title h1__title--left-aligned">Willkommen, hereinspaziert</h1>
+				<p class="intro__subtitle h1__subtitle h1__subtitle--left-aligned">Abteilung wählen</p>
 
-				<ul class="introduction__company-listing">
-					<li class="introduction__list-item--tischlerei" src="assets/images/oak-wood-red.png" alt="Platzhalter-Bild">
-						<img class="img__wood-square--red">
-						<h2 class="h2__title h2__title--left-aligned">Tischlerei</h2>
-						<p class="h2__subtitle h2__subtitle--left-aligned">Wir gestalten Lebensräume.</p>
+				<ul class="intro__company-listing">
+					<li class="intro__list-item intro__list-item--tischlerei">
+						<img class="intro__list-img img__wood-square--red" src="assets/images/oak-wood-red.png" alt="Platzhalter-Bild">
+						<div class="intro__list-content">
+							<h2 class="intro__list-title h2__title h2__title--left-aligned">Tischlerei</h2>
+							<p class="intro__list-subtitle h2__subtitle h2__subtitle--left-aligned">Wir gestalten Lebensräume.</p>
+						</div>
 					</li>
 				</ul>
 
-				<ul class="introduction__company-listing">
-					<li class="introduction__list-item--bestattung" src="assets/images/oak-wood-grey.png" alt="Platzhalter-Bild">
-						<img class="img__wood-square--gray">
-						<h2 class="h2__title h2__title--left-aligned">Bestattung</h2>
-						<p class="h2__subtitle h2__subtitle--left-aligned">Wir gestalten Lebensräume.</p>
+				<ul class="intro__company-listing">
+					<li class="intro__list-item intro__list-item--bestattung">
+						<img class="intro__list-img img__wood-square--gray" src="assets/images/oak-wood-gray.png" alt="Platzhalter-Bild">
+						<div class="intro__list-content">
+							<h2 class="intro__list-title h2__title h2__title--left-aligned">Bestattung</h2>
+							<p class="intro__list-subtitle h2__subtitle h2__subtitle--left-aligned">Wir gestalten Lebensräume.</p>
+						</div>
 					</li>
 				</ul>
 

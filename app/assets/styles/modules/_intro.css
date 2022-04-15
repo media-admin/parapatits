@@ -1,0 +1,61 @@
+/* === INTRO === */
+.intro {
+	margin-top: 10.0rem;
+
+	&__headline {
+		margin-bottom: 0.25rem;
+	}
+
+	&__subtitle {
+		margin-bottom: 1.25rem;
+	}
+
+
+	&__company-listing {
+		list-style-image: none;
+	}
+
+	&__list-item {
+		display: grid;
+		width: 50%;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 25px;
+		align-items: center;
+		margin-bottom: 1.0rem;
+	}
+
+
+	&__list-img {
+		position: relative;
+		display: block;
+		min-width: 92px;
+		max-width: 30%;
+		height: auto;
+	}
+
+
+	&__list-content {
+		display: inline-block;
+		padding: 0.5rem;
+		padding-top: 0.0rem;
+	}
+
+	&__list-title {
+		font-size: 1.4rem;
+		line-height: 1.6rem;
+		color: $darkGray;
+		margin-bottom: auto;
+	}
+
+	&__list-subtitle {
+		font-size: 0.8rem;
+		font-weight: 500;
+		line-height: 1.2rem;
+		letter-spacing: 0.1rem;
+		color: $mainRed;
+		margin: 0;
+	}
+
+
+
+}

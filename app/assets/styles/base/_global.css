@@ -11,8 +11,17 @@ img {
 }
 
 
+.img__wood-square--red {
+	display: inline-block;
+	min-width: 92px;
+	max-width: 100%;
+	height: auto;
+}
+
+
 /* === Button Styles === */
 .btn {
+	padding: 0.75rem 1.0rem;
 
 	&--red {
 		font-size: 0.9rem;
@@ -22,6 +31,7 @@ img {
 		background-color: $mainRed;
 		border: none;
 		margin: 0;
+		margin: 1.25rem 0;
 	}
 
 }

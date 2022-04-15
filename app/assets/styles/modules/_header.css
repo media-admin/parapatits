@@ -1,4 +1,72 @@
+/* === HEADER === */
 .header {
+	position: relative;
+	display: block;
+	width: 100%;
 	padding-left: 18px;
 	padding-right: 18px;
+
+	&-logo {
+		position: relative;
+		display: inline-block;
+		padding-top: 20px;
+	}
+
+	&-logo__img {
+		position: relative;
+		width: auto;
+	}
+
 }
+
+
+
+/* === Navigation Menu === */
+menu.site-menu {
+	position: relative;
+	display: inline-block;
+}
+
+
+
+/* === Burger Menu === */
+.burger-menu {
+	 position: relative;
+	 display: inline-block;
+	 width: 35px;
+	 height: 35px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 transition: border-radius .5s;
+}
+
+
+.line {
+	position: absolute;
+	display: block;
+	height: 3px;
+	width: 30px;
+	left: 10px;
+	background: $darkGray;
+	margin-top: 0;
+	transition: 0.5s;
+	transform-origin: center;
+}
+
+.line:nth-child(1) { top: 10px; }
+.line:nth-child(2) { top: 20px; }
+.line:nth-child(3) { top: 30px; }
+
+/* --- Burger Menu Animation  --- */
+.burger-menu.checked .line:nth-child(1){
+	 transform: translateY(10px) rotate(-45deg);
+}
+
+.burger-menu.checked .line:nth-child(2){
+	 opacity:0;
+}
+
+.burger-menu.checked .line:nth-child(3){
+	 transform: translateY(-10px) rotate(45deg);
+}
+

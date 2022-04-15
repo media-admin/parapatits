@@ -3,9 +3,10 @@
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_global';
+@import 'modules/_wrapper';
 @import 'modules/_text-styles';
 @import 'modules/_header';
 @import 'modules/_large-hero';
-@import 'modules/_wrapper';
+@import 'modules/_intro';
 @import 'modules/_company-listing';
 @import 'modules/_footer';
