@@ -1,0 +1,30 @@
+/* === INFO SECTION === */
+.info-section {
+	width: 80%;
+	margin-top: 15.0rem;
+	margin-bottom: 10.0rem;
+
+
+	&__title {
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+		margin-bottom: 0.5rem;
+	}
+
+	&__subtitle {
+		font-size: 0.8rem;
+		font-weight: 500;
+		line-height: 1.2rem;
+		letter-spacing: 0.1rem;
+		margin: 0;
+		margin-bottom: 1.5rem;
+	}
+
+	&__content {
+		line-height: 2.0rem;
+	}
+
+
+
+}
+

@@ -1,0 +1,42 @@
+/* === NEWS SECTION === */
+.news-section {
+	margin-top: 1.0rem;
+	margin-bottom: 1.0rem;
+
+	&__img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	&__container {
+		color: $brightWhite;
+		background-color: $mainGray;
+		margin: 30px 18px;
+		padding: 2.5rem 0.25rem;
+	}
+
+	&__title {
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+		margin-bottom: 0.5rem;
+	}
+
+	&__subtitle {
+		font-size: 0.8rem;
+		font-weight: 500;
+		line-height: 1.2rem;
+		letter-spacing: 0.1rem;
+		margin: 0;
+		margin-bottom: 1.5rem;
+	}
+
+
+	&__content {
+		line-height: 2.0rem;
+	}
+
+
+
+}
+

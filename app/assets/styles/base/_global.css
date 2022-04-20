@@ -19,6 +19,14 @@ img {
 }
 
 
+.img__wood-square--gray {
+	display: inline-block;
+	min-width: 92px;
+	max-width: 100%;
+	height: auto;
+}
+
+
 /* === Button Styles === */
 .btn {
 	padding: 0.75rem 1.0rem;
@@ -27,11 +35,19 @@ img {
 		font-size: 0.9rem;
 		font-weight: 700;
 		text-transform: lowercase;
-		color: $white;
+		color: $brightWhite;
 		background-color: $mainRed;
 		border: none;
-		margin: 0;
 		margin: 1.25rem 0;
 	}
+
+
+
+	&--centered-aligned {
+		position: relative;
+		text-align: center !important;
+		margin: 1.25rem auto;
+	}
+
 
 }

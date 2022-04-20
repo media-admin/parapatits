@@ -1,4 +1,4 @@
-
+/* === TEXT STYLES === */
 
 .h1 {
 
@@ -41,13 +41,15 @@
 		line-height: 40px;
 		letter-spacing: 0.1rem;
 		text-transform: lowercase;
-
 		margin: 0;
 
 	}
 
-
 	&__title--right-aligned {
+		text-align: right;
+	}
+
+	&__subtitle--right-aligned {
 		text-align: right;
 	}
 

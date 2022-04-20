@@ -9,4 +9,9 @@
 @import 'modules/_large-hero';
 @import 'modules/_intro';
 @import 'modules/_company-listing';
+@import 'modules/_news-section';
+@import 'modules/_info-section';
+@import 'modules/_details-section';
+@import 'modules/_jobs-section';
+@import 'modules/_recall-section';
 @import 'modules/_footer';

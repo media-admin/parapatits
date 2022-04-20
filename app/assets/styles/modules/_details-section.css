@@ -1,0 +1,83 @@
+/* === DETAILS SECTION === */
+.details-section {
+	margin: 0px;
+	margin-top: 15.0rem;
+	margin-bottom: 10.0rem;
+
+
+	&____branch-item--tischlerei {
+		position: relative;
+		width: 100%;
+	}
+
+
+	&__branch-item--tischlerei__img {
+		position: relative;
+		height: auto;
+		overflow: hidden;
+		margin-left: 35%;
+		padding-right: -18px !important;
+	}
+
+
+	&__branch-item--tischlerei__container {
+		width: 70%;
+		text-align: right;
+		margin-left: 30%;
+	}
+
+
+	&____branch-item--bestattung {
+		position: relative;
+		width: 100%;
+		text-align: left;
+		margin-right: auto;
+		margin-left: 0px;
+	}
+
+
+	&__branch-item--bestattung__img {
+		height: auto;
+		overflow: hidden;
+		text-align: left;
+		margin: 25px auto;
+		padding-left: -18px;
+	}
+
+
+	&__branch-item--bestattung__container {
+		width: 70%;
+		text-align: left;
+		margin-right: 30%;
+	}
+
+
+	&__title {
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+		margin-bottom: 0.5rem;
+	}
+
+
+	&__subtitle {
+		font-size: 0.8rem;
+		font-weight: 500;
+		line-height: 1.2rem;
+		letter-spacing: 0.1rem;
+		margin: 0;
+		margin-bottom: 1.5rem;
+	}
+
+
+	&__content {
+		line-height: 2.0rem;
+	}
+
+
+	&__btn {
+		margin-top: 2.0rem;
+		margin-bottom: 2.0rem;
+	}
+
+}
+
