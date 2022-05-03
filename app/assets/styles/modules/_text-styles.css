@@ -3,7 +3,7 @@
 .h1 {
 
 	&__title {
-		font-size: 1.8rem;
+		font-size: 2.0rem;
 		font-weight: 700;
 		line-height: 2.0rem;
 		text-transform: lowercase;
@@ -42,16 +42,23 @@
 		letter-spacing: 0.1rem;
 		text-transform: lowercase;
 		margin: 0;
-
 	}
 
-	&__title--right-aligned {
-		text-align: right;
+
+	&__subtitle--left-aligned {
+		text-align: left !important;
+		padding-left: 0.25rem;
+		padding-right: 25%;
 	}
+
 
 	&__subtitle--right-aligned {
-		text-align: right;
+		text-align: right !important;
+		padding-right: 0.25rem;
+		padding-left: 25%;
 	}
+
+
 
 }
 

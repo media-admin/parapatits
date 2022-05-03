@@ -1,13 +1,13 @@
 /* === INFO SECTION === */
 .info-section {
 	width: 80%;
-	margin-top: 15.0rem;
-	margin-bottom: 10.0rem;
+	margin-top: 10.0rem;
+	margin-bottom: 5.0rem;
 
 
 	&__title {
-		font-size: 1.6rem;
-		line-height: 1.8rem;
+		font-size: 1.8rem;
+		line-height: 2.0rem;
 		margin-bottom: 0.5rem;
 	}
 
