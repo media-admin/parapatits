@@ -9,7 +9,7 @@
 	&-logo {
 		position: relative;
 		display: inline-block;
-		padding-top: 20px;
+		padding-top: 18px;
 	}
 
 	&-logo__img {
@@ -21,25 +21,77 @@
 
 
 
+
+
+/* === Main Navigation === */
+
+.main-navigation  {
+	display: inline-block;
+	width: auto;
+}
+
+
 /* === Navigation Menu === */
+
 menu.site-menu {
 	position: relative;
-	display: inline-block;
+	margin-top: -5px;
+}
+
+
+/* --- Navigation Menu --- */
+.navbar  {
+	display: none;
+}
+
+
+.main-navigation.is-active {
+
+}
+
+
+.is-active .navbar {
+	position: absolute;
+	display: block;
+	width: 100vw;
+	height: 100%;
+	left: 0px;
+	background: rgba(255,255,255,0.8);
+	transition: 0.8s;
+}
+
+
+.is-active .navbar li a {
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+	font-weight: 700;
+	text-transform: lowercase;
+	color: $darkGray;
+	margin: 0;
+	padding-left: 0.5rem;
+}
+
+.is-active .navbar .navbar-item__submenu li a {
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	font-weight: 500;
+	text-transform: lowercase;
+	margin: 0;
+	padding-left: 2.0rem;
 }
 
 
 
 /* === Burger Menu === */
 .burger-menu {
-	 position: relative;
-	 display: inline-block;
-	 width: 35px;
-	 height: 35px;
-	 margin-left: auto;
-	 margin-right: auto;
-	 transition: border-radius .5s;
+	position: relative;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: border-radius .5s;
 }
-
 
 .line {
 	position: absolute;

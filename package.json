@@ -9,12 +9,20 @@
   "author": "Markus Tritremmel | markus.tritremmel@media-lab.at",
   "dependencies": {
     "bulma": "^0.9.3",
+    "css-minimizer-webpack-plugin": "^3.4.1",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
     "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.6.0",
+    "fs-extra": "^10.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
     "postcss-import": "^14.0.2",
     "postcss-loader": "^6.2.1",
     "postcss-mixins": "^9.0.1",

@@ -13,20 +13,51 @@
 				</a>
 			</div>
 
-			<menu class="site-menu">
-				<div class="burger-menu">
-					<span class="line"></span>
-					<span class="line"></span>
-					<span class="line"></span>
-				</div>
-			</menu>
-			<!-- Hamburger Menu Toggle -->
-			<script>
-				 var hamburger = document.querySelector(".burger-menu");
-				 hamburger.onclick = function () {
+			<nav class="main-navigation">
+
+				<menu class="site-menu">
+					<div class="burger-menu">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</div>
+				</menu>
+
+				<!-- Hamburger Menu Toggle -->
+				<script>
+					var navigation = document.querySelector(".main-navigation");
+					var hamburger = document.querySelector(".burger-menu");
+
+ 					navigation.onclick = function () {
+						this.classList.toggle ("is-active");
+					}
+
+					hamburger.onclick = function () {
 						this.classList.toggle ("checked");
-				 }
-			</script>
+					}
+				</script>
+
+				<div class="navbar">
+					<ul class="navbar__navigation-list">
+						<li class="navbar-item"><a href="/tischlerei">Tischlerei</a></li>
+							<ul class="navbar-item__submenu">
+								<li class="navbar-item"><a href="unsere-ansprueche">Unsere Ansprüche</a></li>
+								<li class="navbar-item"><a href="projekte">Projekte</a></li>
+								<li class="navbar-item"><a href="haeufig-gestellte-fragen">Häufig gestellte Fragen</a></li>
+							</ul>
+						<li class="navbar-item"><a href="/bestattung">Bestattung</a></li>
+							<ul class="navbar-item__submenu">
+								<li class="navbar-item"><a href="leitfaden-im-todesfall">Leitfaden im Todesfall</a></li>
+								<li class="navbar-item"><a href="unsere-leistungen">Unsere Leistungen</a></li>
+								<li class="navbar-item"><a href="haeufig-gestellte-fragen">Häufig gestellte Fragen</a></li>
+							</ul>
+						<li class="navbar-item"><a href="/ueber-uns">Über uns</a></li>
+						<li class="navbar-item"><a href="/kontakt">Kontakt</a></li>
+						<li class="navbar-item"><a href="/jobs">Jobs</a></li>
+					</ul>
+				</div>
+
+			</nav>
 
 
 			<section class="large-hero">
