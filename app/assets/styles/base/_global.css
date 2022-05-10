@@ -1,14 +1,60 @@
 /* === GLOBAL STYLES === */
 
+/* === General Styles === */
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: $mainGray;
 }
 
+
+
+
+/* === Image Styles === */
+
 img {
 	max-width: 100%;
 	height: auto;
 }
+
+
+.img__fullwidth {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+
+.img__centered {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+
+.img__left-aligned {
+	position: relative;
+	width: 95%;
+	height: auto;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+
+.img__right-aligned {
+	position: relative;
+	width: 100%;
+	height: auto;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+}
+
+
+
 
 
 .img__wood-square--red {
