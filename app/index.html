@@ -6,162 +6,159 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="" rel="stylesheet">
 	</head>
-	<body class="home">
-			<div class="header-logo">
-				<a class="header-logo__link wrapper" href="index.html">
-					<img class="header-logo__img" src="assets/images/logo-peter-parapatits.svg" alt="Logo Paraptits Peter">
-				</a>
-			</div>
-
-			<nav class="main-navigation">
-
-				<menu class="site-menu">
-					<div class="burger-menu">
-						<span class="line"></span>
-						<span class="line"></span>
-						<span class="line"></span>
-					</div>
-				</menu>
-
-				<!-- Hamburger Menu Toggle -->
-				<script>
-					var navigation = document.querySelector(".main-navigation");
-					var hamburger = document.querySelector(".burger-menu");
-
- 					navigation.onclick = function () {
-						this.classList.toggle ("is-active");
-					}
-
-					hamburger.onclick = function () {
-						this.classList.toggle ("checked");
-					}
-				</script>
-
-				<div class="navbar">
-					<ul class="navbar__navigation-list">
-						<li class="navbar-item"><a href="/tischlerei.html">Tischlerei</a></li>
-							<ul class="navbar-item__submenu">
-								<li class="navbar-item"><a href="unsere-ansprueche.html">Unsere Ansprüche</a></li>
-								<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
-								<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
-							</ul>
-						<li class="navbar-item"><a href="/bestattung.html">Bestattung</a></li>
-							<ul class="navbar-item__submenu">
-								<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
-								<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
-								<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
-							</ul>
-						<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
-						<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
-						<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
-					</ul>
+	<body class="site-body home">
+		<header class="site-header">
+			<div class="site-branding">
+				<div class="header-logo">
+					<a class="header-logo__link wrapper" href="index.html">
+						<img class="header-logo__img" src="assets/images/logo-peter-parapatits.svg" alt="Logo Paraptits Peter">
+					</a>
 				</div>
+				<nav class="main-navigation">
+					<menu class="site-menu">
+						<div class="burger-menu">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+						</div>
+					</menu>
 
-			</nav>
+					<!-- Hamburger Menu Toggle -->
+					<script>
+						var navigation = document.querySelector(".main-navigation");
+						var hamburger = document.querySelector(".burger-menu");
 
+ 						navigation.onclick = function () {
+							this.classList.toggle ("is-active");
+						}
 
+						hamburger.onclick = function () {
+							this.classList.toggle ("checked");
+						}
+					</script>
+
+					<div class="navbar">
+						<ul class="navbar__navigation-list">
+							<li class="navbar-item"><a href="/tischlerei.html">Tischlerei</a></li>
+								<ul class="navbar-item__submenu">
+									<li class="navbar-item"><a href="unsere-ansprueche.html">Unsere Ansprüche</a></li>
+									<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
+									<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
+								</ul>
+							<li class="navbar-item"><a href="/bestattung.html">Bestattung</a></li>
+								<ul class="navbar-item__submenu">
+									<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
+									<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
+									<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
+								</ul>
+							<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
+							<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
+							<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
+						</ul>
+					</div>
+				</nav>
 			<section class="large-hero">
 				<img class="large-hero__img lazyload" data-srcset="assets/images/home/hero-home.png" alt="Hero Image">
 				<p class="large-hero__title wrapper">Willkommen, hereinspaziert</p>
 				<p class="large-hero__text wrapper"></p>
 			</section>
-
 		</header>
 
 		<main class="site-main">
-			<section class="intro wrapper">
-				<h1 class="intro__headline h1__title h1__title--left-aligned">Willkommen, hereinspaziert</h1>
-				<p class="intro__subtitle h1__subtitle h1__subtitle--left-aligned">Abteilung wählen</p>
+			<div class="site-content">
+				<section class="intro wrapper">
+					<h1 class="site-title intro__headline h1__title h1__title--left-aligned">Willkommen, hereinspaziert</h1>
+					<p class="intro__subtitle h1__subtitle h1__subtitle--left-aligned">Abteilung wählen</p>
 
-				<ul class="intro__company-listing">
-					<li class="intro__list-item intro__list-item--tischlerei">
-						<img class="intro__list-img img__wood-square img__wood-square--red" src="assets/images/oak-wood-red.png" alt="Platzhalter-Bild">
-						<div class="intro__list-content">
-							<h2 class="intro__list-title h2__title h2__title--left-aligned">Tischlerei</h2>
-							<p class="intro__list-subtitle h2__subtitle h2__subtitle--left-aligned">Wir gestalten Lebensräume.</p>
+					<ul class="intro__company-listing">
+						<li class="intro__list-item intro__list-item--tischlerei">
+							<img class="intro__list-img img__wood-square img__wood-square--red" src="assets/images/oak-wood-red.png" alt="Platzhalter-Bild">
+							<div class="intro__list-content">
+								<h2 class="intro__list-title h2__title h2__title--left-aligned">Tischlerei</h2>
+								<p class="intro__list-subtitle h2__subtitle h2__subtitle--left-aligned">Wir gestalten Lebensräume.</p>
+							</div>
+						</li>
+					</ul>
+					<hr class="intro__company-listing-separator"</section>
+					<ul class="intro__company-listing">
+						<li class="intro__list-item intro__list-item--bestattung">
+							<div class="intro__list-content">
+								<h2 class="intro__list-title h2__title h2__title--left-aligned">Bestattung</h2>
+								<p class="intro__list-subtitle h2__subtitle h2__subtitle--right-aligned">Persönliche Bestattung.</p>
+							</div>
+							<img class="intro__list-img img__wood-square img__wood-square--gray lazyload" data-srcset="assets/images/oak-wood-gray.png" alt="Platzhalter-Bild">
+						</li>
+					</ul>
+
+				</section>
+
+				<section class="news-section">
+
+					<img class="news-section__img" src="assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
+
+					<article class="news-section__container wrapper">
+						<h2 class="h2__title news-section__title wrapper">Aktuelles</h2>
+						<p class="p__subitle news-section__subtitle wrapper">Aktuelle Informationen</p>
+						<div class="news-section__content wrapper">
+							<p>
+								Wir sind auf Urlaub!
+								von 24.12.2021 bis 31.12.2021
+								Bitte um Verständnis, dass wir zu dieser Zeit nicht erreichbar sind.
+							</p>
 						</div>
-					</li>
-				</ul>
-				<hr class="intro__company-listing-separator"</section>
-				<ul class="intro__company-listing">
-					<li class="intro__list-item intro__list-item--bestattung">
-						<div class="intro__list-content">
-							<h2 class="intro__list-title h2__title h2__title--left-aligned">Bestattung</h2>
-							<p class="intro__list-subtitle h2__subtitle h2__subtitle--right-aligned">Persönliche Bestattung.</p>
-						</div>
-						<img class="intro__list-img img__wood-square img__wood-square--gray lazyload" data-srcset="assets/images/oak-wood-gray.png" alt="Platzhalter-Bild">
-					</li>
-				</ul>
+					</article>
 
-			</section>
+				</section>
 
-			<section class="news-section">
-
-				<img class="news-section__img" src="assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
-
-				<article class="news-section__container wrapper">
-					<h2 class="h2__title news-section__title wrapper">Aktuelles</h2>
-					<p class="p__subitle news-section__subtitle wrapper">Aktuelle Informationen</p>
-					<div class="news-section__content wrapper">
+				<section class="info-section wrapper">
+					<h2 class="h1__title info-section__title h1__title--left-aligned">Tischlerei und Bestattung Parapatits</h1>
+					<p class="h1__subtitle info-section__subtitle h1__subtitle--left-aligned">Ein vielseitiger Betrieb</p>
+					<div class="info-section__content">
 						<p>
-							Wir sind auf Urlaub!
-							von 24.12.2021 bis 31.12.2021
-							Bitte um Verständnis, dass wir zu dieser Zeit nicht erreichbar sind.
+							Die zwei Standbeine unseres Familienunternehmens sind die Tischlerei und die Bestattung. Beides wird schon seit vielen Jahrzehnten in alter Familientradition geführt. Dass es diese zwei Standbeine auf unserem Betrieb gibt, ist historisch gewachsen. So unterschiedlich diese auch wirken mögen, sind diese doch ganz nah aneinander. Denn es geht immer darum den Menschen gut zuzuhören und diesen zu verstehen.
 						</p>
 					</div>
-				</article>
+				</section>
 
-			</section>
+				<section class="details-section">
+					<ul class="details-section__branches">
+						<li class="details-section__branch-item details-section__branch-item--tischlerei">
+							<img class="details-section__branch-item--tischlerei__img lazyload" data-srcset="assets/images/parapatits-tischlerei_komp-47-DSC03514.png" alt="Platzhalter-Bild">
+							<div class="details-section__branch-item--tischlerei__container wrapper">
+								<h2 class="details-section__branch-item--tischlerei__title h2__title h2__title--right-aligned">Tischlerei</h2>
+								<p class="details-section__branch-item--tischlerei__text h2__subtitle h2__subtitle--right-aligned">Wir gestalten Räume vom Fußboden bis zur Deckenbeleuchtung.</p>
+								<button class="btn btn--red details-section__btn" type="button">mehr erfahren</button>
+							</div>
+						</li>
 
-			<section class="info-section wrapper">
-				<h2 class="h1__title info-section__title h1__title--left-aligned">Tischlerei und Bestattung Parapatits</h1>
-				<p class="h1__subtitle info-section__subtitle h1__subtitle--left-aligned">Ein vielseitiger Betrieb</p>
-				<div class="info-section__content">
-					<p>
-						Die zwei Standbeine unseres Familienunternehmens sind die Tischlerei und die Bestattung. Beides wird schon seit vielen Jahrzehnten in alter Familientradition geführt. Dass es diese zwei Standbeine auf unserem Betrieb gibt, ist historisch gewachsen. So unterschiedlich diese auch wirken mögen, sind diese doch ganz nah aneinander. Denn es geht immer darum den Menschen gut zuzuhören und diesen zu verstehen.
-					</p>
-				</div>
-			</section>
+						<li class="details-section__branch-item details-section__branch-item--bestattung">
+							<img class="details-section__branch-item--bestattung__img lazyload" data-srcset="assets/images/parapatits-bestattung_komp-DSC03299t.png" alt="Platzhalter-Bild">
+							<div class="details-section__branch-item--bestattung__container wrapper">
+								<h2 class="details-section__branch-item--bestattung__title h2__title h2__title--left-aligned">Bestattung</h2>
+								<p class="details-section__branch-item__text h2__subtitle h2__subtitle--left-aligned">Mit viel Feingefühl und persönlichen Kontakt führen wir Sie durch eine schwierige Zeit und schaffen eine ehrenden Abschiednahme.</p>
+								<button class="btn btn--red details-section__btn" type="button">mehr erfahren</button>
+							</div>
+						</li>
+					</ul>
+				</section>
 
-			<section class="details-section">
-				<ul class="details-section__branches">
-					<li class="details-section__branch-item details-section__branch-item--tischlerei">
-						<img class="details-section__branch-item--tischlerei__img lazyload" data-srcset="assets/images/parapatits-tischlerei_komp-47-DSC03514.png" alt="Platzhalter-Bild">
-						<div class="details-section__branch-item--tischlerei__container wrapper">
-							<h2 class="details-section__branch-item--tischlerei__title h2__title h2__title--right-aligned">Tischlerei</h2>
-							<p class="details-section__branch-item--tischlerei__text h2__subtitle h2__subtitle--right-aligned">Wir gestalten Räume vom Fußboden bis zur Deckenbeleuchtung.</p>
-							<button class="btn btn--red details-section__btn" type="button">mehr erfahren</button>
-						</div>
-					</li>
+				<section class="jobs-section">
+					<img class="jobs-section__img lazyload" data-srcset="assets/images/parapatits-tischlerei_komp-43-DSC03482.JPG" alt="Platzhalter-Bild">
+					<div class="jobs-section__container wrapper">
+						<h2 class="jobs-section__title h2__title h2__title--left-aligned ">Jobs</h2>
+						<p class="jobs-section__text h2__subtitle h2__subtitle--left-aligned">Komm in unser Team!</p>
+						<button class="btn btn--red jobs-section__btn btn--centered-aligned" type="button">Offene Stellen anzeigen</button>
+					</div>
+				</section>
 
-					<li class="details-section__branch-item details-section__branch-item--bestattung">
-						<img class="details-section__branch-item--bestattung__img lazyload" data-srcset="assets/images/parapatits-bestattung_komp-DSC03299t.png" alt="Platzhalter-Bild">
-						<div class="details-section__branch-item--bestattung__container wrapper">
-							<h2 class="details-section__branch-item--bestattung__title h2__title h2__title--left-aligned">Bestattung</h2>
-							<p class="details-section__branch-item__text h2__subtitle h2__subtitle--left-aligned">Mit viel Feingefühl und persönlichen Kontakt führen wir Sie durch eine schwierige Zeit und schaffen eine ehrenden Abschiednahme.</p>
-							<button class="btn btn--red details-section__btn" type="button">mehr erfahren</button>
-						</div>
-					</li>
-				</ul>
-			</section>
-
-			<section class="jobs-section">
-				<img class="jobs-section__img lazyload" data-srcset="assets/images/parapatits-tischlerei_komp-43-DSC03482.JPG" alt="Platzhalter-Bild">
-				<div class="jobs-section__container wrapper">
-					<h2 class="jobs-section__title h2__title h2__title--left-aligned ">Jobs</h2>
-					<p class="jobs-section__text h2__subtitle h2__subtitle--left-aligned">Komm in unser Team!</p>
-					<button class="btn btn--red jobs-section__btn btn--centered-aligned" type="button">Offene Stellen anzeigen</button>
-				</div>
-			</section>
-
-			<section class="recall-section wrapper container--darkgray">
-				<div class="recall-section__container">
-					<h2 class="recall-section__title h2__title h2__light h2__title--left-aligned">Rückruf vereinbaren</h2>
-					<p class="">CONTACT FORM PLACEHOLDER</p>
-					<button class="btn btn--red recall-section__btn" type="button">absenden</button>
-				</div>
-			</section>
-
+				<section class="recall-section wrapper container--darkgray">
+					<div class="recall-section__container">
+						<h2 class="recall-section__title h2__title h2__light h2__title--left-aligned">Rückruf vereinbaren</h2>
+						<p class="">CONTACT FORM PLACEHOLDER</p>
+						<button class="btn btn--red recall-section__btn" type="button">absenden</button>
+					</div>
+				</section>
+			</div>
 		</main>
 
 		<footer class="site-footer">

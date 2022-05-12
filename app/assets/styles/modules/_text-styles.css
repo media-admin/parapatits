@@ -1,27 +1,47 @@
 /* === TEXT STYLES === */
 
+.site-title {
+
+}
+
+
+
 .h1 {
 
 	&__title {
-		font-size: 2.0rem;
+		font-size: 3.0rem;
 		font-weight: 700;
 		line-height: 2.0rem;
 		text-transform: lowercase;
-		margin: 0;
+		letter-spacing: 0.10rem;
+		margin: 1.0rem 0;
+		padding-left: 1.0rem;
+	}
+
+	&__title--left-aligned {
+		text-align: left;
+		padding-left: 1.0rem;
 	}
 
 	&__title--right-aligned {
 		text-align: right;
+		padding-right: 1.0rem;
 	}
 
-
 	&__subtitle {
-		font-size: 0.8rem;
+		font-size: 1.0rem;
 		font-weight: 500;
 		line-height: 1.4rem;
 		letter-spacing: 0.05rem;
 		color: $mainRed;
 		margin: 0;
+		margin-top: 1.0rem;
+		margin-bottom: 2.0rem;
+	}
+
+	&__subtitle--left-aligned {
+		text-align: left;
+		padding-left: 1.0rem;
 	}
 
 	&__subtitle--right-aligned {
@@ -34,46 +54,78 @@
 
 .h2 {
 
-	&__title {
-		font-size: 31px;
-		font-size: 1.2rem;
+	&__heading {
+		font-size: 2.2rem;
 		font-weight: 700;
-		line-height: 40px;
+		line-height: 2.6rem;
 		letter-spacing: 0.1rem;
 		text-transform: lowercase;
 		margin: 0;
+		margin-top: 4.0rem;
+		padding-top: 2.0rem;
+		padding-bottom: 1.0rem;
 	}
 
-
-	&__subtitle--left-aligned {
+	&__heading--left-aligned {
 		text-align: left !important;
 		padding-left: 0.25rem;
 		padding-right: 25%;
 	}
 
-
-	&__subtitle--right-aligned {
+	&__heading--right-aligned {
 		text-align: right !important;
 		padding-right: 0.25rem;
 		padding-left: 25%;
 	}
 
+	&__subheading {
+		font-size: 1.2rem;
+		font-weight: 700;
+		line-height: 1.6rem;
+		letter-spacing: 0.1rem;
+		text-transform: lowercase;
+		margin: 0;
+	}
 
+	&__subheading--left-aligned {
+		text-align: left !important;
+		padding-left: 0.25rem;
+		padding-right: 25%;
+	}
+
+	&__subheading--right-aligned {
+		text-align: right !important;
+		padding-right: 0.25rem;
+		padding-left: 25%;
+	}
 
 }
 
 
 .h3 {
 
-	&__title {
-		font-size: 25px;
-		font-size: 1.1rem;
+	&__heading {
+		font-size: 1.4rem;
 		font-weight: 700;
-		margin: 0;
-
-		line-height: 32px;
-		letter-spacing: 10px;
+		line-height: 1.6rem;
 		text-transform: lowercase;
+		letter-spacing: 0.1rem;
+		margin: 0;
+		padding-top: 1.0rem;
+		padding-bottom: 2.0rem;
 	}
 
+}
+
+.subheading {
+	font-size: 0.8rem;
+	font-weight: 500;
+	line-height: 1.4rem;
+	letter-spacing: 0.05rem;
+	color: $mainRed;
+	margin: 0;
+}
+
+article p {
+	line-height: 2.4rem;
 }

@@ -23,13 +23,20 @@
 	width: 42%;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
+	list-style-type: none;
 	margin: 2.0rem auto;
+	padding-left: 0;
 }
 
 .footer-navigation {
 	font-weight: 700;
 	line-height: 2.0rem;
 	color: $mainGray;
+}
+
+.footer-navigation__list {
+	list-style-type: none;
+	padding-left: 0;
 }
 
 .copyright {

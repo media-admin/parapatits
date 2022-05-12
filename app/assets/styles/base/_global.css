@@ -8,62 +8,136 @@ body {
 }
 
 
+.site-body {
+
+}
+
+.site-content {
+
+}
+
+.site-intro {
+
+}
+
+
+.box--left-aligned {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	text-align: left;
+	margin: 0;
+	margin-bottom: 3.0rem;
+	padding: 0;
+}
+
+.box--left-aligned article {
+	position: relative;
+	width: 75%;
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.box--right-aligned {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	text-align: right;
+	margin: 0;
+	margin-bottom: 3.0rem;
+	padding: 0;
+}
+
+.box--right-aligned article {
+	position: relative;
+	width: 75%;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+
 
 
 /* === Image Styles === */
+
+.img__wood-square-before--red:before {
+	position: relative;
+	display: inline-block;
+	top: 15%;
+	left: 50%;
+	content: url(/app/assets/images/oak-wood-red.png);
+	transform: scale(.5);
+	z-index: 100 !important;
+}
+
+.img__wood-square-before--red {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-top: -20px !important;
+}
+
+.img__wood-square-before {
+	position: relative;
+	display: block;
+	height: auto;
+	margin-top: -80px !important;
+	z-index: 0 !important;
+}
 
 img {
 	max-width: 100%;
 	height: auto;
 }
 
-
 .img__fullwidth {
 	position: relative;
+	display: block;
 	width: 100%;
 	height: auto;
-	margin: 0;
+	margin: 2.0rem 0;
 	padding: 0;
 }
-
 
 .img__centered {
 	position: relative;
-	width: 100%;
+	display: block;
+	width: calc(100%-2.0rem);
 	height: auto;
+	margin: 0 auto;
 }
-
 
 .img__left-aligned {
 	position: relative;
-	width: 95%;
+	display: block;
+	width: 80%;
 	height: auto;
 	text-align: left;
-	margin: 0;
+	margin: 2.0rem 0;
 	padding: 0;
 }
-
 
 .img__right-aligned {
 	position: relative;
-	width: 100%;
+	width: 80%;
 	height: auto;
 	text-align: right;
-	margin: 0;
+	margin: 2.0rem 0;
 	padding: 0;
 }
 
-
-
-
-
 .img__wood-square--red {
-	display: inline-block;
-	min-width: 92px;
+	position: relative;
+	display: block;
 	max-width: 100%;
+	min-height: 250px;
 	height: auto;
+	margin: 0;
+	padding: 0;
 }
-
 
 .img__wood-square--gray {
 	display: inline-block;
@@ -73,7 +147,10 @@ img {
 }
 
 
+
+
 /* === Button Styles === */
+
 .btn {
 	padding: 0.75rem 1.0rem;
 
@@ -87,13 +164,11 @@ img {
 		margin: 1.25rem 0;
 	}
 
-
-
 	&--centered-aligned {
 		position: relative;
+		display: block;
 		text-align: center !important;
 		margin: 1.25rem auto;
 	}
-
 
 }

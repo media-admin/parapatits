@@ -6,78 +6,76 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="" rel="stylesheet">
 	</head>
-	<body class="home">
-			<div class="header-logo">
-				<a class="header-logo__link wrapper" href="index.html">
-					<img class="header-logo__img" src="assets/images/logo-peter-parapatits.svg" alt="Logo Tischlerei Paraptits">
-				</a>
-			</div>
+	<body class="site-body datenschutz">
+		<div class="site-content">
+			<header class="site-header">
+				<div class="site-branding">
+					<a class="header-logo__link wrapper" href="index.html">
+						<img class="header-logo__img" src="assets/images/logo-peter-parapatits.svg" alt="Logo Tischlerei Paraptits">
+					</a>
+				</div>
+				<nav class="main-navigation">
+					<menu class="site-menu">
+						<div class="burger-menu">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+						</div>
+					</menu>
 
-			<nav class="main-navigation">
+					<!-- Hamburger Menu Toggle -->
+					<script>
+						var navigation = document.querySelector(".main-navigation");
+						var hamburger = document.querySelector(".burger-menu");
 
-				<menu class="site-menu">
-					<div class="burger-menu">
-						<span class="line"></span>
-						<span class="line"></span>
-						<span class="line"></span>
+ 						navigation.onclick = function () {
+							this.classList.toggle ("is-active");
+						}
+
+						hamburger.onclick = function () {
+							this.classList.toggle ("checked");
+						}
+					</script>
+
+					<div class="navbar">
+						<ul class="navbar__navigation-list">
+							<li class="navbar-item"><a href="/tischlerei.html">Tischlerei</a></li>
+								<ul class="navbar-item__submenu">
+									<li class="navbar-item"><a href="unsere-ansprueche.html">Unsere Ansprüche</a></li>
+									<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
+									<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
+								</ul>
+							<li class="navbar-item"><a href="/bestattung.html">Bestattung</a></li>
+								<ul class="navbar-item__submenu">
+									<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
+									<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
+									<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
+								</ul>
+							<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
+							<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
+							<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
+						</ul>
 					</div>
-				</menu>
+				</nav>
+			</header>
 
-				<!-- Hamburger Menu Toggle -->
-				<script>
-					var navigation = document.querySelector(".main-navigation");
-					var hamburger = document.querySelector(".burger-menu");
+			<main class="site-main">
+				<section class="">
+					<h1 class="site-title">Datenschutz</h1>
+					<p class="">
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+					</p>
+				</section>
 
- 					navigation.onclick = function () {
-						this.classList.toggle ("is-active");
-					}
+				<section class="">
+					<div class="">
+						<h2 class="">Rückruf vereinbaren</h2>
+						<p class="">CONTACT FORM PLACEHOLDER</p>
+						<button class="" type="button">absenden</button>
+					</div>
+				</section>
 
-					hamburger.onclick = function () {
-						this.classList.toggle ("checked");
-					}
-				</script>
-
-				<div class="navbar">
-					<ul class="navbar__navigation-list">
-						<li class="navbar-item"><a href="/tischlerei.html">Tischlerei</a></li>
-							<ul class="navbar-item__submenu">
-								<li class="navbar-item"><a href="unsere-ansprueche.html">Unsere Ansprüche</a></li>
-								<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
-								<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
-							</ul>
-						<li class="navbar-item"><a href="/bestattung.html">Bestattung</a></li>
-							<ul class="navbar-item__submenu">
-								<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
-								<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
-								<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
-							</ul>
-						<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
-						<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
-						<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
-					</ul>
-				</div>
-
-			</nav>
-
-		</header>
-
-		<main class="site-main">
-			<section class="">
-				<h1 class="">Datenschutz</h1>
-				<p class="">
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-				</p>
-			</section>
-
-			<section class="">
-				<div class="">
-					<h2 class="">Rückruf vereinbaren</h2>
-					<p class="">CONTACT FORM PLACEHOLDER</p>
-					<button class="" type="button">absenden</button>
-				</div>
-			</section>
-
-		</main>
+			</main>
 
 		<footer class="site-footer">
 
