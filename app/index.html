@@ -7,67 +7,69 @@
 		<link href="" rel="stylesheet">
 	</head>
 	<body class="site-body home">
-		<header class="site-header">
-			<div class="site-branding">
-				<div class="header-logo">
-					<a class="header-logo__link wrapper" href="index.html">
-						<img class="header-logo__img" src="assets/images/logo-peter-parapatits.svg" alt="Logo Paraptits Peter">
-					</a>
-				</div>
-				<nav class="main-navigation">
-					<menu class="site-menu">
-						<div class="burger-menu">
-							<span class="line"></span>
-							<span class="line"></span>
-							<span class="line"></span>
-						</div>
-					</menu>
-
-					<!-- Hamburger Menu Toggle -->
-					<script>
-						var navigation = document.querySelector(".main-navigation");
-						var hamburger = document.querySelector(".burger-menu");
-
- 						navigation.onclick = function () {
-							this.classList.toggle ("is-active");
-						}
-
-						hamburger.onclick = function () {
-							this.classList.toggle ("checked");
-						}
-					</script>
-
-					<div class="navbar">
-						<ul class="navbar__navigation-list">
-							<li class="navbar-item"><a href="/tischlerei.html">Tischlerei</a></li>
-								<ul class="navbar-item__submenu">
-									<li class="navbar-item"><a href="unsere-ansprueche.html">Unsere Ansprüche</a></li>
-									<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
-									<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
-								</ul>
-							<li class="navbar-item"><a href="/bestattung.html">Bestattung</a></li>
-								<ul class="navbar-item__submenu">
-									<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
-									<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
-									<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
-								</ul>
-							<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
-							<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
-							<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
-						</ul>
+		<div class="site-content">
+			<header class="site-header">
+				<div class="site-branding">
+					<div class="header-logo">
+						<a class="header-logo__link wrapper" href="index.html">
+							<img class="header-logo__img" src="assets/images/logo-peter-parapatits.svg" alt="Logo Paraptits Peter">
+						</a>
 					</div>
-				</nav>
-			<section class="large-hero">
-				<img class="large-hero__img lazyload" data-srcset="assets/images/home/hero-home.png" alt="Hero Image">
-				<p class="large-hero__title wrapper">Willkommen, hereinspaziert</p>
-				<p class="large-hero__text wrapper"></p>
-			</section>
+					<nav class="main-navigation">
+						<menu class="site-menu">
+							<div class="burger-menu">
+								<span class="line"></span>
+								<span class="line"></span>
+								<span class="line"></span>
+							</div>
+						</menu>
+
+						<!-- Hamburger Menu Toggle -->
+						<script>
+							var navigation = document.querySelector(".main-navigation");
+							var hamburger = document.querySelector(".burger-menu");
+
+ 							navigation.onclick = function () {
+								this.classList.toggle ("is-active");
+							}
+
+							hamburger.onclick = function () {
+								this.classList.toggle ("checked");
+							}
+						</script>
+
+						<div class="navbar">
+							<ul class="navbar__navigation-list">
+								<li class="navbar-item"><a href="/tischlerei.html">Tischlerei</a></li>
+									<ul class="navbar-item__submenu">
+										<li class="navbar-item"><a href="unsere-ansprueche.html">Unsere Ansprüche</a></li>
+										<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
+										<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
+									</ul>
+								<li class="navbar-item"><a href="/bestattung.html">Bestattung</a></li>
+									<ul class="navbar-item__submenu">
+										<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
+										<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
+										<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
+									</ul>
+								<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
+								<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
+								<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
+							</ul>
+						</div>
+					</nav>
+				<section class="large-hero">
+					<img class="large-hero__img lazyload" data-srcset="assets/images/home/hero-home.png" alt="Hero Image">
+					<p class="large-hero__title wrapper">Willkommen, hereinspaziert</p>
+					<p class="large-hero__text wrapper"></p>
+				</section>
+			</div>
 		</header>
 
 		<main class="site-main">
 			<div class="site-content">
 				<section class="intro wrapper">
-					<h1 class="site-title intro__headline h1__title h1__title--left-aligned">Willkommen, hereinspaziert</h1>
+					<h1 class="site-title h1__title intro__headline h1__title--left-aligned">Willkommen, hereinspaziert</h1>
 					<p class="intro__subtitle h1__subtitle h1__subtitle--left-aligned">Abteilung wählen</p>
 
 					<ul class="intro__company-listing">

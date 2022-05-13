@@ -15,6 +15,7 @@
 .footer-contact__data a {
 	font-weight: 600;
 	color: $mainGray;
+	text-decoration: none;
 }
 
 .footer-contact__social-media-area {

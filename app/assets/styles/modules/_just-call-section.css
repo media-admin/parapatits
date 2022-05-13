@@ -1,0 +1,30 @@
+/* === JUST CALL SECTION === */
+.section__just-call {
+	position: relative;
+	width: 100%;
+	color: $brightWhite;
+	background: $darkGray;
+	margin-top: 5.0rem;
+	margin-bottom: 5.0rem;
+	padding-top: 0.0rem;
+	padding-bottom: 0.0rem;
+}
+
+.just-call__contact-data {
+	width: 100%;
+	text-align: right;
+}
+
+.just-call__contact-data a {
+	position: relative;
+	display: block;
+	font-size: 2.0rem;
+	line-height: 2.8rem;
+	font-weight: 700;
+	text-decoration: none;
+	color: $brightWhite;
+}
+
+.hours-available {
+	font-size: 0.9rem;
+}
