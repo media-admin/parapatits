@@ -1,6 +1,12 @@
 /* === COMPANY LISTING === */
 .company-listing {
 	position: relative;
+}
 
+.details-section__branches {
+	list-style-type: none;
+}
 
+.intro__company-listing {
+	list-style-type: none;
 }

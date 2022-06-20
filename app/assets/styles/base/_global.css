@@ -175,11 +175,11 @@ img {
 .img__wood-square--red {
 	position: relative;
 	display: block;
+	min-width: 92px;
 	max-width: 100%;
-	min-height: 250px;
+	/* min-height: 250px; */
 	height: auto;
-	margin: 0;
-	padding: 0;
+
 }
 
 .img__wood-square--gray {
@@ -237,3 +237,5 @@ img {
 	}
 
 }
+
+

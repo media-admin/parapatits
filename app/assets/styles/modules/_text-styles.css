@@ -1,11 +1,44 @@
 /* === TEXT STYLES === */
 
+/* === General Text Styles === */
 .site-title {
 
 }
 
-/* === Heading Styles === */
+/* --- Highlighted Letters --- */
+.letter-colored--red {
+	color: #b6274f;
+}
 
+
+/* --- Article Styles --- */
+article p {
+	line-height: 2.4rem;
+}
+
+
+/* --- Cite Styles --- */
+.cite__project-special {
+	position: relative;
+	display: block;
+	width: 80%;
+	font-size: 1.2rem;
+	font-weight: 300;
+	line-height: 2.4rem;
+	text-align: center !important;
+	margin: 5.0rem auto !important;
+}
+
+
+/* --- List Styles --- */
+ul {
+	list-style-type: square;
+	color: #707173;
+}
+
+
+
+/* === Heading Styles === */
 .h1 {
 
 	&__title {
@@ -129,30 +162,4 @@
 	margin: 0;
 }
 
-/* === Article Styles === */
 
-article p {
-	line-height: 2.4rem;
-}
-
-
-/* === Cite Styles === */
-
-.cite__project-special {
-	position: relative;
-	display: block;
-	width: 80%;
-	font-size: 1.2rem;
-	font-weight: 300;
-	line-height: 2.4rem;
-	text-align: center !important;
-	margin: 5.0rem auto !important;
-}
-
-
-/* === List Styles === */
-
-ul {
-	list-style-type: square;
-	color: #707173;
-}
