@@ -4,7 +4,7 @@
 
 }
 
-
+/* === Heading Styles === */
 
 .h1 {
 
@@ -129,9 +129,14 @@
 	margin: 0;
 }
 
+/* === Article Styles === */
+
 article p {
 	line-height: 2.4rem;
 }
+
+
+/* === Cite Styles === */
 
 .cite__project-special {
 	position: relative;
@@ -142,4 +147,12 @@ article p {
 	line-height: 2.4rem;
 	text-align: center !important;
 	margin: 5.0rem auto !important;
+}
+
+
+/* === List Styles === */
+
+ul {
+	list-style-type: square;
+	color: #707173;
 }
