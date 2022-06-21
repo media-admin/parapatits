@@ -216,6 +216,7 @@ img {
 
 .btn {
 	padding: 0.75rem 1.0rem;
+	text-transform: lowercase;
 
 	&--red {
 		font-size: 0.9rem;
@@ -223,6 +224,17 @@ img {
 		text-transform: lowercase;
 		color: $brightWhite;
 		background-color: $mainRed;
+		border: none;
+		margin: 1.25rem 0;
+		margin-bottom: 2.0rem;
+	}
+
+	&--white {
+		font-size: 0.9rem;
+		font-weight: 700;
+		text-transform: lowercase;
+		color: $mainRed;
+		background-color: $brightWhite;
 		border: none;
 		margin: 1.25rem 0;
 		margin-bottom: 2.0rem;
