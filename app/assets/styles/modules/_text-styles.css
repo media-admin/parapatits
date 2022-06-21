@@ -5,9 +5,14 @@
 
 }
 
-/* --- Highlighted Letters --- */
+/* --- Highlighted Text --- */
 .letter-colored--red {
 	color: #b6274f;
+}
+
+
+.text--underlined {
+	text-decoration: underline;
 }
 
 

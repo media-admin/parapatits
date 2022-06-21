@@ -5,7 +5,22 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="" rel="stylesheet">
+
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				$("#accordion article h2").click(function(e) {
+					$(this).parents().siblings("article").addClass("accordion__item-hidden");
+					$(this).parents("article").removeClass("accordion__item-hidden");
+
+					e.preventDefault();
+				});
+			});
+		</script>
+
 	</head>
+
 	<body class="site-body haeufig-gestellte-fragen">
 		<div class="site-content">
 			<header class="site-header">
@@ -42,7 +57,7 @@
 							<ul class="navbar__navigation-list">
 								<li class="navbar-item"><a href="/tischlerei.html">Tischlerei</a></li>
 									<ul class="navbar-item__submenu">
-										<li class="navbar-item"><a href="unsere-ansprueche.html">Unsere Ansprüche</a></li>
+										<li class="navbar-item"><a href="unsere-werte.html">Unsere Werte</a></li>
 										<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
 										<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
 									</ul>
@@ -61,57 +76,63 @@
 				</div>
 			</header>
 
+
+
+
 			<main class="site-main">
-				<section class="site-intro box--left-aligned">
-					<article class="wrapper">
-						<h1 class="site-title h1__title">Häufig gestellte Fragen</h1>
-						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Fragen, welche wir schon mehr als einmal beantworten durften.</p>
-					</article>
-				</section>
+				<div class="site-content">
+					<section class="site-intro box--left-aligned">
+						<article class="wrapper">
+							<h1 class="site-title h1__title">Häufig gestellte Fragen</h1>
+							<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Fragen, die wir schon mehr als einmal beantworten durften.</p>
+						</article>
+					</section>
 
-				<section class="">
-					<article class="">
-						<h2 class=""">Frage 01</h2>
-						<hr/>
-						<p class="">Antwort 01</p>
-					</article>
-					<article class="">
-						<h2 class=""">Frage 02</h2>
-						<hr/>
-						<p class="">Antwort 02</p>
-					</article>
-					<article class="">
-						<h2 class=""">Frage 03</h2>
-						<hr/>
-						<p class="">Antwort 03</p>
-					</article>
-				</section>
+					<section id="accordion" class="wrapper">
+						<article class="accordion__item">
+							<h2 class="accordion__headline""><a href="#">Frage 01</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
+							<div class="accordion_content wrapper">
+								<p>Antwort 01</p>
+							</div>
+						</article>
+						<article class="accordion__item accordion__item-hidden">
+							<h2 class="accordion__headline""><a href="#">Frage 02</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
+							<div class="accordion_content wrapper">
+								<p>Antwort 02</p>
+							</div>
+						</article>
+						<article class="accordion__item accordion__item-hidden">
+							<h2 class="accordion__headline""><a href="#">Frage 03</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
+							<div class="accordion_content wrapper">
+								<p>Antwort 03</p>
+							</div>
+						</article>
+					</section>
 
-				<section class="">
-					<div class="">
-						<h2 class=""">Haben Sie eine spezielle Frage?</h2>
-						<p class="">Kontaktieren Sie uns und wir werden Ihnen gerne weiterhelfen.</p>
-						<button class="btn" type="button">Kontakt</button>
-						<img class="" src="assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
-					</div>
-				</section>
-
-				<section class="wrapper">
-					<h2 class="wrapper">Unsere Ansprüche</h2>
-					<p class="">Erfahren Sie was unsere Arbeit ausmacht.</p>
-					<button class="btn" type="button">Ansprüche anzeigen</button>
-				</section>
-
-				<section class="box--left-aligned">
-					<article class="wrapper">
+					<section class="wrapper">
 						<div class="">
-							<h2 class="h2__heading">Rückruf vereinbaren</h2>
-							<p class="">CONTACT FORM PLACEHOLDER</p>
-							<button class="btn btn--red btn--centered-aligned" type="button">absenden</button>
+							<h2 class=""">Haben Sie eine spezielle Frage?</h2>
+							<p class="">Kontaktieren Sie uns, wir beantworten diese gerne.</p>
+							<button class="btn" type="button">Kontakt</button>
+							<img class="" src="assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
 						</div>
-					</article>
-				</section>
+					</section>
 
+					<section class="wrapper">
+						<h2 class="wrapper">Unsere Werte</h2>
+						<p class="">Erfahren Sie was unsere Arbeit ausmacht.</p>
+						<button class="btn" type="button">zu unseren werten</button>
+					</section>
+
+					<section class="recall-section wrapper container--darkgray">
+						<div class="recall-section__container">
+							<h2 class="recall-section__title h2__title h2__light h2__title--left-aligned">Rückruf vereinbaren</h2>
+							<p class="">Hinterlassen Sie uns Ihre Nummer, wir rufen Sie gerne zurück.</p>
+							<p class="">[ CONTACT FORM ]</p>
+							<button class="btn btn--red recall-section__btn" type="button">absenden</button>
+						</div>
+					</section>
+				</div>
 			</main>
 
 		<footer class="site-footer">
@@ -141,6 +162,8 @@
 			<p class="copyright">alle Rechte vorbehalten ©&nbsp;2022</p>
 
 		</footer>
+
+
 
 		<!-- Start Scripts Area -->
 		<script src="bundled.js"></script>

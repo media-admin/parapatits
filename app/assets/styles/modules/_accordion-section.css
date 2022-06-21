@@ -1,0 +1,117 @@
+/* === INTRO SECTION === */
+#accordion article,
+#accordion .accordion__pointer,
+#accordion h2,
+#accordion div,
+#accordion p {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+#accordion {
+	position: relative;
+	width: 96%;
+	margin-top: 10.0rem;
+	margin-bottom: 5.0rem;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+/* --- Pure CSS Arrow --- */
+.arrow {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: solid $darkGray;
+	border-width: 0 2px 2px 0;
+	padding: 3px;
+}
+
+.down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+/* --- Accordion --- */
+.accordion {
+
+	&__item {
+		position: relative;
+		display: block;
+		border-bottom: 2px solid $darkGray;
+		background: $brightWhite;
+	}
+
+	&__headline {
+		display: block;
+		position: relative;
+		width: 80%;
+		margin: 0;
+		padding: 10px 10px 10px 10px;
+	}
+
+	&__headline a {
+		font-size: 2.2rem;
+		font-weight: 700;
+		color: $darkGray;
+		line-height: 2.6rem;
+		letter-spacing: 0.1rem;
+		text-transform: lowercase;
+		text-decoration: none;
+		margin: 0;
+		margin-top: 4.0rem;
+		padding-top: 2.0rem;
+		padding-bottom: 1.0rem;
+	}
+
+
+	&__pointer {
+		position: relative;
+		position: absolute;
+		top: 12px;
+		right: 30px;
+		width: 10px;
+		height: 10px;
+		color: $darkGray;
+		line-height: 20px;
+		margin: 10px 0 10px 20px;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+
+	&__content {
+		display: block;
+		position: relative;
+		width: 96%;
+		padding: 10px 10px 10px 10px;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+
+}
+
+#accordion article.accordion__item-hidden div:not(.accordion__pointer) {
+	color: $darkGray;
+}
+
+#accordion article.accordion__item-hidden {
+	height: 68px;
+}
+
+
+#accordion article:not(.accordion__item-hidden) .accordion__pointer {
+	display: inline-block;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	right: 20px;
+	padding: 0;
+}
+
