@@ -254,6 +254,19 @@ body {
 
 }
 
+
+.site-content a {
+	text-decoration: none;
+	color: #707173;
+	font-weight: 700;
+}
+
+
+.site-content a:hover {
+	text-decoration: underline;
+}
+
+
 .box--left-aligned {
 	position: relative;
 	display: block;

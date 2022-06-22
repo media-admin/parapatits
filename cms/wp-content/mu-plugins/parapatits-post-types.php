@@ -188,7 +188,7 @@ function parapatits_post_types() {
 	));
 
 
-	/* --- Custom Post Type SLIDER ---
+	/* --- Custom Post Type SLIDER --- */
 	$labels = array(
 		'name' =>  'Header Slider',
 		'add_new' => 'Neues Slider-Bild erstellen',
