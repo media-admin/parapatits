@@ -849,6 +849,7 @@ menu.site-menu {
 
 .intro__company-listing {
 	list-style-image: none;
+	padding-left: 10px;
 }
 
 .intro__list-item {
@@ -946,6 +947,7 @@ span.hover__alt-text {
 
 .details-section__branches {
 	list-style-type: none;
+	line-height: 2.0rem;
 }
 
 .intro__company-listing {
@@ -1190,10 +1192,14 @@ span.hover__alt-text {
 .recall-section {
 	color: #FFFFFF;
 	background-color: #838282;
-	margin: 30px 0px;
+	margin: 10px 0px 10px 0px;
 	margin-top: 1.0rem;
 	margin-bottom: 1.0rem;
 	padding: 2.5rem;
+}
+
+.recall-section h2 {
+	margin-top: 0.0rem;
 }
 
 .recall-section__img {
@@ -1349,6 +1355,32 @@ span.hover__alt-text {
 	right: 20px;
 	padding: 0;
 }
+
+
+/* === NEWS Area === */
+.news-section__container h2 {
+	margin-top: 0.0rem;
+}
+
+
+
+/* === Page KONTAKT === */
+.contact-details a {
+	font-size: 1.0rem;
+	line-height: 1.0rem;
+	text-align: center;
+	letter-spacing: 0.05rem;
+	font-weight: 600;
+	color: #838282;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
 
 
 /* === FOOTER === */

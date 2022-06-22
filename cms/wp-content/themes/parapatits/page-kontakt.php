@@ -3,7 +3,7 @@
 * Template Name: Seite Kontakt
 */
 
-get_header('bestattung');
+get_header('');
 ?>
 
 			<main class="site-main">
@@ -12,8 +12,8 @@ get_header('bestattung');
 						<article class="wrapper">
 							<h1 class="site-title h1__title">Kontakt</h1>
 							<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Wir freuen uns auf Ihren Anruf, Ihr E-Mail oder Ihre Postkarte.</p>
-							<div class="wrapper">
-								<p class="">
+							<div class="">
+								<p class="contact-details">
 									<strong>Peter Parapatits</strong><br>
 									Angergasse 10<br>
 									7341 Markt Sankt Martin<br>
@@ -21,10 +21,6 @@ get_header('bestattung');
 									<a href="tel:+436643079828">+43 664/307 98 28</a><br>
 									<a href="mailto:tischlerei@parapatits.at">tischlerei@parapatits.at</a><br>
 								</p>
-								<ul class="footer-contact__social-media-area">
-									<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--facebook" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/facebook-icon.svg" alt="Facebook Logo"></a></li>
-									<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--instragram" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/instagram-icon.svg" alt="Instagram Logo"></a></li>
-								</ul>
 							</div>
 						</article>
 					</section>
@@ -54,12 +50,14 @@ get_header('bestattung');
 					</section>
 
 					<section class="recall-section wrapper container--darkgray">
-						<div class="recall-section__container">
-							<h2 class="recall-section__title h2__title h2__light h2__title--left-aligned">Rückruf vereinbaren</h2>
-							<p class="">Hinterlassen Sie uns Ihre Nummer, wir rufen Sie gerne zurück.</p>
-							<p class="">[ CONTACT FORM ]</p>
-							<button class="btn btn--red recall-section__btn" type="button">absenden</button>
-						</div>
+						<article class="wrapper">
+							<div class="recall-section__container">
+								<h2 class="recall-section__title h2__title h2__light h2__title--left-aligned">Rückruf vereinbaren</h2>
+								<p class="">Hinterlassen Sie uns Ihre Nummer, wir rufen Sie gerne zurück.</p>
+								<p class="">[ CONTACT FORM ]</p>
+								<button class="btn btn--red recall-section__btn" type="button">absenden</button>
+							</div>
+						</article>
 					</section>
 				</div>
 			</main>

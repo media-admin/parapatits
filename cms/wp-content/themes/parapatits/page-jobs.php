@@ -26,14 +26,14 @@ get_header('');
 								<p class="">
 									Zur Zeit sind leider keine offenen Stellen vorhanden. Wir freuen uns aber trotzdem auf Ihre Initiativbewerbung.
 								</p>
-								<button class="btn" type="button">Bewerbung mailen</button>
+								<button class="btn btn--red" type="button">Bewerbung mailen</button>
 							</div>
 						</article>
 
 					<section class="box--left-aligned">
 						<article class="wrapper">
 							<div class="">
-								<h2 class="h2__heading">Tischlereigeselle/in</h2>
+								<h2 class="h2__heading">Tischlerei&shy;geselle/in</h2>
 								<p class="">
 									Auf dich wartet:
 									- ein kollegiales und familiäres Umfeld
@@ -41,7 +41,7 @@ get_header('');
 									- ein sicherer langfristiger Arbeitsplatz
 									- selbstständige Projektabwicklung von Anfang bis Ende
 								</p>
-								<button class="btn btn--red btn--centered-aligned" type="button">Jobdetails anzeigen</button>
+								<button class="btn btn--red" type="button">Jobdetails anzeigen</button>
 							</div>
 						</article>
 
@@ -66,7 +66,7 @@ get_header('');
 									Melde dich bei uns und wir zeigen dir erstmal unseren Betrieb.
 								</p>
 							</div>
-							<button class="btn" type="button">Kontakt</button>
+							<button class="btn btn--red" type="button">Kontakt</button>
 						</article>
 					</section>
 

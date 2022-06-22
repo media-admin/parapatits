@@ -47,15 +47,17 @@ get_header('');
 						<img class="" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
 					</section>
 
-					<section class="wrapper">
-						<h2 class="h2__title h2__title--left-aligned">Bestattung</h2>
-						<p class="h2__subtitle h2__subtitle--left-aligned">Wir begleiten Sie.</p>
-						<div class="">
-							<p class="">
-								Unsere Bestattung betreiben wir aus Nächstenliebe. Wir legen großen Wert darauf, dass jeder Mensch eine würdevolle Beisetzung bekommt. Außerdem ist es uns wichtig, Angehörigen Trost und Zuspruch in dieser schwierigen Zeit zu geben.
-							</p>
-						</div>
-						<button class="btn btn--red btn--centered-aligned" type="button" onklick="window.open('/bestattung.html', '_blank')">Bestattung anzeigen</button>
+					<section class="">
+						<article class="wrapper">
+							<h2 class="h2__title h2__title--left-aligned">Bestattung</h2>
+							<p class="h2__subtitle h2__subtitle--left-aligned">Wir begleiten Sie.</p>
+							<div class="">
+								<p class="">
+									Unsere Bestattung betreiben wir aus Nächstenliebe. Wir legen großen Wert darauf, dass jeder Mensch eine würdevolle Beisetzung bekommt. Außerdem ist es uns wichtig, Angehörigen Trost und Zuspruch in dieser schwierigen Zeit zu geben.
+								</p>
+							</div>
+							<button class="btn btn--red btn--centered-aligned" type="button" onklick="window.open('/bestattung.html', '_blank')">Bestattung anzeigen</button>
+						</article>
 					</section>
 
 					<section class="wrapper">

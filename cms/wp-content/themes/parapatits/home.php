@@ -54,7 +54,7 @@ get_header('');
 
 				<section class="info-section wrapper">
 					<h2 class="h2__title info-section__title h2__title--left-aligned">Tischlerei und Bestattung Parapatits</h2>
-					<p class="h2__subtitle info-section__subtitle h2__subtitle--left-aligned">Familienbetrieb mit Herz.</p>
+					<p class="h2__subtitle h2__subheading info-section__subtitle h2__subtitle--left-aligned">Familienbetrieb mit Herz.</p>
 					<div class="info-section__content">
 						<p>
 							Seit vielen Jahrzehnten steht unser Familienunternehmen auf zwei Standbeinen: <strong>Tischlerei</strong> und <strong>Bestattung</strong>. So unterschiedlich diese beiden Bereiche auch wirken mögen, so haben sie eine Gemeinsamkeit, die uns sehr am Herzen liegt: Es geht darum, den Menschen gut zuzuhören, ihre Bedürfnisse zu erkennen und sie zu verstehen.
@@ -63,25 +63,26 @@ get_header('');
 				</section>
 
 				<section class="details-section">
-					<ul class="details-section__branches">
-						<li class="details-section__branch-item details-section__branch-item--tischlerei">
-							<img class="details-section__branch-item--tischlerei__img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-47-DSC03514.png" alt="Platzhalter-Bild">
-							<div class="details-section__branch-item--tischlerei__container wrapper">
-								<h2 class="details-section__branch-item--tischlerei__title h2__title h2__title--right-aligned">Tischlerei</h2>
-								<p class="details-section__branch-item--tischlerei__text h2__subtitle h2__subtitle--right-aligned">Wir gestalten Lebens<span class="letter-colored--red">t</span>räume aus Holz. Von der gut durchdachten Küche bis zum liebevoll gestalteten Kinderzimmer, vom gemütlichen Bad bis zum praktischen Abstellraum.</p>
-								<button class="btn btn--red details-section__btn" type="button" onklick="window.open('/tischlerei.html', '_blank')">Mehr erfahren</button>
-							</div>
-						</li>
+						<ul class="details-section__branches wrapper">
+							<li class="details-section__branch-item details-section__branch-item--tischlerei">
+								<img class="details-section__branch-item--tischlerei__img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-47-DSC03514.png" alt="Platzhalter-Bild">
+								<div class="details-section__branch-item--tischlerei__container">
+									<h2 class="details-section__branch-item--tischlerei__title h2__title h2__title--right-aligned">Tischlerei</h2>
+									<p class="details-section__branch-item--tischlerei__text h2__subtitle h2__subtitle--right-aligned">Wir gestalten Lebens<span class="letter-colored--red">t</span>räume aus Holz. Von der gut durchdachten Küche bis zum liebevoll gestalteten Kinderzimmer, vom gemütlichen Bad bis zum praktischen Abstellraum.</p>
+									<button class="btn btn--red details-section__btn" type="button" onklick="window.open('/tischlerei.html', '_blank')">Mehr erfahren</button>
+								</div>
+							</li>
 
-						<li class="details-section__branch-item details-section__branch-item--bestattung">
-							<img class="details-section__branch-item--bestattung__img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-bestattung_komp-DSC03299t.png" alt="Platzhalter-Bild">
-							<div class="details-section__branch-item--bestattung__container wrapper">
-								<h2 class="details-section__branch-item--bestattung__title h2__title h2__title--left-aligned">Bestattung</h2>
-								<p class="details-section__branch-item__text h2__subtitle h2__subtitle--left-aligned">Mit viel Feingefühl und persönlichem Kontakt führen wir Sie durch die schwierige Zeit und schaffen eine ehrende Abschiednahme.</p>
-								<button class="btn btn--red details-section__btn" type="button" onklick="window.open('/bestattung.html', '_blank')">Mehr erfahren</button>
-							</div>
-						</li>
-					</ul>
+							<li class="details-section__branch-item details-section__branch-item--bestattung">
+								<img class="details-section__branch-item--bestattung__img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-bestattung_komp-DSC03299t.png" alt="Platzhalter-Bild">
+								<div class="details-section__branch-item--bestattung__container">
+									<h2 class="details-section__branch-item--bestattung__title h2__title h2__title--left-aligned">Bestattung</h2>
+									<p class="details-section__branch-item__text h2__subtitle h2__subtitle--left-aligned">Mit viel Feingefühl und persönlichem Kontakt führen wir Sie durch die schwierige Zeit und schaffen eine ehrende Abschiednahme.</p>
+									<button class="btn btn--red details-section__btn" type="button" onklick="window.open('/bestattung.html', '_blank')">Mehr erfahren</button>
+								</div>
+							</li>
+						</ul>
+					</article>
 				</section>
 
 				<section class="jobs-section">
