@@ -24,17 +24,17 @@
 			<?php if(!empty($post->post_content)) { ?>
 			<?php } else { ?>
 			<?php
-		   	$args = array(
-			   'post_status' => 'publish',
-			   'posts_per_page' => 1,
-			   'post_type' => 'hinweis',
-			   'orderby'   => 'date',
-			   'order' => 'DESC',
-			   );
+				 $args = array(
+				 'post_status' => 'publish',
+				 'posts_per_page' => 1,
+				 'post_type' => 'hinweis',
+				 'orderby'   => 'date',
+				 'order' => 'DESC',
+				 );
 			$loop = new WP_Query( $args );
 			while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<article class="message">
-			    <div class="message-header">
+					<div class="message-header">
 						<h2 class=""><?php the_title(); ?></h2>
 					</div>
 
@@ -54,7 +54,7 @@
 				<div class="navbar-brand">
 
 					<a class="header__logo" href="<?php echo get_home_url(); ?>">
-						<img class="header__logo-image" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logo-peter-parapatits.svg" alt="Peter Parapatits">
+						<img class="header__logo-image" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logo-bestattung-parapatits.svg" alt="Bestattungs Parapatits">
 					</a>
 
 					<a role="button" class="navbar-burger burger column column--menu" aria-label="menu" aria-expanded="false" data-target="navbar-main">

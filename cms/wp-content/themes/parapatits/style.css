@@ -20,7 +20,7 @@ Hellgrau - #92918D
 */
 
 
-/* --- FONTS ---
+/* === FONTS ===
 
 Überschriften Zeile 1 - ClanOT Bold - 76px
 
@@ -48,7 +48,7 @@ Copyright - ClanOT Book - 32px
 */
 
 
-/* Font Awesome Solid */
+/* --- Font Awesome Solid --- */
 @font-face {
 	font-family: 'FontAwesome Solid';
 	font-style: normal;
@@ -63,7 +63,7 @@ Copyright - ClanOT Book - 32px
 }
 
 
-/* Font Awesome Brands */
+/* --- Font Awesome Brands --- */
 @font-face {
 	font-family: 'FontAwesome Brands';
 	font-style: normal;
@@ -78,7 +78,7 @@ Copyright - ClanOT Book - 32px
 }
 
 
-/* ClanOT Bold */
+/* --- ClanOT Bold --- */
 @font-face {
 	font-family: 'ClanOT Bold';
 	font-style: normal;
@@ -91,3 +91,8 @@ Copyright - ClanOT Book - 32px
 			 url('assets/fonts/ClanOT-Bold/ClanOT-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
 			 url('assets/fonts/ClanOT-Bold/ClanOT-Bold.svg#AbrilFatface') format('svg'); /* Legacy iOS */
 }
+
+
+
+
+

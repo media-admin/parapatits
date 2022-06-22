@@ -27,6 +27,7 @@ function parapatits_post_types() {
 		'public' => true,
 		'show_ui' => true,
 		'labels' => $labels,
+		'supports' => ['editor', 'page-attributes', 'revisions', 'thumbnail', 'title', 'custom-fields'],
 		'has_archive' => false,
 		'exclude_from_search' => false,
 		'menu_position' => 10,
@@ -55,6 +56,7 @@ function parapatits_post_types() {
 		'show_ui' => true,
 		'taxonomies' => array( 'faq-category' ),
 		'labels' => $labels,
+		'supports' => ['editor', 'page-attributes', 'revisions', 'thumbnail', 'title', 'custom-fields'],
 		'has_archive' => false,
 		'exclude_from_search' => false,
 		'rewrite' => array('slug' => 'faq', 'with_front' => true, 'pages' => true, 'feeds' => true,),
@@ -64,6 +66,12 @@ function parapatits_post_types() {
 		'publicly_queryable'  => true,
 		'menu_icon' => 'dashicons-lightbulb'
 	));
+
+
+
+
+
+
 
 
 	/* --- Custom Post Type TESTIMONIALS --- */
@@ -82,6 +90,7 @@ function parapatits_post_types() {
 		'show_ui' => true,
 		'taxonomies' => array( 'testimonial-category' ),
 		'labels' => $labels,
+		'supports' => ['editor', 'page-attributes', 'revisions', 'thumbnail', 'title', 'custom-fields'],
 		'has_archive' => false,
 		'exclude_from_search' => false,
 		'rewrite' => array('slug' => 'testimonial'),
@@ -110,6 +119,7 @@ function parapatits_post_types() {
 		'public' => true,
 		'show_ui' => true,
 		'labels' => $labels,
+		'supports' => ['editor', 'page-attributes', 'revisions', 'thumbnail', 'title', 'custom-fields'],
 		'has_archive' => false,
 		'exclude_from_search' => false,
 		'rewrite' => array('slug' => 'jobs'),
@@ -130,8 +140,8 @@ function parapatits_post_types() {
 		'edit_item' => 'Partner bearbeiten',
 		'singular_name' => 'Partner',
 		'all_items' => 'Alle Partner',
-		'supports' => array('title', 'editor', 'author', 'custom-fields'
-	));
+		'supports' => array('title', 'editor', 'author', 'custom-fields')
+	);
 
 	register_post_type( 'partner', array(
 		'show_in_rest' => true,
@@ -139,6 +149,7 @@ function parapatits_post_types() {
 		'show_ui' => true,
 		'taxonomies' => array( 'partner-category' ),
 		'labels' => $labels,
+		'supports' => ['editor', 'page-attributes', 'revisions', 'thumbnail', 'title', 'custom-fields'],
 		'has_archive' => false,
 		'exclude_from_search' => false,
 		'menu_position' => 14,
@@ -215,8 +226,9 @@ function parapatits_post_types() {
 		'public' => true,
 		'show_ui' => true,
 		'labels' => $labels,
+		'supports' => ['revisions', 'editor', 'title', 'custom-fields'],
 		'has_archive' => false,
-		'exclude_from_search' => false,
+		'exclude_from_search' => true,
 		'menu_position' => 15,
 		'show_in_admin_bar'   => false,
 		'show_in_nav_menus'   => false,
@@ -234,12 +246,11 @@ function parapatits_post_types() {
 
 
 /* === PARAPATITS CUSTOM TAXONOMIES === */
-
 function parapatits_taxonomies() {
 
 	/* --- Custom Taxonomie FAQ-KATEGORIE --- */
 	$labels = array(
-		'name' => _x( 'FAQ-Kategorien', 'taxonomy general name' ),
+		'name' => _x( 'FAQ-Kategorie', 'taxonomy general name' ),
 		'singular_name' => _x( 'FAQ-Kategorie', 'taxonomy singular name' ),
 		'search_items' =>  __( 'FAQ-Kategorien durchsuchen' ),
 		'popular_items' => __( 'Meist benutzte FAQ-Kategorien' ),
@@ -256,6 +267,7 @@ function parapatits_taxonomies() {
 		'hierarchical' => true,
 		'labels' => $labels,
 		'show_ui' => true,
+		'show_admin_column' => true,
 		'show_in_rest' => true,
 		'query_var' => true,
 		'rewrite' => array( 'slug' => 'faqs' ),
@@ -264,7 +276,7 @@ function parapatits_taxonomies() {
 
 	/* --- Custom Taxonomie TESTIMONIAL-KATEGORIE --- */
 	$labels = array(
-		'name' => _x( 'Bewertungs-Kategorien', 'taxonomy general name' ),
+		'name' => _x( 'Bewertungs-Kategorie', 'taxonomy general name' ),
 		'singular_name' => _x( 'Bewertungs-Kategorie', 'taxonomy singular name' ),
 		'search_items' =>  __( 'Bewertungs-Kategorien durchsuchen' ),
 		'popular_items' => __( 'Meist benutzte Bewertungs-Kategorien' ),
@@ -281,6 +293,7 @@ function parapatits_taxonomies() {
 		'hierarchical' => true,
 		'labels' => $labels,
 		'show_ui' => true,
+		'show_admin_column' => true,
 		'show_in_rest' => true,
 		'query_var' => true,
 		'rewrite' => array( 'slug' => 'testimonials' ),
@@ -306,6 +319,7 @@ function parapatits_taxonomies() {
 		'hierarchical' => false,
 		'labels' => $labels,
 		'show_ui' => true,
+		'show_admin_column' => true,
 		'show_in_rest' => true,
 		'query_var' => true,
 	));
