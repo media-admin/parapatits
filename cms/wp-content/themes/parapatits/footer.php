@@ -1,5 +1,3 @@
-</div>
-
 <footer class="site-footer">
 
 	<section class="footer-contact">
@@ -17,26 +15,22 @@
 	</section>
 
 	<nav class="footer-navigation">
-		<ul class="footer-navigation__list">
 			<?php
 				wp_nav_menu(array(
 					'walker' => new Footer_Walker(),
 					'menu' => 'footer-menu',
 					'theme_location'=> 'Footermenü',
-					'container'=> '<ul>',
-					'menu_class' => '',
+					'container'=> 'ul',
+					'menu_class' => 'footer-navigation__list',
 					'items_wrap'=> '%3$s',
 					'fallback_cb'=> false
 				));
 			?>
-		</ul>
 	</nav>
 
 	<p class="copyright">alle Rechte vorbehalten ©&nbsp;2022</p>
 
 </footer>
-
-</div>
 
 <?php wp_footer();?>
 

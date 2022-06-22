@@ -117,6 +117,7 @@ function medialab_register_styles() {
 	wp_register_style( 'fontawesome', get_template_directory_uri() . '/assets/styles/fontawesome-all.css' );
 	wp_enqueue_style( 'fontawesome' );
 
+
 	// --- Import Slick Styles ---
 	wp_register_style( 'slick', get_template_directory_uri() . '/assets/styles/slick.css' );
 	wp_enqueue_style( 'slick' );

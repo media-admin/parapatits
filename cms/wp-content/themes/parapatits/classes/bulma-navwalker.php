@@ -31,7 +31,7 @@
 
     public function start_lvl( &$output, $depth = 0, $args = array() ) {
       $indent = str_repeat( "\t", $depth );
-        $output .= $indent."<div class=\"navbar-dropdown is-boxed";
+        $output .= $indent."<ul class=\"navbar-dropdown is-boxed";
         if( in_array( 'is-right', $this->right_class ) ){
             $output .= " is-right ";
           }
@@ -62,7 +62,7 @@
     public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
       $defaults = array(
         'menu'            => '',
-        'container'       => 'div',
+        'container'       => '',
         'container_class' => '',
         'container_id'    => '',
         'menu_class'      => 'menu',
@@ -271,5 +271,5 @@
       }
     }
   }
-  
+
   ?>

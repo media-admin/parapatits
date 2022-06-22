@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Seite Bestattung
+* Template Name: Seitentemplate Bestattung
 */
 
 get_header('bestattung');

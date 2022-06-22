@@ -1,4 +1,4 @@
-/* === ACCORDION SECTION === */
+/* === INTRO SECTION === */
 .intro {
 	margin-top: 10.0rem;
 	margin-bottom: 5.0rem;
@@ -86,13 +86,15 @@
 		margin-bottom: 1.5rem;
 	}
 
+}
 
+/* === General Hover Styles === */
 
-	/* === General Hover Styles === */
+span.hover__alt-text {
+	opacity: 0;
+}
 
-	span.hover__alt-text {
-	 opacity: 0;
-	}
+.intro {
 
 	&__list-subtitle:hover span.hover__default-text {
 		display: none;
