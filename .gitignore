@@ -29,5 +29,9 @@ nbproject
 _notes
 dwsync.xml
 
+
+# Exclude static environment's dist folder
+dist
+
 # Exclude WordPress Installation temporarily <<<<<< INCLUDE WHEN STATIC DEVELOPMENT HAS BEEN FINISHED >>>>>>>
 _cms
