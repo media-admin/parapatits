@@ -1,8 +1,6 @@
 import '../styles/styles.css'
 import 'lazysizes'
 
-
-
 let modal
 
 document.querySelectorAll(".open-modal").forEach(el => {

@@ -24,6 +24,23 @@
 	}
 
 	&__description {
+		text-align: center;
+		font-size: 1.3rem;
+		font-weight: 300;
+		line-height: 1.65;
+	}
 
+	&__close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		transform: scaleX(1.25);
+		transform-origin: 100% 0;
+		cursor: pointer;
+		font-size: 2.0rem;
+	}
+
+	&:hover {
+		color: green;
 	}
 }
