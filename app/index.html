@@ -6,6 +6,61 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="" rel="stylesheet">
 
+		<!-- === FAVICONS === -->
+
+		<!-- Default -->
+		<link rel="icon" href="assets/images/favicon/favicon.svg" type="image/x-icon">
+		<link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- PNG icons with different sizes -->
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-194x194.png" sizes="194x194">
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16">
+
+		<!-- Apple Touch Icons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon-180x180.png">
+		<link rel="apple-touch-icon" sizes="192x192" href="assets/images/favicon/apple-touch-icon-192x192.png">
+
+		<!-- Apple macOS Safari Mask Icon -->
+		<link rel="mask-icon" href="assets/images/favicon/favicon.svg" color="#B6274F">
+
+		<!-- Apple iOS Safari Theme -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#B6274F">
+		<meta name="apple-mobile-web-app-title" content="Website Parapatits Peter - Tischlerei & Bestattung">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<!-- Microsoft Windows Tiles -->
+		<meta name="theme-color" content="#707173">
+		<meta name="msapplication-navbutton-color" content="#B6274F">
+		<meta name="msapplication-TileColor" content="#838282">
+		<meta name="msapplication-TileImage" content="assets/images/favicon/windows-tile-icon-144x144.png">
+		<meta name="application-name" content="Website Parapatits Peter - Tischlerei & Bestattung">
+
+		<!-- Internet Explorer 11 Tiles -->
+		<meta name="msapplication-square70x70logo" content="assets/images/favicon/ms-ie11-icon-70x70.png">
+		<meta name="msapplication-square150x150logo" content="assets/images/favicon/ms-ie11-icon-150x150.png">
+		<meta name="msapplication-wide310x150logo" content="assets/images/favicon/ms-ie11-icon-310x150.png">
+		<meta name="msapplication-square310x310logo" content="assets/images/favicon/ms-ie11-icon-310x310.png">
+
+		<!-- Open Graph -->
+		<meta property="og:title" content="Parapatits Peter - Tischlerei & Bestattung">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.parapatits.at">
+		<meta property="og:image" content="og_image_url">
+		<meta property="og:site_name" content="Parapatits Peter">
+		<meta property="og:locale" content="de_AT">
+
+
 		<!-- Slick Slider
 		<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
 		-->
@@ -14,34 +69,36 @@
 	<body class="site-body home">
 		<div class="site-content">
 			<header class="site-header">
-				<div class="site-branding">
-					<div class="header-logo">
+				<div class="site-header__branding">
+					<div class="site-header__logo">
 						<a class="header-logo__link wrapper" href="index.html">
-							<img class="header-logo__img" src="assets/images/logo-peter-parapatits.svg" alt="Logo Paraptits Peter">
+							<img class="site-header__logo-img" src="assets/images/logos/logo-peter-parapatits.svg" alt="Logo Paraptits Peter">
 						</a>
 					</div>
-					<nav class="main-navigation">
-						<menu class="site-menu">
-							<div class="burger-menu">
-								<span class="line"></span>
-								<span class="line"></span>
-								<span class="line"></span>
-							</div>
-						</menu>
+				</div>
 
-						<!-- Hamburger Menu Toggle -->
-						<script>
-							var navigation = document.querySelector(".main-navigation");
-							var hamburger = document.querySelector(".burger-menu");
+				<!-- Hamburger Menu Toggle -->
+				<nav class="main-navigation">
+					<menu class="site-menu">
+						<div class="burger-menu">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+						</div>
+					</menu>
 
- 							navigation.onclick = function () {
-								this.classList.toggle ("is-active");
-							}
+					<script>
+						var navigation = document.querySelector(".main-navigation");
+						var hamburger = document.querySelector(".burger-menu");
 
-							hamburger.onclick = function () {
-								this.classList.toggle ("checked");
-							}
-						</script>
+ 						navigation.onclick = function () {
+							this.classList.toggle ("is-active");
+						}
+
+						hamburger.onclick = function () {
+							this.classList.toggle ("checked");
+						}
+					</script>
 
 						<div class="navbar">
 							<ul class="navbar__navigation-list">
@@ -63,13 +120,14 @@
 							</ul>
 						</div>
 					</nav>
+				</header>
+
 				<section class="large-hero">
 					<img class="large-hero__img lazyload" data-srcset="assets/images/home/hero-home.png" alt="Hero Image">
 					<p class="large-hero__title wrapper">Willkommen, hereinspaziert</p>
 					<p class="large-hero__text wrapper"></p>
 				</section>
-			</div>
-		</header>
+
 
 		<main class="site-main">
 			<div class="site-content">
@@ -82,7 +140,7 @@
 							<img class="intro__list-img img__wood-square img__wood-square--red lazyload" srcset="assets/images/oak-wood-red.png" alt="Platzhalter-Bild">
 							<div class="intro__list-content">
 								<h2 class="intro__list-title h2__title h2__title--left-aligned">Tischlerei</h2>
-								<p class="intro__list-subtitle h2__subtitle h2__subtitle--left-aligned"><span class="hover__default-text">Wir gestalten Lebensräume.</span><span class="hover__alt-text">Wir gestalten Lebensträume.</p>
+								<p class="intro__list-subtitle h2__subtitle h2__subtitle--left-aligned"><span class="hover__default-text">Wir gestalten Lebensräume.</span><span class="hover__alt-text">Wir gestalten Lebensträume.</span></p>
 							</div>
 						</li>
 					</ul>
@@ -99,7 +157,7 @@
 
 				</section>
 
-				<section class="news-section">
+				<section id="news-section" class="news-section" data-matching-link="#news-section-link">
 
 					<img class="news-section__img" src="assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
 
@@ -181,8 +239,8 @@
 					<a href="mailto:tischlerei@parapatits.at">tischlerei@parapatits.at</a><br>
 				</p>
 				<ul class="footer-contact__social-media-area">
-					<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--facebook" src="assets/images/facebook-icon.svg" alt="Facebook Logo"></a></li>
-					<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--instragram" src="assets/images/instagram-icon.svg" alt="Instagram Logo"></a></li>
+					<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--facebook" src="assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>
+					<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--instragram" src="assets/images/icons/instagram-icon.svg" alt="Instagram Logo"></a></li>
 				</ul>
 			</section>
 

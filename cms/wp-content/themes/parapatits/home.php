@@ -98,7 +98,9 @@ get_header('');
 					<div class="recall-section__container">
 						<h2 class="recall-section__title h2__title h2__light h2__title--left-aligned">Rückruf vereinbaren</h2>
 						<p class="">Hinterlassen Sie uns Ihre Nummer, wir rufen Sie gerne zurück.</p>
-						<p class="">[ CONTACT FORM ]</p>
+						<?php
+							echo do_shortcode('[contact-form-7 id="129" title="Rückruf-Formular"]');
+						?>
 						<button class="btn btn--red recall-section__btn" type="button">Absenden</button>
 					</div>
 				</section>

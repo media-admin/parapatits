@@ -1,38 +1,35 @@
 .large-hero {
-	position: relative;
+  position: relative;
 
-	&__img {
-		position: relative;
-		width: 100%;
-		height: auto;
-		z-index: 0;
-		margin: 0;
-	}
+  &__img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    margin: 0;
+  }
 
-	&__title {
-		position: relative;
-		font-size: 1.6rem;
-		font-weight: 700;
-		line-height: 1.8rem;
-		text-transform: lowercase;
-		z-index: 10;
-		margin: 0;
-		margin-top: -11.0rem;
-	}
+  &__title {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    text-transform: lowercase;
+    z-index: 10;
+    margin: 0;
+    margin-top: -11rem;
+    z-index: 0;
+  }
 
-	@mixin atSmall {
-		font-size: 4.8rem;
-	}
+  @mixin atSmall {
+    font-size: 4.8rem;
+  }
 
+  &__text {
+    font-size: 1.1rem;
+  }
 
-	&__text {
-		font-size: 1.1rem;
-	}
-
-	@mixin atSmall {
-		font-size: 2.2rem;
-	}
-
-
-
+  @mixin atSmall {
+    font-size: 2.2rem;
+  }
 }

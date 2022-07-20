@@ -119,7 +119,7 @@ function parapatits_post_types() {
 		'public' => true,
 		'show_ui' => true,
 		'labels' => $labels,
-		'supports' => ['editor', 'page-attributes', 'revisions', 'thumbnail', 'title', 'custom-fields'],
+		'supports' => ['editor', 'page-attributes', 'revisions', 'excerpt', 'thumbnail', 'title', 'custom-fields'],
 		'has_archive' => false,
 		'exclude_from_search' => false,
 		'rewrite' => array('slug' => 'jobs'),
@@ -140,8 +140,8 @@ function parapatits_post_types() {
 		'edit_item' => 'Partner bearbeiten',
 		'singular_name' => 'Partner',
 		'all_items' => 'Alle Partner',
-		'supports' => array('title', 'editor', 'author', 'custom-fields')
-	);
+		'supports' => array('title', 'editor', 'author', 'custom-fields'
+	));
 
 	register_post_type( 'partner', array(
 		'show_in_rest' => true,
@@ -149,7 +149,7 @@ function parapatits_post_types() {
 		'show_ui' => true,
 		'taxonomies' => array( 'partner-category' ),
 		'labels' => $labels,
-		'supports' => ['editor', 'page-attributes', 'revisions', 'thumbnail', 'title', 'custom-fields'],
+		'supports' => ['editor', 'revisions', 'thumbnail', 'title', 'custom-fields'],
 		'has_archive' => false,
 		'exclude_from_search' => false,
 		'menu_position' => 14,
@@ -162,23 +162,25 @@ function parapatits_post_types() {
 	add_post_type_support( 'partner', 'thumbnail' );
 
 
-	/* --- Custom Post Type HINWEISE ---
+
+	/* --- Custom Post Type AKTUELLER HINWEIS --- */
 	$labels = array(
 		'name' =>  'Hinweise',
 		'add_new' => 'Neuen Hinweis erstellen',
 		'edit_item' => 'Hinweis bearbeiten',
 		'singular_name' => 'Hinweis',
 		'all_items' => 'Alle Hinweise',
-		'supports' => array('title', 'editor', 'author', 'custom-fields'
+		'supports' => array('title', 'editor', 'author', 'custom-fields',
 	));
 
 	register_post_type( 'notification', array(
 		'show_in_rest' => true,
 		'public' => true,
 		'show_ui' => true,
+		'supports' => ['editor', 'page-attributes', 'revisions', 'thumbnail', 'title', 'custom-fields'],
 		'labels' => $labels,
 		'has_archive' => false,
-		'exclude_from_search' => false,
+		'exclude_from_search' => true,
 		'rewrite' => array('slug' => 'hinweise'),
 		'menu_position' => 5,
 		'show_in_admin_bar'   => false,
@@ -316,7 +318,7 @@ function parapatits_taxonomies() {
 	);
 
 	register_taxonomy('partner-category', array('partners'), array(
-		'hierarchical' => false,
+		'hierarchical' => true,
 		'labels' => $labels,
 		'show_ui' => true,
 		'show_admin_column' => true,

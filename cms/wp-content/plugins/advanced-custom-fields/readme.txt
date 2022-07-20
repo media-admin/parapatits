@@ -2,9 +2,9 @@
 Contributors: deliciousbrains, bradt, elliotcondon
 Tags: acf, fields, custom fields, meta, repeater
 Requires at least: 4.7
-Tested up to: 6.0
+Tested up to: 6.0.1
 Requires PHP: 5.6
-Stable tag: 5.12.2
+Stable tag: 5.12.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,8 +13,6 @@ Customize WordPress with powerful, professional and intuitive fields. Proudly po
 == Description ==
 
 Advanced Custom Fields turns WordPress sites into a fully-fledged content management system by giving you all the tools to do more with your data.
-
-https://deliciousbrains.wistia.com/medias/md7ea4ep8z
 
 Use the Advanced Custom Fields plugin to take full control of your WordPress edit screens & custom field data.
 
@@ -77,6 +75,11 @@ From your WordPress dashboard
 
 
 == Changelog ==
+
+= 5.12.3 =
+*Release Date 14th July 2022*
+
+* Security Fix - Inputs for basic file uploads are now nonced to prevent an issue which could allow arbitrary file uploads to forms with ACF fields (Thanks to James Golovich from Pritect, Inc.)
 
 = 5.12.2 =
 *Release Date 6th April 2022*

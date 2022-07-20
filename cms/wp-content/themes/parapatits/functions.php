@@ -13,6 +13,15 @@ function medialab_theme_features() {
 add_action('initafter_setup_theme', 'medialab_theme_features');
 
 
+
+/* --- Make default excerpt available --- */
+function medialab_add_excerpts_to_pages() {
+		add_post_type_support( 'page', 'excerpt' );
+}
+
+add_action( 'init', 'medialab_add_excerpts_to_pages' );
+
+
 /* --- Make Custom Background available --- */
 add_theme_support( 'custom-background' );
 

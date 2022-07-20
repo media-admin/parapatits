@@ -2,10 +2,10 @@
 // button-back-to-top.js
 //
 
-jQuery(document).ready(function(){   
+jQuery(document).ready(function(){
 
 	// Der Button wird mit JavaScript erzeugt und vor dem Ende des body eingebunden.
-	var back_to_top_button = ['<a href="#top" class="back-to-top"><p>Rauf bitte</p></a>'].join("");
+	var back_to_top_button = ['<a href="#top" class="back-to-top"><p><img src="https://parapatits.dev/cms/wp-content/themes/parapatits/assets/images/button-back-to-top.js"</p></a>'].join("");
 	jQuery("body").append(back_to_top_button)
 
 	// Der Button wird ausgeblendet
@@ -20,7 +20,7 @@ jQuery(document).ready(function(){
 				jQuery('.back-to-top').fadeOut();
 			}
 		});
-	
+
 		jQuery('.back-to-top').click(function () { // Klick auf den Button
 			jQuery('body,html').animate({
 				scrollTop: 0
