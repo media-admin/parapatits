@@ -279,6 +279,27 @@ function medialab_preview_thumb_column($column_name, $post_ID) {
 add_action('manage_posts_custom_column', 'medialab_preview_thumb_column', 10, 2);
 
 
+
+
+
+
+/* --- Extends CPT PROJECTS to make Tags available --- */
+add_action('pre_get_posts', function($query) {
+	// This will target the queries used to generate the tag archive template.
+	// You may remove the `is_main_query()` condition if you want to get posts
+	// by tag outside the loop.
+	if (!is_admin() && is_tag() && $query->is_main_query()) {
+		// Will set to something like: Array( 'post', 'portfolio' )
+		$types = get_taxonomy('post_tag')->object_type;
+
+		// Alter the query to only use the types which are registered to the
+		// `post_tag` taxonomy.
+		$query->set('project', $types);
+	}
+});
+
+
+
 /* --- Register Google Maps --- */
 
 // Method 1: Filter.

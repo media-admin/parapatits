@@ -16,6 +16,9 @@ const postCSSPlugins = [
 
 class RunAfterCompile {
 	apply(compiler) {
+		compiler.hooks.done.tap('Copy fonts', function() {
+			fse.copySync('./app/assets/fonts', './dist/assets/fonts')
+		})
 		compiler.hooks.done.tap('Copy images', function() {
 			fse.copySync('./app/assets/images', './dist/assets/images')
 		})
@@ -44,23 +47,7 @@ let config = {
 	plugins: pages,
 	module: {
 		rules: [
-			cssConfig,
-			{
-				 test: /\.(jpg|png|svg|gif)$/,
-				 type: 'asset/resource',
-				 generator: {
-						//publicPath: '../fonts/',
-						filename: 'assets/images/[name][ext][query]'
-					}
-			 },
-			{
-				test: /\.(svg|eot|woff|woff2|ttf)$/,
-				 type: 'asset/resource',
-				 generator: {
-					 //publicPath: '../fonts/',
-					 filename: 'assets/fonts/[name][ext][query]'
-				 }
-			},
+			cssConfig
 		]
 	}
 }
@@ -95,9 +82,7 @@ if (currentTask == 'build') {
 			}
 		}
 	})
-
 	cssConfig.use.unshift(MiniCssExtractPlugin.loader)
-
 	config.output = {
 		filename: '[name].[chunkhash].js',
 		chunkFilename: '[name].[chunkhash].js',
@@ -116,8 +101,8 @@ if (currentTask == 'build') {
 			},
 
 		},
-		// minimize: true,
-		// minimizer: [`...`, new CssMinimizerPlugin()],
+		minimize: true,
+		minimizer: [`...`, new CssMinimizerPlugin()],
 	}
 	config.plugins.push(
 		new CleanWebpackPlugin(),

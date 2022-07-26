@@ -1,3 +1,7 @@
+//
+// Modal.js
+//
+
 class Modal {
 	constructor() {
 		this.injectHTML()

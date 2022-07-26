@@ -143,6 +143,39 @@
 						</article>
 					</section>
 
+
+					<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+					<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+					<script type="text/javascript" src="slick/slick.min.js"></script>
+
+					<script>
+					$('.center').slick({
+						centerMode: true,
+						centerPadding: '60px',
+						slidesToShow: 3,
+						responsive: [
+							{
+								breakpoint: 768,
+								settings: {
+									arrows: false,
+									centerMode: true,
+									centerPadding: '40px',
+									slidesToShow: 3
+								}
+							},
+							{
+								breakpoint: 480,
+								settings: {
+									arrows: false,
+									centerMode: true,
+									centerPadding: '40px',
+									slidesToShow: 1
+								}
+							}
+						]
+					});
+					</script>
+
 					<section class="box--left-aligned">
 						<btn>Weitere Projekte laden (LAZY LOAD)</btn>
 						<img class="" src="assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
@@ -197,5 +230,15 @@
 
 		<!-- Start Scripts Area -->
 		<script src="bundled.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.your-class').slick({
+					setting-name: setting-value
+				});
+			});
+		</script>
+
+
 	</body>
 </html>

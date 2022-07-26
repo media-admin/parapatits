@@ -1,4 +1,8 @@
 
+	//
+	// CookieNotice.js
+	//
+
 	document.addEventListener("DOMContentLoaded", function() {
 
 	Dywc.init({

@@ -16,6 +16,9 @@ const postCSSPlugins = [
 
 class RunAfterCompile {
 	apply(compiler) {
+		compiler.hooks.done.tap('Copy fonts', function() {
+			fse.copySync('./app/assets/fonts', './dist/assets/fonts')
+		})
 		compiler.hooks.done.tap('Copy images', function() {
 			fse.copySync('./app/assets/images', './dist/assets/images')
 		})
@@ -25,10 +28,20 @@ class RunAfterCompile {
 	}
 }
 
+
+
+
+
+
 let cssConfig = {
 	test: /\.css$/i,
 	use: ['css-loader', {loader: 'postcss-loader', options: {postcssOptions: {plugins: postCSSPlugins}}}]
 }
+
+
+
+
+
 
 let pages = fse.readdirSync('./app').filter(function(file) {
 	return file.endsWith('.html')
@@ -39,31 +52,24 @@ let pages = fse.readdirSync('./app').filter(function(file) {
 	})
 })
 
+
+
+
+
 let config = {
 	entry: './app/assets/scripts/App.js',
 	plugins: pages,
 	module: {
 		rules: [
-			cssConfig,
-			{
-				 test: /\.(jpg|png|svg|gif)$/,
-				 type: 'asset/resource',
-				 generator: {
-						//publicPath: '../fonts/',
-						filename: 'assets/images/[name][ext][query]'
-					}
-			 },
-			{
-				test: /\.(svg|eot|woff|woff2|ttf)$/,
-				 type: 'asset/resource',
-				 generator: {
-					 //publicPath: '../fonts/',
-					 filename: 'assets/fonts/[name][ext][query]'
-				 }
-			},
+			cssConfig
 		]
 	}
 }
+
+
+
+
+
 
 if (currentTask == 'dev') {
 	cssConfig.use.unshift('style-loader')
@@ -95,30 +101,32 @@ if (currentTask == 'build') {
 			}
 		}
 	})
-
 	cssConfig.use.unshift(MiniCssExtractPlugin.loader)
+
+
+
 
 	config.output = {
 		filename: '[name].[chunkhash].js',
 		chunkFilename: '[name].[chunkhash].js',
-		path: path.resolve(__dirname, 'dist')
+		path: path.resolve(__dirname, 'dist'),
+		clean: true,
 	}
+
+
+
 	config.mode = 'production'
+
 	config.optimization = {
 		runtimeChunk: 'single',
 		splitChunks: {
-			cacheGroups: {
-				vendor: {
-					test: /[\\/]node_modules[\\/]/,
-					name: 'vendors',
-					chunks: 'all'
-				}
-			},
-
+			chunks: 'all',
+			minSize: 1000
 		},
-		// minimize: true,
-		// minimizer: [`...`, new CssMinimizerPlugin()],
+		minimize: true,
+		minimizer: [`...`, new CssMinimizerPlugin()]
 	}
+
 	config.plugins.push(
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({filename: 'styles.[chunkhash].css'}),
@@ -126,5 +134,9 @@ if (currentTask == 'build') {
 	)
 
 }
+
+
+
+
 
 module.exports = config

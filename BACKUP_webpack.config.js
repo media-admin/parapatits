@@ -19,9 +19,6 @@ class RunAfterCompile {
 		compiler.hooks.done.tap('Copy images', function() {
 			fse.copySync('./app/assets/images', './dist/assets/images')
 		})
-		compiler.hooks.done.tap('Copy vendor files', function() {
-			fse.copySync('./app/vendor', './dist/assets/vendor')
-		})
 	}
 }
 
@@ -44,23 +41,7 @@ let config = {
 	plugins: pages,
 	module: {
 		rules: [
-			cssConfig,
-			{
-				 test: /\.(jpg|png|svg|gif)$/,
-				 type: 'asset/resource',
-				 generator: {
-						//publicPath: '../fonts/',
-						filename: 'assets/images/[name][ext][query]'
-					}
-			 },
-			{
-				test: /\.(svg|eot|woff|woff2|ttf)$/,
-				 type: 'asset/resource',
-				 generator: {
-					 //publicPath: '../fonts/',
-					 filename: 'assets/fonts/[name][ext][query]'
-				 }
-			},
+			cssConfig
 		]
 	}
 }
@@ -95,9 +76,7 @@ if (currentTask == 'build') {
 			}
 		}
 	})
-
 	cssConfig.use.unshift(MiniCssExtractPlugin.loader)
-
 	config.output = {
 		filename: '[name].[chunkhash].js',
 		chunkFilename: '[name].[chunkhash].js',
@@ -105,19 +84,9 @@ if (currentTask == 'build') {
 	}
 	config.mode = 'production'
 	config.optimization = {
-		runtimeChunk: 'single',
-		splitChunks: {
-			cacheGroups: {
-				vendor: {
-					test: /[\\/]node_modules[\\/]/,
-					name: 'vendors',
-					chunks: 'all'
-				}
-			},
-
-		},
-		// minimize: true,
-		// minimizer: [`...`, new CssMinimizerPlugin()],
+		splitChunks: {chunks:'all', minSize: 1000},
+		minimize: true,
+		minimizer: [`...`, new CssMinimizerPlugin()]
 	}
 	config.plugins.push(
 		new CleanWebpackPlugin(),

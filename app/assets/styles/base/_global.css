@@ -68,7 +68,7 @@ body {
 	display: inline-block;
 	top: 15%;
 	left: 50%;
-	content: url(/app/assets/images/oak-wood-red.png);
+	content: url(../images/oak-wood-red.png);
 	transform: scale(.5);
 	z-index: 100 !important;
 }
@@ -87,7 +87,7 @@ body {
 	display: inline-block;
 	top: 15%;
 	left: 50%;
-	content: url(/app/assets/images/oak-wood-gray.png);
+	content: url(../images/oak-wood-gray.png);
 	transform: scale(.5);
 	z-index: 100 !important;
 }

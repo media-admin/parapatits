@@ -1,3 +1,7 @@
+//
+// StickyHeader.js
+//
+
 import throttle from "lodash/throttle"
 
 class StickyHeader {
