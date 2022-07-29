@@ -1,0 +1,39 @@
+/* === YOUR OPINION SECTION === */
+.your-opinion-section {
+	margin-top: 1.0rem;
+	margin-bottom: 1.0rem;
+
+	&__container {
+		text-align: center;
+		margin: 30px 18px;
+		padding: 2.5rem 0.25rem;
+	}
+
+	&__title {
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+		margin-bottom: 0.5rem;
+		text-transform: lowercase;
+	}
+
+	&__content {
+		font-size: 1.0rem;
+		font-weight: 500;
+		line-height: 1.2rem;
+		line-height: 2.0rem;
+		margin: auto;
+		margin-bottom: 1.5rem;
+	}
+
+	&__content .btn {
+		position: relative !important;
+		width: fit-content;
+		display: block;
+		text-align: center;
+		text-decoration: none !important;
+		margin-top: 2.5rem;
+		padding: 1rem 1.5rem !important;
+	}
+
+}
+

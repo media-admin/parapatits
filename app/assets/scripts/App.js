@@ -12,6 +12,8 @@ let stickyHeader = new StickyHeader()
 let backToTop = new BackToTop()
 let dywc = new Dywc()
 let cookieNotice = new CockieNotice()
+
+
 let modal
 
 document.querySelectorAll(".open-modal").forEach((el) => {

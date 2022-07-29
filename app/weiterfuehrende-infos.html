@@ -6,6 +6,60 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="" rel="stylesheet">
 
+		<!-- === FAVICONS === -->
+
+		<!-- Default -->
+		<link rel="icon" href="assets/images/favicon/favicon.svg" type="image/x-icon">
+		<link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- PNG icons with different sizes -->
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-194x194.png" sizes="194x194">
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16">
+
+		<!-- Apple Touch Icons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon-180x180.png">
+		<link rel="apple-touch-icon" sizes="192x192" href="assets/images/favicon/apple-touch-icon-192x192.png">
+
+		<!-- Apple macOS Safari Mask Icon -->
+		<link rel="mask-icon" href="assets/images/favicon/favicon.svg" color="#B6274F">
+
+		<!-- Apple iOS Safari Theme -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#B6274F">
+		<meta name="apple-mobile-web-app-title" content="Website Parapatits Peter - Tischlerei & Bestattung">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<!-- Microsoft Windows Tiles -->
+		<meta name="theme-color" content="#707173">
+		<meta name="msapplication-navbutton-color" content="#B6274F">
+		<meta name="msapplication-TileColor" content="#838282">
+		<meta name="msapplication-TileImage" content="assets/images/favicon/windows-tile-icon-144x144.png">
+		<meta name="application-name" content="Website Parapatits Peter - Tischlerei & Bestattung">
+
+		<!-- Internet Explorer 11 Tiles -->
+		<meta name="msapplication-square70x70logo" content="assets/images/favicon/ms-ie11-icon-70x70.png">
+		<meta name="msapplication-square150x150logo" content="assets/images/favicon/ms-ie11-icon-150x150.png">
+		<meta name="msapplication-wide310x150logo" content="assets/images/favicon/ms-ie11-icon-310x150.png">
+		<meta name="msapplication-square310x310logo" content="assets/images/favicon/ms-ie11-icon-310x310.png">
+
+		<!-- Open Graph -->
+		<meta property="og:title" content="Parapatits Peter - Tischlerei & Bestattung">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.parapatits.at">
+		<meta property="og:image" content="og_image_url">
+		<meta property="og:site_name" content="Parapatits Peter">
+		<meta property="og:locale" content="de_AT">
+
 		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 
 		<script>
@@ -20,36 +74,39 @@
 		</script>
 
 	</head>
-	<body class="site-body home">
-		<div class="site-content">
-			<header class="site-header">
-				<div class="header-logo">
+
+	<body class="site-body weiterfuehrende-infos">
+		<header class="site-header">
+			<div class="site-header__branding">
+				<div class="site-header__logo">
 					<a class="header-logo__link wrapper" href="index.html">
-						<img class="header-logo__img" src="assets/images/logos/logo-tischlerei-parapatits.svg" alt="Logo Tischlerei Paraptits">
+						<img class="site-header__logo-img" src="assets/images/logos/logo-tischlerei-parapatits.svg" alt="Logo Tischlerei Paraptits">
 					</a>
 				</div>
-				<nav class="main-navigation">
-					<menu class="site-menu">
-						<div class="burger-menu">
-							<span class="line"></span>
-							<span class="line"></span>
-							<span class="line"></span>
-						</div>
-					</menu>
+			</div>
 
-					<!-- Hamburger Menu Toggle -->
-					<script>
-						var navigation = document.querySelector(".main-navigation");
-						var hamburger = document.querySelector(".burger-menu");
+			<!-- Hamburger Menu Toggle -->
+			<nav class="main-navigation">
+				<menu class="site-menu">
+					<div class="burger-menu">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</div>
+				</menu>
 
- 						navigation.onclick = function () {
-							this.classList.toggle ("is-active");
-						}
+				<script>
+					var navigation = document.querySelector(".main-navigation");
+					var hamburger = document.querySelector(".burger-menu");
 
-						hamburger.onclick = function () {
-							this.classList.toggle ("checked");
-						}
-					</script>
+					 navigation.onclick = function () {
+						this.classList.toggle ("is-active");
+					}
+
+					hamburger.onclick = function () {
+						this.classList.toggle ("checked");
+					}
+				</script>
 
 					<div class="navbar">
 						<ul class="navbar__navigation-list">
@@ -72,8 +129,6 @@
 					</div>
 				</nav>
 			</header>
-
-		</header>
 
 		<main class="site-main">
 			<div class="site-content">
@@ -235,46 +290,58 @@
 					<button class="btn btn--red btn--centered-aligned" type="button" onklick="window.open('/leitfaden-im-todesfall.html', '_blank')">Leitfaden anzeigen</button>
 				</section>
 
-				<section class="recall-section wrapper container--darkgray">
-					<div class="recall-section__container">
-						<h2 class="recall-section__title h2__title h2__light h2__title--left-aligned">Rückruf vereinbaren</h2>
-						<p class="">Hinterlassen Sie uns Ihre Nummer, wir rufen Sie gerne zurück.</p>
-						<p class="">[ CONTACT FORM ]</p>
-						<button class="btn btn--red recall-section__btn" type="button">absenden</button>
-					</div>
+				<section class="recall-section container--darkgray">
+					<article class="wrapper">
+						<div class="recall-section__container">
+							<h2 class="recall-section__title h2__title h2__light h2__title--left-aligned">Rückruf vereinbaren</h2>
+								<p class="recall-section__text">Hinterlassen Sie uns Ihre Nummer, wir rufen Sie gerne zurück.</p>
+								<div class="recall-section__form">
+									<input type="text" name="ihr-name" class="recall-section__form-item recall-section__form-item-name" value="" aria-required="true" aria-invalid="false" placeholder="Name*">
+									<input type="text" name="ihre-telefonnummer" class="recall-section__form-item recall-section__form-item-phonenumber" value="" aria-required="true" aria-invalid="false" placeholder="Telefonnummer*">
+									<span class="wpcf7-list-item">
+										<label class="recall-section__form-label-dsgvo-acceptance">
+											<input type="checkbox" name="ihre-datenschutzzustimmung" class="recall-section__form-item-dsgvo-checkbox value="1" aria-invalid="false">
+											<span class="recall-section__form-item-dsgvo-acceptance">Ich stimme der Verarbeitung meiner Daten gemäß der <a href="/datenschutz" target="_blank">Datenschutzrichtlinie</a> zu.</span>
+										</label>
+									</span>
+									<a class="btn btn--red recall-section__btn open-modal" href="#">Absenden</a>
+								</div>
+						</div>
+					</article>
 				</section>
+
 			</div>
 		</main>
 
 		<footer class="site-footer">
 
-			<section class="footer-contact">
-				<p class="footer-contact__data">
-					Peter Parapatits<br>
-					Angergasse 10<br>
-					7341 Markt Sankt Martin<br>
-					<a href="tel:+4326182221">+43 2618/2221</a><br>
-					<a href="mailto:tischlerei@parapatits.at">tischlerei@parapatits.at</a><br>
-				</p>
-				<ul class="footer-contact__social-media-area">
-					<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--facebook" src="assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>
-					<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--instragram" src="assets/images/icons/instagram-icon.svg" alt="Instagram Logo"></a></li>
-				</ul>
-			</section>
+					<section class="footer-contact">
+						<p class="footer-contact__data">
+							Peter Parapatits<br>
+							Angergasse 10<br>
+							7341 Markt Sankt Martin<br>
+							<a href="tel:+4326182221">+43 2618/2221</a><br>
+							<a href="mailto:tischlerei@parapatits.at">tischlerei@parapatits.at</a><br>
+						</p>
+						<ul class="footer-contact__social-media-area">
+							<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--facebook" src="assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>
+							<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--instragram" src="assets/images/icons/instagram-icon.svg" alt="Instagram Logo"></a></li>
+						</ul>
+					</section>
 
-			<nav class="footer-navigation">
-				<ul class="footer-navigation__list">
-					<li class="footer-navigation__item">Impressum</li>
-					<li class="footer-navigation__item">Datenschutz</li>
-					<li class="footer-navigation__item">AGB</li>
-				</ul>
-			</nav>
+					<nav class="footer-navigation">
+						<ul class="footer-navigation__list">
+							<li class="footer-navigation__item">Impressum</li>
+							<li class="footer-navigation__item">Datenschutz</li>
+							<li class="footer-navigation__item">AGB</li>
+						</ul>
+					</nav>
 
-			<p class="copyright">alle Rechte vorbehalten ©&nbsp;2022</p>
+					<p class="copyright">alle Rechte vorbehalten ©&nbsp;2022</p>
 
-		</footer>
+				</footer>
 
-		<!-- Start Scripts Area -->
-		<script src="bundled.js"></script>
-	</body>
-</html>
+				<!-- Start Scripts Area -->
+
+			</body>
+		</html>

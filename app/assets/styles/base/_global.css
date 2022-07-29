@@ -14,7 +14,7 @@ body {
 }
 
 .site-content {
-
+	padding-top: 100px;
 }
 
 .site-intro {
@@ -70,7 +70,6 @@ body {
 	left: 50%;
 	content: url(../images/oak-wood-red.png);
 	transform: scale(.5);
-	z-index: 100 !important;
 }
 
 .img__wood-square-before--red {
@@ -89,7 +88,6 @@ body {
 	left: 50%;
 	content: url(../images/oak-wood-gray.png);
 	transform: scale(.5);
-	z-index: 100 !important;
 }
 
 .img__wood-square-before--gray {
@@ -106,7 +104,7 @@ body {
 	display: block;
 	height: auto;
 	margin-top: -80px !important;
-	z-index: 0 !important;
+	z-index: -1;
 }
 
 img {
