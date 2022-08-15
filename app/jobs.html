@@ -74,6 +74,7 @@
 
 			<!-- Hamburger Menu Toggle -->
 			<nav class="main-navigation">
+
 				<menu class="site-menu">
 					<div class="burger-menu">
 						<span class="line"></span>
@@ -82,126 +83,117 @@
 					</div>
 				</menu>
 
-				<script>
-					var navigation = document.querySelector(".main-navigation");
-					var hamburger = document.querySelector(".burger-menu");
-
-					 navigation.onclick = function () {
-						this.classList.toggle ("is-active");
-					}
-
-					hamburger.onclick = function () {
-						this.classList.toggle ("checked");
-					}
-				</script>
-
-					<div class="navbar">
-						<ul class="navbar__navigation-list">
-							<li class="navbar-item"><a href="/tischlerei.html">Tischlerei</a></li>
-								<ul class="navbar-item__submenu">
-									<li class="navbar-item"><a href="unsere-werte.html">Unsere Werte</a></li>
-									<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
-									<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
-								</ul>
-							<li class="navbar-item"><a href="/bestattung.html">Bestattung</a></li>
-								<ul class="navbar-item__submenu">
-									<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
-									<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
-									<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
-								</ul>
-							<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
-							<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
-							<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
-						</ul>
-					</div>
-				</nav>
-			</header>
-
-			<main class="site-main">
-					<section class="site-intro box--left-aligned">
-						<article class="wrapper">
-							<h1 class="site-title h1__title">Jobs</h1>
-							<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Werde Teil unseres Teams!</p>
-							<img class="" src="assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
-							<div class="wrapper">
-								<h2 class="">Offene Stellen</h2>
-							</div>
-						</article>
-					</section>
-
-					<section class="box--left-aligned">
-						<article class="wrapper">
-							<div class="">
-								<h2 class="h2__heading">PLATZHALTER-TEXT</h2>
-								<p class="">
-									Zur Zeit sind leider keine offenen Stellen vorhanden. Wir freuen uns aber trotzdem auf Ihre Initiativbewerbung.
-								</p>
-								<button class="btn" type="button">Bewerbung mailen</button>
-							</div>
-						</article>
-
-					<section class="box--left-aligned">
-						<article class="wrapper">
-							<div class="">
-								<h2 class="h2__heading">Tischlereigeselle/in</h2>
-								<p class="">
-									Auf dich wartet:
-									- ein kollegiales und familiäres Umfeld
-									- ein Junges und motiviertes Team
-									- ein sicherer langfristiger Arbeitsplatz
-									- selbstständige Projektabwicklung von Anfang bis Ende
-								</p>
-								<button class="btn" type="button">Jobdetails anzeigen</button>
-							</div>
-						</article>
-
-						<article class="wrapper">
-							<div class="">
-								<h2 class="h2__heading">Planer/Zeichner</h2>
-								<p class="">
-									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-								</p>
-								<button class="btn" type="button">Jobdetails anzeigen</button>
-							</div>
-						</article>
-					</section>
-
-					<img class="" src="assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
-
-					<section class="box--left-aligned">
-						<article class="wrapper">
-							<h2 class="wrapper">Betrieb ansehen</h2>
-							<div class="box--left-aligned">
-								<p class="">
-									Melde dich bei uns und wir zeigen dir erstmal unseren Betrieb.
-								</p>
-							</div>
-							<button class="btn" type="button">Kontakt</button>
-						</article>
-					</section>
-
-					<section class="recall-section container--darkgray">
-						<article class="wrapper">
-							<div class="recall-section__container">
-								<h2 class="recall-section__title h2__title h2__light h2__title--left-aligned">Rückruf vereinbaren</h2>
-									<p class="recall-section__text">Hinterlassen Sie uns Ihre Nummer, wir rufen Sie gerne zurück.</p>
-									<div class="recall-section__form">
-										<input type="text" name="ihr-name" class="recall-section__form-item recall-section__form-item-name" value="" aria-required="true" aria-invalid="false" placeholder="Name*">
-										<input type="text" name="ihre-telefonnummer" class="recall-section__form-item recall-section__form-item-phonenumber" value="" aria-required="true" aria-invalid="false" placeholder="Telefonnummer*">
-										<span class="wpcf7-list-item">
-											<label class="recall-section__form-label-dsgvo-acceptance">
-												<input type="checkbox" name="ihre-datenschutzzustimmung" class="recall-section__form-item-dsgvo-checkbox value="1" aria-invalid="false">
-												<span class="recall-section__form-item-dsgvo-acceptance">Ich stimme der Verarbeitung meiner Daten gemäß der <a href="/datenschutz" target="_blank">Datenschutzrichtlinie</a> zu.</span>
-											</label>
-										</span>
-										<a class="btn btn--red recall-section__btn open-modal" href="#">Absenden</a>
-									</div>
-							</div>
-						</article>
-					</section>
-
+				<div class="navbar">
+					<ul class="navbar__navigation-list">
+						<li class="navbar-item navbar-item--submenu-button"><a href="/tischlerei.html">Tischlerei</a>
+							<ul class="navbar-item__submenu">
+								<li class="navbar-item"><a href="unsere-werte.html">Unsere Werte</a></li>
+								<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
+								<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a>
+							</ul>
+						</li>
+						<li class="navbar-item navbar-item--submenu-button"><a href="/bestattung.html">Bestattung</a>
+							<ul class="navbar-item__submenu">
+								<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
+								<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
+								<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
+							</ul>
+						</li>
+						<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
+						<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
+						<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
+					</ul>
 				</div>
-			</main>
+
+			</nav>
+
+		</header>
+
+		<main class="site-main">
+			<section class="site-intro box--left-aligned">
+				<article class="wrapper">
+					<h1 class="site-title h1__title">Jobs</h1>
+					<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Werde Teil unseres Teams!</p>
+					<img class="" src="assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
+					<div class="wrapper">
+						<h2 class="">Offene Stellen</h2>
+					</div>
+				</article>
+			</section>
+
+			<section class="box--left-aligned">
+				<article class="wrapper">
+					<div class="">
+						<h2 class="h2__heading">PLATZHALTER-TEXT</h2>
+						<p class="">
+							Zur Zeit sind leider keine offenen Stellen vorhanden. Wir freuen uns aber trotzdem auf Ihre Initiativbewerbung.
+						</p>
+						<button class="btn" type="button">Bewerbung mailen</button>
+					</div>
+				</article>
+
+			<section class="box--left-aligned">
+				<article class="wrapper">
+					<div class="">
+						<h2 class="h2__heading">Tischlereigeselle/in</h2>
+						<p class="">
+							Auf dich wartet:
+							- ein kollegiales und familiäres Umfeld
+							- ein Junges und motiviertes Team
+							- ein sicherer langfristiger Arbeitsplatz
+							- selbstständige Projektabwicklung von Anfang bis Ende
+						</p>
+						<button class="btn" type="button">Jobdetails anzeigen</button>
+					</div>
+				</article>
+
+				<article class="wrapper">
+					<div class="">
+						<h2 class="h2__heading">Planer/Zeichner</h2>
+						<p class="">
+							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+						</p>
+						<button class="btn" type="button">Jobdetails anzeigen</button>
+					</div>
+				</article>
+			</section>
+
+			<img class="" src="assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
+
+			<section class="box--left-aligned">
+				<article class="wrapper">
+					<h2 class="wrapper">Betrieb ansehen</h2>
+					<div class="box--left-aligned">
+						<p class="">
+							Melde dich bei uns und wir zeigen dir erstmal unseren Betrieb.
+						</p>
+					</div>
+					<button class="btn" type="button">Kontakt</button>
+				</article>
+			</section>
+
+			<section class="recall-section container--darkgray">
+				<article class="wrapper">
+					<div class="recall-section__container">
+						<h2 class="recall-section__title h2__title h2__light h2__title--left-aligned">Rückruf vereinbaren</h2>
+							<p class="recall-section__text">Hinterlassen Sie uns Ihre Nummer, wir rufen Sie gerne zurück.</p>
+							<div class="recall-section__form">
+								<input type="text" name="ihr-name" class="recall-section__form-item recall-section__form-item-name" value="" aria-required="true" aria-invalid="false" placeholder="Name*">
+								<input type="text" name="ihre-telefonnummer" class="recall-section__form-item recall-section__form-item-phonenumber" value="" aria-required="true" aria-invalid="false" placeholder="Telefonnummer*">
+								<span class="wpcf7-list-item">
+									<label class="recall-section__form-label-dsgvo-acceptance">
+										<input type="checkbox" name="ihre-datenschutzzustimmung" class="recall-section__form-item-dsgvo-checkbox value="1" aria-invalid="false">
+										<span class="recall-section__form-item-dsgvo-acceptance">Ich stimme der Verarbeitung meiner Daten gemäß der <a href="/datenschutz" target="_blank">Datenschutzrichtlinie</a> zu.</span>
+									</label>
+								</span>
+								<a class="btn btn--red recall-section__btn open-modal" href="#">Absenden</a>
+							</div>
+					</div>
+				</article>
+			</section>
+
+			</div>
+		</main>
 
 		<footer class="site-footer">
 
@@ -231,7 +223,63 @@
 
 				</footer>
 
-				<!-- Start Scripts Area -->
+				<!-- START SCRIPTS AREA -->
+
+				<!-- Hamburger Menu Toggle -->
+				<script>
+					var navigation = document.querySelector(".main-navigation");
+					var hamburger = document.querySelector(".burger-menu");
+
+					 navigation.onclick = function () {
+						this.classList.toggle ("is-active");
+					}
+
+					hamburger.onclick = function () {
+						this.classList.toggle ("checked");
+					}
+				</script>
+
+				<!-- Accordions -->
+				<script>
+					$(document).ready(function() {
+						$("#accordion article h2").click(function(e) {
+							$(this).parents().siblings("article").addClass("accordion__item-hidden");
+							$(this).parents("article").removeClass("accordion__item-hidden");
+
+							e.preventDefault();
+						});
+					});
+				</script>
+
+				<!-- START SCRIPTS AREA -->
+
+				<!-- Hamburger Menu Toggle -->
+				<script>
+					var navigation = document.querySelector(".main-navigation");
+					var hamburger = document.querySelector(".burger-menu");
+
+					 navigation.onclick = function () {
+						this.classList.toggle ("is-active");
+					}
+
+					hamburger.onclick = function () {
+						this.classList.toggle ("checked");
+					}
+				</script>
+
+				<!-- Accordions -->
+				<script>
+					$(document).ready(function() {
+						$("#accordion article h2").click(function(e) {
+							$(this).parents().siblings("article").addClass("accordion__item-hidden");
+							$(this).parents("article").removeClass("accordion__item-hidden");
+
+							e.preventDefault();
+						});
+					});
+				</script>
+
+				<!-- END SCRIPTS AREA -->
 
 			</body>
 		</html>

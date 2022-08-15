@@ -73,6 +73,7 @@
 
 			<!-- Hamburger Menu Toggle -->
 			<nav class="main-navigation">
+
 				<menu class="site-menu">
 					<div class="burger-menu">
 						<span class="line"></span>
@@ -81,40 +82,31 @@
 					</div>
 				</menu>
 
-				<script>
-					var navigation = document.querySelector(".main-navigation");
-					var hamburger = document.querySelector(".burger-menu");
+				<div class="navbar">
+					<ul class="navbar__navigation-list">
+						<li class="navbar-item navbar-item--submenu-button"><a href="/tischlerei.html">Tischlerei</a>
+							<ul class="navbar-item__submenu">
+								<li class="navbar-item"><a href="unsere-werte.html">Unsere Werte</a></li>
+								<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
+								<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a>
+							</ul>
+						</li>
+						<li class="navbar-item navbar-item--submenu-button"><a href="/bestattung.html">Bestattung</a>
+							<ul class="navbar-item__submenu">
+								<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
+								<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
+								<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
+							</ul>
+						</li>
+						<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
+						<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
+						<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
+					</ul>
+				</div>
 
-					 navigation.onclick = function () {
-						this.classList.toggle ("is-active");
-					}
+			</nav>
 
-					hamburger.onclick = function () {
-						this.classList.toggle ("checked");
-					}
-				</script>
-
-					<div class="navbar">
-						<ul class="navbar__navigation-list">
-							<li class="navbar-item"><a href="/tischlerei.html">Tischlerei</a></li>
-								<ul class="navbar-item__submenu">
-									<li class="navbar-item"><a href="unsere-werte.html">Unsere Werte</a></li>
-									<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
-									<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
-								</ul>
-							<li class="navbar-item"><a href="/bestattung.html">Bestattung</a></li>
-								<ul class="navbar-item__submenu">
-									<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
-									<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
-									<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
-								</ul>
-							<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
-							<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
-							<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
-						</ul>
-					</div>
-				</nav>
-			</header>
+		</header>
 
 			<main class="site-main">
 				<div class="site-content">
@@ -272,7 +264,35 @@
 
 				</footer>
 
-				<!-- Start Scripts Area -->
+				<!-- START SCRIPTS AREA -->
+
+				<!-- Hamburger Menu Toggle -->
+				<script>
+					var navigation = document.querySelector(".main-navigation");
+					var hamburger = document.querySelector(".burger-menu");
+
+					 navigation.onclick = function () {
+						this.classList.toggle ("is-active");
+					}
+
+					hamburger.onclick = function () {
+						this.classList.toggle ("checked");
+					}
+				</script>
+
+				<!-- Accordions -->
+				<script>
+					$(document).ready(function() {
+						$("#accordion article h2").click(function(e) {
+							$(this).parents().siblings("article").addClass("accordion__item-hidden");
+							$(this).parents("article").removeClass("accordion__item-hidden");
+
+							e.preventDefault();
+						});
+					});
+				</script>
+
+				<!-- END SCRIPTS AREA -->
 
 			</body>
 		</html>

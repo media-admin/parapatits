@@ -1,0 +1,160 @@
+/* --- Navigation Menu --- */
+.main-navigation {
+  display: inline-block;
+  width: auto;
+
+  @mixin atMedium {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+}
+
+menu.site-menu {
+  position: relative;
+  margin-top: -5px;
+
+  @mixin atMedium {
+    display: none;
+  }
+}
+
+.navbar {
+  display: none;
+
+  @mixin atMedium {
+    position: relative;
+    display: inline-flex;
+    width: 80%;
+    margin-left: 25%;
+    margin-right: 15px;
+  }
+}
+
+.navbar__navigation-list {
+  list-style-type: none;
+
+  @mixin atMedium {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+  }
+}
+
+.navbar__navigation-list li {
+  list-style-type: none;
+
+  @mixin atMedium {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: $darkGray;
+  }
+}
+
+.navbar__navigation-list li a {
+  @mixin atMedium {
+    text-decoration: none;
+    color: $darkGray;
+  }
+}
+
+.navbar-item__submenu {
+  list-style-type: none;
+
+  @mixin atMedium {
+    margin-right: 1.5rem;
+  }
+}
+
+.navbar-item__submenu .navbar-item {
+  @mixin atMedium {
+    display: none;
+  }
+}
+
+.is-active .navbar {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: 0.8s;
+  z-index: 1;
+}
+
+.is-active .navbar li a {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: $darkGray;
+  list-style-type: none;
+  margin: 0;
+}
+
+.is-active .navbar .navbar-item__submenu li a {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: $darkGray;
+  list-style-type: none;
+  margin: 0;
+}
+
+/* === Burger Menu === */
+.burger-menu {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  top: 15px;
+  right: 25px;
+  transition: border-radius 0.5s;
+}
+
+.line {
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 30px;
+  left: -10px;
+  background: $darkGray;
+  margin-top: 0;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.line:nth-child(1) {
+  top: 10px;
+}
+.line:nth-child(2) {
+  top: 20px;
+}
+.line:nth-child(3) {
+  top: 30px;
+}
+
+/* --- Burger Menu Animation  --- */
+.burger-menu.checked .line:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.burger-menu.checked .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.checked .line:nth-child(3) {
+  transform: translateY(-10px) rotate(45deg);
+}

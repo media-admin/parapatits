@@ -9,8 +9,8 @@ body {
 }
 
 
-.site-body {
-
+.site-main {
+	z-index: auto;
 }
 
 .site-content {
