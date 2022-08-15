@@ -26,6 +26,8 @@
 @import "modules/_values-section";
 @import "modules/_your-opinion-section";
 @import "modules/_accordion-section";
+@import "modules/_partner";
+
 @import "modules/_footer";
 @import "modules/_modal";
 @import "modules/_social-icons";

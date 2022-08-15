@@ -62,17 +62,6 @@
 
 		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 
-		<script>
-			jQuery(document).ready(function() {
-				jQuery("#accordion article h2").click(function(e) {
-					jQuery(this).parents().siblings("article").addClass("accordion__item-hidden");
-					jQuery(this).parents("article").removeClass("accordion__item-hidden");
-
-					e.preventDefault();
-				});
-			});
-		</script>
-
 	</head>
 
 	<body class="site-body haeufig-gestellte-fragen">
@@ -160,9 +149,10 @@
 							<h2 class=""">Haben Sie eine spezielle Frage?</h2>
 							<p class="">Kontaktieren Sie uns, wir beantworten diese gerne.</p>
 							<button class="btn btn--red btn--centered-aligned" type="button" onklick="window.open('/kontakt.html', '_blank')">Kontakt</button>
-							<img class="lazyload" src="assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
 						</div>
 					</section>
+
+					<img class="img--fullwidth lazyload" src="assets/images/tischlerei/haeufig-gestellte-fragen/parapatits-tischlerei_komp-41-DSC03470_web.jpg" alt="Platzhalter-Bild">
 
 					<section id="values-section" class="values-section container--darkgray" data-matching-link="#values-section-link">
 						<article class="wrapper">
@@ -177,11 +167,6 @@
 							</div>
 						</article>
 					</section>
-
-
-
-
-
 
 
 					<section class="recall-section container--darkgray">
@@ -209,29 +194,29 @@
 
 		<footer class="site-footer">
 
-					<section class="footer-contact">
-						<p class="footer-contact__data">
+					<section class="site-footer__contact">
+						<p class="site-footer__contact-data">
 							Peter Parapatits<br>
 							Angergasse 10<br>
 							7341 Markt Sankt Martin<br>
 							<a href="tel:+4326182221">+43 2618/2221</a><br>
 							<a href="mailto:tischlerei@parapatits.at">tischlerei@parapatits.at</a><br>
 						</p>
-						<ul class="footer-contact__social-media-area">
-							<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--facebook lazyload" src="assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>
-							<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--instragram lazyload" src="assets/images/icons/instagram-icon.svg" alt="Instagram Logo"></a></li>
+						<ul class="site-footer__contact-social-media-area">
+							<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--facebook" src="assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>
+							<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--instragram" src="assets/images/icons/instagram-icon.svg" alt="Instagram Logo"></a></li>
 						</ul>
 					</section>
 
-					<nav class="footer-navigation">
-						<ul class="footer-navigation__list">
-							<li class="footer-navigation__item">Impressum</li>
-							<li class="footer-navigation__item">Datenschutz</li>
-							<li class="footer-navigation__item">AGB</li>
+					<nav class="site-footer__navigation">
+						<ul class="site-footer__navigation-list">
+							<li class="site-footer__navigation-list-item"><a href="/impressum">Impressum</a></li>
+							<li class="site-footer__navigation-list-item"><a href="/datenschutz">Datenschutz</a></li>
+							<li class="site-footer__navigation-list-item"><a href="/agb">AGB</a></li>
 						</ul>
 					</nav>
 
-					<p class="copyright">alle Rechte vorbehalten ©&nbsp;2022</p>
+					<p class="site-footer__copyright">alle Rechte vorbehalten ©&nbsp;2022</p>
 
 				</footer>
 

@@ -4,9 +4,6 @@
 #accordion h2,
 #accordion div,
 #accordion p {
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -77,9 +74,6 @@
 		color: $darkGray;
 		line-height: 20px;
 		margin: 10px 0 10px 20px;
-		-webkit-transition: all 0.5s ease-in-out;
-		-moz-transition: all 0.5s ease-in-out;
-		-ms-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
 	}
 
@@ -88,9 +82,6 @@
 		position: relative;
 		width: 96%;
 		padding: 10px 10px 10px 10px;
-		-webkit-transition: all 0.5s ease-in-out;
-		-moz-transition: all 0.5s ease-in-out;
-		-ms-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
 	}
 
@@ -107,11 +98,9 @@
 
 #accordion article:not(.accordion__item-hidden) .accordion__pointer {
 	display: inline-block;
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
 	transform: rotate(90deg);
 	right: 20px;
 	padding: 0;
+	transition: all 0.5s ease-in-out;
 }
 

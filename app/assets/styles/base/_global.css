@@ -1,13 +1,11 @@
 /* === GLOBAL STYLES === */
 
-/* === General Styles === */
-
+/* === General Areas === */
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	color: $mainGray;
 }
-
 
 .site-main {
 	z-index: auto;
@@ -21,7 +19,7 @@ body {
 
 }
 
-
+/* === General Boxes === */
 .box--left-aligned {
 	position: relative;
 	display: block;
@@ -31,6 +29,7 @@ body {
 	margin: 0;
 	margin-bottom: 3.0rem;
 	padding: 0;
+	overflow: hidden !important;
 }
 
 .box--left-aligned article {
@@ -38,6 +37,7 @@ body {
 	width: 75%;
 	margin-left: 0;
 	margin-right: auto;
+	overflow: hidden !important;
 }
 
 .box--right-aligned {
@@ -49,6 +49,7 @@ body {
 	margin: 0;
 	margin-bottom: 3.0rem;
 	padding: 0;
+	overflow: hidden !important;
 }
 
 .box--right-aligned article {
@@ -56,121 +57,91 @@ body {
 	width: 75%;
 	margin-left: auto;
 	margin-right: 0;
+	overflow: hidden !important;
 }
-
-
 
 
 /* === Image Styles === */
 
-.img__wood-square-before--red:before {
-	position: relative;
-	display: inline-block;
-	top: 15%;
-	left: 50%;
-	content: url(../images/oak-wood-red.png);
-	transform: scale(.5);
-}
-
-.img__wood-square-before--red {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: auto;
-	margin-top: -20px !important;
-}
-
-
-.img__wood-square-before--gray:before {
-	position: relative;
-	display: inline-block;
-	top: 15%;
-	left: 50%;
-	content: url(../images/oak-wood-gray.png);
-	transform: scale(.5);
-}
-
-.img__wood-square-before--gray {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: auto;
-	margin-top: -20px !important;
-}
-
-
-.img__wood-square-before {
-	position: relative;
-	display: block;
-	height: auto;
-	margin-top: -80px !important;
-	z-index: -1;
-}
-
+/* --- All Images --- */
 img {
 	max-width: 100%;
 	height: auto;
 }
 
-.img__fullwidth {
+
+/* --- Image Sizes & Positions --- */
+.img--fullwidth {
+	max-width: inherit;
+	width: 100vw !important;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	height: auto;
+	object-fit: cover;
+	padding: 0;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	overflow: hidden;
+
+
+	@mixin atMedium {
+
+	}
+
+}
+
+.img--centered {
+	position: relative;
+	display: block;
+	width: 96%;
+	height: auto;
+	object-fit: cover;
+	margin: 0 auto !important;
+	overflow: hidden !important;
+
+	@mixin atMedium {
+
+	}
+
+}
+
+.img--left-aligned {
 	position: relative;
 	display: block;
 	width: 100%;
 	height: auto;
-	margin: 2.0rem 0;
-	padding: 0;
-}
-
-.img__centered {
-	position: relative;
-	display: block;
-	width: calc(100%-2.0rem);
-	height: auto;
-	margin: 0 auto;
-}
-
-.img__left-aligned {
-	position: relative;
-	display: block;
-	width: 80%;
-	height: auto;
+	object-fit: cover;
 	text-align: left;
 	margin: 2.0rem 0;
+	margin-left: -36px !important;
 	padding: 0;
+
+	@mixin atMedium {
+
+	}
+
 }
 
-.img__right-aligned {
-	position: relative;
-	width: 80%;
-	height: auto;
-	text-align: right;
-	margin: 2.0rem 0;
-	padding: 0;
-}
-
-.img__project-overview--left-aligned {
+.img--right-aligned {
 	position: relative;
 	width: 100%;
 	height: auto;
-	text-align: left;
-	margin: 2.0rem 0;
-	margin-left: -1.1rem !important;
-	margin-bottom: -5.0rem;
-	padding: 0;
-}
-
-.img__project-overview--right-aligned {
-	position: relative;
-	width: 100%;
-	height: auto;
+	object-fit: cover;
 	text-align: right;
 	margin: 2.0rem 0;
-	margin-right: -1.1rem !important;
-	margin-bottom: -5.0rem;
+	margin-right: -36px !important;
 	padding: 0;
+
+	@mixin atMedium {
+
+	}
+
 }
 
-.img__wood-square--red {
+.img--wood-square-red {
 	position: relative;
 	display: block;
 	min-width: 92px;
@@ -178,34 +149,163 @@ img {
 	/* min-height: 250px; */
 	height: auto;
 
+	@mixin atMedium {
+
+	}
+
 }
 
-.img__wood-square--gray {
+.img--wood-square-gray {
 	display: inline-block;
 	min-width: 92px;
 	max-width: 100%;
 	height: auto;
+
+	@mixin atMedium {
+
+	}
+
 }
 
 
+/* --- Project Images --- */
+.img--project-overview-left-aligned {
+	position: relative;
+	width: 100%;
+	height: auto;
+	text-align: left;
+	object-fit: cover;
+	margin: 2.0rem 0;
+	margin-left: -1.1rem !important;
+	margin-bottom: -5.0rem;
+	padding: 0;
 
-.img__project-main {
+	@mixin atMedium {
+
+	}
+
+}
+
+.img--project-overview-right-aligned {
+	position: relative;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	text-align: right;
+	margin: 2.0rem 0;
+	margin-right: -1.1rem !important;
+	margin-bottom: -5.0rem;
+	padding: 0;
+
+	@mixin atMedium {
+
+	}
+
+}
+
+.img--project-main {
 	position: relative;
 	display: block;
 	width: 100%;
 	height: auto;
+	object-fit: cover;
 	margin: 2.0rem -1.0rem;
 	padding: 0;
+
+	@mixin atMedium {
+
+	}
+
 }
 
-
-.gallery__project-img {
+.gallery--project-img {
 	width: calc(100%+2.0rem) !important;
+	object-fit: cover;
+
+	@mixin atMedium {
+
+	}
+
 }
 
-.gallery__project-img img {
+.gallery--project-img img {
 	width: calc(100%+2.0rem) !important;
+	object-fit: cover;
 	margin: 2.0rem auto;
+
+	@mixin atMedium {
+
+	}
+
+}
+
+
+/* --- Wood Square Images --- */
+.img--wood-square-before-red:before {
+	position: relative;
+	display: inline-block;
+	top: 15%;
+	left: 50%;
+	content: url(../images/oak-wood-red.png);
+	transform: scale(.5);
+
+	@mixin atMedium {
+
+	}
+
+}
+
+.img--wood-square-before-red {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-top: -20px !important;
+
+	@mixin atMedium {
+
+	}
+
+}
+
+.img--wood-square-before-gray:before {
+	position: relative;
+	display: inline-block;
+	top: 15%;
+	left: 50%;
+	content: url(../images/oak-wood-gray.png);
+	transform: scale(.5);
+
+	@mixin atMedium {
+
+	}
+
+}
+
+.img--wood-square-before--gray {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-top: -20px !important;
+
+	@mixin atMedium {
+
+	}
+
+}
+
+.img--wood-square-before {
+	position: relative;
+	display: block;
+	height: auto;
+	margin-top: -80px !important;
+	z-index: -1;
+
+	@mixin atMedium {
+
+	}
+
 }
 
 
