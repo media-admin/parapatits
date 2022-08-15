@@ -31,12 +31,12 @@
 
 
 	&__content {
+		width: 100%;
 		line-height: 2.0rem;
 	}
 
 	&__btn {
 		position: relative;
-		display: block;
 		text-align: center;
 		margin: 1.5rem auto;
 		padding-left: 18px;

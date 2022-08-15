@@ -1,0 +1,23 @@
+/* === SPECIAL QUESTION === */
+.special-question {
+	width: 100%;
+	margin-top: 10.0rem;
+	margin-bottom: 5.0rem;
+
+
+	&__container {
+
+	}
+
+	&__intro {
+		margin-bottom: 2.0rem;
+	}
+
+	&__btn {
+		margin-top: 2.0rem;
+		margin-bottom: 2.0rem;
+	}
+
+
+}
+

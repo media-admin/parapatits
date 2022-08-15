@@ -4,12 +4,18 @@
 	margin-top: 10.0rem;
 	margin-bottom: 5.0rem;
 
+	@mixin atMedium {
+
+	}
 
 	&____branch-item--tischlerei {
 		position: relative;
 		width: 100%;
-	}
 
+		@mixin atMedium {
+
+		}
+	}
 
 	&__branch-item--tischlerei__img {
 		position: relative;
@@ -17,15 +23,23 @@
 		overflow: hidden;
 		margin-left: 35%;
 		padding-right: -18px !important;
-	}
 
+		@mixin atMedium {
+
+		}
+
+	}
 
 	&__branch-item--tischlerei__container {
 		width: 70%;
 		text-align: right;
 		margin-left: 30%;
-	}
 
+		@mixin atMedium {
+
+		}
+
+	}
 
 	&____branch-item--bestattung {
 		position: relative;
@@ -33,8 +47,12 @@
 		text-align: left;
 		margin-right: auto;
 		margin-left: 0px;
-	}
 
+		@mixin atMedium {
+
+		}
+
+	}
 
 	&__branch-item--bestattung__img {
 		height: auto;
@@ -42,22 +60,34 @@
 		text-align: left;
 		margin: 25px auto;
 		padding-left: -18px;
-	}
 
+		@mixin atMedium {
+
+		}
+
+	}
 
 	&__branch-item--bestattung__container {
 		width: 70%;
 		text-align: left;
 		margin-right: 30%;
-	}
 
+		@mixin atMedium {
+
+		}
+
+	}
 
 	&__title {
 		font-size: 1.6rem;
 		line-height: 1.8rem;
 		margin-bottom: 0.5rem;
-	}
 
+		@mixin atMedium {
+
+		}
+
+	}
 
 	&__subtitle {
 		font-size: 0.8rem;
@@ -66,17 +96,30 @@
 		letter-spacing: 0.1rem;
 		margin: 0;
 		margin-bottom: 1.5rem;
-	}
 
+		@mixin atMedium {
+
+		}
+
+	}
 
 	&__content {
 		line-height: 2.0rem;
-	}
 
+		@mixin atMedium {
+
+		}
+
+	}
 
 	&__btn {
 		margin-top: 2.0rem;
 		margin-bottom: 2.0rem;
+
+		@mixin atMedium {
+
+		}
+
 	}
 
 }
