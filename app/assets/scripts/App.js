@@ -1,4 +1,5 @@
 import "../styles/styles.css"
+
 import "lazysizes"
 
 import JQuery from "./modules/jquery"
@@ -7,14 +8,22 @@ import BackToTop from "./modules/BackToTop"
 import Dywc from "./modules/Dywc"
 import CoockieNotice from "./modules/CoockieNotice"
 
+
+
 let jQuery = new JQuery()
 let stickyHeader = new StickyHeader()
 let backToTop = new BackToTop()
 let dywc = new Dywc()
 let cookieNotice = new CockieNotice()
 
-
 let modal
+
+/* Slick Slider */
+import $ from 'jquery'
+import 'slick-carousel-latest'
+
+window.jQuery = window.$ = $;
+
 
 document.querySelectorAll(".open-modal").forEach((el) => {
   el.addEventListener("click", (e) => {
@@ -31,6 +40,7 @@ document.querySelectorAll(".open-modal").forEach((el) => {
     }
   })
 })
+
 
 if (module.hot) {
   module.hot.accept()
