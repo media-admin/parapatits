@@ -110,6 +110,52 @@
 
 			<main class="site-main">
 				<div class="site-content">
+
+					<hr  />
+
+					<section>
+						<div class="references-carousel">
+							<div>
+								<a class="slick-slider-link" href="#">
+									<img class="" src="assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt=" ">
+								</a>
+							</div>
+							<div>
+								<a class="slick-slider-link" href="#">
+									<img class="" src="assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt=" ">
+								</a>
+							</div>
+							<div>
+								<a class="slick-slider-link" href="#">
+									<img class="" src="assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt=" ">
+								</a>
+							</div>
+
+							<div>
+								<a class="slick-slider-link" href="#">
+									<img class="" src="assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt=" ">
+								</a>
+							</div>
+
+							<div>
+								<a class="slick-slider-link" href="#">
+									<img class="" src="assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt=" ">
+								</a>
+							</div>
+
+							<div>
+							<a class="slick-slider-link" href="#">
+									<img class="" src="assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt=" ">
+								</a>
+							</div>
+
+						</div>
+
+					</section>
+
+					<hr  />
+
+
 					<section class="site-intro box--left-aligned">
 						<article class="wrapper">
 							<h1 class="site-title h1__title">Projekte</h1>
@@ -190,6 +236,22 @@
 						</article>
 					</section>
 
+					<hr  />
+
+					<section>
+						<div class="project-carousel-center">
+							<div><img class="" src="assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt="Platzhalter-Bild"></div>
+							<div><img class="" src="assets/images/tischlerei/projekte/parapatits-tischlerei_komp-38-DSC03459_web.jpg" alt="Platzhalter-Bild"></div>
+							<div><img class="" src="assets/images/tischlerei/projekte/Koch 1_web.jpg" alt="Platzhalter-Bild"></div>
+							<div><img class="" src="assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt="Platzhalter-Bild"></div>
+							<div><img class="" src="assets/images/tischlerei/projekte/parapatits-tischlerei_komp-38-DSC03459_web.jpg" alt="Platzhalter-Bild"></div>
+							<div><img class="" src="assets/images/tischlerei/projekte/Koch 1_web.jpg" alt="Platzhalter-Bild"></div>
+						</div>
+					</section>
+
+					<hr  />
+
+
 
 					<section class="box--left-aligned">
 						<btn>Weitere Projekte laden (LAZY LOAD)</btn>
@@ -214,7 +276,7 @@
 										<input type="text" name="ihre-telefonnummer" class="recall-section__form-item recall-section__form-item-phonenumber" value="" aria-required="true" aria-invalid="false" placeholder="Telefonnummer*">
 										<span class="wpcf7-list-item">
 											<label class="recall-section__form-label-dsgvo-acceptance">
-												<input type="checkbox" name="ihre-datenschutzzustimmung" class="recall-section__form-item-dsgvo-checkbox value="1" aria-invalid="false">
+												<input type="checkbox" name="ihre-datenschutzzustimmung" class="recall-section__form-item-dsgvo-checkbox" value="1" aria-required="true" aria-invalid="false" data-rule="name">
 												<span class="recall-section__form-item-dsgvo-acceptance">Ich stimme der Verarbeitung meiner Daten gemäß der <a href="/datenschutz" target="_blank">Datenschutzrichtlinie</a> zu.</span>
 											</label>
 										</span>
@@ -257,6 +319,12 @@
 
 				<!-- START SCRIPTS AREA -->
 
+				<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+
+
+
 				<!-- Hamburger Menu Toggle -->
 				<script>
 					var navigation = document.querySelector(".main-navigation");
@@ -273,7 +341,7 @@
 
 				<!-- Accordions -->
 				<script>
-					$(document).ready(function() {
+					jQuery(document).ready(function() {
 						$("#accordion article h2").click(function(e) {
 							$(this).parents().siblings("article").addClass("accordion__item-hidden");
 							$(this).parents("article").removeClass("accordion__item-hidden");
@@ -284,34 +352,65 @@
 				</script>
 
 
-				<!-- Slick Slider -->
-				<script>
-					$('.center').slick({
+				<!-- Slick Sliders -->
+				<script type="text/javascript" src="assets/scripts/modules/slick.min.js"></script>
+
+				<script type="text/javascript">
+
+					$('.references-carousel').slick({
+						slidesToShow: 5,
+						slidesToScroll: 1,
+						arrows: true,
+						dots: true,
 						centerMode: true,
-						centerPadding: '60px',
-						slidesToShow: 3,
+						focusOnSelect: true
+					});
+
+				</script>
+
+
+				<script type="text/javascript">
+
+					$('.project-carousel-center').slick({
+						dots: true,
+						infinite: false,
+						speed: 300,
+						slidesToShow: 4,
+						slidesToScroll: 1,
+						arrows: true,
 						responsive: [
 							{
-								breakpoint: 768,
+								breakpoint: 1024,
 								settings: {
-									arrows: false,
-									centerMode: true,
-									centerPadding: '40px',
-									slidesToShow: 3
+									slidesToShow: 5,
+									slidesToScroll: 1,
+									infinite: true,
+									dots: true,
+									arrows: true,
+								}
+							},
+							{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 2,
+									arrows: true,
 								}
 							},
 							{
 								breakpoint: 480,
 								settings: {
-									arrows: false,
-									centerMode: true,
-									centerPadding: '40px',
-									slidesToShow: 1
+									slidesToShow: 1,
+									slidesToScroll: 1,
+									arrows: true,
 								}
 							}
 						]
 					});
+
 				</script>
+
+
 
 				<!-- END SCRIPTS AREA -->
 

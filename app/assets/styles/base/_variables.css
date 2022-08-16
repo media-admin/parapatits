@@ -1,6 +1,33 @@
 /* === VARIABLES === */
 
+/* --- Colors --- */
 $brightWhite: #FFFFFF;
 $mainGray: #838282;
 $mainRed: #B6274F;
 $darkGray: #707173;
+
+
+/* --- Slick Slider ---
+
+// Default Variables
+
+// Slick icon entity codes outputs the following
+// "\2190" outputs ascii character "←"
+// "\2192" outputs ascii character "→"
+// "\2022" outputs ascii character "•"
+*/
+
+$slick-font-path: "../fonts/Slick/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "../images/slick/" !default;
+$slick-arrow-color: white !default;
+
+$slick-dot-color: #B6274F !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
