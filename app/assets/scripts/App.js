@@ -1,5 +1,7 @@
+import 'lightbox2/dist/css/lightbox.css';
 import "../styles/styles.css"
 
+import 'lightbox2';
 import "jquery"
 import "lazysizes"
 import "slick-slider"
@@ -15,8 +17,6 @@ let dywc = new Dywc()
 let cookieNotice = new CockieNotice()
 
 let modal
-
-
 
 
 document.querySelectorAll(".open-modal").forEach((el) => {

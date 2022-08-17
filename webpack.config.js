@@ -14,6 +14,14 @@ const postCSSPlugins = [
 	require('autoprefixer')
 ]
 
+// look for the "resolve" property and add the following...
+// you might need to require the asset like '~/bootsrap/...'
+resolve: {
+	alias: {
+		'~': path.resolve('./node_modules')
+	}
+}
+
 class RunAfterCompile {
 	apply(compiler) {
 		compiler.hooks.done.tap('Copy images', function() {

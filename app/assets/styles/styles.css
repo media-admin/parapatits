@@ -1,4 +1,5 @@
 @import "normalize.css";
+
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_fonts";
@@ -28,6 +29,7 @@
 @import "modules/_your-opinion-section";
 @import "modules/_accordion-section";
 @import "modules/_partner";
+@import "modules/_projects-section";
 @import "modules/_special-question";
 
 @import "modules/_footer";

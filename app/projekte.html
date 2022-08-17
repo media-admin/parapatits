@@ -3,7 +3,7 @@
 	<head>
 		<title>LocalDev - PROJEKTE - Tischlerwerkstätte Parapatits Peter</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleable=no">
 		<link href="" rel="stylesheet">
 
 		<!-- === FAVICONS === -->
@@ -152,6 +152,66 @@
 						</div>
 
 					</section>
+
+					<hr  />
+
+					<section id="project">
+
+						<!-- heading ----------------------->
+						<div class="project-heading">
+							<span>Let's see my Work</span>
+							<h3>My Projects</h3>
+						</div>
+
+						<!-- filter  ----------------------->
+						<ul class="project-filter">
+							<li class="list project-filter-active" data-filter="all">All</li>
+							<li class="list" data-filter="app">Application</li>
+							<li class="list" data-filter="design">App Design</li>
+							<li class="list" data-filter="web">Website Design</li>
+							<li class="list" data-filter="ai">AI</li>
+						</ul>
+
+						<!-- container  ----------------------->
+						<div class="project-container">
+
+							<!-- box-1 (about-app) ----------------------->
+							<a class="project-box app" data-lightbox="work" href="assets/images/tischlerei/projekte/30370843820_b14aa5d064_o_web.jpg">
+								<img src="assets/images/tischlerei/projekte/30370843820_b14aa5d064_o_web.jpg" alt="work">
+							</a>
+
+							<!-- box-2 (about-website) ----------------------->
+							<a class="project-box web" data-lightbox="work" href="assets/images/tischlerei/projekte/39464746535_2bcc63c4c1_o_web.jpg">
+								<img src="assets/images/tischlerei/projekte/39464746535_2bcc63c4c1_o_web.jpg" alt="work">
+							</a>
+
+							<!-- box-3 (about-ai) ----------------------->
+							<a class="project-box ai" data-lightbox="work" href="assets/images/tischlerei/projekte/39651287294_14b3c2e283_o_web.jpg">
+								<img src="assets/images/tischlerei/projekte/39651287294_14b3c2e283_o_web.jpg" alt="work">
+							</a>
+
+							<!-- box-4 (about-design) ----------------------->
+							<a class="project-box design" data-lightbox="work" href="assets/images/tischlerei/projekte/DSC01559-2_web.jpg">
+								<img src="assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt="work">
+							</a>
+
+							<!-- box-5 (about-design) ----------------------->
+							<a class="project-box design" data-lightbox="work" href="assets/images/tischlerei/projekte/Koch 1_web.jpg">
+								<img src="assets/images/tischlerei/projekte/Koch 1_web.jpg" alt="work">
+							</a>
+
+							<!-- box-6 (about-app) ----------------------->
+							<a class="project-box app" data-lightbox="work" href="assets/images/tischlerei/projekte/parapatits-tischlerei_komp-38-DSC03459_web.jpg">
+								<img src="assets/images/tischlerei/projekte/parapatits-tischlerei_komp-38-DSC03459_web.jpg" alt="work">
+							</a>
+
+						</div>
+
+
+
+					</section>
+
+
 
 					<hr  />
 
@@ -326,7 +386,7 @@
 
 
 				<!-- Hamburger Menu Toggle -->
-				<script>
+				<script type="text/javascript">
 					var navigation = document.querySelector(".main-navigation");
 					var hamburger = document.querySelector(".burger-menu");
 
@@ -340,7 +400,7 @@
 				</script>
 
 				<!-- Accordions -->
-				<script>
+				<script type="text/javascript">
 					jQuery(document).ready(function() {
 						$("#accordion article h2").click(function(e) {
 							$(this).parents().siblings("article").addClass("accordion__item-hidden");
@@ -353,7 +413,7 @@
 
 
 				<!-- Slick Sliders -->
-				<script type="text/javascript" src="assets/scripts/modules/slick.min.js"></script>
+				<script src="assets/scripts/modules/slick.min.js"></script>
 
 				<script type="text/javascript">
 
@@ -410,6 +470,34 @@
 
 				</script>
 
+
+
+
+				<!-- Projects -->
+				<script type="text/javascript">
+
+					/* ---- for-filter-menu -----------------------------------------------*/
+					$(document).on('click','.project-filter li',function(){
+						$(this).addClass('project-filter-active').siblings().removeClass('project-filter-active')
+					});
+
+					/* ---- for-project/work-filter -----------------------------------------------*/
+					$(document).ready(function(){
+						$('.list').click(function(){
+							const value = $(this).attr('data-filter');
+							if(value == 'all'){
+								$('.project-box').show('1000');
+							}
+							else {
+								$('.project-box').not('.'+value).hide('1000');
+								$('.project-box').filter('.'+value).show('1000');
+							}
+						})
+					});
+
+				</script>
+
+				<script src="lightbox.js"></script>
 
 
 				<!-- END SCRIPTS AREA -->

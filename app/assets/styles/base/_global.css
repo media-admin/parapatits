@@ -1,10 +1,27 @@
 /* === GLOBAL STYLES === */
 
 /* === General Areas === */
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	color: $mainGray;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
 }
 
 .site-main {
