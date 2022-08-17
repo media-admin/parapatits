@@ -207,7 +207,7 @@
 
 						</div>
 
-
+						<div id="loadMore">Load more</div>
 
 					</section>
 
@@ -379,12 +379,6 @@
 
 				<!-- START SCRIPTS AREA -->
 
-				<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-
-
-
-
-
 				<!-- Hamburger Menu Toggle -->
 				<script type="text/javascript">
 					var navigation = document.querySelector(".main-navigation");
@@ -413,6 +407,8 @@
 
 
 				<!-- Slick Sliders -->
+				<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
 				<script src="assets/scripts/modules/slick.min.js"></script>
 
 				<script type="text/javascript">
@@ -499,6 +495,18 @@
 
 				<script src="lightbox.js"></script>
 
+				<!-- Button Load More -->
+				<script type="text/javascript">
+					$(function () {
+							x=2;
+							$('.project-container a').slice(0, 2).show();
+							$('#loadMore').on('click', function (e) {
+									e.preventDefault();
+									x = x+2;
+									$('.project-container a').slice(0, x).slideDown();
+							});
+					});
+				</script>
 
 				<!-- END SCRIPTS AREA -->
 

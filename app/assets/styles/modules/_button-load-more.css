@@ -1,0 +1,13 @@
+/* --- BUTTON LOAD MORE --- */
+.project-container a {
+	display: none;
+}
+
+#loadMore {
+		color: green;
+		cursor: pointer;
+}
+
+#loadMore:hover {
+		color: black;
+}

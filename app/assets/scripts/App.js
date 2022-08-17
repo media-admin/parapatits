@@ -1,8 +1,9 @@
 import 'lightbox2/dist/css/lightbox.css';
 import "../styles/styles.css"
 
-import 'lightbox2';
+import 'lightbox2'
 import "jquery"
+import "jquery/dist/cdn/jquery-1.11.0.min.js"
 import "lazysizes"
 import "slick-slider"
 
