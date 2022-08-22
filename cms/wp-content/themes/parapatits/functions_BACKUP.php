@@ -244,12 +244,10 @@ add_action('pre_get_posts', function($query) {
 
 
 
+	/* === NAVIGATION === */
+
 	/* --- Navigation Walker for HAUPTNAVIGATION --- */
-	require_once( 'classes/navwalker.php' );
-
-	require_once( 'classes/custom_navwalker.php' );
-
-
+	require_once( 'classes/bulma-navwalker.php' );
 
 
 	/* --- Navigation Walker for FOOTERMENÜ --- */

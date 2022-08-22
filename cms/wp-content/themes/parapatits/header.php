@@ -74,101 +74,84 @@
 
 	</head>
 
+	<body class="site-body <?php body_class(); ?>">
 
-
-					<body class="site-body <?php body_class(); ?>">
-					<header class="site-header">
-						<div class="site-header__branding">
-							<div class="site-header__logo">
-								<a class="header-logo__link wrapper" href="<?php echo get_home_url(); ?>">
-									<img class="site-header__logo-img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/logo-tischlerei-parapatits.svg" alt="Logo Tischlerei Paraptits">
-								</a>
-							</div>
-						</div>
-
-
-
-					<!-- Hamburger Menu Toggle -->
-						<nav class="main-navigation">
-
-							<menu class="site-menu">
-								<div class="burger-menu">
-									<span class="line"></span>
-									<span class="line"></span>
-									<span class="line"></span>
-								</div>
-							</menu>
-
-							<div class="navbar">
-								<ul class="navbar__navigation-list">
-									<li class="navbar-item navbar-item--submenu-button"><a href="/tischlerei.html">Tischlerei</a>
-										<ul class="navbar-item__submenu">
-											<li class="navbar-item"><a href="unsere-werte.html">Unsere Werte</a></li>
-											<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
-											<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a>
-										</ul>
-									</li>
-									<li class="navbar-item navbar-item--submenu-button"><a href="/bestattung.html">Bestattung</a>
-										<ul class="navbar-item__submenu">
-											<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
-											<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
-											<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
-										</ul>
-									</li>
-									<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
-									<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
-									<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
-								</ul>
-							</div>
-
-
-							<div id="navbar-main" class="navbar-menu">
-								<!-- Main Navigation -->
-								<?php
-									$defaults = array(
-										'walker'         => new Bulma_Navwalker(),
-										'menu'           => 'Hauptnavigation',
-										'theme_location' => 'nav-menu-main',
-										'depth'          => 2,
-										'container'      => FALSE,
-										'menu_class'     => '',
-										'items_wrap'     => '%3$s',
-										'fallback_cb'		=>	'Bulma_NavWalker::fallback'
-									);
-									wp_nav_menu( $defaults );
-								?>
-							</div>
-
-
-
-					</nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-					<?php if (is_front_page() ) : ?>
-
-					<section class="large-hero">
-						<img class="large-hero__img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/hero-home.png" alt="Hero Image">
-						<p class="large-hero__title wrapper">Willkommen, hereinspaziert</p>
-						<p class="large-hero__text wrapper"></p>
-					</section>
-
-					<?php endif; ?>
-
+		<header class="site-header">
+			<div class="site-header__branding">
+				<div class="site-header__logo">
+					<a class="header-logo__link wrapper" href="<?php echo get_home_url(); ?>">
+						<img class="site-header__logo-img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/logo-tischlerei-parapatits.svg" alt="Logo Tischlerei Paraptits">
+					</a>
 				</div>
-			</header>
+			</div>
+
+			<!-- Hamburger Menu Toggle -->
+			<nav class="main-navigation">
+
+				<menu class="site-menu">
+					<div class="burger-menu">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</div>
+				</menu>
+
+				<!--
+				<div class="navbar">
+					<ul class="navbar__navigation-list">
+						<li class="navbar-item navbar-item--submenu-button"><a href="/tischlerei.html">Tischlerei</a>
+							<ul class="navbar-item__submenu">
+								<li class="navbar-item"><a href="unsere-werte.html">Unsere Werte</a></li>
+								<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
+								<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a>
+							</ul>
+						</li>
+						<li class="navbar-item navbar-item--submenu-button"><a href="/bestattung.html">Bestattung</a>
+							<ul class="navbar-item__submenu">
+								<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
+								<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
+								<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
+							</ul>
+						</li>
+						<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
+						<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
+						<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
+					</ul>
+				</div>
+				-->
+
+				<!-- Main Navigation -->
+				<div class="navbar">
+					<ul class="navbar__navigation-list">
+						<?php
+							$defaults = array(
+								'walker'         => new Custom_Navwalker(),
+								'menu'           => 'Hauptnavigation',
+								'theme_location' => 'nav-menu-main',
+								'depth'          => 2,
+								'container'      => FALSE,
+								'container_class'   => '',
+								'menu_class'     => '',
+								'items_wrap'     => '%3$s',
+								'fallback_cb'		=>	'NavWalker::fallback'
+							);
+							wp_nav_menu( $defaults );
+						?>
+					</ul>
+				</div>
+
+			</nav>
+
+		</div>
+
+	</header>
+
+	<?php if (is_front_page() ) : ?>
+
+	<section class="large-hero">
+		<img class="large-hero__img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/hero-home.png" alt="Hero Image">
+		<p class="large-hero__title wrapper">Willkommen, hereinspaziert</p>
+		<p class="large-hero__text wrapper"></p>
+	</section>
+
+	<?php endif; ?>
