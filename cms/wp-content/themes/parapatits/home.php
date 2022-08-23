@@ -38,16 +38,35 @@ get_header('');
 
 				<img class="news-section__img img--fullwidth" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-52-DSC03554_web.jpg" alt="Platzhalter-Bild">
 
+
 				<article class="news-section__container wrapper">
 					<h2 class="h2__title news-section__title wrapper">Aktuelles</h2>
-					<p class="p__subitle news-section__subtitle wrapper">Aktuelle Informationen</p>
-					<div class="news-section__content wrapper">
-						<p>
-							Wir sind auf Urlaub!
-							von 24.12.2021 bis 31.12.2021
-							Bitte um Verständnis, dass wir zu dieser Zeit nicht erreichbar sind.
-						</p>
-					</div>
+
+					<?php
+
+					$args = array(
+						'post_status' => 'publish',
+						'posts_per_page' => 1,
+						'post_type' => 'notification',
+					);
+
+					$loop = new WP_Query( $args );
+
+						while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+						<p class="p__subitle news-section__subtitle wrapper"><?php the_title();?></p>
+						<div class="news-section__content wrapper">
+							<p>
+								<?php the_content();?>
+							</p>
+						</div>
+
+					<?php endwhile; ?>
+
+					<?php
+					wp_reset_postdata();
+					?>
+
 				</article>
 
 			</section>

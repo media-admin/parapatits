@@ -11,26 +11,14 @@ get_header('');
 				<article class="wrapper">
 					<h1 class="site-title h1__title"><?php the_title();?></h1>
 					<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Wir freuen uns auf Ihren Anruf, Ihr E-Mail oder Ihre Postkarte.</p>
-
-					<?php
-
-					$args = array(
-						'post_status' => 'publish',
-						'posts_per_page' => 1,
-						'post_type' => 'company-details',
-					);
-
-					$loop = new WP_Query( $args );
-
-						while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
 					<div class="wrapper">
 						<p class="contact__data">
 							<strong>Peter Parapatits</strong><br>
-							<?php the_field('company-adress');?>
-							<a class="contact__data-phone" href="tel:<?php the_field('phone-number-primary');?>"><?php the_field('phone-number-primary');?></a><br>
-							<a class="contact__data-cellphone" href="tel:<?php the_field('phone-number-secondary');?>"><?php the_field('phone-number-secondary');?></a><br>
-							<a class="contact__data-mail" href="mailto:<?php the_field('email-primary');?>"><?php the_field('email-primary');?></a><br>
+							Angergasse 10<br>
+							7341 Markt Sankt Martin<br>
+							<a class="contact__data-phone" href="tel:+4326182221">+43 2618/2221</a><br>
+							<a class="contact__data-cellphone" href="tel:+436643079828">+43 664/307 98 28</a><br>
+							<a class="contact__data-mail" href="mailto:tischlerei@parapatits.at">tischlerei@parapatits.at</a><br>
 						</p>
 						<ul class="contact__data-social-media-area">
 							<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="contact__data-social-media-icon contact__data-social-media-icon--facebook lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>
@@ -40,46 +28,20 @@ get_header('');
 				</article>
 			</section>
 
-			<?php
-
-			// Check rows exists.
-			if( have_rows('opening-hours') ):
-
-				// Loop through rows.
-				while( have_rows('opening-hours') ) : the_row();
-
-						// Load sub field value.
-						$hours_monday = get_sub_field('hours_monday');
-						$hours_tuesday = get_sub_field('hours_tuesday');
-						$hours_wednesday = get_sub_field('hours_wednesday');
-						$hours_thursday = get_sub_field('hours_thursday');
-						$hours_friday = get_sub_field('hours_friday');
-						$hours_saturday = get_sub_field('hours_saturday');
-						$hours_sunday = get_sub_field('hours_sunday');
-						?>
-
-
-
 			<section class="contact__data-opening-hours box--left-aligned">
 				<article class="wrapper">
 					<div class="">
 						<h2 class="h2__heading">Bürozeiten</h2>
 						<div class="contact__data-opening-hours-table">
-							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Mo:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_monday;?></div>
-							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Di:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_tuesday;?></div>
-							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Mi:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_wednesday;?></div>
-							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Do:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_thursday;?></div>
-							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Fr:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_friday;?></div>
+							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Mo:</div><div class="contact__data-opening-hours-table-row-hours">08:00 - 12:00, 13:00 - 16:00</div>
+							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Di:</div><div class="contact__data-opening-hours-table-row-hours">08:00 - 12:00, 13:00 - 16:00</div>
+							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Mi:</div><div class="contact__data-opening-hours-table-row-hours">08:00 - 12:00, 13:00 - 16:00</div>
+							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Do:</div><div class="contact__data-opening-hours-table-row-hours">08:00 - 12:00, 13:00 - 16:00</div>
+							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Fr:</div><div class="contact__data-opening-hours-table-row-hours">08:00 - 12:00</div>
 						</div>
 					</div>
 				</article>
 			</section>
-
-			<?php
-					endwhile;
-
-			endif;
-			?>
 
 			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/parapatits-tischlerei_komp-12-DSC03241_web.jpg" alt="Platzhalter-Bild">
 
@@ -99,12 +61,6 @@ get_header('');
 					</div>
 				</article>
 			</section>
-
-			<?php endwhile; ?>
-
-			<?php
-			wp_reset_postdata();
-			?>
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
 

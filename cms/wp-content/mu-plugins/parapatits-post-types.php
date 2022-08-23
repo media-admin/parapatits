@@ -166,7 +166,7 @@ function parapatits_post_types() {
 
 	/* --- Custom Post Type AKTUELLER HINWEIS --- */
 	$labels = array(
-		'name' =>  'Hinweise',
+		'name' =>  'Hinweis',
 		'add_new' => 'Neuen Hinweis erstellen',
 		'edit_item' => 'Hinweis bearbeiten',
 		'singular_name' => 'Hinweis',

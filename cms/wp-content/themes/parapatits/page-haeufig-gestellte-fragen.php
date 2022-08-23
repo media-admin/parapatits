@@ -16,7 +16,65 @@ get_header('tischlerei');
 			</section>
 
 			<section id="accordion" class="wrapper">
-				<article class="accordion__item">
+
+				<?php
+
+				$args = array(
+					'post_status' => 'publish',
+					'posts_per_page' => 1,
+					'post_type' => 'faq',
+					'faq-category' => 'allgemeine-frage'
+				);
+
+				$loop = new WP_Query( $args );
+
+					while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+					<article class="accordion__item">
+						<h2 class="accordion__headline""><a href="#"><?php the_title();?></a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
+						<div class="accordion_content wrapper">
+							<p><?php the_content();?></p>
+						</div>
+					</article>
+
+					<?php endwhile; ?>
+
+					<?php
+					wp_reset_postdata();
+					?>
+
+
+					<?php
+
+					$args = array(
+						'post_status' => 'publish',
+						'posts_per_page' => 999,
+						'offset' => 1,
+						'post_type' => 'faq',
+						'faq-category' => 'allgemeine-frage'
+					);
+
+					$loop = new WP_Query( $args );
+
+						while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+						<article class="accordion__item accordion__item-hidden">
+							<h2 class="accordion__headline""><a href="#"><?php the_title();?></a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
+							<div class="accordion_content wrapper">
+								<p><?php the_content();?></p>
+							</div>
+						</article>
+
+						<?php endwhile; ?>
+
+						<?php
+						wp_reset_postdata();
+						?>
+
+
+
+
+				<!-- <article class="accordion__item">
 					<h2 class="accordion__headline""><a href="#">Frage 01</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
 					<div class="accordion_content wrapper">
 						<p>Antwort 01</p>
@@ -33,7 +91,11 @@ get_header('tischlerei');
 					<div class="accordion_content wrapper">
 						<p>Antwort 03</p>
 					</div>
-				</article>
+				</article> -->
+
+
+
+
 			</section>
 
 			<?php echo do_shortcode("[shortcode_special_question]"); ?>
