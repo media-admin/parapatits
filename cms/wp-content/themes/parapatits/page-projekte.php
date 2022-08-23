@@ -86,9 +86,6 @@ get_header('tischlerei');
 
 				<hr  />
 
-
-
-
 				<section class="box--right-aligned">
 					<article class="wrapper">
 						<img class="img--project-overview-right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/30370843820_b14aa5d064_o_web.jpg" alt="Platzhalter-Bild">

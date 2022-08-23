@@ -153,6 +153,9 @@ function parapatits_register_scripts() {
 	wp_register_script( 'modal', get_template_directory_uri() . '/modal.86995f46e4f29a4ce8c3.js', '', null, true );
 	wp_enqueue_script( 'modal' );
 
+	// Import Button Back-to-Top
+	wp_register_script( 'button-back-to-top', get_template_directory_uri() . '/assets/scripts/button-back-to-top.js', '', null, true );
+	wp_enqueue_script( 'button-back-to-top' );
 
 }
 

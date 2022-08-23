@@ -6,6 +6,8 @@
 get_header('bestattung');
 ?>
 
+<section class="site-intro box--left-aligned">
+
 	<main class="site-main">
 		<div class="site-content">
 			<section class="site-intro box--left-aligned">
@@ -16,12 +18,12 @@ get_header('bestattung');
 				</article>
 			</section>
 
-			<section id="accordion" class="wrapper">
-				<article class="accordion__item">
+			<section id="accordion" class="accordion">
+				<article class="accordion__item wrapper">
 					<h2 class="accordion__headline""><a href="#">Wichtige Dokumente für die Bestattung</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
 					<div class="accordion_content wrapper">
 						<p>Folgende Dokumente sollten bei einem Sterbefall vorbereitet werden:</p>
-						<ul>
+						<ul class="listing">
 							<li>Geburtsurkunde</li>
 							<li>Heiratskunde</li>
 							<li>Staatsbürgerschaftsnachweis oder Heimatschein</li>
@@ -29,25 +31,25 @@ get_header('bestattung');
 							<li>Bekleidung</li>
 							<li>Foto für Trauerbild</li>
 						</ul>
-						<p>Bei Verwitweten</p>
-						<ul>
+						<p><span class="text--underlined">Bei Verwitweten</span></p>
+						<ul class="listing">
 							<li>Sterbeurkunde der Ehegattin, des Ehegatten</li>
 						</ul>
-						<p>Bei Geschiedenen</p>
-						<ul>
+						<p><span class="text--underlined">Bei Geschiedenen</span></p>
+						<ul class="listing">
 							<li>Scheidungsurteil</li>
 						</ul>
-						<p>Bei Akademikerinnen, Akademikern</p>
-						<ul>
+						<p><span class="text--underlined">Bei Akademikerinnen, Akademikern</span></p>
+						<ul class="listing">
 							<li>Nachweis des akademischen Grades</li>
 						</ul>
-						<p>Bei einer Vorsorgeversicherung <strong>(Wiener Verein)</strong></p>
-						<ul>
+						<p><span class="text--underlined">Bei einer Vorsorgeversicherung</span> <strong>(Wiener Verein)</strong></p>
+						<ul class="listing">
 							<li>Versicherungspolizze</li>
 						</ul>
 					</div>
 				</article>
-				<article class="accordion__item accordion__item-hidden">
+				<article class="accordion__item wrapper accordion__item-hidden">
 					<h2 class="accordion__headline""><a href="#">Trauerarbeit</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
 					<div class="accordion_content wrapper">
 						<p>
@@ -61,7 +63,7 @@ get_header('bestattung');
 						</p>
 					</div>
 				</article>
-				<article class="accordion__item accordion__item-hidden">
+				<article class="accordion__item wrapper accordion__item-hidden">
 					<h2 class="accordion__headline""><a href="#">Sterbeort</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
 					<div class="accordion_content wrapper">
 						<p>
@@ -86,7 +88,7 @@ get_header('bestattung');
 						</p>
 					</div>
 				</article>
-				<article class="accordion__item accordion__item-hidden">
+				<article class="accordion__item wrapper accordion__item-hidden">
 					<h2 class="accordion__headline""><a href="#">Bestattungsarten</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
 					<div class="accordion_content wrapper">
 						<p>
@@ -112,7 +114,7 @@ get_header('bestattung');
 						</p>
 					</div>
 				</article>
-				<article class="accordion__item accordion__item-hidden">
+				<article class="accordion__item wrapper accordion__item-hidden">
 					<h2 class="accordion__headline""><a href="#">Religion</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
 					<div class="accordion_content wrapper">
 						<p>
@@ -123,7 +125,7 @@ get_header('bestattung');
 						</p>
 					</div>
 				</article>
-				<article class="accordion__item accordion__item-hidden">
+				<article class="accordion__item wrapper accordion__item-hidden">
 					<h2 class="accordion__headline""><a href="#">Eigenvorsorge</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
 					<div class="accordion_content wrapper">
 						<p>
@@ -137,7 +139,7 @@ get_header('bestattung');
 						</p>
 					</div>
 				</article>
-				<article class="accordion__item accordion__item-hidden">
+				<article class="accordion__item wrapper accordion__item-hidden">
 					<h2 class="accordion__headline""><a href="#">Erinnerungen</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
 					<div class="accordion_content wrapper">
 						<p>
@@ -160,10 +162,12 @@ get_header('bestattung');
 
 			<img class="lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/parapatits-bestattung_highres-3-DSC03302_web.jpg" alt="Platzhalter-Bild">
 
-			<section class="wrapper">
-				<h2 class="wrapper">Leitfaden im Todesfall</h2>
-				<p class="">Was tun, wenn ein Familienmitglied stirbt?</p>
-				<a class="btn btn--red btn--centered-aligned" role="button" href="/leitfaden-im-todesfall">Leitfaden anzeigen</a>
+			<section class="box--left-aligned">
+				<article class="wrapper">
+					<h2 class="h2__heading">Leitfaden im Todesfall</h2>
+					<p class="">Was tun, wenn ein Familienmitglied stirbt?</p>
+					<a class="btn btn--red btn--centered-aligned" role="button" href="/leitfaden-im-todesfall">Leitfaden anzeigen</a>
+				</article>
 			</section>
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>

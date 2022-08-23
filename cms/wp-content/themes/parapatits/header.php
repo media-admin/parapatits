@@ -148,10 +148,40 @@
 
 	<?php if (is_front_page() ) : ?>
 
-	<section class="large-hero">
+<!-- 	<section class="large-hero">
 		<img class="large-hero__img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/hero-home.png" alt="Hero Image">
 		<p class="large-hero__title wrapper">Willkommen, hereinspaziert</p>
 		<p class="large-hero__text wrapper"></p>
+	</section> -->
+
+	<section>
+		<div class="home-slider">
+			<div>
+				<picture>
+					<source media="(min-width: 38em)" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits-tischlerei_highres-6-DSC03181_web.jpg">
+					<source srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits_highres-1-DSC03181_web.jpg">
+					<img src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits_highres-1-DSC03181_web.jpg" alt="">
+				</picture>
+				<p class="home-slider__text"><span class="higlight-me">Herzlich</span> - Verlässlich - Echt</p>
+			</div>
+			<div>
+				<picture>
+					<source media="(min-width: 38em)" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits-tischlerei_komp-21-DSC03276_web.jpg">
+					<source srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits_highres-2-DSC03276_web.jpg">
+					<img src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits_highres-2-DSC03276_web.jpg" alt="">
+				</picture>
+				<p class="home-slider__text">Herzlich - <span class="higlight-me">Verlässlich</span> - Echt</p>
+			</div>
+			<div>
+				<picture>
+					<source media="(min-width: 38em)" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits-tischlerei_komp-50-DSC03548_web.jpg">
+					<source srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits_highres-3-DSC03548_web.jpg">
+					<img src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits_highres-3-DSC03548_web.jpg" alt="">
+				</picture>
+				<p class="home-slider__text">Herzlich - Verlässlich - <span class="higlight-me">Echt</span></p>
+			</div>
+		</div>
 	</section>
+
 
 	<?php endif; ?>

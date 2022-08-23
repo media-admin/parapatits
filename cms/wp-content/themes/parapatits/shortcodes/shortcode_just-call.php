@@ -1,4 +1,4 @@
-<section class="section__just-call">
+<section class="section__just-call box--left-aligned">
 	<article class="wrapper">
 		<h2 class="h2__heading">Einfach anrufen</h1>
 		<p class="">Wenn Sie einen Sterbefall haben, rufen Sie uns an und wir kümmern uns um alles Weitere.</p>

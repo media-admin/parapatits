@@ -75,6 +75,25 @@
 
 		<script type="text/javascript">
 
+			jQuery('.home-slider').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				dots: false,
+				infinite: true,
+				autoplay: true,
+				autoplaySpeed: 5000,
+				speed: 1500,
+				fade: true,
+				cssEase: 'linear'
+			});
+
+		</script>
+
+
+
+		<script type="text/javascript">
+
 			jQuery('.single-item').slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,

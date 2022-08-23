@@ -828,13 +828,21 @@ ul {
 	list-style: none;
 }
 
+ul.listing {
+	padding-left: 1.5rem;
+	line-height: 2.0rem;
+	margin-bottom: 1.5rem;
+}
+
 .site-main {
 	z-index: auto;
 }
 
 .site-content {
-	padding-top: 100px;
+	padding-top: 0px;
 }
+
+
 
 .site-intro {
 
@@ -1519,7 +1527,7 @@ input[type=checkbox], input[type=radio] {
 /* === General Text Styles === */
 
 .site-title {
-
+	margin-top: 4.0rem !important;
 }
 
 /* --- Highlighted Text --- */
@@ -1531,6 +1539,12 @@ input[type=checkbox], input[type=radio] {
 .text--underlined {
 	text-decoration: underline;
 }
+
+.higlight-me {
+	background-color: #b6274f;
+	padding: 0.25rem;
+}
+
 
 /* --- Article Styles --- */
 
@@ -2193,6 +2207,34 @@ menu.site-menu {
     font-size: 2.2rem;
   }
 	}
+
+
+.home-slider {
+	width: 100vw !important;
+}
+
+
+.home-slider .slick-slide img {
+	width: 100vw !important;
+	object-fit: cover !important;
+}
+
+.home-slider img {
+	object-fit: cover !important;
+}
+
+
+.home-slider__text {
+	width: 100%;
+	font-size: 1.4rem;
+	text-align: center;
+	color: #ffffff;
+	margin-top: -120px;
+	z-index: 1;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.70);
+}
+
+
 
 /* === SLICK SLIDER === */
 
@@ -3217,9 +3259,21 @@ span.hover__alt-text {
 		display: block;
 		position: relative;
 		width: 96%;
-		padding: 10px 10px 10px 10px;
+		padding: 1.0rem !important;
 		transition: all 0.5s ease-in-out;
 	}
+
+
+	.accordion__content p {
+		line-height: 1.8rem;
+		padding: 0.5rem 0.75rem;
+		padding: 1.0rem !important;
+	}
+
+	.accordion__content p {
+		line-height: 1.8rem;
+	}
+
 
 #accordion article.accordion__item-hidden div:not(.accordion__pointer) {
 	color: #707173;

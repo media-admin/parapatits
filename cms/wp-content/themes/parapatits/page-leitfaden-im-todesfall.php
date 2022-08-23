@@ -7,6 +7,7 @@ get_header('bestattung');
 ?>
 
 		<main class="site-main">
+			<div class="site-content">
 				<section class="site-intro box--left-aligned">
 					<article class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title();?></h1>

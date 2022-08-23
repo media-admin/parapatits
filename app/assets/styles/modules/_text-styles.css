@@ -2,7 +2,7 @@
 
 /* === General Text Styles === */
 .site-title {
-
+	margin-top: 4.0rem !important;
 }
 
 /* --- Highlighted Text --- */
@@ -10,10 +10,16 @@
 	color: #b6274f;
 }
 
-
 .text--underlined {
 	text-decoration: underline;
 }
+
+.higlight-me {
+	background-color: #b6274f;
+	padding: 0.25rem;
+}
+
+
 
 
 /* --- Article Styles --- */
