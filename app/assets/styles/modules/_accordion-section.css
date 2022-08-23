@@ -37,7 +37,7 @@
 	&__item {
 		position: relative;
 		display: block;
-		border-bottom: 2px solid $darkGray;
+		border-bottom: 1px solid $darkGray;
 		background: $brightWhite;
 	}
 

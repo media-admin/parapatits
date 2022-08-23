@@ -1,0 +1,313 @@
+/* === CONTACT SECTION === */
+.contact {
+	font-size: 0.9rem;
+	line-height: 1.6rem;
+	text-align: left;
+	letter-spacing: 0.05rem;
+	margin-top: 4.0rem;
+
+	@mixin atMedium {
+
+	}
+
+	&__data {
+		margin-top: 3.0rem;
+		margin-bottom: 3.0rem;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+	&__data a {
+		font-weight: 600;
+		color: $mainGray;
+		text-decoration: none;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+
+	&__data-phone {
+		position: relative;
+		font-weight: 600;
+		color: $mainGray;
+		text-decoration: none;
+		margin-top: 1.0rem;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+
+	&__data-cellphone {
+		font-weight: 600;
+		color: $mainGray;
+		text-decoration: none;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+	&__data-mail {
+		font-weight: 600;
+		color: $mainGray;
+		text-decoration: none;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+	&__data-social-media-area {
+		position: relative;
+		display: grid;
+		width: 90%;
+		grid-template-columns: 1fr 1fr;
+		align-items: left;
+		list-style-type: none;
+		margin-top: 0.0rem;
+		padding-left: 0;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+
+	&__data-social-media-icon {
+
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+
+	&__data-social-media-icon--facebook {
+
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+
+	&__data-social-media-icon--instagram {
+
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+	&__data-opening-hours {
+		line-height: 1.5rem;
+		padding-left: 1.0rem;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+
+
+	&__data-opening-hours-table {
+
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+
+	&__data-opening-hours-table-row {
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+	&__data-opening-hours-table-row-day {
+		text-decoration: underline;
+
+		@mixin atMedium {
+
+		}
+
+		&__data-opening-hours-table-row-hours {
+			text-decoration: none;
+
+			@mixin atMedium {
+
+			}
+
+		}
+
+	}
+
+
+}
+
+
+
+/* Shortcode ANFAHRT / ROUTE */
+
+&__data-map {
+
+
+	@mixin atMedium {
+
+	}
+
+}
+
+
+&__data-map h2 {
+	padding-left: 1.0rem;
+
+	@mixin atMedium {
+
+	}
+
+}
+
+
+
+
+.route__header {
+	font-weight: 300 !important;
+	text-transform: uppercase;
+	margin-bottom: 1.0rem !important;
+	padding: 1.5rem 0.75rem !important;
+}
+
+	@mixin atMedium {
+
+	.service-overview__service-title {
+		margin-bottom: 0.0rem !important;
+	}
+
+}
+
+
+.route__container-column iframe {
+	position: relative !important;
+	width: 100% !important;
+	height: 100% !important;
+	min-height: 550px;
+}
+
+
+.route__map-wrapper {
+	background: rgba(112,122,122,0.15);
+	background-size: cover;
+	position: relative;
+	height: 550px;
+	width: 100%;
+	text-align: center;
+
+	.route__map-trigger {
+		padding: 130px 30px;
+			height: -webkit-calc( 100% - 260px );
+		height: -moz-calc( 100% - 260px );
+		height: -o-calc( 100% - 260px );
+		height: calc( 100% - 260px );
+		width: -webkit-calc( 100% - 60px );
+		width: -moz-calc( 100% - 60px );
+		width: -o-calc( 100% - 60px );
+		width: calc( 100% - 60px );
+		position: absolute;
+		bottom: 0;
+		z-index: 9;
+		background-color: rgba( 0, 0, 0, .8 );
+		color: #fff;
+
+		&:before {
+			font-family: 'FontAwesome Solid' !important;
+			content: '\f04b';
+			position: absolute;
+			z-index: -1;
+			font-size: 120px;
+			color: rgba( 255, 255, 255, .2 );
+			width: 120px;
+			height: 120px;
+			line-height: 120px;
+			text-align: center;
+			top: -webkit-calc( 50% - 60px );
+			top: calc( 50% - 60px );
+			left: -webkit-calc( 50% - 60px );
+			left: calc( 50% - 60px );
+		}
+
+	}
+
+	.route__map-layer {
+		position: relative;
+		display: none;
+		height: inherit;
+		width: inherit;
+		margin: auto;
+
+		iframe {
+			border: 0px none transparent;
+			height: inherit;
+			width: inherit;
+			vertical-align: middle;
+		}
+
+	}
+
+}
+
+.route__map-trigger  {
+	position: relative;
+	height: 100%;
+	padding: 15px !important;
+}
+
+.route__map-shariff-infotext {
+	position: relative !important;
+	width: 80% !important;
+	display: block !important;
+	margin: 25px auto !important;
+	margin-top: 0px !important;
+	padding: 15px !important;
+}
+
+.button--load-more {
+	position: relative !important;
+	display: inline-block !important;
+	width: auto !important;
+	font-size: 0.9rem !important;
+	line-height: 1.4rem;
+	text-align: center !important;
+	text-transform: lowercase;
+	border: 0px  solid transparent;
+	border-radius: 0px;
+	margin-top: 25px auto !important;
+	margin-bottom: 0px;
+	padding: 0.5em 1.0em !important;
+	z-index: 1 !important;
+}
+
+.button--load-more:hover {
+	cursor: pointer;
+}
+

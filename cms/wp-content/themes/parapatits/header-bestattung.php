@@ -10,30 +10,30 @@
 		<!-- === FAVICONS === -->
 
 		<!-- Default -->
-		<link rel="icon" href="assets/images/favicon/favicon.svg" type="image/x-icon">
-		<link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/favicon.svg" type="image/x-icon">
+		<link rel="shortcut icon" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/favicon.ico" type="image/x-icon">
 
 		<!-- PNG icons with different sizes -->
-		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-194x194.png" sizes="194x194">
-		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-192x192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/favicon-194x194.png" sizes="194x194">
+		<link rel="icon" type="image/png" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/favicon-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/favicon-16x16.png" sizes="16x16">
 
 		<!-- Apple Touch Icons -->
-		<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-touch-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-touch-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon-180x180.png">
-		<link rel="apple-touch-icon" sizes="192x192" href="assets/images/favicon/apple-touch-icon-192x192.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/apple-touch-icon-180x180.png">
+		<link rel="apple-touch-icon" sizes="192x192" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/apple-touch-icon-192x192.png">
 
 		<!-- Apple macOS Safari Mask Icon -->
-		<link rel="mask-icon" href="assets/images/favicon/favicon.svg" color="#B6274F">
+		<link rel="mask-icon" href="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/favicon.svg" color="#B6274F">
 
 		<!-- Apple iOS Safari Theme -->
 		<meta name="apple-mobile-web-app-status-bar-style" content="#B6274F">
@@ -44,14 +44,14 @@
 		<meta name="theme-color" content="#707173">
 		<meta name="msapplication-navbutton-color" content="#B6274F">
 		<meta name="msapplication-TileColor" content="#838282">
-		<meta name="msapplication-TileImage" content="assets/images/favicon/windows-tile-icon-144x144.png">
+		<meta name="msapplication-TileImage" content="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/windows-tile-icon-144x144.png">
 		<meta name="application-name" content="Website Parapatits Peter - Tischlerei & Bestattung">
 
 		<!-- Internet Explorer 11 Tiles -->
-		<meta name="msapplication-square70x70logo" content="assets/images/favicon/ms-ie11-icon-70x70.png">
-		<meta name="msapplication-square150x150logo" content="assets/images/favicon/ms-ie11-icon-150x150.png">
-		<meta name="msapplication-wide310x150logo" content="assets/images/favicon/ms-ie11-icon-310x150.png">
-		<meta name="msapplication-square310x310logo" content="assets/images/favicon/ms-ie11-icon-310x310.png">
+		<meta name="msapplication-square70x70logo" content="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/ms-ie11-icon-70x70.png">
+		<meta name="msapplication-square150x150logo" content="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/ms-ie11-icon-150x150.png">
+		<meta name="msapplication-wide310x150logo" content="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/ms-ie11-icon-310x150.png">
+		<meta name="msapplication-square310x310logo" content="<?php bloginfo( 'template_directory' ); ?>/assets/images/favicon/ms-ie11-icon-310x310.png">
 
 		<!-- Open Graph -->
 		<meta property="og:title" content="Parapatits Peter - Tischlerei & Bestattung">

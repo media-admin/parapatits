@@ -1,4 +1,4 @@
-<footer class="site-footer">
+	<footer class="site-footer">
 
 			<section class="site-footer__contact">
 				<p class="site-footer__contact-data">
@@ -40,6 +40,8 @@
 
 		</footer>
 
+		<?php wp_footer();?>
+
 		<!-- START SCRIPTS AREA -->
 
 		<!-- Hamburger Menu Toggle -->
@@ -47,7 +49,7 @@
 			var navigation = document.querySelector(".main-navigation");
 			var hamburger = document.querySelector(".burger-menu");
 
-			 navigation.onclick = function () {
+		 	navigation.onclick = function () {
 				this.classList.toggle ("is-active");
 			}
 
@@ -59,9 +61,9 @@
 		<!-- Accordions -->
 		<script type="text/javascript">
 			jQuery(document).ready(function() {
-				$("#accordion article h2").click(function(e) {
-					$(this).parents().siblings("article").addClass("accordion__item-hidden");
-					$(this).parents("article").removeClass("accordion__item-hidden");
+				jQuery("#accordion article h2").click(function(e) {
+					jQuery(this).parents().siblings("article").addClass("accordion__item-hidden");
+					jQuery(this).parents("article").removeClass("accordion__item-hidden");
 
 					e.preventDefault();
 				});
@@ -70,19 +72,44 @@
 
 
 		<!-- Slick Sliders -->
-		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-
-		<script src="assets/scripts/modules/slick.min.js"></script>
 
 		<script type="text/javascript">
 
-			$('.references-carousel').slick({
+			jQuery('.references-carousel').slick({
 				slidesToShow: 5,
 				slidesToScroll: 1,
 				arrows: true,
 				dots: true,
 				centerMode: true,
-				focusOnSelect: true
+				focusOnSelect: true,
+				responsive: [
+					{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 5,
+							slidesToScroll: 1,
+							infinite: true,
+							dots: true,
+							arrows: true,
+						}
+					},
+					{
+						breakpoint: 600,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2,
+							arrows: true,
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							arrows: true,
+						}
+					}
+				]
 			});
 
 		</script>
@@ -90,7 +117,7 @@
 
 		<script type="text/javascript">
 
-			$('.project-carousel-center').slick({
+			jQuery('.project-carousel-center').slick({
 				dots: true,
 				infinite: false,
 				speed: 300,
@@ -134,44 +161,41 @@
 		<script type="text/javascript">
 
 			/* ---- for-filter-menu -----------------------------------------------*/
-			$(document).on('click','.project-filter li',function(){
-				$(this).addClass('project-filter-active').siblings().removeClass('project-filter-active')
+			jQuery(document).on('click','.project-filter li',function(){
+				jQuery(this).addClass('project-filter-active').siblings().removeClass('project-filter-active')
 			});
 
 			/* ---- for-project/work-filter -----------------------------------------------*/
-			$(document).ready(function(){
-				$('.list').click(function(){
+			jQuery(document).ready(function(){
+				jQuery('.list').click(function(){
 					const value = $(this).attr('data-filter');
 					if(value == 'all'){
-						$('.project-box').show('1000');
+						jQuery('.project-box').show('1000');
 					}
 					else {
-						$('.project-box').not('.'+value).hide('1000');
-						$('.project-box').filter('.'+value).show('1000');
+						jQuery('.project-box').not('.'+value).hide('1000');
+						jQuery('.project-box').filter('.'+value).show('1000');
 					}
 				})
 			});
 
 		</script>
 
-		<script src="lightbox.js"></script>
 
 		<!-- Button Load More -->
 		<script type="text/javascript">
-			$(function () {
+			jQuery(function () {
 					x=2;
-					$('.project-container a').slice(0, 2).show();
-					$('#loadMore').on('click', function (e) {
+					jQuery('.project-container a').slice(0, 2).show();
+					jQuery('#loadMore').on('click', function (e) {
 							e.preventDefault();
 							x = x+2;
-							$('.project-container a').slice(0, x).slideDown();
+							jQuery('.project-container a').slice(0, x).slideDown();
 					});
 			});
 		</script>
 
 		<!-- END SCRIPTS AREA -->
-
-		<?php wp_footer();?>
 
 	</body>
 

@@ -8,6 +8,7 @@
 	&__title {
 		font-size: 1.8rem;
 		line-height: 2.0rem;
+		text-transform: lowercase;
 		margin-bottom: 0.5rem;
 	}
 
@@ -15,6 +16,7 @@
 		font-size: 0.8rem;
 		font-weight: 500;
 		line-height: 1.2rem;
+		text-transform: lowercase;
 		letter-spacing: 0.1rem;
 		color: $mainRed;
 		margin: 0;

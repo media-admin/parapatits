@@ -819,6 +819,8 @@ body {
 }
 
 a {
+	color: #838282;
+	font-weight: 600;
 	text-decoration: none;
 }
 
@@ -1568,11 +1570,13 @@ ul {
 
 .h1__title--left-aligned {
 		text-align: left;
+		text-transform: lowercase;
 		padding-left: 1.0rem;
 	}
 
 .h1__title--right-aligned {
 		text-align: right;
+		text-transform: lowercase;
 		padding-right: 1.0rem;
 	}
 
@@ -1590,11 +1594,13 @@ ul {
 
 .h1__subtitle--left-aligned {
 		text-align: left;
+		text-transform: lowercase;
 		padding-left: 1.0rem;
 	}
 
 .h1__subtitle--right-aligned {
 		text-align: right;
+		text-transform: lowercase;
 	}
 
 .h2__heading {
@@ -1617,6 +1623,7 @@ ul {
 
 .h2__heading--right-aligned {
 		text-align: right !important;
+		text-transform: lowercase;
 		padding-right: 0.25rem;
 		padding-left: 25%;
 	}
@@ -1626,6 +1633,7 @@ ul {
 		font-weight: 500;
 		line-height: 1.4rem;
 		letter-spacing: 0.05rem;
+		text-transform: lowercase;
 		color: #B6274F;
 		margin: 0;
 		margin-top: 0.0rem;
@@ -1634,15 +1642,23 @@ ul {
 
 .h2__subheading--left-aligned {
 		text-align: left !important;
+		text-transform: lowercase;
 		padding-left: 0.25rem;
 		padding-right: 25%;
 	}
 
 .h2__subheading--right-aligned {
 		text-align: right !important;
+		text-transform: lowercase;
 		padding-right: 0.25rem;
 		padding-left: 25%;
 	}
+
+
+	.h2__title {
+		text-transform: lowercase;
+	}
+
 
 .h3__heading {
 		font-size: 1.4rem;
@@ -1659,6 +1675,7 @@ ul {
 	font-size: 0.8rem;
 	font-weight: 500;
 	line-height: 1.4rem;
+	text-transform: lowercase;
 	letter-spacing: 0.05rem;
 	color: #B6274F;
 	margin: 0;
@@ -1813,13 +1830,14 @@ menu.site-menu {
 
 .is-active .navbar {
   position: absolute;
-  top: 80px;
+  top: 60px;
   display: block;
   width: 100vw;
   height: 100vh;
   left: 0px;
   text-align: left;
   background: #FFFFFF;
+	padding-top: 20px;
   transition: 0.8s;
   z-index: 1;
 
@@ -1839,8 +1857,8 @@ menu.site-menu {
     transition: none;
     z-index: inherit;
     margin-left: 15px;
-    margin-right: 15px
-
+    margin-right: 15px;
+		padding-top: 0px;
 }
 	}
 
@@ -1985,7 +2003,7 @@ menu.site-menu {
     box-shadow: 0px 3px 22px -3px #000000;
     padding-top: 0.5rem;
     padding-bottom: 1.0rem;
-    padding-left: 1.0rem;
+    /* padding-left: 1.0rem; */
     z-index: 1 !important
 
 }
@@ -2032,7 +2050,8 @@ menu.site-menu {
     font-weight: 300;
     line-height: 1.6rem;
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem
+    padding-bottom: 0.5rem;
+		padding-left: 1.0rem;
 
 }
 	}
@@ -2062,8 +2081,9 @@ menu.site-menu {
     width: 100%;
     color: white !important;
     background-color: #B6274F;
-    margin-left: -16px;
-    padding-left: 16px
+  	/*margin-left: -16px;
+    padding-left: 16px */
+		padding-left: 16px;
 
 }
 	}
@@ -2076,6 +2096,12 @@ menu.site-menu {
 @media (min-width: 800px) {
 	}
 
+
+.navbar-item .current_page_item {
+	color: #B6274F !important;
+	font-weight: 600 !important;
+}
+
 /* === Burger Menu === */
 
 .burger-menu {
@@ -2084,7 +2110,7 @@ menu.site-menu {
   width: 35px;
   height: 35px;
   top: 15px;
-  right: 25px;
+  /* right: 25px; */
   transition: border-radius 0.5s;
 }
 
@@ -2570,7 +2596,7 @@ span.hover__alt-text {
 	}
 
 .intro__company-listing-separator {
-		height: 1px;
+		/* height: 1px; */
 		background-color: #838282;
 		margin: 2.0rem 0.0rem;
 	}
@@ -2646,6 +2672,7 @@ span.hover__alt-text {
 .info-section__title {
 		font-size: 1.8rem;
 		line-height: 2.0rem;
+		text-transform: lowercase;
 		margin-bottom: 0.5rem;
 	}
 
@@ -2653,6 +2680,7 @@ span.hover__alt-text {
 		font-size: 0.8rem;
 		font-weight: 500;
 		line-height: 1.2rem;
+		text-transform: lowercase;
 		letter-spacing: 0.1rem;
 		color: #B6274F;
 		margin: 0;
@@ -2955,7 +2983,7 @@ span.hover__alt-text {
 
 .recall-section input[type="checkbox"] {
 		position: relative;
-		left: 1.0rem;
+		left: 0.5rem;
 		top: -2px;
 		vertical-align: baseline;
 		margin-top: -2px !important;
@@ -2993,14 +3021,15 @@ span.hover__alt-text {
 	}
 
 .recall-section__form-item-dsgvo-acceptance {
+		position: absolute;
 		display: inline-block;
 		font-weight: 100;
 		font-size: 0.8rem;
 		line-height: 1.4rem;
 		color: #FFFFFF;
 		opacity: 1.0; /* Firefox */
-		margin-top: -1.4rem;
-		padding-left: 2.0rem;
+		margin-top: 0.25rem;
+		padding-left: -0.25rem;
 	}
 
 .recall-section__form-item-dsgvo-acceptance a {
@@ -3145,7 +3174,7 @@ span.hover__alt-text {
 .accordion__item {
 		position: relative;
 		display: block;
-		border-bottom: 2px solid #707173;
+		border-bottom: 1px solid #707173;
 		background: #FFFFFF;
 	}
 
@@ -3409,6 +3438,329 @@ span.hover__alt-text {
 		margin-top: 2.0rem;
 		margin-bottom: 2.0rem;
 	}
+
+
+
+
+/* === CONTACT SECTION === */
+.contact {
+	font-size: 0.9rem;
+	line-height: 1.6rem;
+	text-align: left;
+	letter-spacing: 0.05rem;
+	margin-top: 4.0rem;
+
+	}
+
+	@media (min-width: 800px) {
+
+	}
+
+	.contact__data {
+		margin-top: 3.0rem;
+		margin-bottom: 3.0rem;
+
+		}
+
+		@media (min-width: 800px) {
+
+		}
+
+
+	.contact__data a {
+		font-weight: 600;
+		color: #838282;
+		text-decoration: none;
+
+		}
+
+		@media (min-width: 800px) {
+
+		}
+
+
+	.contact__data-phone {
+		position: relative;
+		font-weight: 600;
+		color: #838282;
+		text-decoration: none;
+		margin-top: 1.0rem;
+
+		}
+
+		@media (min-width: 800px) {
+
+		}
+
+
+
+	.contact__data-cellphone {
+		font-weight: 600;
+		color: #838282;
+		text-decoration: none;
+
+		}
+
+		@media (min-width: 800px) {
+		}
+
+
+	.contact__data-mail {
+		font-weight: 600;
+		color: #838282;
+		text-decoration: none;
+		}
+
+		@media (min-width: 800px) {
+		}
+
+
+	.contact__data-social-media-area {
+		position: relative;
+		display: grid;
+		width: 90%;
+		grid-template-columns: 1fr 1fr;
+		align-items: left;
+		list-style-type: none;
+		margin-top: 0.0rem;
+		padding-left: 0;
+
+		}
+
+		@media (min-width: 800px) {
+
+		}
+
+
+
+	.contact__data-social-media-icon {
+
+
+		}
+
+		@media (min-width: 800px) {
+
+		}
+
+
+
+	.contact__data-social-media-icon--facebook {
+
+
+		}
+
+		@media (min-width: 800px) {
+
+		}
+
+
+
+	.contact__data-social-media-icon--instagram {
+
+
+		}
+
+		@media (min-width: 800px) {
+
+		}
+
+
+	.contact__data-opening-hours {
+		line-height: 1.5rem;
+		padding-left: 1.0rem;
+
+		}
+
+		@media (min-width: 800px) {
+
+		}
+
+
+		.contact__data-opening-hours-table {
+
+
+		}
+
+		@media (min-width: 800px) {
+
+		}
+
+
+		.contact__data-opening-hours-table-row {
+			margin-top: 1.0rem;
+
+		}
+
+		@media (min-width: 800px) {
+
+		}
+
+
+		.contact__data-opening-hours-table-row-day {
+			text-decoration: underline;
+
+		}
+
+		@media (min-width: 800px) {
+
+		}
+
+		.contact__data-opening-hours-table-row-hours {
+			text-decoration: none;
+
+		}
+
+		@media (min-width: 800px) {
+
+		}
+
+
+	/* Shortcode ANFAHRT / ROUTE */
+
+
+	.contact__data-map {
+
+
+	}
+
+	@media (min-width: 800px) {
+
+	}
+
+	.contact__data-map h2 {
+		padding-left: 1.0rem;
+
+	}
+
+	@media (min-width: 800px) {
+
+	}
+
+
+		.route__header {
+			font-weight: 300 !important;
+			text-transform: uppercase;
+			margin-bottom: 1.0rem !important;
+			padding: 1.5rem 0.75rem !important;
+		}
+
+			@mixin atMedium {
+
+			.service-overview__service-title {
+				margin-bottom: 0.0rem !important;
+			}
+
+		}
+
+
+		.route__container-column iframe {
+			position: relative !important;
+			width: 100% !important;
+			height: 100% !important;
+			min-height: 550px;
+		}
+
+
+		.route__map-wrapper {
+			background: rgba(112,122,122,0.15);
+			background-size: cover;
+			position: relative;
+			height: 550px;
+			width: 100%;
+			text-align: center;
+
+			.route__map-trigger {
+				padding: 130px 30px;
+					height: -webkit-calc( 100% - 260px );
+				height: -moz-calc( 100% - 260px );
+				height: -o-calc( 100% - 260px );
+				height: calc( 100% - 260px );
+				width: -webkit-calc( 100% - 60px );
+				width: -moz-calc( 100% - 60px );
+				width: -o-calc( 100% - 60px );
+				width: calc( 100% - 60px );
+				position: absolute;
+				bottom: 0;
+				z-index: 9;
+				background-color: rgba( 0, 0, 0, .8 );
+				color: #fff;
+
+				&:before {
+					font-family: 'FontAwesome Solid' !important;
+					content: '\f04b';
+					position: absolute;
+					z-index: -1;
+					font-size: 120px;
+					color: rgba( 255, 255, 255, .2 );
+					width: 120px;
+					height: 120px;
+					line-height: 120px;
+					text-align: center;
+					top: -webkit-calc( 50% - 60px );
+					top: calc( 50% - 60px );
+					left: -webkit-calc( 50% - 60px );
+					left: calc( 50% - 60px );
+				}
+
+			}
+
+			.route__map-layer {
+				position: relative;
+				display: none;
+				height: inherit;
+				width: inherit;
+				margin: auto;
+
+				iframe {
+					border: 0px none transparent;
+					height: inherit;
+					width: inherit;
+					vertical-align: middle;
+				}
+
+			}
+
+		}
+
+		.route__map-trigger  {
+			position: relative;
+			height: 100%;
+			padding: 15px !important;
+		}
+
+		.route__map-shariff-infotext {
+			position: relative !important;
+			width: 80% !important;
+			display: block !important;
+			margin: 25px auto !important;
+			margin-top: 0px !important;
+			padding: 15px !important;
+		}
+
+		.button--load-more {
+			position: relative !important;
+			display: inline-block !important;
+			width: auto !important;
+			font-size: 0.9rem !important;
+			line-height: 1.4rem;
+			text-align: center !important;
+			text-transform: lowercase;
+			border: 0px  solid transparent;
+			border-radius: 0px;
+			margin-top: 25px auto !important;
+			margin-bottom: 0px;
+			padding: 0.5em 1.0em !important;
+			z-index: 1 !important;
+		}
+
+		.button--load-more:hover {
+			cursor: pointer;
+		}
+
+
+
+
+
 
 /* === FOOTER === */
 

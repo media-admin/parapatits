@@ -116,12 +116,12 @@ add_filter( 'body_class', 'parapatits_add_slug_body_class' );
 /* === Styles and Scripts === */
 function parapatits_register_styles() {
 
-	// Import Cookie Script Stylesheets
+	/* --- Import Cookie Script Stylesheets --- */
 	wp_register_style( 'styles', get_template_directory_uri() . '/styles.c0eb9b412b450fe4bb20.css' );
 	wp_enqueue_style( 'styles' );
 
 
-	// Import Theme Styles via style.css
+	/* --- Import Theme Styles via style.css --- */
 	wp_register_style( 'style', get_stylesheet_uri() );
 	wp_enqueue_style( 'style' );
 
@@ -133,17 +133,26 @@ add_action( 'wp_enqueue_scripts', 'parapatits_register_styles' );
 
 function parapatits_register_scripts() {
 
-	// --- Import Main Scripts ---
-	wp_register_script( 'main', get_template_directory_uri() . 'main.c0eb9b412b450fe4bb20.js', '', null, true );
+	/* --- Import Main Scripts --- */
+	wp_register_script( 'main', get_template_directory_uri() . '/main.c0eb9b412b450fe4bb20.js', '', null, true );
 	wp_enqueue_script( 'main' );
 
-	// --- Import Modal Scripts ---
-	wp_register_script( 'modal', get_template_directory_uri() . 'modal.86995f46e4f29a4ce8c3.js', '', null, true );
+	/* --- Import Lightbox Scripts --- */
+	wp_register_script( 'lightbox', get_template_directory_uri() . '/assets/vendor/lightbox2/dist/js/lightbox.js', '', null, true );
+	wp_enqueue_script( 'lightbox' );
+
+	/* --- Import Slick Scripts --- */
+	wp_register_script( 'slick', get_template_directory_uri() . '/assets/vendor/slick-1.8.1/slick/slick.min.js', '', null, true );
+	wp_enqueue_script( 'slick' );
+
+	/* --- Import Vendors Scripts --- */
+	wp_register_script( 'vendors', get_template_directory_uri() . '/vendors.b86e0341894c80fe39c1.js', '', null, true );
+	wp_enqueue_script( 'vendors' );
+
+	/* --- Import Modal Scripts --- */
+	wp_register_script( 'modal', get_template_directory_uri() . '/modal.86995f46e4f29a4ce8c3.js', '', null, true );
 	wp_enqueue_script( 'modal' );
 
-	// --- Import Vendors Scripts ---
-	wp_register_script( 'vendors', get_template_directory_uri() . 'vendors.b86e0341894c80fe39c1.js', '', null, true );
-	wp_enqueue_script( 'vendors' );
 
 }
 
@@ -168,6 +177,7 @@ function check_for_category_single_template( $t ) {
 
 
 /* --- Menu Support --- */
+
 function parapatits_register_menu() {
 	register_nav_menu( 'nav-menu-main', 'Hauptnavigation', 'parapatits' );
 	register_nav_menu( 'footer-menu', 'Footermenü', 'parapatits' );

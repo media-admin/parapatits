@@ -58,11 +58,13 @@ ul {
 
 	&__title--left-aligned {
 		text-align: left;
+		text-transform: lowercase;
 		padding-left: 1.0rem;
 	}
 
 	&__title--right-aligned {
 		text-align: right;
+		text-transform: lowercase;
 		padding-right: 1.0rem;
 	}
 
@@ -80,11 +82,13 @@ ul {
 
 	&__subtitle--left-aligned {
 		text-align: left;
+		text-transform: lowercase;
 		padding-left: 1.0rem;
 	}
 
 	&__subtitle--right-aligned {
 		text-align: right;
+		text-transform: lowercase;
 	}
 
 }
@@ -107,12 +111,14 @@ ul {
 
 	&__heading--left-aligned {
 		text-align: left !important;
+		text-transform: lowercase;
 		padding-left: 0.25rem;
 		padding-right: 25%;
 	}
 
 	&__heading--right-aligned {
 		text-align: right !important;
+		text-transform: lowercase;
 		padding-right: 0.25rem;
 		padding-left: 25%;
 	}
@@ -122,6 +128,7 @@ ul {
 		font-weight: 500;
 		line-height: 1.4rem;
 		letter-spacing: 0.05rem;
+		text-transform: lowercase;
 		color: $mainRed;
 		margin: 0;
 		margin-top: 0.0rem;
@@ -130,14 +137,20 @@ ul {
 
 	&__subheading--left-aligned {
 		text-align: left !important;
+		text-transform: lowercase;
 		padding-left: 0.25rem;
 		padding-right: 25%;
 	}
 
 	&__subheading--right-aligned {
 		text-align: right !important;
+		text-transform: lowercase;
 		padding-right: 0.25rem;
 		padding-left: 25%;
+	}
+
+	&__title {
+		text-transform: lowercase;
 	}
 
 }
@@ -162,6 +175,7 @@ ul {
 	font-size: 0.8rem;
 	font-weight: 500;
 	line-height: 1.4rem;
+	text-transform: lowercase;
 	letter-spacing: 0.05rem;
 	color: $mainRed;
 	margin: 0;

@@ -1,57 +1,39 @@
 <?php
 
-
-
-
-function services_shortcode() {
+function shortcode_just_call() {
 	ob_start();
-	get_template_part( 'shortcodes/services_shortcode');
+	get_template_part( 'shortcodes/shortcode_just-call');
 	return ob_get_clean();
 }
 
-add_shortcode( 'content_services', 'services_shortcode' );
+add_shortcode( 'shortcode_just_call', 'shortcode_just_call' );
 
 
-
-function newslettermotivation_shortcode() {
+function shortcode_recall() {
 	ob_start();
-	get_template_part( 'shortcodes/newslettermotivation_shortcode');
+	get_template_part( 'shortcodes/shortcode_recall');
 	return ob_get_clean();
 }
 
-add_shortcode( 'content_newslettermotivation', 'newslettermotivation_shortcode' );
+add_shortcode( 'shortcode_recall', 'shortcode_recall' );
 
 
-
-function team_shortcode() {
+function shortcode_special_question() {
 	ob_start();
-	get_template_part( 'shortcodes/team_shortcode');
+	get_template_part( 'shortcodes/shortcode_special-question');
 	return ob_get_clean();
 }
 
-add_shortcode( 'content_team', 'team_shortcode' );
+add_shortcode( 'shortcode_special_question', 'shortcode_special_question' );
 
 
-
-
-function products_shortcode() {
+function shortcode_our_values() {
 	ob_start();
-	get_template_part( 'shortcodes/products_shortcode');
+	get_template_part( 'shortcodes/shortcode_our-values');
 	return ob_get_clean();
 }
 
-add_shortcode( 'content_products', 'products_shortcode' );
-
-
-function maps_shortcode() {
-	ob_start();
-	get_template_part( 'shortcodes/maps_shortcode');
-	return ob_get_clean();
-}
-
-add_shortcode( 'content_maps', 'maps_shortcode' );
-
-
+add_shortcode( 'shortcode_our_values', 'shortcode_our_values' );
 
 
 
@@ -82,7 +64,6 @@ function all_posts_shortcode() {
 
 	//Posts holen
 	$posts = get_posts($args);
-
 
 	//Inhalte sammeln
 	$content = '';

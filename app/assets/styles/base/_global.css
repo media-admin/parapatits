@@ -17,6 +17,8 @@ body {
 }
 
 a {
+	color: $mainGray;
+	font-weight: 600;
 	text-decoration: none;
 }
 
