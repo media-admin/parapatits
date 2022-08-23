@@ -918,8 +918,16 @@ img {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 	overflow: hidden;
-
 }
+
+
+.img--fullwidth {
+	width: 100vw !important;
+	object-fit: cover !important;
+}
+
+
+
 
 @media (min-width: 800px) {
 	}
@@ -1514,12 +1522,15 @@ input[type=checkbox], input[type=radio] {
 }
 
 #loadMore {
-		color: green;
+		color: #ffffff;
 		cursor: pointer;
+		border: 1px solid #b6274f;
 }
 
 #loadMore:hover {
-		color: black;
+		color: #b6274f;
+		background-color: #ffffff;
+		border: 1px solid #b6274f;
 }
 
 /* === TEXT STYLES === */
@@ -3371,22 +3382,6 @@ span.hover__alt-text {
 	margin: 50px 0px;
 }
 
-.project-heading {
-		margin-top: 20px;
-		display: flex;
-		flex-direction: column;
-	}
-
-.project-heading h3 {
-		font-size: 2.7rem;
-		font-weight: 600;
-		text-transform: uppercase;
-		color: #222222;
-	}
-
-.project-heading span {
-		color: #f33;
-	}
 
 .project-filter {
 		display: flex;
@@ -3440,11 +3435,9 @@ span.hover__alt-text {
 
 @media (min-width: 800px) {
 
-.project-container {
-			background-color: #ffffff;
-			border: 1px solid rgb(219,219,219)
+	.project-container {
 
-	}
+		}
 	}
 
 .project-box {
@@ -3457,17 +3450,17 @@ span.hover__alt-text {
 
 @media (min-width: 800px) {
 
-.project-box {
-			width: 330px
+	.project-box {
+				width: 330px
 
-	}
+		}
 	}
 
 .project-box img {
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
-		border-radius: 5px;
+		border-radius: 0px;
 	}
 
 /* === SPECIAL QUESTION === */

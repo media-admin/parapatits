@@ -90,6 +90,19 @@ function shortcode_testimonials_bestattung() {
 add_shortcode( 'shortcode_testimonials_bestattung', 'shortcode_testimonials_bestattung' );
 
 
+function shortcode_faqs() {
+	ob_start();
+	get_template_part( 'shortcodes/shortcode_faqs');
+	return ob_get_clean();
+}
+
+add_shortcode( 'shortcode_faqs', 'shortcode_faqs' );
+
+
+
+
+
+
 
 
 

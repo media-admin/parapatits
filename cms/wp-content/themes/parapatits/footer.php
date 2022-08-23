@@ -157,8 +157,8 @@
 			/* ---- for-project/work-filter -----------------------------------------------*/
 			jQuery(document).ready(function(){
 				jQuery('.list').click(function(){
-					const value = $(this).attr('data-filter');
-					if(value == 'all'){
+					const value = jQuery(this).attr('data-filter');
+					if(value == 'alle'){
 						jQuery('.project-box').show('1000');
 					}
 					else {
@@ -174,11 +174,11 @@
 		<!-- Button Load More -->
 		<script type="text/javascript">
 			jQuery(function () {
-					x=2;
-					jQuery('.project-container a').slice(0, 2).show();
+					x=3;
+					jQuery('.project-container a').slice(0, 3).show();
 					jQuery('#loadMore').on('click', function (e) {
 							e.preventDefault();
-							x = x+2;
+							x = x+3;
 							jQuery('.project-container a').slice(0, x).slideDown();
 					});
 			});
