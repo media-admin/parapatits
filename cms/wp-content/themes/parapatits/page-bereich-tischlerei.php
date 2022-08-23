@@ -56,76 +56,17 @@ get_header('tischlerei');
 
 			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/25490015827_969bab3ace_o_web.jpg" alt="Platzhalter-Bild">
 
-			<section id="values-section" class="values-section container--darkgray" data-matching-link="#values-section-link">
-				<article class="wrapper">
-					<div class="values-section__container wrapper">
-						<h2 class="h2__title values-section__title wrapper">Unsere Werte</h2>
-						<div class="values-section__content">
-							<p>
-								Erfahren Sie was unsere Arbeit ausmacht.
-							</p>
-							<a class="btn btn--white btn--centered-aligned" href="#">Zu unseren Werten</a>
-						</div>
-					</div>
-				</article>
-			</section>
+			<?php echo do_shortcode("[shortcode_our_values]"); ?>
 
 			<section class="box--right-aligned">
 				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/parapatits-tischlerei_komp-31-DSC03422_web.jpg" alt="Platzhalter-Bild">
 			</section>
 
+			<?php echo do_shortcode("[shortcode_your_opinion]"); ?>
 
-			<section id="your-opinion-section" class="your-opinion-section" data-matching-link="#your-opinion-section-link">
-				<article class="wrapper">
-					<div class="your-opinion-section__container wrapper">
-						<h2 class="h2__title your-opinion-section__title wrapper">Wir würden gerne Ihre Meinung hören</h2>
-						<div class="your-opinion-section__content">
-							<p>
-								Es wäre schön, wenn auch Sie uns Ihr Feedback zukommen lassen.
-							</p>
-							<a class="btn btn--red btn--centered-aligned" href="#">Feedback schreiben</a>
-						</div>
-					</div>
-				</article>
-			</section>
+			<?php echo do_shortcode("[shortcode_partner_tischlerei]"); ?>
 
-			<section class="partner box--left-aligned">
-				<article class="wrapper">
-					<h2 class="h2__heading">Unsere Partner</h2>
-					<p class="partner__intro">
-						Die Zusammenarbeit mit verlässlichen Partnern und Lieferanten, ein um und auf.
-					</p>
-
-					<div class="partner__container">
-						<ul class="partner__listing">
-							<li class="partner__listing-item"><a class="partner__link" href="#" target="_blank"><img class="partner__logo lazyload" src="assets/images/logos/partner/logo_rmb-raumausstatter-brezovits.svg" alt="Logo RMB Raumausstatter Brezovits"></a></li>
-							<li class="partner__listing-item"><a class="partner__link" href="#" target="_blank"><img class="partner__logo lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/partner/logo_und-andere-ansichten.svg" alt=""></a></li>
-							<li class="partner__listing-item"><a class="partner__link" href="#" target="_blank"><img class="partner__logo lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/partner/logo_die-stein-werkstatt.svg" alt=""></a></li>
-							<li class="partner__listing-item"><a class="partner__link" href="#" target="_blank"><img class="partner__logo lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/partner/logo_artner-artissimo.svg" alt=""></a></li>
-							<li class="partner__listing-item"><a class="partner__link" href="#" target="_blank"><img class="partner__logo lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/partner/logo_lang-und-martini.svg" alt=" "></a></li>
-							<li class="partner__listing-item"><a class="partner__link" href="#" target="_blank"><img class="partner__logo lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/partner/logo_re-vier.svg" alt=" "></a></li>
-							<li class="partner__listing-item"><a class="partner__link" href="#" target="_blank"><img class="partner__logo lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/partner/logo_ada.svg" alt=" "></a></li>
-							<li class="partner__listing-item"><a class="partner__link" href="#" target="_blank"><img class="partner__logo lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/partner/logo_glas-hoefler.svg" alt=" "></a></li>
-							<li class="partner__listing-item"><a class="partner__link" href="#" target="_blank"><img class="partner__logo lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/partner/logo_joka.svg" alt=" "></a></li>
-						</ul>
-
-					</div>
-				</article>
-			</section>
-
-			<section class="box--left-aligned">
-				<article class="wrapper">
-					<div class="">
-						<h2 class="h2__heading"">Was unsere Kunden sagen</h2>
-						<div>
-							[Slider Kundenmeinungen]
-						</div>
-						<h3 class="h3__heading">Wir würden auch Ihre Meinung gerne hören</h3>
-						<p class="">Lassen Sie uns Ihr Feedback zukommen!</p>
-						<a class="btn btn--red btn--centered-aligned" role="button" href="https://g.page/r/CVpT6XCa9L20EAg/review" target="_blank">Feedback schreiben</a>
-					</div>
-				</article>
-			</section>
+			<?php echo do_shortcode("[shortcode_testimonials_tischlerei]"); ?>
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
 

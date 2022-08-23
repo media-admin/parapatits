@@ -64,7 +64,7 @@ get_header('');
 				</article>
 			</section>
 			<section class="details-section box--right-aligned">
-				<img class="details-section__branch-item--tischlerei__img img--left-aligned lazyload" data-srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-47-DSC03514_web.jpg" alt="Platzhalter-Bild">
+				<img class="details-section__branch-item--tischlerei__img img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-47-DSC03514_web.jpg" alt="Platzhalter-Bild">
 				<article class="wrapper">
 					<h2 class="details-section__branch-item--tischlerei__title h2__title h2__title--right-aligned">Tischlerei</h2>
 					<div class="">
@@ -75,7 +75,7 @@ get_header('');
 			</section>
 
 			<section class="box--left-aligned">
-				<img class="details-section__branch-item--bestattung__img img--right-aligned lazyload" data-srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-bestattung_highres-2-DSC03299_web.jpg" alt="Platzhalter-Bild">
+				<img class="details-section__branch-item--bestattung__img img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-bestattung_highres-2-DSC03299_web.jpg" alt="Platzhalter-Bild">
 				<article class="wrapper">
 					<h2 class="details-section__branch-item--bestattung__title h2__title h2__title--left-aligned">Bestattung</h2>
 					<div class="">
@@ -85,34 +85,9 @@ get_header('');
 				</article>
 			</section>
 
-			<section class="jobs-section">
-				<img class="jobs-section__img img--fullwidth lazyload" data-srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-43-DSC03482_web.jpg" alt="Platzhalter-Bild">
-				<div class="jobs-section__container wrapper">
-					<h2 class="jobs-section__title h2__title h2__title--left-aligned ">Jobs</h2>
-					<p class="jobs-section__text h2__subtitle h2__subtitle--left-aligned">Werde Teil unseres Teams!</p>
-					<a class="btn btn--red jobs-section__btn btn--centered-aligned" role="button" href="/jobs">Offene Stellen anzeigen</a>
-				</div>
-			</section>
+			<?php echo do_shortcode("[shortcode_jobs]"); ?>
 
-			<section class="recall-section container--darkgray">
-				<article class="wrapper">
-					<div class="recall-section__container">
-						<h2 class="recall-section__title h2__title h2__light h2__title--left-aligned">Rückruf vereinbaren</h2>
-							<p class="recall-section__text">Hinterlassen Sie uns Ihre Nummer, wir rufen Sie gerne zurück.</p>
-							<div class="recall-section__form">
-								<input type="text" name="ihr-name" class="recall-section__form-item recall-section__form-item-name" value="" aria-required="true" aria-invalid="false" placeholder="Name*">
-								<input type="text" name="ihre-telefonnummer" class="recall-section__form-item recall-section__form-item-phonenumber" value="" aria-required="true" aria-invalid="false" placeholder="Telefonnummer*">
-								<span class="wpcf7-list-item">
-									<label class="recall-section__form-label-dsgvo-acceptance">
-										<input type="checkbox" name="ihre-datenschutzzustimmung" class="recall-section__form-item-dsgvo-checkbox" value="1" aria-required="true" aria-invalid="false" data-rule="name">
-										<span class="recall-section__form-item-dsgvo-acceptance">Ich stimme der Verarbeitung meiner Daten gemäß der <a href="/datenschutz" target="_blank">Datenschutzrichtlinie</a> zu.</span>
-									</label>
-								</span>
-								<a class="btn btn--red recall-section__btn open-modal" href="#">Absenden</a>
-							</div>
-					</div>
-				</article>
-			</section>
+			<?php echo do_shortcode("[shortcode_recall]"); ?>
 
 		</div>
 	</main>

@@ -75,41 +75,11 @@
 
 		<script type="text/javascript">
 
-			jQuery('.references-carousel').slick({
-				slidesToShow: 5,
+			jQuery('.single-item').slick({
+				slidesToShow: 1,
 				slidesToScroll: 1,
-				arrows: true,
+				arrows: false,
 				dots: true,
-				centerMode: true,
-				focusOnSelect: true,
-				responsive: [
-					{
-						breakpoint: 1024,
-						settings: {
-							slidesToShow: 5,
-							slidesToScroll: 1,
-							infinite: true,
-							dots: true,
-							arrows: true,
-						}
-					},
-					{
-						breakpoint: 600,
-						settings: {
-							slidesToShow: 2,
-							slidesToScroll: 2,
-							arrows: true,
-						}
-					},
-					{
-						breakpoint: 480,
-						settings: {
-							slidesToShow: 1,
-							slidesToScroll: 1,
-							arrows: true,
-						}
-					}
-				]
 			});
 
 		</script>

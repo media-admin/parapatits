@@ -259,22 +259,19 @@ menu.site-menu {
     line-height: 1.6rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    padding-left: 1.0rem;
   }
 
 }
 
 .is-active .navbar-item__submenu .navbar-item a {
   font-size: 1.2rem;
-  line-height: 2.8rem;
+  line-height: 1.6rem;
   font-weight: 300;
-  letter-spacing: 1px;
-  padding-left: 1.2rem;
 
   @mixin atMedium {
-
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1.0rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   }
 
 }

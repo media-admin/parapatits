@@ -28,8 +28,6 @@ get_header('');
 				</article>
 			</section>
 
-			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/parapatits-tischlerei_komp-12-DSC03241_web.jpg" alt="Platzhalter-Bild">
-
 			<section class="contact__data-opening-hours box--left-aligned">
 				<article class="wrapper">
 					<div class="">
@@ -44,6 +42,8 @@ get_header('');
 					</div>
 				</article>
 			</section>
+
+			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/parapatits-tischlerei_komp-12-DSC03241_web.jpg" alt="Platzhalter-Bild">
 
 			<section class="contact__data-map">
 				<article class="">
@@ -61,7 +61,6 @@ get_header('');
 					</div>
 				</article>
 			</section>
-
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
 

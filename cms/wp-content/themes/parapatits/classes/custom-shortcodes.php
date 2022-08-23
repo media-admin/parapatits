@@ -36,6 +36,64 @@ function shortcode_our_values() {
 add_shortcode( 'shortcode_our_values', 'shortcode_our_values' );
 
 
+function shortcode_jobs() {
+	ob_start();
+	get_template_part( 'shortcodes/shortcode_jobs');
+	return ob_get_clean();
+}
+
+add_shortcode( 'shortcode_jobs', 'shortcode_jobs' );
+
+
+function shortcode_partner_tischlerei() {
+	ob_start();
+	get_template_part( 'shortcodes/shortcode_partner-tischlerei');
+	return ob_get_clean();
+}
+
+add_shortcode( 'shortcode_partner_tischlerei', 'shortcode_partner_tischlerei' );
+
+
+function shortcode_partner_bestattung() {
+	ob_start();
+	get_template_part( 'shortcodes/shortcode_partner-bestattung');
+	return ob_get_clean();
+}
+
+add_shortcode( 'shortcode_partner_bestattung', 'shortcode_partner_bestattung' );
+
+
+function shortcode_your_opinion() {
+	ob_start();
+	get_template_part( 'shortcodes/shortcode_your-opinion');
+	return ob_get_clean();
+}
+
+add_shortcode( 'shortcode_your_opinion', 'shortcode_your_opinion' );
+
+
+function shortcode_testimonials_tischlerei() {
+	ob_start();
+	get_template_part( 'shortcodes/shortcode_testimonials-tischlerei');
+	return ob_get_clean();
+}
+
+add_shortcode( 'shortcode_testimonials_tischlerei', 'shortcode_testimonials_tischlerei' );
+
+
+function shortcode_testimonials_bestattung() {
+	ob_start();
+	get_template_part( 'shortcodes/shortcode_testimonials-bestattung');
+	return ob_get_clean();
+}
+
+add_shortcode( 'shortcode_testimonials_bestattung', 'shortcode_testimonials_bestattung' );
+
+
+
+
+
+
 
 function show_tags()
 {

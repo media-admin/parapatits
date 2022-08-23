@@ -24,49 +24,7 @@ get_header('tischlerei');
 					</article>
 				</section>
 
-				<hr  />
 
-				<section>
-					<div class="references-carousel">
-						<div>
-							<a class="slick-slider-link" href="#">
-								<img class="" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt=" ">
-							</a>
-						</div>
-						<div>
-							<a class="slick-slider-link" href="#">
-								<img class="" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt=" ">
-							</a>
-						</div>
-						<div>
-							<a class="slick-slider-link" href="#">
-								<img class="" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt=" ">
-							</a>
-						</div>
-
-						<div>
-							<a class="slick-slider-link" href="#">
-								<img class="" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt=" ">
-							</a>
-						</div>
-
-						<div>
-							<a class="slick-slider-link" href="#">
-								<img class="" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt=" ">
-							</a>
-						</div>
-
-						<div>
-						<a class="slick-slider-link" href="#">
-								<img class="" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt=" ">
-							</a>
-						</div>
-
-					</div>
-
-				</section>
-
-				<hr  />
 
 				<section id="project">
 

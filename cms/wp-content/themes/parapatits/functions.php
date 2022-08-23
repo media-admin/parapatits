@@ -207,7 +207,7 @@ add_filter('manage_posts_columns', 'parapatits_preview_thumb_column_head');
 
 function parapatits_preview_thumb_column($column_name, $post_ID) {
 	if ($column_name == 'featured_image') {
-		$post_featured_image = medialab_get_backend_preview_thumb($post_ID);
+		$post_featured_image = parapatits_get_backend_preview_thumb($post_ID);
 			if ($post_featured_image) {
 				echo '<img src="' . $post_featured_image . '" />';
 			}

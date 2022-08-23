@@ -67,33 +67,9 @@ get_header('bestattung');
 				<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-10-DSC03332_web.jpg" alt="Platzhalter-Bild">
 			</section>
 
-			<section class="box--left-aligned">
-				<article class="wrapper">
-					<h2 class="h2__heading"">Was unsere Kunden sagen</h2>
-					<div>
-						Slider Kundenmeinungen
-					</div>
-					<h3>wir würden auch ihre Meinung gerne hören</h3>
-					<p class="">Es wäre schön, wenn auch Sie uns Ihr Feedback zukommen lassen.</p>
-					<a class="btn btn--red btn--centered-aligned" role="button" href="https://g.page/r/CVpT6XCa9L20EAg/review" target="_blank">Feedback schreiben</a>
-				</article>
-			</section>
+			<?php echo do_shortcode("[shortcode_testimonials_bestattung]"); ?>
 
-			<section class="partner box--left-aligned">
-				<article class="wrapper">
-					<h2 class="h2__heading">Unsere Partner</h2>
-
-					<div class="partner__container">
-						<ul class="partner__listing">
-							<li class="partner__listing-item"><a class="partner__link" href="#" target="_blank"><img class="partner__logo lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/partner/logo_liv-s-memories.svg" alt=""></a></li>
-							<li class="partner__listing-item"><a class="partner__link" href="#" target="_blank"><img class="partner__logo lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/partner/logo_algordanza.svg" alt=""></a></li>
-							<li class="partner__listing-item"><a class="partner__link" href="#" target="_blank"><img class="partner__logo lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/partner/logo_parkfriedhof-lutzmannsburg.svg" alt=""></a></li>
-							<li class="partner__listing-item"><a class="partner__link" href="#" target="_blank"><img class="partner__logo lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/partner/logo_wiener-verein.svg" alt=" "></a></li>
-						</ul>
-
-					</div>
-				</article>
-			</section>
+			<?php echo do_shortcode("[shortcode_partner_bestattung]"); ?>
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
 

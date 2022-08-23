@@ -100,7 +100,7 @@ get_header('bestattung');
 						<p class="">
 							Alle wichtigen Informationen, übersichtlich für Sie zusammengestellt.
 						</p>
-						<a class="btn btn--red btn--centered-aligned" role="button" href="/weiterfuehrende-informationen">Infos anzeigen</a>
+						<a class="btn btn--red btn--centered-aligned" role="button" href="/weiterfuehrende-infos">Infos anzeigen</a>
 					</article>
 				</section>
 

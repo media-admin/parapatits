@@ -70,6 +70,8 @@ get_header('tischlerei');
 				</article>
 			</section>
 
+			<?php echo do_shortcode("[shortcode_our-values]"); ?>
+
 			<section class="box--right-aligned">
 				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/parapatits-tischlerei_komp-31-DSC03422_web.jpg" alt="Platzhalter-Bild">
 			</section>

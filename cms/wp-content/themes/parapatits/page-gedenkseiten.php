@@ -23,7 +23,7 @@ get_header('bestattung');
 			<section class="box--left-aligned">
 				<article class="wrapper">
 					<h2 class="">Unsere Leistungen</h2>
-					<div class="wrapper">
+					<div class="">
 						<p class="">
 							Erfahren Sie, wie wir Sie unterstützen können.
 						</p>

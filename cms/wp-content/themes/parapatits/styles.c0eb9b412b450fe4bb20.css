@@ -849,6 +849,7 @@ ul {
 	height: auto;
 	text-align: left;
 	margin: 0;
+	margin-top: 3.0rem;
 	margin-bottom: 3.0rem;
 	padding: 0;
 	overflow: hidden !important;
@@ -869,6 +870,7 @@ ul {
 	height: auto;
 	text-align: right;
 	margin: 0;
+	margin-top: 3.0rem;
 	margin-bottom: 3.0rem;
 	padding: 0;
 	overflow: hidden !important;
@@ -2058,19 +2060,17 @@ menu.site-menu {
 
 .is-active .navbar-item__submenu .navbar-item a {
   font-size: 1.2rem;
-  line-height: 2.8rem;
+  line-height: 1.6rem;
   font-weight: 300;
-  letter-spacing: 1px;
-  padding-left: 1.2rem;
+
 
 }
 
 @media (min-width: 800px) {
 
 .is-active .navbar-item__submenu .navbar-item a {
-
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem
+    padding-bottom: 0.5rem;
 
 }
 	}
@@ -3760,6 +3760,66 @@ span.hover__alt-text {
 
 
 
+		/* === TESTIMONIALS === */
+		.testimonials {
+
+		}
+
+		.testimonials__container {
+			width: 100vw;
+
+
+		}
+
+		.testimonials__title {
+			margin: 2.0rem auto;
+
+		}
+
+		.testimonials-carousel {
+			margin: 2.0rem auto;
+			padding: 2.0rem 1.0rem;
+		}
+
+		.testimonials-carousel__container {
+
+		}
+
+		.testimonials-carousel__content {
+
+		}
+
+		.testimonials-carousel__title {
+			font-size: 1.4rem;
+			font-weight: 700;
+		}
+
+
+		.testimonials h3 {
+			margin-top: 4.0rem;
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* === FOOTER === */
@@ -3767,7 +3827,7 @@ span.hover__alt-text {
 .site-footer {
 	font-size: 0.9rem;
 	line-height: 1.6rem;
-	text-align: center;
+	text-align: center !important;
 	letter-spacing: 0.05rem;
 	margin-top: 4.0rem;
 
@@ -3864,6 +3924,12 @@ span.hover__alt-text {
 		margin: 2.0rem auto;
 
 	}
+
+
+
+
+
+
 
 @media (min-width: 800px) {
 	}

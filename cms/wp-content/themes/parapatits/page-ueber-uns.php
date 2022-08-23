@@ -45,25 +45,29 @@ get_header('');
 				</article>
 			</section>
 
-			<section class="wrapper">
-				<h2 class="h2__title h2__title--left-aligned">Bestattung</h2>
-				<p class="h2__subtitle h2__subtitle--left-aligned">Wir begleiten Sie.</p>
-				<div class="">
-					<p class="">
-						Unsere Bestattung betreiben wir aus Nächstenliebe. Wir legen großen Wert darauf, dass jeder Mensch eine würdevolle Beisetzung bekommt. Außerdem ist es uns wichtig, Angehörigen Trost und Zuspruch in dieser schwierigen Zeit zu geben.
-					</p>
-				</div>
-				<a class="btn btn--red btn--centered-aligned" role="button" href="/bestattung" target="_blank">Bestattung anzeigen</a>
+			<section class="box--left-aligned">
+				<article class="wrapper">
+					<h2 class="h2__title h2__title--left-aligned">Bestattung</h2>
+					<p class="h2__subtitle h2__subtitle--left-aligned">Wir begleiten Sie.</p>
+					<div class="">
+						<p class="">
+							Unsere Bestattung betreiben wir aus Nächstenliebe. Wir legen großen Wert darauf, dass jeder Mensch eine würdevolle Beisetzung bekommt. Außerdem ist es uns wichtig, Angehörigen Trost und Zuspruch in dieser schwierigen Zeit zu geben.
+						</p>
+					</div>
+					<a class="btn btn--red btn--centered-aligned" role="button" href="/bestattung" target="_blank">Bestattung anzeigen</a>
+				</article>
 			</section>
 
-			<section class="wrapper">
-				<h2 class="h2__title h2__title--left-aligned">Jobs</h2>
-				<div class="">
-					<p class="">
-						Werde Teil unseres Teams!
-					</p>
-				</div>
-				<a class="btn btn--red btn--centered-aligned" role="button" href="/jobs" target="_blank">Offene Stellen anzeigen</a>
+			<section class="box--right-aligned">
+				<article class="wrapper">
+					<h2 class="h2__title h2__title--left-aligned">Jobs</h2>
+					<div class="">
+						<p class="">
+							Werde Teil unseres Teams!
+						</p>
+					</div>
+					<a class="btn btn--red btn--centered-aligned" role="button" href="/jobs" target="_blank">Offene Stellen anzeigen</a>
+				</article>
 			</section>
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
