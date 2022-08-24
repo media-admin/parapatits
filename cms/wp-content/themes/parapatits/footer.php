@@ -16,24 +16,18 @@
 
 			<nav class="site-footer__navigation">
 				<ul class="site-footer__navigation-list">
-					<li class="site-footer__navigation-list-item"><a href="/impressum">Impressum</a></li>
-					<li class="site-footer__navigation-list-item"><a href="/datenschutz">Datenschutz</a></li>
-					<li class="site-footer__navigation-list-item"><a href="/agb">AGB</a></li>
-				</ul>
-			</nav>
-
-			<nav class="site-footer__navigation">
 					<?php
 						wp_nav_menu(array(
 							'walker' => new Footer_Walker(),
-							'menu' => 'footer-menu',
-							'theme_location'=> 'Footermenü',
-							'container'=> 'ul',
+							'menu' => 'Footermenü',
+							'theme_location'=> 'nav-menu-footer',
+							'container'=> '<ul>',
 							'menu_class' => 'footer-navigation__list',
 							'items_wrap'=> '%3$s',
 							'fallback_cb'=> false
 						));
 					?>
+				</ul>
 			</nav>
 
 			<p class="site-footer__copyright">alle Rechte vorbehalten ©&nbsp;2022</p>

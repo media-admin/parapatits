@@ -8,5 +8,4 @@
 			<p class="hours-available">Wir sind 24 Stunden am Tag erreichbar.</p>
 		</div>
 	</article>
-	<img class="img__fullwidth" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
 </section>

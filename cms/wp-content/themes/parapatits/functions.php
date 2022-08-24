@@ -183,7 +183,7 @@ function check_for_category_single_template( $t ) {
 
 function parapatits_register_menu() {
 	register_nav_menu( 'nav-menu-main', 'Hauptnavigation', 'parapatits' );
-	register_nav_menu( 'footer-menu', 'Footermenü', 'parapatits' );
+	register_nav_menu( 'nav-menu-footer', 'Footermenü', 'parapatits' );
 }
 
 add_action( 'init', 'parapatits_register_menu' );
@@ -259,7 +259,6 @@ add_action('pre_get_posts', function($query) {
 
 	/* --- Navigation Walker for HAUPTNAVIGATION --- */
 	require_once( 'classes/navwalker.php' );
-
 	require_once( 'classes/custom_navwalker.php' );
 
 
@@ -276,7 +275,7 @@ add_action('pre_get_posts', function($query) {
 
 			!empty ( $class_names ) and $class_names = ' class="'. esc_attr( $class_names ) . '"';
 
-			$output .= "<li>";
+			$output .= '<li class="site-footer__navigation-list-item">';
 			$attributes  = 'class="footer-navigation__item"';
 
 			!empty( $item->attr_title ) and $attributes .= ' title="'  . esc_attr( $item->attr_title ) .'"';

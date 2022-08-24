@@ -4,7 +4,7 @@
 */
 
 get_header('');
-?>
+
 
 	<main class="site-main">
 		<section class="site-intro box--left-aligned">
@@ -18,7 +18,7 @@ get_header('');
 
 		<section class="box--left-aligned">
 			<article class="wrapper">
-				<h2 class="">Offene Stellen</h2>
+				<h2 class="h2__heading">Offene Stellen</h2>
 				<div class="">
 					<h2 class="h2__heading">PLATZHALTER-TEXT</h2>
 					<p class="">

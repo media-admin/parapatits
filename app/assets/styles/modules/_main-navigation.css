@@ -90,7 +90,8 @@ menu.site-menu {
 .is-active .navbar li a {
   font-size: 1.8rem;
   line-height: 2.8rem;
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-weight: 600;
   text-decoration: none;
   color: $mainGray;
   list-style-type: none;
@@ -120,7 +121,7 @@ menu.site-menu {
     display: flex;
     width: 100%;
     align-items: flex-start;
-    margin-top: 1.0rem;
+    /* margin-top: 1.0rem; */
     margin-bottom: 1.0rem;
     padding-top: 5px;
     padding-left: 40px;
@@ -206,19 +207,21 @@ menu.site-menu {
 .navbar-item__submenu {
   display: block;
   list-style-type: none;
-  padding-left: 0px;
+  padding-left: 1.0rem;
 
   @mixin atMedium {
     display: none;
     position: absolute;
     width: 100%;
     float: left;
-    top: 50px;
+    /* top: 50px; */
+    top: 58px;
     background-color: rgba(255,255,255,0.95);
-    box-shadow: 0px 3px 22px -3px #000000;
+    /* box-shadow: 0px 3px 22px -3px #000000; */
     padding-top: 0.5rem;
     padding-bottom: 1.0rem;
     /* padding-left: 1.0rem; */
+    padding-left: 0;
     z-index: 1 !important;
   }
 
@@ -266,10 +269,12 @@ menu.site-menu {
 
 .is-active .navbar-item__submenu .navbar-item a {
   font-size: 1.2rem;
-  line-height: 1.6rem;
+  line-height: 2.0rem;
   font-weight: 300;
 
   @mixin atMedium {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   }
