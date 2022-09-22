@@ -154,7 +154,7 @@
 		<p class="large-hero__text wrapper"></p>
 	</section> -->
 
-	<section>
+	<!-- <section>
 		<div class="home-slider">
 			<div>
 				<picture>
@@ -180,6 +180,48 @@
 				</picture>
 				<p class="home-slider__text">Herzlich - Verlässlich - <span class="higlight-me">Echt</span></p>
 			</div>
+		</div>
+	</section> -->
+
+	<section>
+		<div class="home-slider">
+
+
+			<?php
+
+			$args = array(
+				'post_status' => 'publish',
+				'posts_per_page' => -1,
+				'post_type' => 'slider'
+			);
+
+			$loop = new WP_Query( $args );
+
+				while ( $loop->have_posts() ) : $loop->the_post();
+
+				$image_smartphone = get_field('image_square');
+				$image_desktop = get_field('image_landscape');
+
+				$image_smartphone_url = $image_smartphone['url'];
+				$image_desktop_url = $image_desktop['url'];
+			?>
+
+				<div>
+					<picture>
+						<source media="(min-width: 38em)" srcset=" <?php echo esc_url($image_desktop_url); ?> ">
+						<source srcset=" <?php echo esc_url($image_smartphone_url); ?> ">
+						<img src=" <?php echo esc_url($image_smartphone_url); ?> ">
+					</picture>
+					<p class="home-slider__text"><span class="higlight-me">Herzlich</span> - Verlässlich - Echt</p><?php the_content();?>
+				</div>
+
+
+				<?php endwhile; ?>
+
+				<?php
+				wp_reset_postdata();
+				?>
+
 		</div>
 	</section>
 

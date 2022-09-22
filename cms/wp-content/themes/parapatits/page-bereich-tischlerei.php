@@ -3,7 +3,7 @@
 * Template Name: Seite Bereich Tischlerei
 */
 
-get_header('tischlerei');
+get_header( 'tischlerei' );
 ?>
 
 	<main class="site-main">

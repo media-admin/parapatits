@@ -3,7 +3,7 @@
 * Template Name: Seitentemplate Bestattung
 */
 
-get_header('bestattung');
+get_header( 'bestattung' );
 ?>
 
 	<main class="site-main">

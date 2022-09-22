@@ -3,7 +3,7 @@
 * Template Name: Seite Gedenkseiten
 */
 
-get_header('bestattung');
+get_header( 'bestattung' );
 ?>
 
 	<main class="site-main">

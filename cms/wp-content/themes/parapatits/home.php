@@ -3,7 +3,7 @@
 * Template Name: Startseite
 */
 
-get_header('');
+get_header();
 ?>
 
 	<main class="site-main">

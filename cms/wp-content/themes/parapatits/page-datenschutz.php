@@ -3,7 +3,7 @@
 * Template Name: Seite Datenschutz
 */
 
-get_header('');
+get_header();
 ?>
 
 	<main class="site-main">

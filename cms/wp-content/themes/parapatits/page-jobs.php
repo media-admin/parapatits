@@ -3,8 +3,8 @@
 * Template Name: Seite Jobs
 */
 
-get_header('');
-
+get_header();
+?>
 
 	<main class="site-main">
 		<section class="site-intro box--left-aligned">

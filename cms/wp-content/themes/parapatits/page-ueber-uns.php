@@ -3,7 +3,7 @@
 * Template Name: Seite Über Uns
 */
 
-get_header('');
+get_header();
 ?>
 
 	<main class="site-main">

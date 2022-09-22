@@ -3,7 +3,7 @@
 * Template Name: Seite Weiterführende Infos
 */
 
-get_header('bestattung');
+get_header( 'bestattung' );
 ?>
 
 <section class="site-intro box--left-aligned">
