@@ -18,6 +18,15 @@ function shortcode_recall() {
 add_shortcode( 'shortcode_recall', 'shortcode_recall' );
 
 
+function shortcode_contact_form() {
+	ob_start();
+	get_template_part( 'shortcodes/shortcode_contact-form');
+	return ob_get_clean();
+}
+
+add_shortcode( 'shortcode_contact_form', 'shortcode_contact_form' );
+
+
 function shortcode_special_question() {
 	ob_start();
 	get_template_part( 'shortcodes/shortcode_special-question');

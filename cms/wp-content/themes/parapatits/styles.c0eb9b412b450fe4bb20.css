@@ -3534,10 +3534,30 @@ span.hover__alt-text {
 
 	}
 
-	.contact__data {
-		margin-top: 3.0rem;
-		margin-bottom: 3.0rem;
 
+.contact__wrapper {
+	color: #ffffff;
+	text-align: right;
+	background-color: #B6274F;
+	margin-left: -18px;
+	margin-bottom: 1.0rem;
+	padding-top: 1.0rem;
+	padding-right: 3.5rem;
+	padding-bottom: 2.0rem;
+
+}
+
+@media (min-width: 800px) {
+
+}
+
+
+
+	.contact__data {
+		font-size: 1.2rem;
+		line-height: 2.8rem;
+		margin-top: 2.0rem;
+		padding-bottom: 0.5rem;
 		}
 
 		@media (min-width: 800px) {
@@ -3547,7 +3567,7 @@ span.hover__alt-text {
 
 	.contact__data a {
 		font-weight: 600;
-		color: #838282;
+		color: #ffffff;
 		text-decoration: none;
 
 		}
@@ -3596,12 +3616,25 @@ span.hover__alt-text {
 	.contact__data-social-media-area {
 		position: relative;
 		display: grid;
-		width: 90%;
+		/* width: 100%; */
 		grid-template-columns: 1fr 1fr;
-		align-items: left;
+		align-items: right;
 		list-style-type: none;
 		margin-top: 0.0rem;
-		padding-left: 0;
+		margin-left: 50%;
+		padding-right: 0;
+
+		}
+
+		@media (min-width: 800px) {
+
+		}
+
+	.contact__data-social-media-area li {
+		position: relative;
+		text-align: right;
+		margin-right: 0px;
+		padding-right: 0;
 
 		}
 
@@ -3646,8 +3679,8 @@ span.hover__alt-text {
 	.contact__data-opening-hours {
 		line-height: 1.5rem;
 		padding-left: 1.0rem;
-
-		}
+		padding-bottom: 3.0rem;
+	}
 
 		@media (min-width: 800px) {
 
@@ -3675,7 +3708,9 @@ span.hover__alt-text {
 
 
 		.contact__data-opening-hours-table-row-day {
-			text-decoration: underline;
+			position: relative;
+			display: inline-block;
+			width: 20%;
 
 		}
 
@@ -3684,7 +3719,9 @@ span.hover__alt-text {
 		}
 
 		.contact__data-opening-hours-table-row-hours {
-			text-decoration: none;
+			position: relative;
+			display: inline-block;
+			width: 75%;
 
 		}
 

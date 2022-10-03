@@ -24,7 +24,7 @@ get_header();
 
 						while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-					<div class="wrapper">
+					<div class="contact__wrapper">
 						<p class="contact__data">
 							<strong>Peter Parapatits</strong><br>
 							<?php the_field('company-adress');?>
@@ -81,8 +81,6 @@ get_header();
 			endif;
 			?>
 
-			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/parapatits-tischlerei_komp-12-DSC03241_web.jpg" alt="Platzhalter-Bild">
-
 			<section class="contact__data-map">
 				<article class="">
 					<h2 class="h2__heading">Betriebsstandort</h2>
@@ -107,6 +105,10 @@ get_header();
 			?>
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
+
+			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/parapatits-tischlerei_komp-12-DSC03241_web.jpg" alt="Platzhalter-Bild">
+
+			<?php echo do_shortcode("[shortcode_contact_form]"); ?>
 
 		</div>
 	</main>
