@@ -2699,8 +2699,6 @@ span.hover__alt-text {
 	margin-top: 1.0rem;
 	margin-bottom: 1.0rem;
 
-
-
 }
 
 .news-section__img {
@@ -3921,8 +3919,93 @@ span.hover__alt-text {
 
 
 
+/* === JOBS PAGE === */
+
+.job__container {
+	width: 100%;
+	display: flex;
+	flex: 1;
+	align-items: stretch;
+	flex-direction: column;
+	margin-top: 0.5rem;
+	margin-bottom: 2.0rem;
+}
+
+@media (min-width: 800px) {
+	.job__container {
+		flex: 2;
+		flex-direction: row;
+	}
+}
+
+.job__image {
+	width: 100%;
+
+}
+
+@media (min-width: 800px) {
+	.job__image {
+		width: 50%;
+	}
+}
 
 
+.job__description {
+	width: 100%;
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+	padding: 0.5rem;
+}
+
+@media (min-width: 800px) {
+	.job__description {
+		width: 50%;
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+		padding: 2.0rem;
+	}
+}
+
+
+
+@media (min-width: 800px) {
+	.job__description {
+		padding: 0.25rem 2.0rem;
+	}
+}
+
+.job__title {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+}
+
+
+.job__description h2 {
+	padding-top: 0.5rem;
+	padding-bottom: 0.25rem;
+}
+
+
+.job__description p {
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+}
+
+
+.job__description ul {
+	padding-left: 1.25rem;
+}
+
+
+
+.job__application-button {}
+
+
+@media (min-width: 800px) {
+	.job__application-button {
+		margin-top: 0.75rem;
+	}
+}
 
 
 
