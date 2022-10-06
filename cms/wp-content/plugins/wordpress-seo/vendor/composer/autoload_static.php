@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite0d2ef3e929416e204b70ec415281a04
+class ComposerStaticInitbd8386776dfa09ae9cbec364c611ffdf
 {
     public static $prefixLengthsPsr4 = array (
         'C' => 
@@ -1033,9 +1033,9 @@ class ComposerStaticInite0d2ef3e929416e204b70ec415281a04
         'Yoast\\WP\\SEO\\Routes\\Workouts_Route' => __DIR__ . '/../..' . '/src/routes/workouts-route.php',
         'Yoast\\WP\\SEO\\Routes\\Yoast_Head_REST_Field' => __DIR__ . '/../..' . '/src/routes/yoast-head-rest-field.php',
         'Yoast\\WP\\SEO\\Schema_Templates\\Assets\\Icons' => __DIR__ . '/../..' . '/src/schema-templates/assets/icons.php',
-        'Yoast\\WP\\SEO\\Services\\Health_Check\\Curl_Check' => __DIR__ . '/../..' . '/src/services/health-check/curl-check.php',
-        'Yoast\\WP\\SEO\\Services\\Health_Check\\Curl_Reports' => __DIR__ . '/../..' . '/src/services/health-check/curl-reports.php',
-        'Yoast\\WP\\SEO\\Services\\Health_Check\\Curl_Runner' => __DIR__ . '/../..' . '/src/services/health-check/curl-runner.php',
+        'Yoast\\WP\\SEO\\Services\\Health_Check\\Curl_Check' => __DIR__ . '/../..' . '/src/deprecated/src/services/health-check/curl-check.php',
+        'Yoast\\WP\\SEO\\Services\\Health_Check\\Curl_Reports' => __DIR__ . '/../..' . '/src/deprecated/src/services/health-check/curl-reports.php',
+        'Yoast\\WP\\SEO\\Services\\Health_Check\\Curl_Runner' => __DIR__ . '/../..' . '/src/deprecated/src/services/health-check/curl-runner.php',
         'Yoast\\WP\\SEO\\Services\\Health_Check\\Default_Tagline_Check' => __DIR__ . '/../..' . '/src/services/health-check/default-tagline-check.php',
         'Yoast\\WP\\SEO\\Services\\Health_Check\\Default_Tagline_Reports' => __DIR__ . '/../..' . '/src/services/health-check/default-tagline-reports.php',
         'Yoast\\WP\\SEO\\Services\\Health_Check\\Default_Tagline_Runner' => __DIR__ . '/../..' . '/src/services/health-check/default-tagline-runner.php',
@@ -1107,9 +1107,9 @@ class ComposerStaticInite0d2ef3e929416e204b70ec415281a04
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite0d2ef3e929416e204b70ec415281a04::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite0d2ef3e929416e204b70ec415281a04::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInite0d2ef3e929416e204b70ec415281a04::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitbd8386776dfa09ae9cbec364c611ffdf::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitbd8386776dfa09ae9cbec364c611ffdf::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitbd8386776dfa09ae9cbec364c611ffdf::$classMap;
 
         }, null, ClassLoader::class);
     }

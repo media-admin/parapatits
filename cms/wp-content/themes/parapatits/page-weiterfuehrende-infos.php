@@ -16,11 +16,12 @@ get_header( 'bestattung' );
 					<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Alle wichtigen Informationen, übersichtlich für Sie zusammengestellt.</p>
 					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/parapatits-bestattung_highres-5-DSC03312_web.jpg" alt="Platzhalter-Bild">
 				</article>
+				<div id="wichtige-dokumente"></div>
 			</section>
 
 			<section id="accordion" class="accordion">
 				<article class="accordion__item wrapper">
-					<h2 class="accordion__headline""><a href="#">Wichtige Dokumente für die Bestattung</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
+					<h2 class="accordion__headline"><a href="#">Wichtige Dokumente für die Bestattung</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
 					<div class="accordion_content wrapper">
 						<p>Folgende Dokumente sollten bei einem Sterbefall vorbereitet werden:</p>
 						<ul class="listing">

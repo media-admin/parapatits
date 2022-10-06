@@ -52,18 +52,24 @@
 			}
 		</script>
 
-		<!-- Accordions -->
-		<script type="text/javascript">
-			jQuery(document).ready(function() {
-				jQuery("#accordion article h2").click(function(e) {
-					jQuery(this).parents().siblings("article").addClass("accordion__item-hidden");
-					jQuery(this).parents("article").removeClass("accordion__item-hidden");
 
-					e.preventDefault();
+		<!-- Accordion -->
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.maxHeight) {
+						panel.style.maxHeight = null;
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + "px";
+					}
 				});
-			});
+			}
 		</script>
-
 
 		<!-- Slick Sliders -->
 
