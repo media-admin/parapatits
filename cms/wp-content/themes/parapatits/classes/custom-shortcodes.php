@@ -108,7 +108,13 @@ function shortcode_faqs() {
 add_shortcode( 'shortcode_faqs', 'shortcode_faqs' );
 
 
+function shortcode_projects_slider() {
+	ob_start();
+	get_template_part( 'shortcodes/shortcode_projects-slider');
+	return ob_get_clean();
+}
 
+add_shortcode( 'shortcode_projects_slider', 'shortcode_projects_slider' );
 
 
 

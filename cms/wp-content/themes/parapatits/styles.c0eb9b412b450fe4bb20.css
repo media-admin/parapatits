@@ -3724,11 +3724,84 @@ button.active .panel p {
 	}
 
 .project-box img {
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
-		border-radius: 0px;
-	}
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 0px;
+}
+
+
+
+
+/* --- PROJECTS SLIDER --- */
+
+.project-carousel {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+
+.project-carousel .slick-prev {
+	top: 25%;
+}
+
+
+.project-carousel .slick-next {
+	top: 25%;
+}
+
+
+.project-carousel__projects-container {
+	text-align: center;
+}
+
+.project-carousel__thumbnail {
+
+}
+
+.project-carousel__content {
+	width: 80%;
+	margin: 0.0rem auto;
+}
+
+
+.project-carousel__title {
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	margin-top: 1.5rem;
+	padding-top: 0.0rem;
+}
+
+.project-carousel__meta {
+	line-height: 1.2rem;
+}
+
+
+.project-carousel__summary {
+	width: 80%;
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+	margin: 0.0rem auto;
+	margin-bottom: 1.5rem;
+}
+
+
+.project-carousel__button-container {
+	width: 100%;
+	text-align: center;
+	margin: 0.0rem auto;
+}
+
+
+.project-carousel__button {
+	margin-top: 2.5rem;
+	margin-bottom: 1.5rem;
+}
+
+
+
+
+
 
 /* === SPECIAL QUESTION === */
 
@@ -3789,184 +3862,184 @@ button.active .panel p {
 
 
 
-	.contact__data {
-		font-size: 1.2rem;
-		line-height: 2.8rem;
-		margin-top: 2.0rem;
-		padding-bottom: 0.5rem;
-		}
-
-		@media (min-width: 800px) {
-
-		}
-
-
-	.contact__data a {
-		font-weight: 600;
-		color: #ffffff;
-		text-decoration: none;
-
-		}
-
-		@media (min-width: 800px) {
-
-		}
-
-
-	.contact__data-phone {
-		position: relative;
-		font-weight: 600;
-		color: #838282;
-		text-decoration: none;
-		margin-top: 1.0rem;
-
-		}
-
-		@media (min-width: 800px) {
-
-		}
-
-
-
-	.contact__data-cellphone {
-		font-weight: 600;
-		color: #838282;
-		text-decoration: none;
-
-		}
-
-		@media (min-width: 800px) {
-		}
-
-
-	.contact__data-mail {
-		font-weight: 600;
-		color: #838282;
-		text-decoration: none;
-		}
-
-		@media (min-width: 800px) {
-		}
-
-
-	.contact__data-social-media-area {
-		position: relative;
-		display: grid;
-		/* width: 100%; */
-		grid-template-columns: 1fr 1fr;
-		align-items: right;
-		list-style-type: none;
-		margin-top: 0.0rem;
-		margin-left: 50%;
-		padding-right: 0;
-
-		}
-
-		@media (min-width: 800px) {
-
-		}
-
-	.contact__data-social-media-area li {
-		position: relative;
-		text-align: right;
-		margin-right: 0px;
-		padding-right: 0;
-
-		}
-
-		@media (min-width: 800px) {
-
-		}
-
-
-
-	.contact__data-social-media-icon {
-
-
-		}
-
-		@media (min-width: 800px) {
-
-		}
-
-
-
-	.contact__data-social-media-icon--facebook {
-
-
-		}
-
-		@media (min-width: 800px) {
-
-		}
-
-
-
-	.contact__data-social-media-icon--instagram {
-
-
-		}
-
-		@media (min-width: 800px) {
-
-		}
-
-
-	.contact__data-opening-hours {
-		line-height: 1.5rem;
-		padding-left: 1.0rem;
-		padding-bottom: 3.0rem;
+.contact__data {
+	font-size: 1.2rem;
+	line-height: 2.8rem;
+	margin-top: 2.0rem;
+	padding-bottom: 0.5rem;
 	}
 
-		@media (min-width: 800px) {
+	@media (min-width: 800px) {
 
-		}
-
-
-		.contact__data-opening-hours-table {
+	}
 
 
-		}
+.contact__data a {
+	font-weight: 600;
+	color: #ffffff;
+	text-decoration: none;
 
-		@media (min-width: 800px) {
+	}
 
-		}
+	@media (min-width: 800px) {
 
-
-		.contact__data-opening-hours-table-row {
-			margin-top: 1.0rem;
-
-		}
-
-		@media (min-width: 800px) {
-
-		}
+	}
 
 
-		.contact__data-opening-hours-table-row-day {
-			position: relative;
-			display: inline-block;
-			width: 20%;
+.contact__data-phone {
+	position: relative;
+	font-weight: 600;
+	color: #838282;
+	text-decoration: none;
+	margin-top: 1.0rem;
 
-		}
+	}
 
-		@media (min-width: 800px) {
+	@media (min-width: 800px) {
 
-		}
-
-		.contact__data-opening-hours-table-row-hours {
-			position: relative;
-			display: inline-block;
-			width: 75%;
-
-		}
-
-		@media (min-width: 800px) {
-
-		}
+	}
 
 
-	/* Shortcode ANFAHRT / ROUTE */
+
+.contact__data-cellphone {
+	font-weight: 600;
+	color: #838282;
+	text-decoration: none;
+
+	}
+
+	@media (min-width: 800px) {
+	}
+
+
+.contact__data-mail {
+	font-weight: 600;
+	color: #838282;
+	text-decoration: none;
+	}
+
+	@media (min-width: 800px) {
+	}
+
+
+.contact__data-social-media-area {
+	position: relative;
+	display: grid;
+	/* width: 100%; */
+	grid-template-columns: 1fr 1fr;
+	align-items: right;
+	list-style-type: none;
+	margin-top: 0.0rem;
+	margin-left: 50%;
+	padding-right: 0;
+
+	}
+
+	@media (min-width: 800px) {
+
+	}
+
+.contact__data-social-media-area li {
+	position: relative;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0;
+
+	}
+
+	@media (min-width: 800px) {
+
+	}
+
+
+
+.contact__data-social-media-icon {
+
+
+	}
+
+	@media (min-width: 800px) {
+
+	}
+
+
+
+.contact__data-social-media-icon--facebook {
+
+
+	}
+
+	@media (min-width: 800px) {
+
+	}
+
+
+
+.contact__data-social-media-icon--instagram {
+
+
+	}
+
+	@media (min-width: 800px) {
+
+	}
+
+
+.contact__data-opening-hours {
+	line-height: 1.5rem;
+	padding-left: 1.0rem;
+	padding-bottom: 3.0rem;
+}
+
+	@media (min-width: 800px) {
+
+	}
+
+
+	.contact__data-opening-hours-table {
+
+
+	}
+
+	@media (min-width: 800px) {
+
+	}
+
+
+	.contact__data-opening-hours-table-row {
+		margin-top: 1.0rem;
+
+	}
+
+	@media (min-width: 800px) {
+
+	}
+
+
+	.contact__data-opening-hours-table-row-day {
+		position: relative;
+		display: inline-block;
+		width: 20%;
+
+	}
+
+	@media (min-width: 800px) {
+
+	}
+
+	.contact__data-opening-hours-table-row-hours {
+		position: relative;
+		display: inline-block;
+		width: 75%;
+
+	}
+
+	@media (min-width: 800px) {
+
+	}
+
+
+	/* --- Shortcode ANFAHRT / ROUTE --- */
 
 
 	.contact__data-map {

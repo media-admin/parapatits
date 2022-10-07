@@ -102,23 +102,7 @@ get_header( 'tischlerei' );
 					</article>
 				</section>
 
-
-				<hr  />
-
-				<section>
-					<div class="project-carousel-center">
-						<div><img class="" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt="Platzhalter-Bild"></div>
-						<div><img class="" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/parapatits-tischlerei_komp-38-DSC03459_web.jpg" alt="Platzhalter-Bild"></div>
-						<div><img class="" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/Koch 1_web.jpg" alt="Platzhalter-Bild"></div>
-						<div><img class="" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt="Platzhalter-Bild"></div>
-						<div><img class="" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/parapatits-tischlerei_komp-38-DSC03459_web.jpg" alt="Platzhalter-Bild"></div>
-						<div><img class="" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/Koch 1_web.jpg" alt="Platzhalter-Bild"></div>
-					</div>
-				</section>
-
-				<hr  />
-
-
+				<?php echo do_shortcode("[shortcode_projects_slider]"); ?>
 
 				<section class="box--right-aligned">
 					<article class="wrapper">

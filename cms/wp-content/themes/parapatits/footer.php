@@ -106,21 +106,18 @@
 
 		<script type="text/javascript">
 
-			jQuery('.project-carousel-center').slick({
+			jQuery('.project-carousel__projects-container').slick({
 				dots: true,
-				infinite: false,
+				infinite: true,
 				speed: 300,
 				slidesToShow: 4,
 				slidesToScroll: 1,
-				arrows: true,
 				responsive: [
 					{
 						breakpoint: 1024,
 						settings: {
-							slidesToShow: 5,
+							slidesToShow: 3,
 							slidesToScroll: 1,
-							infinite: true,
-							dots: true,
 							arrows: true,
 						}
 					},
@@ -128,8 +125,8 @@
 						breakpoint: 600,
 						settings: {
 							slidesToShow: 2,
-							slidesToScroll: 2,
-							arrows: true,
+							slidesToScroll: 1,
+							arrows: false,
 						}
 					},
 					{
@@ -137,7 +134,9 @@
 						settings: {
 							slidesToShow: 1,
 							slidesToScroll: 1,
-							arrows: true,
+							arrows: false,
+							centerMode: true,
+							centerPadding: '40px',
 						}
 					}
 				]
