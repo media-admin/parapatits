@@ -4289,6 +4289,97 @@ button.active .panel p {
 
 
 
+
+/* === PROJECT SINGLE PAGE === */
+
+.single-project {
+
+}
+
+
+.single-project__title {
+
+}
+
+
+.single-project__container {
+	margin-bottom: 5.0rem;
+}
+
+
+.single-project__meta {
+
+}
+
+
+.single-project__summary {
+	margin: 2.0rem 0.0rem;
+}
+
+
+.single-project__img {
+	margin: 5.0rem 0.0rem;
+}
+
+
+.single-project__content-wrapper {
+	width: 95%;
+	text-align: center;
+	margin: 2.0rem auto;
+}
+
+
+.single-project__quote {
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: 300;
+	line-height: 2.6rem;
+	margin-top: 2.0rem;
+}
+
+
+.single-project__quote-author {
+	position: relative;
+	display: block;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 300;
+	font-style: oblique;
+	line-height: 1.8rem;
+	margin-bottom: 2.0rem !important;
+}
+
+
+.single-project__content-container {
+	font-size: 1.0rem;
+	line-height: 1.8rem;
+	text-align: left;
+}
+
+.single-project__content-container p {
+	margin-bottom: 1.5rem;
+}
+
+
+.single-project__more-projects {
+	margin: 5.0rem 0.0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		/* === TESTIMONIALS PAGE === */
 		.testimonials {
 
