@@ -56,6 +56,13 @@ get_header( 'tischlerei' );
 
 			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/25490015827_969bab3ace_o_web.jpg" alt="Platzhalter-Bild">
 
+			<section class="box--left-aligned">
+				<article class="wrapper">
+					<h2 class="h2__heading">gefolgt von viel Planung …</h2>
+					<?php echo do_shortcode("[shortcode_projects_slider]"); ?>
+				</article>
+			</section>
+
 			<section id="values-section" class="values-section container--darkgray" data-matching-link="#values-section-link">
 				<article class="wrapper">
 					<div class="values-section__container wrapper">

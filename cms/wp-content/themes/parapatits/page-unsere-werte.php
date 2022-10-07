@@ -97,10 +97,7 @@ get_header( 'tischlerei' );
 						<p class="">
 							Hier zeigen wir, was wir können. Werfen Sie einen Blick in von uns umgesetzte Wohnträume, von Wohnküchen über Wohlfühlbüros bis hin zu ganz persönlichen Rückzugsorten.
 						</p>
-						<div class="">
-							Slider mit Musterprojekten
-							<btn>Alle Projekte anzeigen</btn>
-						</div>
+						<?php echo do_shortcode("[shortcode_projects_slider]"); ?>
 					</article>
 					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/39651277054_a0cf16a1c3_o_web.jpg" alt="Platzhalter-Bild">
 				</section>
