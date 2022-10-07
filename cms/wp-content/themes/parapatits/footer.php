@@ -149,20 +149,20 @@
 		<script type="text/javascript">
 
 			/* ---- for-filter-menu -----------------------------------------------*/
-			jQuery(document).on('click','.project-filter li',function(){
-				jQuery(this).addClass('project-filter-active').siblings().removeClass('project-filter-active')
+			jQuery(document).on('click','.projects-overview__project-filters li',function(){
+				jQuery(this).addClass('projects-overview__project-filter--active').siblings().removeClass('projects-overview__project-filter--active')
 			});
 
 			/* ---- for-project/work-filter -----------------------------------------------*/
 			jQuery(document).ready(function(){
-				jQuery('.list').click(function(){
+				jQuery('.projects-overview__list').click(function(){
 					const value = jQuery(this).attr('data-filter');
 					if(value == 'alle'){
-						jQuery('.project-box').show('1000');
+						jQuery('.projects-overview__project-box').show('1000');
 					}
 					else {
-						jQuery('.project-box').not('.'+value).hide('1000');
-						jQuery('.project-box').filter('.'+value).show('1000');
+						jQuery('.projects-overview__project-box').not('.'+value).hide('1000');
+						jQuery('.projects-overview__project-box').filter('.'+value).show('1000');
 					}
 				})
 			});
@@ -174,11 +174,11 @@
 		<script type="text/javascript">
 			jQuery(function () {
 					x=3;
-					jQuery('.project-container a').slice(0, 3).show();
+					jQuery('.projects-overview__project-container a').slice(0, 3).show();
 					jQuery('#loadMore').on('click', function (e) {
 							e.preventDefault();
 							x = x+3;
-							jQuery('.project-container a').slice(0, x).slideDown();
+							jQuery('.projects-overview__project-container a').slice(0, x).slideDown();
 					});
 			});
 		</script>

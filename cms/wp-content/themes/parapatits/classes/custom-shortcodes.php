@@ -118,7 +118,13 @@ add_shortcode( 'shortcode_projects_slider', 'shortcode_projects_slider' );
 
 
 
+function shortcode_projects_overview() {
+	ob_start();
+	get_template_part( 'shortcodes/shortcode_projects-overview');
+	return ob_get_clean();
+}
 
+add_shortcode( 'shortcode_projects_overview', 'shortcode_projects_overview' );
 
 
 

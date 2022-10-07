@@ -1517,6 +1517,7 @@ input[type=checkbox], input[type=radio] {
 	width: 40px !important;
 }
 
+
 /* --- BUTTON LOAD MORE --- */
 
 .project-container a {
@@ -3641,7 +3642,7 @@ button.active .panel p {
 
 /* === PROJECTS SECTION === */
 
-#project {
+#projects-overview__project {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -3650,7 +3651,7 @@ button.active .panel p {
 }
 
 
-.project-filter {
+.projects-overview__project-filters {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -3665,14 +3666,14 @@ button.active .panel p {
 
 @media (min-width: 800px) {
 
-.project-filter {
+.projects-overview__project-filters {
 			background-color: inherit;
 			border: 1px solid rgba(237,237,237,0.6)
 
 	}
 	}
 
-.project-filter li {
+.projects-overview__project-filters li {
 		color: #9b9b9b;
 		font-weight: 400;
 		letter-spacing: 0.5px;
@@ -3685,12 +3686,12 @@ button.active .panel p {
 		padding: 5px 20px;
 	}
 
-.project-filter-active {
+.projects-overview__project-filter--active {
 		color: #272727;
 		background-color: #f0f0f0;
 	}
 
-.project-container {
+.projects-overview__project-container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -3702,12 +3703,12 @@ button.active .panel p {
 
 @media (min-width: 800px) {
 
-	.project-container {
+	.projects-overview__project-container {
 
 		}
 	}
 
-.project-box {
+.projects-overview__project-box {
 		width: 80%;
 		border: 1px solid #eeeeee;
 		margin: 20px;
@@ -3717,18 +3718,21 @@ button.active .panel p {
 
 @media (min-width: 800px) {
 
-	.project-box {
+	.projects-overview__project-box {
 				width: 330px
 
 		}
 	}
 
-.project-box img {
+.projects-overview__project-box img {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 	border-radius: 0px;
 }
+
+
+
 
 
 
