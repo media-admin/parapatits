@@ -183,6 +183,20 @@
 			});
 		</script>
 
+
+		<!-- Button Load More Projects -->
+		<script type="text/javascript">
+			jQuery(function () {
+					x=3;
+					jQuery('.project-overview-box .project-overview-box__container').slice(0, 3).show();
+					jQuery('#loadMoreProjects').on('click', function (e) {
+							e.preventDefault();
+							x = x+3;
+							jQuery('.project-overview-box .project-overview-box__container').slice(0, x).slideDown();
+					});
+			});
+		</script>
+
 		<!-- END SCRIPTS AREA -->
 
 	</body>

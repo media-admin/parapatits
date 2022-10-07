@@ -1520,7 +1520,7 @@ input[type=checkbox], input[type=radio] {
 
 /* --- BUTTON LOAD MORE --- */
 
-.project-container a {
+.projects-overview__project-container a {
 	display: none;
 }
 
@@ -1535,6 +1535,28 @@ input[type=checkbox], input[type=radio] {
 		background-color: #ffffff;
 		border: 1px solid #b6274f;
 }
+
+
+
+/* --- BUTTON LOAD MORE PROJECTS --- */
+
+.project-overview-box__container {
+	display: none;
+}
+
+#loadMoreProjects {
+		color: #ffffff;
+		cursor: pointer;
+		border: 1px solid #b6274f;
+}
+
+#loadMoreProjects:hover {
+		color: #b6274f;
+		background-color: #ffffff;
+		border: 1px solid #b6274f;
+}
+
+
 
 /* === TEXT STYLES === */
 
@@ -4188,7 +4210,86 @@ button.active .panel p {
 
 
 
-		/* === TESTIMONIALS === */
+
+
+
+
+/* === PROJECTS PAGE === */
+
+/* --- Project Overview Section ---> */
+
+.project-overview-box {
+	position: relative;
+	display: block;
+	width: 80%;
+	height: auto;
+	text-align: left;
+	margin: 0;
+	/* margin-top: 3.0rem; */
+	margin-top: 0.0rem;
+	margin-bottom: 3.0rem;
+	padding: 0;
+	overflow: hidden !important;
+}
+
+.project-overview-box:nth-child(2n+1) {
+	position: relative;
+	display: block;
+	width: 80%;
+	height: auto;
+	text-align: right;
+	margin: 0;
+	margin-top: 3.0rem;
+	margin-bottom: 3.0rem;
+	margin-right: 0 !important;
+	margin-left: auto;
+	padding: 0;
+	overflow: hidden !important;
+}
+
+.project-overview-box__container {
+	position: relative;
+	width: 100%;
+	margin-left: 0;
+	margin-right: auto;
+	overflow: hidden !important;
+}
+
+
+.project-overview-box__container:nth-child(2n+1) {
+	position: relative;
+	width: 100%;
+	margin-left: 0;
+	margin-right: auto;
+	overflow: hidden !important;
+}
+
+.project-overview-box__img {}
+
+.project-overview-box__title {}
+
+.project-overview-box__meta {}
+
+.project-overview-box__summary {}
+
+.project-overview-box__button-container {
+	width: 100%;
+	text-align: center;
+	margin: 0.0rem auto;
+}
+
+.project-overview-box__button {
+	margin-top: 2.5rem;
+	margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+		/* === TESTIMONIALS PAGE === */
 		.testimonials {
 
 		}

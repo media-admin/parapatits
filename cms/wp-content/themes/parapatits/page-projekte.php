@@ -22,72 +22,43 @@ get_header( 'tischlerei' );
 					</article>
 				</section>
 
-				<?php echo do_shortcode("[shortcode_projects_slider]"); ?>
+				<?php
+				$args = array(
+					'post_status' => 'publish',
+					'posts_per_page' => 999,
+					'post_type' => 'project'
+				);
 
-				<section class="box--right-aligned">
-					<article class="wrapper">
-						<img class="img--project-overview-right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/30370843820_b14aa5d064_o_web.jpg" alt="Platzhalter-Bild">
-						<h2 class="h2__heading">Musterprojekt 1</h2>
-						<p class="h2__subheading">Ort - Datum</p>
-						<div class="">
-							<p class="">
-								Hier kommt eine kurze Beschreibung, Zusammenfassung oder irgendetwas das die Aufmerksamkeit fängt hin.
+				$loop = new WP_Query( $args );
+
+				while ( $loop->have_posts() ) : $loop->the_post();
+
+				$image_id = get_post_thumbnail_id(get_the_ID());
+				$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+				$alt_text = get_post_meta($image_id , '_wp_attachment_image_alt', true); ?>
+
+				<section class="project-overview-box">
+					<article class="project-overview-box__container">
+						<a href="<?php the_permalink() ?>">
+							<img class="project-overview-box__img img--project-overview-right-aligned lazyload" src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text ;?>">
+						</a>
+						<div class="wrapper">
+							<h2 class="project-overview-box__title h2__heading"><?php the_title();?></h2>
+							<p class="project-overview-box__meta h2__subheading"><?php the_field('project-city');?> - <?php the_field('project-date');?></p>
+							<p class="project-overview__summary">
+								<?php the_field('project-summary');?>
 							</p>
 						</div>
 					</article>
 				</section>
+				<?php endwhile;
+					wp_reset_postdata();
+				?>
 
-				<section class="box--left-aligned">
-					<article class="wrapper">
-						<img class="img--project-overview-left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/39464746535_2bcc63c4c1_o_web.jpg" alt="Platzhalter-Bild">
-						<h2 class="h2__heading">Musterprojekt 2</h2>
-						<p class="h2__subheading">Ort - Datum</p>
-						<div class="">
-							<p class="">
-								Hier kommt eine kurze Beschreibung, Zusammenfassung oder irgendetwas das die Aufmerksamkeit fängt hin.
-							</p>
-						</div>
-					</article>
-				</section>
+				<div class="project-overview-box__button-container">
+					<div id="loadMoreProjects" class="project-overview-box__button btn btn--red btn--centered-aligned">Weitere Projekte laden</div>
+				</div>
 
-				<section class="box--right-aligned">
-					<article class="wrapper">
-						<img class="img--project-overview-right-aligned" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/Koch 1_web.jpg" alt="Platzhalter-Bild">
-						<h2 class="h2__heading">Musterprojekt 3</h2>
-						<p class="h2__subheading">Ort - Datum</p>
-						<div class="">
-							<p class="">
-								Hier kommt eine kurze Beschreibung, Zusammenfassung oder irgendetwas das die Aufmerksamkeit fängt hin.
-							</p>
-						</div>
-					</article>
-				</section>
-
-				<section class="box--left-aligned">
-					<article class="wrapper">
-						<img class="img--project-overview-left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/39651287294_14b3c2e283_o_web.jpg" alt="Platzhalter-Bild">
-						<h2 class="h2__heading">Musterprojekt 4</h2>
-						<p class="h2__subheading">Ort - Datum</p>
-						<div class="">
-							<p class="">
-								Hier kommt eine kurze Beschreibung, Zusammenfassung oder irgendetwas das die Aufmerksamkeit fängt hin.
-							</p>
-						</div>
-					</article>
-				</section>
-
-				<section class="box--right-aligned">
-					<article class="wrapper">
-						<img class="img--project-overview-right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/DSC01559-2_web.jpg" alt="Platzhalter-Bild">
-						<h2 class="h2__heading">Musterprojekt 5</h2>
-						<p class="h2__subheading">Ort - Datum</p>
-						<div class="">
-							<p class="">
-								Hier kommt eine kurze Beschreibung, Zusammenfassung oder irgendetwas das die Aufmerksamkeit fängt hin.
-							</p>
-						</div>
-					</article>
-				</section>
 
 				<?php echo do_shortcode("[shortcode_faqs]"); ?>
 
