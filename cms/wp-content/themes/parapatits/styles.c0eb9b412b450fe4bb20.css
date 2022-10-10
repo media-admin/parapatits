@@ -849,6 +849,42 @@ ul.listing {
 
 }
 
+
+
+/* --- DEFAULT PAGE */
+.page__content-container {
+	font-size: 1.0rem;
+	line-height: 1.8rem;
+	text-align: left;
+}
+
+.page__content-container p {
+	margin-bottom: 1.5rem;
+}
+
+.page__content-container ol {
+	line-height: 1.8rem;
+	margin-bottom: 2.5rem;
+	margin-left: 1.0rem;
+}
+
+.page__content-container ul {
+	line-height: 1.8rem;
+	margin-bottom: 2.5rem;
+	margin-left: 1.0rem;
+}
+
+
+.page__content-container ol li {
+	margin-bottom: 1.5rem;
+}
+
+.page__content-container ul li {
+	margin-bottom: 1.5rem;
+}
+
+
+
 /* === General Boxes === */
 
 .box--left-aligned {
