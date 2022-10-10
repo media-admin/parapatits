@@ -48,7 +48,7 @@
 					}
 
 					?>
-					" data-lightbox="work" href="<?php the_permalink() ?>">
+					" href="<?php the_permalink() ?>">
 						<img src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text ;?>">
 					</a>
 

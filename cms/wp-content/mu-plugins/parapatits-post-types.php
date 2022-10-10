@@ -31,6 +31,7 @@ function parapatits_post_types() {
 		'supports' => ['editor', 'revisions', 'thumbnail', 'title', 'excerpt', 'custom-fields'],
 		'has_archive' => false,
 		'exclude_from_search' => false,
+		'rewrite' => array('slug' => 'projekt', 'with_front' => true, 'pages' => true, 'feeds' => true,),
 		'menu_position' => 10,
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => false,
