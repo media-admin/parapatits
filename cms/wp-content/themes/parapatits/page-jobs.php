@@ -7,14 +7,19 @@ get_header();
 ?>
 
 	<main class="site-main">
-		<section class="site-intro box--left-aligned">
-			<article class="wrapper">
-				<h1 class="site-title h1__title"><?php the_title();?></h1>
-				<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Werde Teil unseres Teams!</p>
-			</article>
+		<section class="site-intro box--left-aligned unstacked-wrapper">
+			<div class="unstacked-left">
+				<article class="wrapper">
+					<h1 class="site-title h1__title"><?php the_title();?></h1>
+					<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Werde Teil unseres Teams!</p>
+				</article>
+			</div>
+			<div class="unstacked-rigth">
+				<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/jobs/parapatits-tischlerei_komp-32-DSC03424_web.jpg" alt="Platzhalter-Bild">
+			</div>
 		</section>
 
-		<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/jobs/parapatits-tischlerei_komp-32-DSC03424_web.jpg" alt="Platzhalter-Bild">
+
 
 		<section class="box--left-aligned">
 			<h2 class="h2__heading wrapper">Offene Stellen</h2>
@@ -68,19 +73,24 @@ get_header();
 			<?php
 			} ?>
 
-		<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/jobs/parapatits-tischlerei_komp-48-DSC03529_web.jpg" alt="Platzhalter-Bild">
-
-		<section class="box--left-aligned">
-			<article class="wrapper">
-				<div class="">
-					<h2 class="h2__heading">Betrieb ansehen</h2>
-					<p class="">
-						Melde dich bei uns und wir zeigen dir erstmal unseren Betrieb.
-					</p>
-				</div>
-				<a class="btn btn--red" role="button" href="/kontakt">Kontakt</a>
-			</article>
-		</section>
+		<div class="unstacked-wrapper">
+			<div class="unstacked-right">
+				<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/jobs/parapatits-tischlerei_komp-48-DSC03529_web.jpg" alt="Platzhalter-Bild">
+			</div>
+			<div class="unstacked-left">
+				<section class="box--left-aligned">
+					<article class="wrapper">
+						<div class="">
+							<h2 class="h2__heading">Betrieb ansehen</h2>
+							<p class="">
+								Melde dich bei uns und wir zeigen dir erstmal unseren Betrieb.
+							</p>
+						</div>
+						<a class="btn btn--red" role="button" href="/kontakt">Kontakt</a>
+					</article>
+				</section>
+			</div>
+		</div>
 
 		<?php echo do_shortcode("[shortcode_recall]"); ?>
 

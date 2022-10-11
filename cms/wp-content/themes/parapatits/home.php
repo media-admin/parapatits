@@ -8,67 +8,71 @@ get_header();
 
 	<main class="site-main">
 		<div class="site-content">
-			<section class="intro wrapper">
-				<h1 class="site-title h1__title intro__headline h1__title--left-aligned">Parapatits – Ihr starker Partner</h1>
-				<p class="intro__subtitle h1__subtitle h1__subtitle--left-aligned">herzlich, verlässlich, echt.</p>
-
-				<ul class="intro__company-listing">
-					<li class="intro__list-item intro__list-item--tischlerei">
-						<img class="intro__list-img img--wood-square img--wood-square-red lazyload" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/oak-wood-red.png" alt="Platzhalter-Bild">
-						<div class="intro__list-content">
-							<h2 class="intro__list-title h2__title h2__title--left-aligned">Tischlerei</h2>
-							<p class="intro__list-subtitle h2__subtitle h2__subtitle--left-aligned"><span class="hover__default-text">Wir gestalten Lebensräume.</span><span class="hover__alt-text">Wir gestalten Lebensträume.</span></p>
-						</div>
-					</li>
-				</ul>
-				<hr class="intro__company-listing-separator"></hr>
-				<ul class="intro__company-listing">
-					<li class="intro__list-item intro__list-item--bestattung">
-						<div class="intro__list-content">
-							<h2 class="intro__list-title h2__title h2__title--left-aligned">Bestattung</h2>
-							<p class="intro__list-subtitle h2__subtitle h2__subtitle--right-aligned"><span class="hover__default-text">Wir begleiten Sie.</span><span class="hover__alt-text">Wir geleiten Sie.</p>
-						</div>
-						<img class="intro__list-img img--wood-square img--wood-square-gray lazyload" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/oak-wood-gray.png" alt="Platzhalter-Bild">
-					</li>
-				</ul>
-
+			<section class="intro wrapper unstacked-wrapper">
+				<div class="unstacked-left">
+					<h1 class="site-title h1__title intro__headline h1__title--left-aligned">Parapatits – Ihr starker Partner</h1>
+					<p class="intro__subtitle h1__subtitle h1__subtitle--left-aligned">herzlich, verlässlich, echt.</p>
+				</div>
+				<div class="unstacked-right">
+					<ul class="intro__company-listing">
+						<li class="intro__list-item intro__list-item--tischlerei">
+							<img class="intro__list-img img--wood-square img--wood-square-red lazyload" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/oak-wood-red.png" alt="Platzhalter-Bild">
+							<div class="intro__list-content">
+								<h2 class="intro__list-title h2__title h2__title--left-aligned">Tischlerei</h2>
+								<p class="intro__list-subtitle h2__subtitle h2__subtitle--left-aligned"><span class="hover__default-text">Wir gestalten Lebensräume.</span><span class="hover__alt-text">Wir gestalten Lebensträume.</span></p>
+							</div>
+						</li>
+					</ul>
+					<hr class="intro__company-listing-separator"></hr>
+					<ul class="intro__company-listing">
+						<li class="intro__list-item intro__list-item--bestattung">
+							<div class="intro__list-content">
+								<h2 class="intro__list-title h2__title h2__title--left-aligned">Bestattung</h2>
+								<p class="intro__list-subtitle h2__subtitle h2__subtitle--right-aligned"><span class="hover__default-text">Wir begleiten Sie.</span><span class="hover__alt-text">Wir geleiten Sie.</p>
+							</div>
+							<img class="intro__list-img img--wood-square img--wood-square-gray lazyload" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/oak-wood-gray.png" alt="Platzhalter-Bild">
+						</li>
+					</ul>
+				</div>
 			</section>
 
-			<section id="news-section" class="news-section" data-matching-link="#news-section-link">
+			<section id="news-section" class="news-section unstacked-wrapper" data-matching-link="#news-section-link">
 
-				<img class="news-section__img img--fullwidth" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-52-DSC03554_web.jpg" alt="Platzhalter-Bild">
+				<div class="unstacked-left">
+					<img class="news-section__img img--fullwidth" src="<?php bloginfo( 'template_directory' ); 	?>/assets/images/parapatits-tischlerei_komp-52-DSC03554_web.jpg" alt="Platzhalter-Bild">
+				</div>
 
+				<div class="unstacked-right">
+					<article class="news-section__container wrapper">
+						<h2 class="h2__title news-section__title wrapper">Aktuelles</h2>
 
-				<article class="news-section__container wrapper">
-					<h2 class="h2__title news-section__title wrapper">Aktuelles</h2>
+						<?php
 
-					<?php
+						$args = array(
+							'post_status' => 'publish',
+							'posts_per_page' => -1,
+							'post_type' => 'notification',
+						);
 
-					$args = array(
-						'post_status' => 'publish',
-						'posts_per_page' => -1,
-						'post_type' => 'notification',
-					);
+						$loop = new WP_Query( $args );
 
-					$loop = new WP_Query( $args );
+							while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-						while ( $loop->have_posts() ) : $loop->the_post(); ?>
+							<p class="p__subitle news-section__subtitle wrapper"><?php the_title();?></p>
+							<div class="news-section__content wrapper">
+								<p>
+									<?php the_content();?>
+								</p>
+							</div>
 
-						<p class="p__subitle news-section__subtitle wrapper"><?php the_title();?></p>
-						<div class="news-section__content wrapper">
-							<p>
-								<?php the_content();?>
-							</p>
-						</div>
+						<?php endwhile; ?>
 
-					<?php endwhile; ?>
+						<?php
+						wp_reset_postdata();
+						?>
 
-					<?php
-					wp_reset_postdata();
-					?>
-
-				</article>
-
+					</article>
+				</div>
 			</section>
 
 			<section class="info-section box--left-aligned">
@@ -82,26 +86,36 @@ get_header();
 					</div>
 				</article>
 			</section>
-			<section class="details-section box--right-aligned">
-				<img class="details-section__branch-item--tischlerei__img img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-47-DSC03514_web.jpg" alt="Platzhalter-Bild">
-				<article class="wrapper">
-					<h2 class="details-section__branch-item--tischlerei__title h2__title h2__title--right-aligned">Tischlerei</h2>
-					<div class="">
-						<p class="details-section__branch-item--tischlerei__text h2__subtitle h2__subtitle--right-aligned">Wir gestalten Lebens<span class="letter-colored--red">t</span>räume aus Holz. Von der gut durchdachten Küche bis zum liebevoll gestalteten Kinderzimmer, vom gemütlichen Bad bis zum praktischen Abstellraum.</p>
-						<a class="btn btn--red details-section__btn" role="button" href="/tischlerei">Mehr erfahren</a>
-					</div>
-				</article>
+
+			<section class="details-section box--right-aligned unstacked-wrapper">
+				<div class="unstacked-right">
+					<img class="details-section__branch-item--tischlerei__img img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-47-DSC03514_web.jpg" alt="Platzhalter-Bild">
+				</div>
+
+				<div class="unstacked-left">
+					<article class="wrapper">
+						<h2 class="details-section__branch-item--tischlerei__title h2__title h2__title--right-aligned">Tischlerei</h2>
+						<div class="">
+							<p class="details-section__branch-item--tischlerei__text h2__subtitle h2__subtitle--right-aligned">Wir gestalten Lebens<span class="letter-colored--red">t</span>räume aus Holz. Von der gut durchdachten Küche bis zum liebevoll gestalteten Kinderzimmer, vom gemütlichen Bad bis zum praktischen Abstellraum.</p>
+							<a class="btn btn--red details-section__btn" role="button" href="/tischlerei">Mehr erfahren</a>
+						</div>
+					</article>
+				</div>
 			</section>
 
-			<section class="box--left-aligned">
-				<img class="details-section__branch-item--bestattung__img img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-bestattung_highres-2-DSC03299_web.jpg" alt="Platzhalter-Bild">
-				<article class="wrapper">
-					<h2 class="details-section__branch-item--bestattung__title h2__title h2__title--left-aligned">Bestattung</h2>
-					<div class="">
-						<p class="details-section__branch-item__text h2__subtitle h2__subtitle--left-aligned">Mit viel Feingefühl und persönlichem Kontakt führen wir Sie durch die schwierige Zeit und schaffen eine ehrende Abschiednahme.</p>
-						<a class="btn btn--red details-section__btn" role="button" href="/bestattung">Mehr erfahren</a>
-					</div>
-				</article>
+			<section class="box--left-aligned unstacked-wrapper">
+				<div class="unstacked-left">
+					<img class="details-section__branch-item--bestattung__img img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-bestattung_highres-2-DSC03299_web.jpg" alt="Platzhalter-Bild">
+				</div>
+				<div class="unstacked-right">
+					<article class="wrapper">
+						<h2 class="details-section__branch-item--bestattung__title h2__title h2__title--left-aligned">Bestattung</h2>
+						<div class="">
+							<p class="details-section__branch-item__text h2__subtitle h2__subtitle--left-aligned">Mit viel Feingefühl und persönlichem Kontakt führen wir Sie durch die schwierige Zeit und schaffen eine ehrende Abschiednahme.</p>
+							<a class="btn btn--red details-section__btn" role="button" href="/bestattung">Mehr erfahren</a>
+						</div>
+					</article>
+				</div>
 			</section>
 
 			<?php echo do_shortcode("[shortcode_jobs]"); ?>

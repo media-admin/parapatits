@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Seite Tischlerei
+* Template Name: LÖSCHEN Seite Tischlerei
 */
 
 get_header( 'tischlerei' );
@@ -8,18 +8,22 @@ get_header( 'tischlerei' );
 
 	<main class="site-main">
 		<div class="site-content">
-			<section class="site-intro box--left-aligned">
-				<article class="wrapper">
-					<h1 class="site-title h1__title"><?php the_title();?></h1>
-					<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Wir gestalten Lebensräume.</p>
-					<div class="wrapper">
-						<p class="">
-							Von der Idee bis zur Montage, alles aus einer Hand.
-						</p>
+			<section class="site-intro box--left-aligned unstacked-wrapper">
+				<div class="unstacked-left">
+					<article class="wrapper">
+						<h1 class="site-title h1__title"><?php the_title();?></h1>
+						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Wir gestalten Lebensräume.</p>
+						<div class="wrapper">
+							<p class="">
+								Von der Idee bis zur Montage, alles aus einer Hand.
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="unstacked-right">
+					<div class="img--wood-square-before-red">
+						<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/26490815358_55c0a42b07_o_web.jpg" alt="Platzhalter-Bild">
 					</div>
-				</article>
-				<div class="img--wood-square-before-red">
-					<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/26490815358_55c0a42b07_o_web.jpg" alt="Platzhalter-Bild">
 				</div>
 			</section>
 

@@ -31,15 +31,6 @@ get_header( 'tischlerei' );
 
 						while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-<!-- 						<article class="accordion__item accordion__item-hidden">
-							<h2 class="accordion__headline""><a href="#"><?php the_title();?></a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
-							<div class="accordion_content wrapper">
-								<p><?php the_content();?></p>
-							</div>
-						</article> -->
-
-
-
 						<article class="accordion__item">
 							<button class="accordion"><?php the_title();?><p class="accordion__pointer"><i class="arrow down"></i></p></button>
 							<div class="panel">
@@ -47,13 +38,11 @@ get_header( 'tischlerei' );
 							</div>
 						</article>
 
-
 						<?php endwhile; ?>
 
 						<?php
 						wp_reset_postdata();
 						?>
-
 
 			</section>
 

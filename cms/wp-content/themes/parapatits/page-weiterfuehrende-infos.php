@@ -6,23 +6,25 @@
 get_header( 'bestattung' );
 ?>
 
-<section class="site-intro box--left-aligned">
-
 	<main class="site-main">
 		<div class="site-content">
-			<section class="site-intro box--left-aligned">
-				<article class="wrapper">
-					<h1 class="site-title h1__title"><?php the_title();?></h1>
-					<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Alle wichtigen Informationen, übersichtlich für Sie zusammengestellt.</p>
+			<section class="site-intro box--left-aligned unstacked-wrapper">
+				<div class="unstacked-left">
+					<article class="wrapper">
+						<h1 class="site-title h1__title"><?php the_title();?></h1>
+						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Alle wichtigen Informationen, übersichtlich für Sie zusammengestellt.</p>
+					</article>
+				</div>
+				<div class="unstacked-right">
 					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/parapatits-bestattung_highres-5-DSC03312_web.jpg" alt="Platzhalter-Bild">
-				</article>
-				<div id="wichtige-dokumente"></div>
-			</section>
+				</div>
+				</section>
 
-			<section id="accordion" class="accordion">
-				<article class="accordion__item wrapper">
-					<h2 class="accordion__headline"><a href="#">Wichtige Dokumente für die Bestattung</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
-					<div class="accordion_content wrapper">
+			<div id="wichtige-dokumente"></div>
+			<section id="accordion" class="wrapper">
+				<article class="accordion__item">
+					<button class="accordion">Wichtige Dokumente für die Bestattung<p class="accordion__pointer"><i class="arrow down"></i></p></button>
+					<div class="panel">
 						<p>Folgende Dokumente sollten bei einem Sterbefall vorbereitet werden:</p>
 						<ul class="listing">
 							<li>Geburtsurkunde</li>
@@ -50,9 +52,10 @@ get_header( 'bestattung' );
 						</ul>
 					</div>
 				</article>
-				<article class="accordion__item wrapper accordion__item-hidden">
-					<h2 class="accordion__headline""><a href="#">Trauerarbeit</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
-					<div class="accordion_content wrapper">
+
+				<article class="accordion__item">
+					<button class="accordion">Trauerarbeit<p class="accordion__pointer"><i class="arrow down"></i></p></button>
+					<div class="panel">
 						<p>
 							Längst ist das Tabu, dass man über das Sterben und den Tod nicht spricht, überwunden. Als Bestatter sind wir Anlaufstelle für alle Menschen, die Trost und Zuspruch suchen. In so manchen Gesprächen fließen die Tränen und das ist auch gut so. Es ist wichtig, die Traurigkeit zum Ausdruck bringen zu können.
 						</p>
@@ -64,9 +67,10 @@ get_header( 'bestattung' );
 						</p>
 					</div>
 				</article>
-				<article class="accordion__item wrapper accordion__item-hidden">
-					<h2 class="accordion__headline""><a href="#">Sterbeort</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
-					<div class="accordion_content wrapper">
+
+				<article class="accordion__item">
+					<button class="accordion">Sterbeort<p class="accordion__pointer"><i class="arrow down"></i></p></button>
+					<div class="panel">
 						<p>
 							Je nachdem wo der Sterbeort ist, werden Sie von jemand andern darüber verständigt.<br/>
 							Das Wichtigste ist, dass Sie uns umgehend nach Erhalt der Todesnachricht kontaktieren, damit wir Ihnen bei allen weiteren Schritten helfen können.
@@ -89,9 +93,10 @@ get_header( 'bestattung' );
 						</p>
 					</div>
 				</article>
-				<article class="accordion__item wrapper accordion__item-hidden">
-					<h2 class="accordion__headline""><a href="#">Bestattungsarten</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
-					<div class="accordion_content wrapper">
+
+				<article class="accordion__item">
+					<button class="accordion">Bestattungsarten<p class="accordion__pointer"><i class="arrow down"></i></p></button>
+					<div class="panel">
 						<p>
 							<span class="text--underlined">Erdbestattung</span><br/>
 							In den meisten Fällen wird nach wie vor die Erdbestattung gewünscht. Entweder erfolgt die Beisetzung in einem bestehenden Grab, oder wir erledigen für Sie das Ansuchen zu einer neuen Grabstelle an der betreffenden Gemeinde.
@@ -115,9 +120,10 @@ get_header( 'bestattung' );
 						</p>
 					</div>
 				</article>
-				<article class="accordion__item wrapper accordion__item-hidden">
-					<h2 class="accordion__headline""><a href="#">Religion</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
-					<div class="accordion_content wrapper">
+
+				<article class="accordion__item">
+					<button class="accordion">Religion<p class="accordion__pointer"><i class="arrow down"></i></p></button>
+					<div class="panel">
 						<p>
 							Selbstverständlich führen wir gerne für Personen ohne Konfession im Rahmen einer Verabschiedung ohne kirchlichen Trauergottesdienst, würdige Zeremonien jeder Art und Größe durch.
 						</p>
@@ -126,9 +132,10 @@ get_header( 'bestattung' );
 						</p>
 					</div>
 				</article>
-				<article class="accordion__item wrapper accordion__item-hidden">
-					<h2 class="accordion__headline""><a href="#">Eigenvorsorge</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
-					<div class="accordion_content wrapper">
+
+				<article class="accordion__item">
+					<button class="accordion">Eigenvorsorge</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p></button>
+					<div class="panel">
 						<p>
 							In Zusammenarbeit mit dem <strong>Wiener Verein</strong> kann für sämtliche Aufwendungen und Kosten einer Bestattung bereits zu Lebzeiten vorgesorgt werden. Außerdem kann festgelegt werden, wie die Bestattung zu passieren hat. Der Abschluss einer individuellen Versicherung ist in jedem Alter möglich.
 						</p>
@@ -140,9 +147,10 @@ get_header( 'bestattung' );
 						</p>
 					</div>
 				</article>
-				<article class="accordion__item wrapper accordion__item-hidden">
-					<h2 class="accordion__headline""><a href="#">Erinnerungen</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p>
-					<div class="accordion_content wrapper">
+
+				<article class="accordion__item">
+					<button class="accordion">Erinnerungen</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p></button>
+					<div class="panel">
 						<p>
 							<span class="text--underlined">Fingerabdruck</span><br/>
 							In Zusammenarbeit mit der Firma <strong>LIV'S MEMORIES</strong> wird eine Halskette mit einem Fingerabdruck gefertigt. Dazu wird der Abdruck des oder der Verstorbenen abgenommen.
@@ -161,15 +169,20 @@ get_header( 'bestattung' );
 				</article>
 			</section>
 
-			<img class="lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/parapatits-bestattung_highres-3-DSC03302_web.jpg" alt="Platzhalter-Bild">
-
-			<section class="box--left-aligned">
-				<article class="wrapper">
-					<h2 class="h2__heading">Leitfaden im Todesfall</h2>
-					<p class="">Was tun, wenn ein Familienmitglied stirbt?</p>
-					<a class="btn btn--red btn--centered-aligned" role="button" href="/leitfaden-im-todesfall">Leitfaden anzeigen</a>
-				</article>
-			</section>
+			<div class="unstacked-wrapper">
+				<div class="unstacked-left">
+					<img class="lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/parapatits-bestattung_highres-3-DSC03302_web.jpg" alt="Platzhalter-Bild">
+				</div>
+				<div class="unstacked-right">
+					<section class="box--left-aligned">
+						<article class="wrapper">
+							<h2 class="h2__heading">Leitfaden im Todesfall</h2>
+							<p class="">Was tun, wenn ein Familienmitglied stirbt?</p>
+							<a class="btn btn--red btn--centered-aligned" role="button" href="/leitfaden-im-todesfall">Leitfaden anzeigen</a>
+						</article>
+					</section>
+				</div>
+			</div>
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
 

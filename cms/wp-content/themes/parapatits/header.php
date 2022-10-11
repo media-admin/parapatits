@@ -96,30 +96,6 @@
 					</div>
 				</menu>
 
-				<!--
-				<div class="navbar">
-					<ul class="navbar__navigation-list">
-						<li class="navbar-item navbar-item--submenu-button"><a href="/tischlerei.html">Tischlerei</a>
-							<ul class="navbar-item__submenu">
-								<li class="navbar-item"><a href="unsere-werte.html">Unsere Werte</a></li>
-								<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
-								<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a>
-							</ul>
-						</li>
-						<li class="navbar-item navbar-item--submenu-button"><a href="/bestattung.html">Bestattung</a>
-							<ul class="navbar-item__submenu">
-								<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
-								<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
-								<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
-							</ul>
-						</li>
-						<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
-						<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
-						<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
-					</ul>
-				</div>
-				-->
-
 				<!-- Main Navigation -->
 				<div class="navbar">
 					<ul class="navbar__navigation-list">
@@ -148,82 +124,38 @@
 
 	<?php if (is_front_page() ) : ?>
 
-<!-- 	<section class="large-hero">
-		<img class="large-hero__img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/hero-home.png" alt="Hero Image">
-		<p class="large-hero__title wrapper">Willkommen, hereinspaziert</p>
-		<p class="large-hero__text wrapper"></p>
-	</section> -->
-
-	<!-- <section>
-		<div class="home-slider">
-			<div>
-				<picture>
-					<source media="(min-width: 38em)" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits-tischlerei_highres-6-DSC03181_web.jpg">
-					<source srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits_highres-1-DSC03181_web.jpg">
-					<img src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits_highres-1-DSC03181_web.jpg" alt="">
-				</picture>
-				<p class="home-slider__text"><span class="higlight-me">Herzlich</span> - Verlässlich - Echt</p>
-			</div>
-			<div>
-				<picture>
-					<source media="(min-width: 38em)" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits-tischlerei_komp-21-DSC03276_web.jpg">
-					<source srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits_highres-2-DSC03276_web.jpg">
-					<img src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits_highres-2-DSC03276_web.jpg" alt="">
-				</picture>
-				<p class="home-slider__text">Herzlich - <span class="higlight-me">Verlässlich</span> - Echt</p>
-			</div>
-			<div>
-				<picture>
-					<source media="(min-width: 38em)" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits-tischlerei_komp-50-DSC03548_web.jpg">
-					<source srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits_highres-3-DSC03548_web.jpg">
-					<img src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/slider/parapatits_highres-3-DSC03548_web.jpg" alt="">
-				</picture>
-				<p class="home-slider__text">Herzlich - Verlässlich - <span class="higlight-me">Echt</span></p>
-			</div>
-		</div>
-	</section> -->
-
-	<section>
-		<div class="home-slider">
-
-
+		<section>
+			<div class="home-slider">
 			<?php
+				$args = array(
+					'post_status' => 'publish',
+					'posts_per_page' => -1,
+					'post_type' => 'slider'
+				);
 
-			$args = array(
-				'post_status' => 'publish',
-				'posts_per_page' => -1,
-				'post_type' => 'slider'
-			);
+				$loop = new WP_Query( $args );
 
-			$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post();
 
-				while ( $loop->have_posts() ) : $loop->the_post();
+						$image_smartphone = get_field('image_square');
+						$image_desktop = get_field('image_landscape');
 
-				$image_smartphone = get_field('image_square');
-				$image_desktop = get_field('image_landscape');
+						$image_smartphone_url = $image_smartphone['url'];
+						$image_desktop_url = $image_desktop['url'];
+					?>
 
-				$image_smartphone_url = $image_smartphone['url'];
-				$image_desktop_url = $image_desktop['url'];
-			?>
-
-				<div>
-					<picture>
-						<source media="(min-width: 38em)" srcset=" <?php echo esc_url($image_desktop_url); ?> ">
-						<source srcset=" <?php echo esc_url($image_smartphone_url); ?> ">
-						<img src=" <?php echo esc_url($image_smartphone_url); ?> ">
-					</picture>
-					<p class="home-slider__text"><span class="higlight-me">Herzlich</span> - Verlässlich - Echt</p><?php the_content();?>
+					<div>
+						<picture>
+							<source media="(min-width: 38em)" srcset=" <?php echo esc_url($image_desktop_url); ?> ">
+							<source srcset=" <?php echo esc_url($image_smartphone_url); ?> ">
+							<img src=" <?php echo esc_url($image_smartphone_url); ?> ">
+						</picture>
+						<p class="home-slider__text"><?php the_content();?>
+					</div>
+					<?php endwhile; ?>
+				<?php wp_reset_postdata(); ?>
 				</div>
-
-
-				<?php endwhile; ?>
-
-				<?php
-				wp_reset_postdata();
-				?>
-
-		</div>
-	</section>
+		</section>
 
 
 	<?php endif; ?>

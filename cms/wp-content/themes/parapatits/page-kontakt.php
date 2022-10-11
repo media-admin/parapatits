@@ -7,7 +7,8 @@ get_header();
 ?>
 
 	<main class="site-main">
-			<section class="contact box--left-aligned">
+		<div class="unstacked-wrapper">
+			<section class="contact box--left-aligned unstacked-left">
 				<article class="wrapper">
 					<h1 class="site-title h1__title"><?php the_title();?></h1>
 					<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Wir freuen uns auf Ihren Anruf, Ihr E-Mail oder Ihre Postkarte.</p>
@@ -58,9 +59,7 @@ get_header();
 						$hours_sunday = get_sub_field('hours_sunday');
 						?>
 
-
-
-			<section class="contact__data-opening-hours box--left-aligned">
+			<section class="contact__data-opening-hours box--left-aligned unstacked-right">
 				<article class="wrapper">
 					<div class="">
 						<h2 class="h2__heading">Bürozeiten</h2>
@@ -80,6 +79,7 @@ get_header();
 
 			endif;
 			?>
+		</div>
 
 			<section class="contact__data-map">
 				<article class="">

@@ -8,20 +8,25 @@ get_header();
 
 	<main class="site-main">
 		<div class="site-content">
-			<section class="site-intro box--left-aligned">
-				<article class="wrapper">
-					<h1 class="site-title h1__title"><?php the_title();?></h1>
-					<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">herzlich, verlässlich, echt.</p>
-					<div class="wrapper">
-						<p class="">
-							Wir sind ein Team, wir sind eine Familie – wir sind die Firma Parapatits. Gegründet im Jahre 1932, sind wir seit über 90 Jahren ein familiengeführtes Unternehmen, bestehend aus einer Tischlereiwerkstätte und einem Bestattungsunternehmen.
-						</p>
-						<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/parapatits-tischlerei_highres-54-DSC03572_web.jpg" alt="Platzhalter-Bild">
-						<p class="">
-							Unsere Mannschaft besteht aus sechs Mitarbeiterinnen und Mitarbeitern in der Werkstatt und im Büro, den beiden Captains Peter und Doris sowie deren Kindern.
-						</p>
-					</div>
-				</article>
+			<section class="site-intro box--left-aligned unstacked-wrapper">
+				<div class="unstacked-left">
+					<article class="wrapper">
+						<h1 class="site-title h1__title"><?php the_title();?></h1>
+						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">herzlich, verlässlich, echt.</p>
+						<div class="wrapper">
+							<p class="">
+								Wir sind ein Team, wir sind eine Familie – wir sind die Firma Parapatits. Gegründet im Jahre 1932, sind wir seit über 90 Jahren ein familiengeführtes Unternehmen, bestehend aus einer Tischlereiwerkstätte und einem Bestattungsunternehmen.
+							</p>
+						</div>
+
+						<div class="unstacked-right">
+							<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/parapatits-tischlerei_highres-54-DSC03572_web.jpg" alt="Platzhalter-Bild">
+							<p class="">
+								Unsere Mannschaft besteht aus sechs Mitarbeiterinnen und Mitarbeitern in der Werkstatt und im Büro, den beiden Captains Peter und Doris sowie deren Kindern.
+							</p>
+						</div>
+					</article>
+				</div>
 			</section>
 
 			<section class="box--right-aligned">

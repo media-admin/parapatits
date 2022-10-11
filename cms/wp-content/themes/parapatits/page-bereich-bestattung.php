@@ -8,41 +8,54 @@ get_header( 'bestattung' );
 
 	<main class="site-main">
 		<div class="site-content">
-			<section class="site-intro box--left-aligned">
-				<article class="wrapper">
-					<h1 class="site-title h1__title"><?php the_title();?></h1>
-					<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Wir begleiten Sie.</p>
-					<div class="wrapper">
-						<p class="">
-							Der Erhalt der Menschenwürde bis zum Schluss.
-						</p>
+			<section class="site-intro box--left-aligned unstacked-wrapper">
+				<div class="unstacked-left">
+					<article class="wrapper">
+						<h1 class="site-title h1__title"><?php the_title();?></h1>
+						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Wir begleiten Sie.</p>
+						<div class="wrapper">
+							<p class="">
+								Der Erhalt der Menschenwürde bis zum Schluss.
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="unstacked-rigth">
+					<div class="img--wood-square-before-gray">
+						<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-28-DSC03400_web.jpg" alt="Platzhalter-Bild">
 					</div>
-				</article>
-				<div class="img--wood-square-before-gray">
-					<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-28-DSC03400_web.jpg" alt="Platzhalter-Bild">
 				</div>
 			</section>
 
-			<section class="box--right-aligned">
-				<article class="wrapper">
-					<h2 class="h2__heading">Unser Arbeitsfeld</h2>
-					<p class="">
-						Als Bestatter ist es unsere Aufgabe, Verstorbene in der richtigen Form zur letzten Ruhe zu geleiten und die Hinterbliebenen mit Erfahrung und Feingefühl zu begleiten.
-					</p>
-				</article>
-				<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-4-DSC03310_web.jpg" alt="Platzhalter-Bild">
+			<section class="box--right-aligned unstacked-wrapper">
+				<div class="unstacked-right">
+					<article class="wrapper">
+						<h2 class="h2__heading">Unser Arbeitsfeld</h2>
+						<p class="">
+							Als Bestatter ist es unsere Aufgabe, Verstorbene in der richtigen Form zur letzten Ruhe zu geleiten und die Hinterbliebenen mit Erfahrung und Feingefühl zu begleiten.
+						</p>
+					</article>
+				</div>
+				<div class="unstacked-left">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-4-DSC03310_web.jpg" alt="Platzhalter-Bild">
+				</div>
+
 				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-6-DSC03314_web.jpg" alt="Platzhalter-Bild">
 			</section>
 
-			<section class="box--left-aligned">
-				<article class="wrapper">
-					<h2 class="h2__heading">Wir unterstützen Sie ganzheitlich</h2>
-					<p class="">
-						In intensivem, persönlichem Kontakt leiten wir Sie durch diese schwere Zeit und versuchen, Ihnen das Abschiednehmen zu erleichtern. Wir übernehmen die behördlichen Wege und organisieren in enger Abstimmung mit Ihnen alles rund um die Bestattung und Trauerfeier. Sie können sich voll und ganz auf Ihre Trauer und das Abschiednehmen einlassen.
-						Oft fehlt den Erwachsenen die Zeit und Kraft, um Minderjährigen zu erklären, was vor sich geht. Wir haben dazu spezielle Weiterbildungen absolviert und kümmern uns einfühlsam um Kinder und Jugendliche.
-					</p>
-				</article>
-				<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-19-DSC03376_web.jpg" alt="Platzhalter-Bild">
+			<section class="box--left-aligned unstacked-wrapper">
+				<div class="unstacked-left">
+					<article class="wrapper">
+						<h2 class="h2__heading">Wir unterstützen Sie ganzheitlich</h2>
+						<p class="">
+							In intensivem, persönlichem Kontakt leiten wir Sie durch diese schwere Zeit und versuchen, Ihnen das Abschiednehmen zu erleichtern. Wir übernehmen die behördlichen Wege und organisieren in enger Abstimmung mit Ihnen alles rund um die Bestattung und Trauerfeier. Sie können sich voll und ganz auf Ihre Trauer und das Abschiednehmen einlassen.
+							Oft fehlt den Erwachsenen die Zeit und Kraft, um Minderjährigen zu erklären, was vor sich geht. Wir haben dazu spezielle Weiterbildungen absolviert und kümmern uns einfühlsam um Kinder und Jugendliche.
+						</p>
+					</article>
+				</div>
+				<div class="unstacked-right">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-19-DSC03376_web.jpg" alt="Platzhalter-Bild">
+				</div>
 			</section>
 
 			<section class="box--right-aligned">
