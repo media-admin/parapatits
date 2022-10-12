@@ -15,11 +15,9 @@ get_header();
 				</article>
 			</div>
 			<div class="unstacked-rigth">
-				<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/jobs/parapatits-tischlerei_komp-32-DSC03424_web.jpg" alt="Platzhalter-Bild">
+				<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/jobs/parapatits-tischlerei_komp-32-DSC03424_web.jpg" alt="Bild">
 			</div>
 		</section>
-
-
 
 		<section class="box--left-aligned">
 			<h2 class="h2__heading wrapper">Offene Stellen</h2>

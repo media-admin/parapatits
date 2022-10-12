@@ -39,7 +39,7 @@ get_header();
 			<section id="news-section" class="news-section unstacked-wrapper" data-matching-link="#news-section-link">
 
 				<div class="unstacked-left">
-					<img class="news-section__img img--fullwidth" src="<?php bloginfo( 'template_directory' ); 	?>/assets/images/parapatits-tischlerei_komp-52-DSC03554_web.jpg" alt="Platzhalter-Bild">
+					<img class="news-section__img img--fullwidth" src="<?php bloginfo( 'template_directory' ); 	?>/assets/images/home/cut-for-web_highres-30-DSC03554.jpg" alt="Platzhalter-Bild">
 				</div>
 
 				<div class="unstacked-right">

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitbd8386776dfa09ae9cbec364c611ffdf
+class ComposerStaticInitef6a49c18533169ab3f8668edfe7597a
 {
     public static $prefixLengthsPsr4 = array (
         'C' => 
@@ -659,6 +659,7 @@ class ComposerStaticInitbd8386776dfa09ae9cbec364c611ffdf
         'Yoast\\WP\\SEO\\Conditionals\\Schema_Blocks_Conditional' => __DIR__ . '/../..' . '/src/conditionals/schema-blocks-conditional.php',
         'Yoast\\WP\\SEO\\Conditionals\\Settings_Conditional' => __DIR__ . '/../..' . '/src/conditionals/settings-conditional.php',
         'Yoast\\WP\\SEO\\Conditionals\\Should_Index_Links_Conditional' => __DIR__ . '/../..' . '/src/conditionals/should-index-links-conditional.php',
+        'Yoast\\WP\\SEO\\Conditionals\\Text_Formality_Conditional' => __DIR__ . '/../..' . '/src/conditionals/text-formality-conditional.php',
         'Yoast\\WP\\SEO\\Conditionals\\The_Events_Calendar_Conditional' => __DIR__ . '/../..' . '/src/conditionals/the-events-calendar-conditional.php',
         'Yoast\\WP\\SEO\\Conditionals\\Third_Party\\CoAuthors_Plus_Activated_Conditional' => __DIR__ . '/../..' . '/src/conditionals/third-party/coauthors-plus-activated-conditional.php',
         'Yoast\\WP\\SEO\\Conditionals\\Third_Party\\CoAuthors_Plus_Flag_Conditional' => __DIR__ . '/../..' . '/src/conditionals/third-party/coauthors-plus-flag-conditional.php',
@@ -949,7 +950,7 @@ class ComposerStaticInitbd8386776dfa09ae9cbec364c611ffdf
         'Yoast\\WP\\SEO\\Presenters\\Abstract_Indexable_Tag_Presenter' => __DIR__ . '/../..' . '/src/presenters/abstract-indexable-tag-presenter.php',
         'Yoast\\WP\\SEO\\Presenters\\Abstract_Presenter' => __DIR__ . '/../..' . '/src/presenters/abstract-presenter.php',
         'Yoast\\WP\\SEO\\Presenters\\Admin\\Alert_Presenter' => __DIR__ . '/../..' . '/src/presenters/admin/alert-presenter.php',
-        'Yoast\\WP\\SEO\\Presenters\\Admin\\Auto_Update_Notification_Presenter' => __DIR__ . '/../..' . '/src/presenters/admin/auto-update-notification-presenter.php',
+        'Yoast\\WP\\SEO\\Presenters\\Admin\\Auto_Update_Notification_Presenter' => __DIR__ . '/../..' . '/src/deprecated/src/presenters/admin/auto-update-notification-presenter.php',
         'Yoast\\WP\\SEO\\Presenters\\Admin\\Badge_Presenter' => __DIR__ . '/../..' . '/src/presenters/admin/badge-presenter.php',
         'Yoast\\WP\\SEO\\Presenters\\Admin\\Beta_Badge_Presenter' => __DIR__ . '/../..' . '/src/presenters/admin/beta-badge-presenter.php',
         'Yoast\\WP\\SEO\\Presenters\\Admin\\Help_Link_Presenter' => __DIR__ . '/../..' . '/src/presenters/admin/help-link-presenter.php',
@@ -1107,9 +1108,9 @@ class ComposerStaticInitbd8386776dfa09ae9cbec364c611ffdf
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitbd8386776dfa09ae9cbec364c611ffdf::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitbd8386776dfa09ae9cbec364c611ffdf::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitbd8386776dfa09ae9cbec364c611ffdf::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitef6a49c18533169ab3f8668edfe7597a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitef6a49c18533169ab3f8668edfe7597a::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitef6a49c18533169ab3f8668edfe7597a::$classMap;
 
         }, null, ClassLoader::class);
     }

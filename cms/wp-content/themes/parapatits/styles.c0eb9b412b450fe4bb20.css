@@ -812,7 +812,7 @@ template {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	color: #838282;
 	margin: 0px;
 	padding: 0px;
@@ -1150,14 +1150,13 @@ img {
 		grid-template-columns: 50% 50%;
 		grid-template-areas: "div1 div2";
 		align-self: center;
-		border: 3px dotted brown;
+		/* border: 3px dotted brown; */
 		padding: 20px;
 		padding: 0px;
 		margin: 30px;
 		margin: 0px;
 	}
 }
-
 
 .unstacked-left {
 	position: relative;
@@ -1170,7 +1169,7 @@ img {
 		width: 100%;
 		grid-area: div1 ;
 		align-self: center;
-		background: #6b9080;
+		/* background: #6b9080; */
 	}
 
 .unstacked-left .img--fullwidth {
@@ -1194,7 +1193,7 @@ img {
 		width: 100%;
 		grid-area: div2 ;
 		align-self: center;
-		background: #eaf4f4;
+		/* background: #eaf4f4; */
 	}
 
 	.unstacked-right .img--fullwidth {
