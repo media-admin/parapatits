@@ -48,7 +48,7 @@ get_header( 'tischlerei' );
 
 			<?php echo do_shortcode("[shortcode_special_question]"); ?>
 
-			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/haeufig-gestellte-fragen/parapatits-tischlerei_komp-41-DSC03470_web.jpg" alt="Platzhalter-Bild">
+			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/haeufig-gestellte-fragen/cut-for-web_highres-25-DSC03470_web.jpg" alt="Platzhalter-Bild">
 
 			<?php echo do_shortcode("[shortcode_our_values]"); ?>
 

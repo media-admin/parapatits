@@ -22,7 +22,7 @@ get_header( 'tischlerei' );
 				</div>
 				<div class="unstacked-right">
 					<div class="img--wood-square-before-red">
-						<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/26490815358_55c0a42b07_o_web.jpg" alt="Platzhalter-Bild">
+						<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/cut-for-web_highres-5-26490815358_55c0a42b07_o_web.jpg" alt="Platzhalter-Bild">
 					</div>
 				</div>
 			</section>
@@ -37,11 +37,11 @@ get_header( 'tischlerei' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/DOC002_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-8-DOC002_web.jpg" alt="Platzhalter-Bild">
 				</div>
 			</section>
 
-			<img class="box--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/Pallisch Küche 1_gerade_web.jpg" alt="Platzhalter-Bild">
+			<img class="box--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/cut-for-web_highres-7-Pallisch-Kueche-1_gerade_web.jpg" alt="Platzhalter-Bild">
 
 			<section class="box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left">
@@ -53,7 +53,7 @@ get_header( 'tischlerei' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/parapatits-tischlerei_komp-42-DSC03479.JPG" alt="Platzhalter-Bild">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-26-DSC03479_web.jpg" alt="Platzhalter-Bild">
 				</div>
 			</section>
 
@@ -66,13 +66,13 @@ get_header( 'tischlerei' );
 					</article>
 				</section>
 				<div class="unstacked-left">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/25490015827_969bab3ace_o_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-4-25490015827_969bab3ace_o_web.jpg" alt="Platzhalter-Bild">
 				</div>
 
 			<?php echo do_shortcode("[shortcode_our_values]"); ?>
 
 			<section class="box--right-aligned">
-				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/parapatits-tischlerei_komp-31-DSC03422_web.jpg" alt="Platzhalter-Bild">
+				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-20-DSC03422_web.jpg" alt="Platzhalter-Bild">
 			</section>
 
 			<?php echo do_shortcode("[shortcode_your_opinion]"); ?>

@@ -16,7 +16,7 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/parapatits-bestattung_highres-5-DSC03312_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Platzhalter-Bild">
 				</div>
 				</section>
 
@@ -171,7 +171,7 @@ get_header( 'bestattung' );
 
 			<div class="unstacked-wrapper">
 				<div class="unstacked-left">
-					<img class="lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/parapatits-bestattung_highres-3-DSC03302_web.jpg" alt="Platzhalter-Bild">
+					<img class="lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-7-DSC03302_web.jpg" alt="Platzhalter-Bild">
 				</div>
 				<div class="unstacked-right">
 					<section class="box--left-aligned">

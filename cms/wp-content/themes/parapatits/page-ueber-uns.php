@@ -20,7 +20,7 @@ get_header();
 						</div>
 
 						<div class="unstacked-right">
-							<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/parapatits-tischlerei_highres-54-DSC03572_web.jpg" alt="Platzhalter-Bild">
+							<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-31-DSC03572_web.jpg" alt="Platzhalter-Bild">
 							<p class="">
 								Unsere Mannschaft besteht aus sechs Mitarbeiterinnen und Mitarbeitern in der Werkstatt und im Büro, den beiden Captains Peter und Doris sowie deren Kindern.
 							</p>
@@ -35,7 +35,7 @@ get_header();
 						<h2 class="h2__title h2__title--right-aligned">Warum machen wir das, was wir machen?</h2>
 						<p class="h2__subtitle h2__subtitle--right-aligned">Eine Herzensangelegenheit.</p>
 					</div>
-					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/parapatits-tischlerei_komp-14-DSC03248_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-5-DSC03248_web.jpg" alt="Platzhalter-Bild">
 
 					<h2 class="h2__title h2__title--left-aligned">Tischlerei</h2>
 					<p class="h2__subtitle h2__subtitle--left-aligned">Wir gestalten Lebensräume.</p>
@@ -46,7 +46,7 @@ get_header();
 						</p>
 						<a class="btn btn--red btn--centered-aligned" role="button" href="/tischlerei">Tischlerei anzeigen</a>
 					</div>
-					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/parapatits-bestattung_highres-10-DSC03332_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-19-DSC03400_web.jpg" alt="Platzhalter-Bild">
 				</article>
 			</section>
 

@@ -22,7 +22,7 @@ get_header( 'bestattung' );
 				</div>
 				<div class="unstacked-rigth">
 					<div class="img--wood-square-before-gray">
-						<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-18-DSC03400.jpg" alt="Platzhalter-Bild">
+						<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-18-DSC03400_web.jpg" alt="Platzhalter-Bild">
 					</div>
 				</div>
 			</section>
@@ -37,10 +37,10 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-4-DSC03310_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-8-DSC03310_web.jpg" alt="Platzhalter-Bild">
 				</div>
 
-				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-6-DSC03314_web.jpg" alt="Platzhalter-Bild">
+				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-10-DSC03314_web.jpg" alt="Platzhalter-Bild">
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
@@ -54,7 +54,7 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-19-DSC03376_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-16-DSC03376_web.jpg" alt="Platzhalter-Bild">
 				</div>
 			</section>
 
@@ -69,7 +69,7 @@ get_header( 'bestattung' );
 
 			<?php echo do_shortcode("[shortcode_just_call]"); ?>
 
-			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-tischlerei_komp-8-DSC03191_web.jpg" alt="Platzhalter-Bild">
+			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-2-DSC03191_web.jpg" alt="Platzhalter-Bild">
 
 			<section class="box--right-aligned">
 				<article class="wrapper">
@@ -77,7 +77,7 @@ get_header( 'bestattung' );
 					<p class="">Was tun, wenn ein Familienmitglied stirbt?</p>
 					<a class="btn btn--red btn--centered-aligned" role="button" href="/leitfaden-im-todesfall">Leitfaden anzeigen</a>
 				</article>
-				<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-10-DSC03332_web.jpg" alt="Platzhalter-Bild">
+				<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-14-DSC03332_web.jpg" alt="Platzhalter-Bild">
 			</section>
 
 			<?php echo do_shortcode("[shortcode_testimonials_bestattung]"); ?>

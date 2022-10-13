@@ -106,7 +106,7 @@ get_header();
 
 			<?php echo do_shortcode("[shortcode_contact_form]"); ?>
 
-			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/parapatits-tischlerei_komp-12-DSC03241_web.jpg" alt="Platzhalter-Bild">
+			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/cut-for-web_highres-4-DSC03241_web.jpg" alt="Platzhalter-Bild">
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
 

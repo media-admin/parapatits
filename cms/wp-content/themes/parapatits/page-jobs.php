@@ -15,7 +15,7 @@ get_header();
 				</article>
 			</div>
 			<div class="unstacked-rigth">
-				<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/jobs/parapatits-tischlerei_komp-32-DSC03424_web.jpg" alt="Bild">
+				<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/jobs/cut-for-web_highres-21-DSC03424_web.jpg" alt="Bild">
 			</div>
 		</section>
 
@@ -73,7 +73,7 @@ get_header();
 
 		<div class="unstacked-wrapper">
 			<div class="unstacked-right">
-				<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/jobs/parapatits-tischlerei_komp-48-DSC03529_web.jpg" alt="Platzhalter-Bild">
+				<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/jobs/cut-for-web_highres-29-DSC03529_web.jpg" alt="Platzhalter-Bild">
 			</div>
 			<div class="unstacked-left">
 				<section class="box--left-aligned">

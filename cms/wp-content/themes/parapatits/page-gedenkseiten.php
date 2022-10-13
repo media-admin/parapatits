@@ -21,7 +21,7 @@ get_header( 'bestattung' );
 					</div>
 				</section>
 				<div class="unstacked-right">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/gedenkseiten/parapatits-bestattung_highres-7-DSC03317_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-11-DSC03317_web.jpg" alt="Platzhalter-Bild">
 				</div>
 			</div>
 

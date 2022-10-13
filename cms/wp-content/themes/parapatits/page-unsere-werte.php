@@ -16,7 +16,7 @@ get_header( 'tischlerei' );
 						</article>
 					</div>
 					<div class="unstacked-rigth">
-						<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/parapatits-tischlerei_komp-39-DSC03462_web.jpg" alt="Platzhalter-Bild">
+						<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-24-DSC03462_web.jpg" alt="Platzhalter-Bild">
 				</div>
 				</section>
 
@@ -32,7 +32,7 @@ get_header( 'tischlerei' );
 						</article>
 					</div>
 					<div class="unstacked-left">
-						<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/DSC01492_web.jpg" alt="Platzhalter-Bild">
+						<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-2-DSC01492_web.jpg" alt="Platzhalter-Bild">
 					</div>
 				</section>
 
@@ -48,7 +48,7 @@ get_header( 'tischlerei' );
 						</article>
 					</div>
 					<div class="unstacked-right">
-						<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/Pallisch Küche 2_web.jpg" alt="Platzhalter-Bild">
+						<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-6-Pallisch-Kueche-2_web.jpg" alt="Platzhalter-Bild">
 					</div>
 				</section>
 
@@ -65,7 +65,7 @@ get_header( 'tischlerei' );
 						</article>
 					</div>
 					<div class="unstacked-left">
-						<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/DSC01457_web.jpg" alt="Platzhalter-Bild">
+						<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-1-DSC01457_web.jpg" alt="Platzhalter-Bild">
 					</div>
 				</section>
 
@@ -97,7 +97,7 @@ get_header( 'tischlerei' );
 						</article>
 					</div>
 					<div class="unstacked-left">
-						<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/parapatits-tischlerei_komp-10-DSC03221_web.jpg" alt="Platzhalter-Bild">
+						<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-DSC03221_web.jpg" alt="Platzhalter-Bild">
 					</div>
 				</section>
 
@@ -123,7 +123,7 @@ get_header( 'tischlerei' );
 						</p>
 						<?php echo do_shortcode("[shortcode_projects_slider]"); ?>
 					</article>
-					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/39651277054_a0cf16a1c3_o_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-39651277054_a0cf16a1c3_o_web.jpg" alt="Platzhalter-Bild">
 				</section>
 
 				<section class="box--left-aligned">

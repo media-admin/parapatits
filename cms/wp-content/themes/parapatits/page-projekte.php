@@ -62,7 +62,7 @@ get_header( 'tischlerei' );
 
 				<?php echo do_shortcode("[shortcode_faqs]"); ?>
 
-				<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/parapatits-tischlerei_komp-38-DSC03459_web.jpg" alt="Platzhalter-Bild">
+				<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/cut-for-webhighres-23-DSC03459_web.jpg" alt="Platzhalter-Bild">
 
 				<?php echo do_shortcode("[shortcode_recall]"); ?>
 
