@@ -40,7 +40,6 @@ get_header( 'bestattung' );
 					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-8-DSC03310_web.jpg" alt="Platzhalter-Bild">
 				</div>
 
-				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-10-DSC03314_web.jpg" alt="Platzhalter-Bild">
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
@@ -54,17 +53,22 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-16-DSC03376_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-10-DSC03314_web.jpg" alt="Platzhalter-Bild">
 				</div>
 			</section>
 
-			<section class="box--right-aligned">
-				<article class="wrapper">
-					<h2 class="h2__heading">Was ist Ihre Aufgabe?</h2>
-					<p class="">
-						Nachdem Sie vom Sterbefall erfahren, sollten Sie uns umgehend kontaktieren. Näheres besprechen wir mit Ihnen in aller Ruhe und Schritt für Schritt.
-					</p>
-				</article>
+			<section class="box--right-aligned unstacked-wrapper">
+				<div class="unstacked-right">
+					<article class="wrapper">
+						<h2 class="h2__heading">Was ist Ihre Aufgabe?</h2>
+						<p class="">
+							Nachdem Sie vom Sterbefall erfahren, sollten Sie uns umgehend kontaktieren. Näheres besprechen wir mit Ihnen in aller Ruhe und Schritt für Schritt.
+						</p>
+					</article>
+				</div>
+				<div class="unstacked-left">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-16-DSC03376_web.jpg" alt="Platzhalter-Bild">
+				</div>
 			</section>
 
 			<?php echo do_shortcode("[shortcode_just_call]"); ?>

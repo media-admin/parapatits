@@ -19,10 +19,16 @@ get_header();
 			</div>
 		</section>
 
-		<section class="box--left-aligned">
-			<h2 class="h2__heading wrapper">Offene Stellen</h2>
+		<section class="box--left-aligned ">
+			<div class="wrapper">
+				<h2 class="h2__heading">Offene Stellen</h2>
+			</div>
+		</section>
 
-			<?php
+		<section class="job__container box--left-aligned">
+
+		<div class="unstacked-wrapper">
+		<?php
 
 			$args = array(
 				'post_status' => 'publish',
@@ -39,16 +45,21 @@ get_header();
 					global $post;
 					$content = apply_filters('the_content', wpautop($post->post_content)); ?>
 
-					<article class="job__container wrapper">
-						<div class="job__image">
-							<?php the_post_thumbnail('full', ['class' => '']); ?>
+					<div class="unstacked-left">
+						<div class="wrapper">
+							<h3 class="job__title h3__heading"><?php the_title();?></h3>
 						</div>
-						<div class="job__description wrapper">
-							<h3 class="job__title h3__heading"><?php the_title();?></h3> <!-- TODO 'Check if h3 format is correct -->
+						<?php the_post_thumbnail('full', ['class' => '']); ?>
+					</div>
+
+					<div class="unstacked-right">
+						<article class="job__description wrapper">
+
 							<?php echo $content; ?>
 							<a class="job__application-button btn btn--red" role="button" href="mailto:bewerbung@parapatits.at?subject='Bewerbung über die Website'">Bewerbung mailen</a>
 						</div>
 					</article>
+				</div>
 
 				<?php endwhile; ?>
 
@@ -56,10 +67,13 @@ get_header();
 				wp_reset_postdata();
 
 			} else { ?>
-				<article class="job__container wrapper">
-					<div class="job__image">
 
-					</div>
+				<div class="unstacked-left">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/jobs/cut-for-web_highres-22-DSC03450_web.jpg" alt="Bild">
+				</div>
+
+				<article class="job__container wrapper">
+
 					<div class="job__description wrapper">
 						<h3 class="job__title h3__heading">Aktuell ist unser Team komplett</h3>
 						<p class="">
@@ -68,27 +82,29 @@ get_header();
 						<a class="btn btn--red" role="button" href="mailto:bewerbung@parapatits.at?subject='Bewerbung über die Website'">Bewerbung mailen</a>
 					</div>
 				</article>
+
 			<?php
 			} ?>
+		</section>
 
-		<div class="unstacked-wrapper">
+
+		<section class="box--left-aligned unstacked-wrapper">
+			<div class="unstacked-left">
+				<article class="box--left-aligned wrapper">
+					<div class="">
+						<h2 class="h2__heading">Betrieb ansehen</h2>
+						<p class="">
+							Melde dich bei uns und wir zeigen dir erstmal unseren Betrieb.
+						</p>
+					</div>
+					<a class="btn btn--red" role="button" href="/kontakt">Kontakt</a>
+				</article>
+			</div>
+
 			<div class="unstacked-right">
 				<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/jobs/cut-for-web_highres-29-DSC03529_web.jpg" alt="Platzhalter-Bild">
 			</div>
-			<div class="unstacked-left">
-				<section class="box--left-aligned">
-					<article class="wrapper">
-						<div class="">
-							<h2 class="h2__heading">Betrieb ansehen</h2>
-							<p class="">
-								Melde dich bei uns und wir zeigen dir erstmal unseren Betrieb.
-							</p>
-						</div>
-						<a class="btn btn--red" role="button" href="/kontakt">Kontakt</a>
-					</article>
-				</section>
-			</div>
-		</div>
+		</section>
 
 		<?php echo do_shortcode("[shortcode_recall]"); ?>
 

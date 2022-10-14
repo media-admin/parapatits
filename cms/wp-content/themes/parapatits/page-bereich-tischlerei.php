@@ -22,7 +22,7 @@ get_header( 'tischlerei' );
 				</div>
 				<div class="unstacked-right">
 					<div class="img--wood-square-before-red">
-						<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/cut-for-web_highres-5-26490815358_55c0a42b07_o_web.jpg" alt="Platzhalter-Bild">
+						<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-5-26490815358_55c0a42b07_o_web.jpg" alt="Platzhalter-Bild">
 					</div>
 				</div>
 			</section>

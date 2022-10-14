@@ -903,7 +903,7 @@ ul.listing {
 
 .box--left-aligned article {
 	position: relative;
-	width: 100%;
+	width: 75%;
 	margin-left: 0;
 	margin-right: auto;
 	overflow: hidden !important;
@@ -1015,6 +1015,22 @@ img {
 
 }
 
+
+
+@media (min-width: 800px) {
+
+	.unstacked-right .img--left-aligned {
+		text-align: right;
+		margin: 2.0rem 0;
+		margin-left: inherit !important;
+	}
+
+}
+
+
+
+
+
 @media (min-width: 800px) {
 	}
 
@@ -1030,6 +1046,23 @@ img {
 	padding: 0;
 
 }
+
+
+@media (min-width: 800px) {
+
+	.unstacked-left .img--right-aligned {
+		text-align: left;
+		margin: 2.0rem 0;
+		margin-right: inherit !important;
+	}
+
+}
+
+
+
+
+
+
 
 @media (min-width: 800px) {
 	}
@@ -1165,36 +1198,118 @@ img {
 }
 
 @media (min-width: 800px) {
+
 	.unstacked-left {
 		width: 100%;
+		height: auto;
 		grid-area: div1 ;
 		align-self: center;
 		/* background: #6b9080; */
 	}
 
-.unstacked-left .img--fullwidth {
-	position: inherit !important;
-	max-width: unset !important;
-	width: 100% !important;
-	left: 0% !important;
-	right: 0% !important;
-	margin-left: 0vw !important;
-	margin-right: 0vw !important;
-}
 
-.unstacked-right {
+	.unstacked-left:first-of-type {
+		align-self: end;
+		margin-bottom: 4.0rem;
+	}
+
+
+
+	.box--left-aligned .unstacked-left article {
+		padding-left: 5.0rem;
+	}
+
+
+	.box--right-aligned .unstacked-left article {
+		padding-right: 5.0rem;
+	}
+
+
+
+
+	.unstacked-left .h2__heading {
+		margin-top: inherit;
+		padding-top: 1.0rem;
+	}
+
+
+	.unstacked-left .img--fullwidth {
+		position: inherit !important;
+		max-width: unset !important;
+		width: 100% !important;
+		left: 0% !important;
+		right: 0% !important;
+		margin-left: 0vw !important;
+		margin-right: 0vw !important;
+	}
+
+
+	.unstacked-left .img--centered {
+		position: inherit !important;
+		max-width: unset !important;
+		width: 100% !important;
+		left: 0% !important;
+		right: 0% !important;
+		margin-left: 0vw !important;
+		margin-right: 0vw !important;
+	}
+
+
+	.unstacked-left .img--left-aligned {
+		position: inherit !important;
+		max-width: unset !important;
+		width: 100% !important;
+		left: 0% !important;
+		right: 0% !important;
+		margin-left: 0vw !important;
+		margin-right: 0vw !important;
+	}
+
+
+	.unstacked-left .img--right-aligned {
+		position: inherit !important;
+		max-width: unset !important;
+		width: 100% !important;
+		left: 0% !important;
+		right: 0% !important;
+		margin-left: 0vw !important;
+		margin-right: 0vw !important;
+	}
+
+
+/* .unstacked-right {
 	position: relative;
 	width: 100%;
 	height: 100%;
-}
+} */
 
-@media (min-width: 800px) {
+
+/* @media (min-width: 800px) { */
 	.unstacked-right {
 		width: 100%;
+		height: auto;
 		grid-area: div2 ;
 		align-self: center;
 		/* background: #eaf4f4; */
 	}
+
+
+	.box--left-aligned .unstacked-right article {
+		padding-left: 5.0rem !important;
+	}
+
+
+	.box--right-aligned .unstacked-right article {
+		padding-right: 5.0rem !important;
+	}
+
+
+	.unstacked-right .h2__heading {
+		margin-top: inherit;
+		padding-top: 1.0rem;
+	}
+
+
 }
 
 
@@ -1207,6 +1322,40 @@ img {
 		margin-left: 0vw !important;
 		margin-right: 0vw !important;
 	}
+
+
+	.unstacked-right .img--centered {
+		position: inherit !important;
+		max-width: unset !important;
+		width: 100% !important;
+		left: 0% !important;
+		right: 0% !important;
+		margin-left: 0vw !important;
+		margin-right: 0vw !important;
+	}
+
+
+	.unstacked-right .img--left-aligned {
+		position: inherit !important;
+		max-width: unset !important;
+		width: 100% !important;
+		left: 0% !important;
+		right: 0% !important;
+		margin-left: 0vw !important;
+		margin-right: 0vw !important;
+	}
+
+
+	.unstacked-right .img--right-aligned {
+		position: inherit !important;
+		max-width: unset !important;
+		width: 100% !important;
+		left: 0% !important;
+		right: 0% !important;
+		margin-left: 0vw !important;
+		margin-right: 0vw !important;
+	}
+
 }
 
 
@@ -4197,6 +4346,10 @@ button.active .panel p {
 
 	@media (min-width: 800px) {
 
+		.contact__data-opening-hours {
+			margin-top: 35%;
+		}
+
 	}
 
 
@@ -4637,7 +4790,7 @@ button.active .panel p {
 
 .job__description {
 	width: 100%;
-	font-size: 0.8rem;
+	font-size: 1.0rem;
 	line-height: 1.2rem;
 	padding: 0.5rem;
 }
@@ -4645,8 +4798,8 @@ button.active .panel p {
 @media (min-width: 800px) {
 	.job__description {
 		width: 50%;
-		font-size: 0.8rem;
-		line-height: 1.2rem;
+		font-size: 1.0rem;
+		line-height: 1.4rem;
 		padding: 2.0rem;
 	}
 }
@@ -4664,10 +4817,17 @@ button.active .panel p {
 	padding-bottom: 0.25rem;
 }
 
+@media (min-width: 800px) {
+	.job__title {
+		margin-top: 0.0rem;
+		padding-bottom: 1.25rem;
+	}
+}
+
 
 .job__description h2 {
-	padding-top: 0.5rem;
-	padding-bottom: 0.25rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.25rem;
 }
 
 
@@ -4688,7 +4848,7 @@ button.active .panel p {
 
 @media (min-width: 800px) {
 	.job__application-button {
-		margin-top: 0.75rem;
+		margin-top: 1.75rem;
 	}
 }
 

@@ -15,13 +15,13 @@ get_header( 'tischlerei' );
 							<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Erfahren Sie, was unsere Arbeit ausmacht.</p>
 						</article>
 					</div>
-					<div class="unstacked-rigth">
+					<div class="unstacked-right">
 						<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-24-DSC03462_web.jpg" alt="Platzhalter-Bild">
 				</div>
 				</section>
 
 				<section class="box--right-aligned unstacked-wrapper">
-					<div class="unstacked-rigth">
+					<div class="unstacked-right">
 						<article class="wrapper">
 							<h2 class="h2__heading">Hochwertigkeit</h2>
 							<div class="">
@@ -101,20 +101,23 @@ get_header( 'tischlerei' );
 					</div>
 				</section>
 
-				<section class="box--left-aligned">
-					<article class="wrapper">
-						<h2 class="h2__heading">Alles aus einer Hand</h2>
-						<div class="">
-							<p class="">
-								Durch die gemeinsame Gestaltung des kompletten Raumes, vom Bodenbelag bis zur Deckenleuchte, können Sie sichergehen, dass ein homogenes Raumerlebnis entsteht. Durch enge Zusammenarbeit mit Meisterinnen und Meistern ihrer Tätigkeit, wie Fliesenleger:innen, Maler:innen und Steinmetzen, können die geplanten Räume mit höchster Qualität umgesetzt werden.
-							</p>
-						</div>
-					</article>
+				<section class="box--left-aligned unstacked-wrapper">
+					<div class="unstacked-left">
+						<article class="wrapper">
+							<h2 class="h2__heading">Alles aus einer Hand</h2>
+							<div class="">
+								<p class="">
+									Durch die gemeinsame Gestaltung des kompletten Raumes, vom Bodenbelag bis zur Deckenleuchte, können Sie sichergehen, dass ein homogenes Raumerlebnis entsteht. Durch enge Zusammenarbeit mit Meisterinnen und Meistern ihrer Tätigkeit, wie Fliesenleger:innen, Maler:innen und Steinmetzen, können die geplanten Räume mit höchster Qualität umgesetzt werden.
+								</p>
+							</div>
+						</article>
+					</div>
+					<div class="unstacked-right">
+						<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-39651277054_a0cf16a1c3_o_web.jpg" alt="Platzhalter-Bild">
+					</div>
 				</section>
 
-				<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/43-Vollbild-querformat.png" alt="Platzhalter-Bild">
-
-				<section class="box--right-aligned">
+				<section class="box--centered-aligned">
 					<article class="wrapper">
 						<h2 class="h2__heading">Projekte</h2>
 						<p class="h2__subtitle h2__subtitle--left-aligned">Wahrgewordene Lebens(t)räume.</p>
@@ -123,17 +126,7 @@ get_header( 'tischlerei' );
 						</p>
 						<?php echo do_shortcode("[shortcode_projects_slider]"); ?>
 					</article>
-					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-39651277054_a0cf16a1c3_o_web.jpg" alt="Platzhalter-Bild">
-				</section>
 
-				<section class="box--left-aligned">
-					<article class="wrapper">
-						<div class="">
-							<h2 class="h2__heading">Häufig gestellte Fragen</h2>
-							<p class="">Fragen, welche wir schon mehr als einmal beantworten durften.</p>
-							<a class="btn btn--red btn--centered-aligned" role="button" href="/haeufig-gestellte-fragen">Fragen anzeigen</a>
-						</div>
-					</article>
 				</section>
 
 				<?php echo do_shortcode("[shortcode_recall]"); ?>

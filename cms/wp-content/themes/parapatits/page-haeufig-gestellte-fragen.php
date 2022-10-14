@@ -46,11 +46,20 @@ get_header( 'tischlerei' );
 
 			</section>
 
-			<?php echo do_shortcode("[shortcode_special_question]"); ?>
+			<div class="unstacked-wrapper">
+
+				<div class="unstacked-left">
+					<?php echo do_shortcode("[shortcode_special_question]"); ?>
+				</div>
+
+				<div class="unstacked-right">
+					<?php echo do_shortcode("[shortcode_our_values]"); ?>
+
+				</div>
+
+			</div>
 
 			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/haeufig-gestellte-fragen/cut-for-web_highres-25-DSC03470_web.jpg" alt="Platzhalter-Bild">
-
-			<?php echo do_shortcode("[shortcode_our_values]"); ?>
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
 

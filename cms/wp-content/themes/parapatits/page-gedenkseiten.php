@@ -25,16 +25,23 @@ get_header( 'bestattung' );
 				</div>
 			</div>
 
-			<section class="box--left-aligned">
-				<article class="wrapper">
-					<h2 class="">Unsere Leistungen</h2>
-					<div class="">
-						<p class="">
-							Erfahren Sie, wie wir Sie unterstützen können.
-						</p>
-						<button class="btn btn--red btn--centered-aligned" type="button" onklick="window.open('/leistungen.html', '_blank')">Leistungen anzeigen</button>
+			<section class="box--left-aligned unstacked-wrapper">
+				<div class="unstacked-right">
+					<article class="wrapper">
+						<h2 class="">Unsere Leistungen</h2>
+						<div class="">
+							<p class="">
+								Erfahren Sie, wie wir Sie unterstützen können.
+							</p>
+							<button class="btn btn--red btn--centered-aligned" type="button" onklick="window.open('/leistungen.html', '_blank')">Leistungen anzeigen</button>
+						</div>
+					</article>
+				</div>
+				<div class="unstacked-left">
+					<div class="img--wood-square-before-red">
+						<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-7-DSC03394_web.jpg" alt="Platzhalter-Bild">
 					</div>
-				</article>
+				</div>
 			</section>
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>

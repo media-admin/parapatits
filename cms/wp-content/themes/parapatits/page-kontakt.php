@@ -106,9 +106,17 @@ get_header();
 
 			<?php echo do_shortcode("[shortcode_contact_form]"); ?>
 
-			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/cut-for-web_highres-4-DSC03241_web.jpg" alt="Platzhalter-Bild">
+			<section class="box--left-aligned unstacked-wrapper">
 
-			<?php echo do_shortcode("[shortcode_recall]"); ?>
+				<div class="unstacked-right">
+					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/cut-for-web_highres-4-DSC03241_web.jpg" alt="Platzhalter-Bild">
+				</div>
+
+				<div class="unstacked-left">
+					<?php echo do_shortcode("[shortcode_recall]"); ?>
+				</div>
+
+			</section>
 
 		</div>
 	</main>

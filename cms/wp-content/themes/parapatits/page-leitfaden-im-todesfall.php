@@ -20,39 +20,42 @@ get_header( 'bestattung' );
 				</div>
 			</section>
 
-			<div class="unstacked-wrapper">
-				<section class="box--left-aligned">
-					<div class="unstacked-right">
-						<article class="wrapper">
-							<h2 class="h2__heading">Leitfaden</h2>
-							<div class="">
-								<p class="">
-									Die erste und wichtigste Aktion ist die <strong>Kontaktaufnahme</strong> mit uns. Danach werden wir Sie um ein persönliches Treffen bei uns bitten. Bitte bringen Sie dabei die <strong>benötigen Dokumente</strong> mit. Alle weiteren Schritte besprechen wir gemeinsam in aller Ruhe, mit Umsicht und Feingefühl.
-								</p>
-								<a class="btn btn--red btn--centered-aligned" role="button" href="/weiterfuehrende-infos/#wichtige-dokumente">Dokumente anzeigen</a>
-							</div>
-						</article>
-					</div>
-				</section>
+			<section class="box--left-aligned unstacked-wrapper">
+				<div class="unstacked-right">
+					<article class="wrapper">
+						<h2 class="h2__heading">Leitfaden</h2>
+						<div class="">
+							<p class="">
+								Die erste und wichtigste Aktion ist die <strong>Kontaktaufnahme</strong> mit uns. Danach werden wir Sie um ein persönliches Treffen bei uns bitten. Bitte bringen Sie dabei die <strong>benötigen Dokumente</strong> mit. Alle weiteren Schritte besprechen wir gemeinsam in aller Ruhe, mit Umsicht und Feingefühl.
+							</p>
+							<a class="btn btn--red btn--centered-aligned" role="button" href="/weiterfuehrende-infos/#wichtige-dokumente">Dokumente anzeigen</a>
+						</div>
+					</article>
+				</div>
 				<div class="unstacked-left">
 					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/leitfaden-im-todesfall/cut-for-web_highres-17-DSC03396_web.jpg" alt="Platzhalter-Bild">
 				</div>
-			</div>
+			</section>
 
-			<section class="box--right-aligned">
-				<article class="wrapper">
-					<h2 class="h2__heading">Unsere Leistungen</h2>
-					<div class="">
-						<p class="">
-							Erfahren Sie, wie wir Sie unterstützen können.
-						</p>
-						<a class="btn btn--red btn--centered-aligned" role="button" href="/unsere-leistungen">Leistungen anzeigen</a>
-					</div>
-				</article>
+			<section class="box--right-aligned unstacked-wrapper">
+				<div class="unstacked-left">
+					<article class="wrapper">
+						<h2 class="h2__heading">Unsere Leistungen</h2>
+						<div class="">
+							<p class="">
+								Erfahren Sie, wie wir Sie unterstützen können.
+							</p>
+							<a class="btn btn--red btn--centered-aligned" role="button" href="/unsere-leistungen">Leistungen anzeigen</a>
+						</div>
+					</article>
+				</div>
+				<div class="unstacked-right">
+					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/leitfaden-im-todesfall/cut-for-web_highres-5-DSC03387_web.jpg" alt="Platzhalter-Bild">
+				</div>
 			</section>
 		</div>
 
-			<?php echo do_shortcode("[shortcode_recall]"); ?>
+		<?php echo do_shortcode("[shortcode_recall]"); ?>
 
 		</div>
 	</main>
