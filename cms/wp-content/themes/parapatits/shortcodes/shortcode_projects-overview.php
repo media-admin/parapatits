@@ -50,6 +50,15 @@
 					?>
 					" href="<?php the_permalink() ?>">
 						<img src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text ;?>">
+
+						<div class="wrapper">
+							<h2 class="project-overview-box__title h2__heading"><?php the_title();?></h2>
+							<p class="project-overview-box__meta h2__subheading"><?php the_field('project-city');?> - <?php the_field('project-date');?></p>
+							<p class="project-overview-box__summary">
+								<?php the_field('project-summary');?>
+							</p>
+						</div>
+
 					</a>
 
 				<?php endwhile;

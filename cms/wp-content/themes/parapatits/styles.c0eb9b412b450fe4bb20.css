@@ -844,8 +844,23 @@ ul.listing {
 }
 
 
+@media (min-width: 800px) {
+	.site-content {
+		padding-top: 80px;
+	}
+
+}
+
 
 .site-intro {
+
+}
+
+
+@media (min-width: 800px) {
+	.home .intro {
+		margin-top: 0.0rem;
+	}
 
 }
 
@@ -4597,11 +4612,20 @@ button.active .panel p {
 
 .project-overview-box__img {}
 
-.project-overview-box__title {}
+.project-overview-box__title {
+	font-size: 1.2rem;
+	margin-top: 1.0rem;
+}
 
 .project-overview-box__meta {}
 
-.project-overview-box__summary {}
+.project-overview-box__summary {
+	font-size: 1.0rem !important;
+	font-weight: 400 !important;
+	line-height: 1.8rem !important;
+	margin-bottom: 1.5rem;
+}
+
 
 .project-overview-box__button-container {
 	width: 100%;

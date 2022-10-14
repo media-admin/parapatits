@@ -74,7 +74,7 @@
 
 	</head>
 
-	<body class="site-body <?php body_class(); ?>">
+	<body <?php body_class('site-body'); ?>>
 
 		<header class="site-header">
 			<div class="site-header__branding">
