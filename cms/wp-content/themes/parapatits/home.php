@@ -81,7 +81,7 @@ get_header();
 					<p class="h2__subtitle info-section__subtitle h2__subtitle--left-aligned">Eine Herzensangelegenheit.</p>
 					<div class="info-section__content">
 						<p>
-							Seit vielen Jahrzehnten steht unser Familienunternehmen auf zwei Standbeinen: <strong>Tischlerei</strong> und <strong>Bestattung</strong>. So unterschiedlich diese beiden Bereiche auch wirken mögen, so haben sie eine Gemeinsamkeit, die uns sehr am Herzen liegt: Es geht darum, den Menschen gut zuzuhören, ihre Bedürfnisse zu erkennen und sie zu verstehen.
+							Seit vielen Jahrzehnten steht unser Familienunternehmen auf zwei Standbeinen: <a href="/tischlerei">Tischlerei</a> und <a href="/bestattung">Bestattung</a>. So unterschiedlich diese beiden Bereiche auch wirken mögen, so haben sie eine Gemeinsamkeit, die uns sehr am Herzen liegt: Es geht darum, den Menschen gut zuzuhören, ihre Bedürfnisse zu erkennen und sie zu verstehen.
 						</p>
 					</div>
 				</article>

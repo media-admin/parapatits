@@ -41,7 +41,7 @@ get_header( 'tischlerei' );
 				</div>
 			</section>
 
-			<img class="box--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/cut-for-web_highres-7-Pallisch-Kueche-1_gerade_web.jpg" alt="Platzhalter-Bild">
+			<img class="box--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-7-Pallisch-Kueche-1_gerade_web.jpg" alt="Platzhalter-Bild">
 
 			<section class="box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left">

@@ -80,7 +80,7 @@
 			<div class="site-header__branding">
 				<div class="site-header__logo">
 					<a class="header-logo__link wrapper" href="<?php echo get_home_url(); ?>">
-						<img class="site-header__logo-img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/logo-tischlerei-parapatits.svg" alt="Logo Tischlerei Paraptits">
+						<img class="site-header__logo-img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/logo-peter-parapatits.svg" alt="Logo Tischlerei Paraptits">
 					</a>
 				</div>
 			</div>
