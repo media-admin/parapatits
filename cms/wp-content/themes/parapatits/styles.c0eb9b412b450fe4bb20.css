@@ -2244,8 +2244,6 @@ menu.site-menu {
 
 }
 
-@media (min-width: 800px) {
-	}
 
 .is-active .navbar {
   position: absolute;
@@ -2259,7 +2257,6 @@ menu.site-menu {
 	padding-top: 20px;
   transition: 0.8s;
   z-index: 1;
-
 }
 
 @media (min-width: 800px) {
@@ -2290,7 +2287,7 @@ menu.site-menu {
 	*/
 
 	font-size: 2.0rem;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 2.5rem;
 
   text-decoration: none;
@@ -2301,16 +2298,15 @@ menu.site-menu {
 }
 
 @media (min-width: 800px) {
-
-.is-active .navbar li a {
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    margin: 0;
-    padding-top: 0px
-
-}
+	.is-active .navbar li a {
+    	font-size: inherit;
+    	font-weight: inherit;
+    	line-height: inherit;
+    	margin: 0;
+    	padding-top: 0px
 	}
+}
+
 
 .navbar__navigation-list {
   list-style-type: none;
@@ -2319,13 +2315,10 @@ menu.site-menu {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   padding-left: 18px;
-
-
 }
 
 @media (min-width: 800px) {
-
-.navbar__navigation-list {
+	.navbar__navigation-list {
     position: relative;
     display: flex;
     width: 100%;
@@ -2334,10 +2327,9 @@ menu.site-menu {
     margin-bottom: 1.0rem;
     padding-top: 5px;
     padding-left: 40px
-
-
-}
 	}
+}
+
 
 .navbar__navigation-list li {
   list-style-type: none;
@@ -2345,35 +2337,35 @@ menu.site-menu {
 }
 
 @media (min-width: 800px) {
+	.navbar__navigation-list li {
+    	position: relative;
+    	display: flex;
+    	width: 100%;
+    	justify-content: center;
+    	align-items: flex-end;
 
-.navbar__navigation-list li {
-    position: relative;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: flex-end;
 
+			/*
+			font-size: 1.6rem;
+    	line-height: 1.8rem;
+			line-height: 2.0rem;
 
-		/*
-		font-size: 1.6rem;
-    line-height: 1.8rem;
-		line-height: 2.0rem;
+    	font-weight: 700;
+			font-weight: 600;
+			*/
 
-    font-weight: 700;
-		font-weight: 600;
-		*/
+			font-size: 1.6rem;
+			font-weight: 600;
+			line-height: 2.0rem;
+			letter-spacing: 0.1rem;
 
-		font-size: 1.6rem;
-		font-weight: 700;
-		line-height: 2.0rem;
-		letter-spacing: 0.1rem;
-
-    text-transform: lowercase;
-    text-decoration: none;
-    color: #707173;
-    padding-top: 10px;
-}
+    	text-transform: lowercase;
+    	text-decoration: none;
+    	color: #707173;
+    	padding-top: 10px;
 	}
+}
+
 
 @media (min-width: 800px) {
 
