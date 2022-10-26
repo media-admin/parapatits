@@ -15,7 +15,7 @@ get_header( 'bestattung' );
 						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Was tun, wenn ein Familienmitglied stirbt?</p>
 					</article>
 				</div>
-				<div class="unstacked-rigth">
+				<div class="unstacked-right">
 					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/leitfaden-im-todesfall/cut-for-web_highres-12-DSC03325_web.jpg" alt="Platzhalter-Bild">
 				</div>
 			</section>

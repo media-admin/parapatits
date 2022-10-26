@@ -80,7 +80,7 @@
 		<div class="site-header__branding">
 			<div class="site-header__logo">
 				<a class="header-logo__link wrapper" href="<?php echo get_home_url(); ?>">
-					<img class="site-header__logo-img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/logo-tischlerei-parapatits.svg" alt="Tischlerei Parapatits">
+					<img class="site-header__logo-img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/logo_parapatits-peter-tischlerwerkstaette.svg" alt="Logo Tischlerwerkstätte Parapatits Peter">
 				</a>
 			</div>
 		</div>
@@ -95,30 +95,6 @@
 							<span class="line"></span>
 						</div>
 					</menu>
-
-					<!--
-					<div class="navbar">
-						<ul class="navbar__navigation-list">
-							<li class="navbar-item navbar-item--submenu-button"><a href="/tischlerei.html">Tischlerei</a>
-								<ul class="navbar-item__submenu">
-									<li class="navbar-item"><a href="unsere-werte.html">Unsere Werte</a></li>
-									<li class="navbar-item"><a href="projekte.html">Projekte</a></li>
-									<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a>
-								</ul>
-							</li>
-							<li class="navbar-item navbar-item--submenu-button"><a href="/bestattung.html">Bestattung</a>
-								<ul class="navbar-item__submenu">
-									<li class="navbar-item"><a href="leitfaden-im-todesfall.html">Leitfaden im Todesfall</a></li>
-									<li class="navbar-item"><a href="unsere-leistungen.html">Unsere Leistungen</a></li>
-									<li class="navbar-item"><a href="haeufig-gestellte-fragen.html">Häufig gestellte Fragen</a></li>
-								</ul>
-							</li>
-							<li class="navbar-item"><a href="/ueber-uns.html">Über uns</a></li>
-							<li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
-							<li class="navbar-item"><a href="/jobs.html">Jobs</a></li>
-						</ul>
-					</div>
-					-->
 
 					<!-- Main Navigation -->
 					<div class="navbar">

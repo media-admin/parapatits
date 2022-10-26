@@ -20,7 +20,7 @@ get_header( 'bestattung' );
 						</div>
 					</article>
 				</div>
-				<div class="unstacked-rigth">
+				<div class="unstacked-right">
 					<div class="img--wood-square-before-gray">
 						<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-18-DSC03400_web.jpg" alt="Platzhalter-Bild">
 					</div>
