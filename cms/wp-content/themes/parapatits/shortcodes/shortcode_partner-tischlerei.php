@@ -1,4 +1,4 @@
-<section class="partner box--left-aligned">
+<section class="partner box--centered">
 	<article class="wrapper">
 		<h2 class="h2__heading">Unsere Partner</h2>
 		<p class="partner__intro">

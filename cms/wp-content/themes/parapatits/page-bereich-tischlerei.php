@@ -41,8 +41,6 @@ get_header( 'tischlerei' );
 				</div>
 			</section>
 
-			<img class="box--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-7-Pallisch-Kueche-1_gerade_web.jpg" alt="Platzhalter-Bild">
-
 			<section class="box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left">
 					<article class="wrapper">
@@ -53,33 +51,41 @@ get_header( 'tischlerei' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-26-DSC03479_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-7-Pallisch-Kueche-1_gerade_web.jpg" alt="Platzhalter-Bild">
 				</div>
 			</section>
 
-				<section class="box--right-aligned unstacked-right">
+			<section class="box--right-aligned unstacked-wrapper">
+				<div class="unstacked-right">
 					<article class="wrapper">
 						<h2 class="h2__heading">und einer perfekten Umsetzung.</h2>
 						<p class="">
 							Als letzter Schritt folgt die Umsetzung. Hier sind Handwerkskunst und Präzision gefragt, gepaart mit jeder Menge Erfahrung. Um das perfekte Ergebnis zu gewährleisten, werden in unserer Tischlerei Projekte vom Anfang bis zum Ende – von der Idee über Planung und Umsetzung bis zur Montage – von denselben Handwerkern begleitet. Gerne können Sie Ihrer neuen Einrichtung schon beim Entstehen zusehen. Kommen Sie einfach auf einen Sprung in der Werkstatt vorbei!
 						</p>
 					</article>
-				</section>
-				<div class="unstacked-left">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-4-25490015827_969bab3ace_o_web.jpg" alt="Platzhalter-Bild">
 				</div>
+				<div class="unstacked-left">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-26-DSC03479_web.jpg" alt="Platzhalter-Bild">
+				</div>
+			</section>
 
 			<?php echo do_shortcode("[shortcode_our_values]"); ?>
 
-			<section class="box--right-aligned">
-				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-20-DSC03422_web.jpg" alt="Platzhalter-Bild">
+			<?php echo do_shortcode("[shortcode_projects_slider]"); ?>
+
+			<section class="box--centered">
+				<article class="wrapper">
+					<div class="unstacked-left">
+						<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-20-DSC03422_web.jpg" alt="Platzhalter-Bild">
+					</div>
+				</article>
 			</section>
+
+			<?php echo do_shortcode("[shortcode_testimonials_tischlerei]"); ?>
 
 			<?php echo do_shortcode("[shortcode_your_opinion]"); ?>
 
 			<?php echo do_shortcode("[shortcode_partner_tischlerei]"); ?>
-
-			<?php echo do_shortcode("[shortcode_testimonials_tischlerei]"); ?>
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
 

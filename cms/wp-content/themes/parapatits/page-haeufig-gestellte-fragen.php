@@ -7,13 +7,20 @@ get_header( 'tischlerei' );
 ?>
 
 	<main class="site-main">
+
 		<div class="site-content">
-			<section class="site-intro box--left-aligned">
+		<section class="faqs site-intro box--left-aligned unstacked-wrapper">
+			<div class="unstacked-left">
 				<article class="wrapper">
 					<h1 class="site-title h1__title"><?php the_title();?></h1>
 					<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Fragen, die wir schon mehr als einmal beantworten durften.</p>
 				</article>
-			</section>
+			</div>
+			<div class="unstacked-right">
+				<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/haeufig-gestellte-fragen/parapatits-tischlerei_highres-19-DSC03271_web.jpg" alt="Platzhalter-Bild">
+			</div>
+
+		</section>
 
 			<section id="accordion" class="wrapper">
 
@@ -46,20 +53,9 @@ get_header( 'tischlerei' );
 
 			</section>
 
-			<div class="unstacked-wrapper">
+			<?php echo do_shortcode("[shortcode_special_question]"); ?>
 
-				<div class="unstacked-left">
-					<?php echo do_shortcode("[shortcode_special_question]"); ?>
-				</div>
-
-				<div class="unstacked-right">
-					<?php echo do_shortcode("[shortcode_our_values]"); ?>
-
-				</div>
-
-			</div>
-
-			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/haeufig-gestellte-fragen/cut-for-web_highres-25-DSC03470_web.jpg" alt="Platzhalter-Bild">
+			<?php echo do_shortcode("[shortcode_our_values]"); ?>
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
 

@@ -1,4 +1,4 @@
-<section class="project-carousel box--centered">
+<section class="project-carousel">
 	<div class="project-carousel__projects-container">
 		<?php
 			$args = array(
@@ -22,6 +22,9 @@
 					<div class="project-carousel__content">
 						<h2 class="project-carousel__title h2__heading"><?php the_title();?></h2>
 						<p class="project-carousel__meta h2__subheading"><?php the_field('project-city');?> - <?php the_field('project-date');?></p>
+						<p class="project-carousel__summary">
+							<?php the_field('project-summary');?>
+						</p>
 					</div>
 				</div>
 

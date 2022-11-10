@@ -86,6 +86,8 @@ get_header( 'bestattung' );
 
 			<?php echo do_shortcode("[shortcode_testimonials_bestattung]"); ?>
 
+			<?php echo do_shortcode("[shortcode_your_opinion]"); ?>
+
 			<?php echo do_shortcode("[shortcode_partner_bestattung]"); ?>
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>

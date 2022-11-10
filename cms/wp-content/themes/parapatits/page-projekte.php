@@ -6,29 +6,41 @@
 get_header( 'tischlerei' );
 ?>
 
-		<main class="site-main">
-			<div class="site-content">
-
-				<section class="projects site-intro">
+	<main class="site-main">
+		<div class="site-content">
+			<section class="projects site-intro box--left-aligned unstacked-wrapper">
+				<div class="unstacked-left">
 					<article class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title();?></h1>
 						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Räume zum Durchstöbern</p>
-						<div class="wrapper">
-							<p class="">
+						<div class="">
+							<p class="wrapper">
 								Hier zeigen wir her was wir können. Wir bieten einige Räume zum Durchstöbern. Von Wohnküchen über Wohlfühlbüros bis hin zum ganz persönlichen Rückzugsort.
 							</p>
 						</div>
-						<?php echo do_shortcode("[shortcode_projects_overview]"); ?>
 					</article>
-				</section>
+				</div>
+				<div class="unstacked-right">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/cut-for-web_highres-8-DOC002_web.jpg" alt="Platzhalter-Bild">
+				</div>
 
-				<?php echo do_shortcode("[shortcode_faqs]"); ?>
+			</section>
 
-				<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/cut-for-webhighres-23-DSC03459_web.jpg" alt="Platzhalter-Bild">
+			<?php echo do_shortcode("[shortcode_projects_overview]"); ?>
 
-				<?php echo do_shortcode("[shortcode_recall]"); ?>
 
-			</div>
-		</main>
+			<section class="box--left-aligned unstacked-wrapper">
+				<div class="unstacked-left">
+					<?php echo do_shortcode("[shortcode_faqs]"); ?>
+				</div>
+				<div class="unstacked-right">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/cut-for-webhighres-23-DSC03459_web.jpg" alt="Platzhalter-Bild">
+				</div>
+			</section>
 
-	<?php get_footer(); ?>
+			<?php echo do_shortcode("[shortcode_recall]"); ?>
+
+		</div>
+	</main>
+
+<?php get_footer(); ?>

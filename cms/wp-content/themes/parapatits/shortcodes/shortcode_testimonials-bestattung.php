@@ -1,4 +1,4 @@
-<section class="testimonials box--left-aligned">
+<section class="testimonials box--centered">
 	<article class="testimonials__container wrapper">
 		<div class="">
 			<h2 class="testimonials__title h2__title h2__title--left-aligned"">Was unsere Kunden sagen</h2>
@@ -29,9 +29,7 @@
 					?>
 
 			</div>
-			<h3 class="h3__heading">Wir würden auch Ihre Meinung gerne hören</h3>
-			<p class="">Lassen Sie uns Ihr Feedback zukommen!</p>
-			<a class="btn btn--red btn--centered-aligned" role="button" href="https://g.page/r/CVpT6XCa9L20EAg/review" target="_blank">Feedback schreiben</a>
+
 		</div>
 	</article>
 </section>

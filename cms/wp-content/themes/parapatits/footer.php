@@ -91,6 +91,7 @@
 		</script>
 
 
+		<!-- Testimonial Sliders -->
 
 		<script type="text/javascript">
 
@@ -99,6 +100,10 @@
 				slidesToScroll: 1,
 				arrows: false,
 				dots: true,
+				infinite: true,
+				autoplay: true,
+				autoplaySpeed: 3000,
+				speed: 800,
 			});
 
 		</script>
@@ -112,7 +117,7 @@
 				autoplay: true,
 				autoplaySpeed: 3000,
 				speed: 800,
-				slidesToShow: 4,
+				slidesToShow: 3,
 				slidesToScroll: 1,
 				arrows: false,
 
@@ -149,6 +154,10 @@
 		</script>
 
 
+
+
+
+
 		<!-- Projects -->
 		<script type="text/javascript">
 
@@ -177,11 +186,11 @@
 		<!-- Button Load More -->
 		<script type="text/javascript">
 			jQuery(function () {
-					x=3;
-					jQuery('.projects-overview__project-container a').slice(0, 3).show();
+					x=4;
+					jQuery('.projects-overview__project-container a').slice(0, 4).show();
 					jQuery('#loadMore').on('click', function (e) {
 							e.preventDefault();
-							x = x+3;
+							x = x+2;
 							jQuery('.projects-overview__project-container a').slice(0, x).slideDown();
 					});
 			});
@@ -191,11 +200,11 @@
 		<!-- Button Load More Projects -->
 		<script type="text/javascript">
 			jQuery(function () {
-					x=3;
-					jQuery('.project-overview-box .project-overview-box__container').slice(0, 3).show();
+					x=2;
+					jQuery('.project-overview-box .project-overview-box__container').slice(0, 2).show();
 					jQuery('#loadMoreProjects').on('click', function (e) {
 							e.preventDefault();
-							x = x+3;
+							x = x+2;
 							jQuery('.project-overview-box .project-overview-box__container').slice(0, x).slideDown();
 					});
 			});

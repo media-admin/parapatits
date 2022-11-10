@@ -1,4 +1,4 @@
-<section class="faqs box--left-aligned">
+<section class="faqs box--centered">
 	<article class="wrapper">
 		<h2 class="h2__heading">Häufig gestellte Fragen</h2>
 		<div class="">
