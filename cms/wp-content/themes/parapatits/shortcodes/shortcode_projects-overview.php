@@ -39,7 +39,7 @@
 
 
 					<!-- box ----------------------->
-					<a class="projects-overview__project-box
+					<a class="projects-overview__project-box"
 						<?php
 					if ($posttags) {
 						foreach($posttags as $tag) {

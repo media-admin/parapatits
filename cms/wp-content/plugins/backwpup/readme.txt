@@ -2,14 +2,16 @@
 Contributors: inpsyde, danielhuesken, Bueltge, nullbyte, wido, dinamiko, cocreation
 Tags: backup, database backup, cloud backup, restore, wordpress backup
 Requires at least: 3.9
-Tested up to: 5.8
-Requires PHP: 5.6
-Stable tag: 3.10.0
+Tested up to: 6.1
+Requires PHP: 7.2
+Stable tag: 4.0.0
 License: GPLv2+
 
 Schedule complete automatic backups of your WordPress installation. Decide which content will be stored (Dropbox, S3…). This is the free version
 
 == Description ==
+Our annual Green Cyber Sale is here! Get a 30% discount on your **BackWPup Pro** license with the promo code “CYBER30”. Only valid from November 25th to December 2nd, 2022. **[Save 30% off your purchase now!](https://backwpup.com/#buy)** 
+
 The **backup plugin** **[BackWPup](https://backwpup.com/)** can be used to save your complete installation including /wp-content/ and push them to an external Backup Service, like **Dropbox**, **S3**, **FTP** and many more, see list below. With a single backup .zip file you are able to easily restore an installation. Please understand: this free version will not be supported as good as the [BackWPup Pro version](https://backwpup.com). With our premium version you get first class support and more features.
 
 * Database Backup  *(needs mysqli)*
@@ -41,8 +43,8 @@ In case you need to comply with the new GDPR regulation, check out our post [Bac
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/510138536?loop=1&color=c9ff23&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 = Requirements =
-* WordPress 3.9 and PHP 5.3.3 required! (read more about [recommended php version and why you should switch to modern php](https://inpsyde.com/en/wordpress-recommended-php-version-update-php))
-* To use the Plugin with full functionality PHP 5.3.3 with mysqli, FTP,gz, bz2, ZipArchive and curl is needed.
+* WordPress 3.9 and PHP 7.2 required! (read more about [recommended php version and why you should switch to modern php](https://inpsyde.com/en/wordpress-recommended-php-version-update-php))
+* To use the Plugin with full functionality PHP 7.2 with mysqli, FTP,gz, bz2, ZipArchive and curl is needed.
 * Plugin functions that don't work because of your server settings, will not be displayed in admin area.
 
 
@@ -166,6 +168,31 @@ Yes. You need to have writing access to the wp-config.php file (usually residing
 [You can find a detailed tutorial in the BackWPup documentation.](https://backwpup.com/docs/install-backwpup-pro-activate-licence/)
 
 == Changelog ==
+
+= 4.0.0 =
+Release Date: November 16, 2022
+
+* Added: Support for additional S3 storage classes
+* Added: Support for Glacier Instant Retrieval
+* Added: Created backwpup_ftp_use_passive_address filter for when FTP is behind NAT
+* Added: Support for object lock in S3 by adding Content-MD5 header
+* Added (pro): Include unique IV when encrypting archives
+* Added (pro): Default character set fetched from alternative database credentials
+* Changed: Upgraded minimum version to PHP 7.2
+* Changed (pro): Upgraded Google Drive SDK to V3
+* Fixed: Better support for PHP 8
+* Fixed: PHP warning when backing up to S3 destination
+* Fixed: Unable to download from S3 when using predefined region
+* Fixed: Unable to download from SugarSync
+* Fixed: Backups downloaded twice from MS Azure
+* Fixed: wp-config.php backed up twice when parent folder is included in backup
+* Fixed: Text fields too long on SugarSync destination settings
+* Fixed: Dropbox runs out of memory when more than 50 files in folder
+* Fixed (pro): Authentication of OneDrive when HTTP_REFERER not set.
+* Fixed (pro): Displayed creation date of OneDrive backups was incorrect
+* Fixed (pro): Disabled mysqldump radio button when binary cannot be found
+* Fixed (pro): HiDrive does not detect when refresh token expires
+* Removed: Unnecessary AWS and Google library files to save on package size.
 
 = Version 3.10.0 =
 Release Date: September 1, 2021
