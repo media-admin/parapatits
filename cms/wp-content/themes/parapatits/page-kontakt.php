@@ -7,82 +7,95 @@ get_header();
 ?>
 
 	<main class="site-main">
-		<div class="unstacked-wrapper">
-			<section class="contact box--left-aligned unstacked-left">
-				<article class="wrapper">
-					<h1 class="site-title h1__title"><?php the_title();?></h1>
-					<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Wir freuen uns auf Ihren Anruf, Ihr E-Mail oder Ihre Postkarte.</p>
+		<div class="site-content">
+
+			<section class="site-intro box--left-aligned unstacked-wrapper">
+				<div class="unstacked-left">
+					<article class="wrapper">
+						<h1 class="site-title h1__title"><?php the_title();?></h1>
+						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Wir freuen uns auf Ihren Anruf, Ihr E-Mail oder Ihre Postkarte.</p>
+					</article>
+				</div>
+				<div class="unstacked-right">
+					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/cut-for-web_highres-4-DSC03241_web.jpg" alt="Platzhalter-Bild">
+				</div>
+			</section>
+
+			<section class="contact box--right-aligned unstacked-wrapper">
+				<div class="unstacked-left">
+					<article class="wrapper">
+						<?php
+							$args = array(
+								'post_status' => 'publish',
+								'posts_per_page' => 1,
+								'post_type' => 'company-details',
+							);
+
+							$loop = new WP_Query( $args );
+
+							while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+						<div class="contact__wrapper">
+							<p class="contact__data">
+								<strong>Peter Parapatits</strong><br>
+								<?php the_field('company-adress');?>
+								<a class="contact__data-phone" href="tel:<?php the_field('phone-number-primary');?>"><?php the_field('phone-number-primary');?></a><br>
+								<a class="contact__data-cellphone" href="tel:<?php the_field('phone-number-secondary');?>"><?php the_field('phone-number-secondary');?></a><br>
+								<a class="contact__data-mail" href="mailto:<?php the_field('email-primary');?>"><?php the_field('email-primary');?></a><br>
+							</p>
+							<ul class="contact__data-social-media-area">
+								<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="contact__data-social-media-icon contact__data-social-media-icon--facebook lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>
+								<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="contact__data-social-media-icon contact__data-social-media-icon--instragram lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/instagram-icon.svg" alt="Instagram Logo"></a></li>
+							</ul>
+						</div>
+					</article>
+				</div>
+
+
+				<div class="contact__data-opening-hours box--left-aligned unstacked-right">
 
 					<?php
 
-					$args = array(
-						'post_status' => 'publish',
-						'posts_per_page' => 1,
-						'post_type' => 'company-details',
-					);
+					// Check rows exists.
+					if( have_rows('opening-hours') ):
 
-					$loop = new WP_Query( $args );
+						// Loop through rows.
+						while( have_rows('opening-hours') ) : the_row();
 
-						while ( $loop->have_posts() ) : $loop->the_post(); ?>
+								// Load sub field value.
+								$hours_monday = get_sub_field('hours_monday');
+								$hours_tuesday = get_sub_field('hours_tuesday');
+								$hours_wednesday = get_sub_field('hours_wednesday');
+								$hours_thursday = get_sub_field('hours_thursday');
+								$hours_friday = get_sub_field('hours_friday');
+								$hours_saturday = get_sub_field('hours_saturday');
+								$hours_sunday = get_sub_field('hours_sunday');
+								?>
 
-					<div class="contact__wrapper">
-						<p class="contact__data">
-							<strong>Peter Parapatits</strong><br>
-							<?php the_field('company-adress');?>
-							<a class="contact__data-phone" href="tel:<?php the_field('phone-number-primary');?>"><?php the_field('phone-number-primary');?></a><br>
-							<a class="contact__data-cellphone" href="tel:<?php the_field('phone-number-secondary');?>"><?php the_field('phone-number-secondary');?></a><br>
-							<a class="contact__data-mail" href="mailto:<?php the_field('email-primary');?>"><?php the_field('email-primary');?></a><br>
-						</p>
-						<ul class="contact__data-social-media-area">
-							<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="contact__data-social-media-icon contact__data-social-media-icon--facebook lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>
-							<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="contact__data-social-media-icon contact__data-social-media-icon--instragram lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/instagram-icon.svg" alt="Instagram Logo"></a></li>
-						</ul>
-					</div>
-				</article>
+						<article class="wrapper">
+							<div class="">
+								<h2 class="h2__heading">Bürozeiten</h2>
+								<div class="contact__data-opening-hours-table">
+									<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Mo:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_monday;?></div>
+									<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Di:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_tuesday;?></div>
+									<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Mi:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_wednesday;?></div>
+									<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Do:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_thursday;?></div>
+									<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Fr:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_friday;?></div>
+								</div>
+
+
+					<?php
+							endwhile;
+
+					endif;
+					?>
+
+				</div>
 			</section>
 
-			<?php
-
-			// Check rows exists.
-			if( have_rows('opening-hours') ):
-
-				// Loop through rows.
-				while( have_rows('opening-hours') ) : the_row();
-
-						// Load sub field value.
-						$hours_monday = get_sub_field('hours_monday');
-						$hours_tuesday = get_sub_field('hours_tuesday');
-						$hours_wednesday = get_sub_field('hours_wednesday');
-						$hours_thursday = get_sub_field('hours_thursday');
-						$hours_friday = get_sub_field('hours_friday');
-						$hours_saturday = get_sub_field('hours_saturday');
-						$hours_sunday = get_sub_field('hours_sunday');
-						?>
-
-			<section class="contact__data-opening-hours box--left-aligned unstacked-right">
-				<article class="wrapper">
-					<div class="">
-						<h2 class="h2__heading">Bürozeiten</h2>
-						<div class="contact__data-opening-hours-table">
-							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Mo:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_monday;?></div>
-							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Di:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_tuesday;?></div>
-							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Mi:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_wednesday;?></div>
-							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Do:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_thursday;?></div>
-							<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Fr:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_friday;?></div>
-						</div>
-					</div>
-				</article>
-			</section>
-
-			<?php
-					endwhile;
-
-			endif;
-			?>
-		</div>
 
 			<section class="contact__data-map">
-				<article class="">
+				<article class="wrapper">
 					<h2 class="h2__heading">Betriebsstandort</h2>
 					<div class="route__map-wrapper" style="background-image: url( '' );">
 
@@ -105,18 +118,6 @@ get_header();
 			?>
 
 			<?php echo do_shortcode("[shortcode_contact_form]"); ?>
-
-			<section class="box--left-aligned unstacked-wrapper">
-
-				<div class="unstacked-right">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/cut-for-web_highres-4-DSC03241_web.jpg" alt="Platzhalter-Bild">
-				</div>
-
-				<div class="unstacked-left">
-					<?php echo do_shortcode("[shortcode_recall]"); ?>
-				</div>
-
-			</section>
 
 		</div>
 	</main>

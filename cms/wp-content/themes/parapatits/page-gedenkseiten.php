@@ -38,9 +38,7 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<div class="img--wood-square-before-red">
-						<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-7-DSC03394_web.jpg" alt="Platzhalter-Bild">
-					</div>
+					<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-7-DSC03394_web.jpg" alt="Platzhalter-Bild">
 				</div>
 			</section>
 

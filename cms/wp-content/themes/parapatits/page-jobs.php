@@ -19,9 +19,11 @@ get_header();
 			</div>
 		</section>
 
-		<section class="box--left-aligned ">
-			<div class="wrapper">
-				<h2 class="h2__heading">Offene Stellen</h2>
+		<section class="box--left-aligned unstacked-wrapper">
+			<div class="unstacked-left">
+				<article class="box--left-aligned wrapper">
+					<h2 class="h2__heading">Offene Stellen</h2>
+				</article>
 			</div>
 		</section>
 
@@ -46,15 +48,12 @@ get_header();
 					$content = apply_filters('the_content', wpautop($post->post_content)); ?>
 
 					<div class="unstacked-left">
-						<div class="wrapper">
-							<h3 class="job__title h3__heading"><?php the_title();?></h3>
-						</div>
 						<?php the_post_thumbnail('full', ['class' => '']); ?>
 					</div>
 
 					<div class="unstacked-right">
 						<article class="job__description wrapper">
-
+							<h3 class="job__title h3__heading"><?php the_title();?></h3>
 							<?php echo $content; ?>
 							<a class="job__application-button btn btn--red" role="button" href="mailto:bewerbung@parapatits.at?subject='Bewerbung über die Website'">Bewerbung mailen</a>
 						</div>

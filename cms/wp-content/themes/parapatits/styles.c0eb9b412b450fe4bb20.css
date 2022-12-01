@@ -858,10 +858,26 @@ ul.listing {
 .site-main {
 	z-index: auto;
 	overflow: hidden;
+
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
 }
 
 .site-content {
 	padding-top: 0px;
+
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+
+	overflow: hidden;
 }
 
 
@@ -934,6 +950,13 @@ ul.listing {
 	margin-bottom: 3.0rem;
 	padding: 0;
 	overflow: hidden !important;
+}
+
+
+@media (min-width: 800px) {
+	.box--left-aligned {
+		max-height: 500px;
+	}
 }
 
 
@@ -1047,17 +1070,18 @@ img {
 	height: auto;
 	-o-object-fit: cover;
 	   object-fit: cover;
+	overflow: hidden;
 	padding: 0;
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 }
 
-
+/*
 .img--fullwidth {
 	width: 100vw !important;
 	object-fit: cover !important;
 	overflow: hidden !important;
-}
+} */
 
 
 
@@ -1101,7 +1125,7 @@ img {
 @media (min-width: 800px) {
 
 	.unstacked-right .img--left-aligned {
-		height: 500px;
+		max-height: 500px;
 		text-align: right;
 		margin: 2.0rem 0;
 		margin: 0.0rem;
@@ -1111,6 +1135,9 @@ img {
 
 	.unstacked-right .img--centered {
 		width: 100%;
+		-o-object-fit: cover !important;
+			 object-fit: cover !important;
+		object-position: center center !important;
 	}
 
 }
@@ -1139,11 +1166,11 @@ img {
 
 @media (min-width: 800px) {
 	.unstacked-left img {
-		height: 500px;
+		max-height: 500px;
 	}
 
 	.unstacked-left .img--right-aligned {
-		height: 500px;
+		max-height: 500px;
 		text-align: left;
 		margin: 2.0rem 0;
 		margin: 0.0rem;
@@ -1331,6 +1358,15 @@ img {
 	align-self: center;
 	margin-bottom: -10px;
 	margin-bottom: -1.0rem;
+
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+
+
 	}
 }
 
@@ -1383,6 +1419,9 @@ img {
 		right: 0% !important;
 		margin-left: 0vw !important;
 		margin-right: 0vw !important;
+		-o-object-fit: cover !important;
+			 object-fit: cover !important;
+		object-position: center center !important;
 	}
 
 
@@ -1429,6 +1468,7 @@ img {
 		grid-area: div2 ;
 		align-self: center;
 		/* background: #eaf4f4; */
+		max-height: 500px;
 	}
 
 
@@ -1472,6 +1512,10 @@ img {
 		margin-left: 0vw !important;
 		margin-right: 0vw !important;
 		height: 500px;
+
+		-o-object-fit: cover !important;
+			 object-fit: cover !important;
+		object-position: center center !important;
 	}
 
 
@@ -1484,6 +1528,9 @@ img {
 		margin-left: 0vw !important;
 		margin-right: 0vw !important;
 		height: 500px;
+		-o-object-fit: cover !important;
+			 object-fit: cover !important;
+		object-position: center center !important;
 	}
 
 
@@ -2136,6 +2183,7 @@ ul {
 @media (min-width: 800px) {
 	.h1__subtitle {
 		margin: 0.0rem 1.0rem;
+		margin-bottom: 1.5rem;
 	}
 }
 
@@ -2195,6 +2243,7 @@ ul {
 	margin: 0;
 	margin-top: 0.0rem;
 	margin-bottom: 1.0rem;
+	margin-bottom: 1.5rem;
 }
 
 
@@ -2257,6 +2306,12 @@ ul {
   padding-right: 18px;
   padding-bottom: 0.25rem;
   z-index: 100 !important;
+
+	width: 100vw !important;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
 }
 
 @media (min-width: 800px) {
@@ -2769,6 +2824,8 @@ menu.site-menu {
 		user-select: none;
 		touch-action: pan-y;
 		-webkit-tap-highlight-color: transparent;
+		overflow: hidden;
+
 }
 
 .slick-list {
@@ -3129,6 +3186,15 @@ menu.site-menu {
 
 .home-slider {
 	width: 100vw !important;
+
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+
+	overflow: hidden;
 }
 
 
@@ -3138,10 +3204,20 @@ menu.site-menu {
 	object-fit: cover !important;
 	object-position: center center !important;
 
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+
+	overflow: hidden;
+
 }
 
 .home-slider img {
 	object-fit: cover !important;
+
 }
 
 
@@ -3396,6 +3472,10 @@ span.hover__alt-text {
 
 @media (min-width: 800px) {
 
+	.info-section {
+		margin: 3rem auto;
+	}
+
 	.home .info-section {
 		margin: 3rem auto;
 	}
@@ -3404,6 +3484,10 @@ span.hover__alt-text {
 
 
 @media (min-width: 800px) {
+
+	.info-section article.wrapper {
+		width: 100% !important;
+	}
 
 	.home .info-section article.wrapper {
 		width: 100% !important;
@@ -3615,8 +3699,18 @@ span.hover__alt-text {
 
 @media (min-width: 800px) {
 	.section__just-call {
+		height: 500px;
 		margin-top: 0.0rem;
 		margin-bottom: 0.0rem;
+	}
+}
+
+
+@media (min-width: 800px) {
+	.section__just-call article {
+		position: relative;
+		width: 100% !important;
+		padding-left: 2.0rem !important;
 	}
 }
 
@@ -3932,7 +4026,7 @@ span.hover__alt-text {
 
 
 
-
+/* === PAGE CONTACT === */
 
 
 
@@ -3948,9 +4042,14 @@ span.hover__alt-text {
 	padding: 4.5rem 0.25rem;
 }
 
-.contact-form-section__container {
-	background-color:
+
+@media (min-width: 800px) {
+	.contact-form-section__container {
+		width: 75%;
+		margin: 0 auto;
+	}
 }
+
 
 .contact-form-section__title {
 	font-size: 1.6rem;
@@ -4221,8 +4320,8 @@ span.hover__alt-text {
 		position: relative;
 		width: 75%;
 		margin: 0 auto;
-		margin-top: 2.0rem;
-		margin-bottom: 2.0rem;
+		margin-top: 6.0rem;
+		margin-bottom: 6.0rem;
 	}
 }
 
@@ -4639,6 +4738,12 @@ button.active .panel p {
 	}
 
 
+.contact .wrapper {
+	width: 100%;
+	padding-rigth: 0.0rem;
+}
+
+
 .contact__wrapper {
 	color: #ffffff;
 	text-align: right;
@@ -4720,14 +4825,15 @@ button.active .panel p {
 .contact__data-social-media-area {
 	position: relative;
 	display: grid;
-	/* width: 100%; */
+	width: 150px;
 	grid-template-columns: 1fr 1fr;
 	align-items: right;
+	justify-items: end;
+	text-align: right;
 	list-style-type: none;
 	margin-top: 0.0rem;
-	margin-left: 50%;
-	padding-right: 0;
-
+	margin-right: 0.0rem;
+	margin-left: auto;
 	}
 
 	@media (min-width: 800px) {
@@ -4736,6 +4842,8 @@ button.active .panel p {
 
 .contact__data-social-media-area li {
 	position: relative;
+	width: 60px !important;
+	height: 60px !important;
 	text-align: right;
 	margin-right: 0px;
 	padding-right: 0;
@@ -4749,9 +4857,9 @@ button.active .panel p {
 
 
 .contact__data-social-media-icon {
+	width: 60px;
 
-
-	}
+}
 
 	@media (min-width: 800px) {
 
@@ -4789,7 +4897,7 @@ button.active .panel p {
 	@media (min-width: 800px) {
 
 		.contact__data-opening-hours {
-			margin-top: 35%;
+
 		}
 
 	}
@@ -5165,45 +5273,80 @@ button.active .panel p {
 
 
 
-		/* === TESTIMONIALS PAGE === */
-		.testimonials {
-			margin-top: 3.0rem;
-			margin-bottom: 3.0rem;
-		}
+/* === TESTIMONIALS PAGE === */
+.testimonials {
+	position: relative !important;
+	width: 100% !important;
+	margin-top: 3.0rem;
+	margin-bottom: 3.0rem;
+}
 
-		.testimonials__container {
-			width: 100vw;
-		}
+.testimonials__container {
+	position: relative !important;
+	width: 100% !important;
 
-		.testimonials__title {
-			margin: 2.0rem auto;
+}
 
-		}
+.testimonials__title {
+	margin: 2.0rem auto;
 
-		.testimonials-carousel {
-			margin: 2.0rem auto;
-			padding: 0.0rem 1.0rem;
-		}
+}
 
-		.testimonials-carousel__container {
-
-		}
-
-		.testimonials-carousel__content {
-
-		}
-
-		.testimonials-carousel__title {
-			font-size: 1.4rem;
-			font-weight: 700;
-		}
+.testimonials-carousel {
+	position: relative !important;
+	width: 75% !important;
+	margin: 2.0rem auto;
+	padding: 0.0rem 1.0rem;
+}
 
 
-		.testimonials h3 {
-			margin-top: 4.0rem;
 
-		}
+.testimonials-carousel .slick-slider {
 
+}
+
+
+.testimonials-carousel .slick-dots {
+	bottom: inherit;
+	margin-top: 1.0rem;
+}
+
+
+.testimonials-carousel__container {
+	position: relative !important;
+}
+
+.testimonials-carousel__content {
+
+}
+
+.testimonials-carousel__title {
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+
+.testimonials h3 {
+	margin-top: 4.0rem;
+
+}
+
+
+
+/* === SERVICES PAGE === */
+
+.unsere-leistungen .site-content ul {
+	position: relative;
+	line-height: 1.4rem;
+	margin-top: 1.0rem;
+	margin-bottom: 1.0rem;
+	margin-left: 2.5rem;
+}
+
+.unsere-leistungen .site-content ul li {
+	margin-top: 1.0rem;
+	margin-bottom: 1.0rem;
+}
 
 
 
@@ -5327,6 +5470,13 @@ button.active .panel p {
 	letter-spacing: 0.05rem;
 	margin-top: 4.0rem;
 
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+
 }
 
 @media (min-width: 800px) {
@@ -5376,6 +5526,7 @@ button.active .panel p {
 	display: grid;
 	width: 42%;
 	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
 	align-items: center;
 	list-style-type: none;
 	margin: 2.0rem auto;
@@ -5387,11 +5538,10 @@ button.active .panel p {
 @media (min-width: 800px) {
 
 	.site-footer__contact-social-media-area {
-		width: 12% !important;
+		width: 150px !important;
 	}
 
-
-	}
+}
 
 .site-footer__navigation {
 		font-weight: 700;

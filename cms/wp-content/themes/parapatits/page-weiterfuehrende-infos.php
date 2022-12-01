@@ -16,7 +16,7 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-7-DSC03302_web.jpg" alt="Platzhalter-Bild">
 				</div>
 				</section>
 
@@ -169,20 +169,21 @@ get_header( 'bestattung' );
 				</article>
 			</section>
 
-			<div class="unstacked-wrapper">
-				<div class="unstacked-left">
-					<img class="lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-7-DSC03302_web.jpg" alt="Platzhalter-Bild">
-				</div>
+			<section class="box--right-aligned unstacked-wrapper">
 				<div class="unstacked-right">
-					<section class="box--left-aligned">
-						<article class="wrapper">
-							<h2 class="h2__heading">Leitfaden im Todesfall</h2>
-							<p class="">Was tun, wenn ein Familienmitglied stirbt?</p>
-							<a class="btn btn--red btn--centered-aligned" role="button" href="/leitfaden-im-todesfall">Leitfaden anzeigen</a>
-						</article>
-					</section>
+					<article class="wrapper">
+						<h2 class="h2__heading">Leitfaden im Todesfall</h2>
+						<p class="">
+							Was tun, wenn ein Familienmitglied stirbt?
+						</p>
+						<a class="btn btn--red btn--centered-aligned" role="button" href="/leitfaden-im-todesfall">Leitfaden anzeigen</a>
+					</article>
 				</div>
-			</div>
+				<div class="unstacked-left">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Platzhalter-Bild">
+				</div>
+			</section>
+
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
 

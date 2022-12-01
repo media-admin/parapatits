@@ -1,5 +1,5 @@
 <section class="jobs-section box--centered">
-	<article class="wrapper">
+	<article class="">
 		<div class="unstacked-left">
 			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-43-DSC03482_web.jpg" alt="Platzhalter-Bild">
 		</div>
