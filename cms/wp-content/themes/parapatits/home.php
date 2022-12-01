@@ -50,7 +50,7 @@ get_header();
 
 						$args = array(
 							'post_status' => 'publish',
-							'posts_per_page' => -1,
+							'posts_per_page' => 2,
 							'post_type' => 'notification',
 						);
 
@@ -61,7 +61,7 @@ get_header();
 							<p class="p__subitle news-section__subtitle wrapper"><?php the_title();?></p>
 							<div class="news-section__content wrapper">
 								<p>
-									<?php the_content();?>
+									<?php the_excerpt();?>
 								</p>
 							</div>
 

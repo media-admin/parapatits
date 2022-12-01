@@ -1166,7 +1166,7 @@ img {
 
 @media (min-width: 800px) {
 	.unstacked-left img {
-		max-height: 500px;
+		height: auto;
 	}
 
 	.unstacked-left .img--right-aligned {
@@ -1408,6 +1408,16 @@ img {
 		right: 0% !important;
 		margin-left: 0vw !important;
 		margin-right: 0vw !important;
+
+		width: 100% !important;
+		left: 0% !important;
+		right: 0% !important;
+		margin-left: 0vw !important;
+		margin-right: 0vw !important;
+		-o-object-fit: cover !important;
+			 object-fit: cover !important;
+		object-position: center center !important;
+
 	}
 
 
@@ -3041,7 +3051,6 @@ menu.site-menu {
 
 .slick-dots {
 	position: relative;
-	bottom: -28px;
 	list-style: none;
 	display: block;
 	text-align: center;
@@ -3762,12 +3771,13 @@ span.hover__alt-text {
 @media (min-width: 800px) {
 	.recall-section__container {
 		display: grid;
-		width: 75%;
-		grid-template-columns: 20% 80%;
+		width: 100%;
+		grid-template-columns: 33% 66%;
 		grid-template-areas: "div1 div2";
-		align-self: center;
+		align-self: center !important;
 		line-height: initial;
 		margin: 0 auto;
+		align-items: center;
 	}
 }
 
@@ -3778,7 +3788,8 @@ span.hover__alt-text {
 
 @media (min-width: 800px) {
 	.recall-section__text-area {
-		padding-left: 2.0rem;
+		position: relative;
+		padding-left: 0.5rem;
 		padding-right: 2.0rem;
 	}
 }
@@ -3789,7 +3800,13 @@ span.hover__alt-text {
 
 }
 
-
+@media (min-width: 800px) {
+	.recall-section__text-area {
+		position: relative;
+		padding-left: 2.0rem;
+		padding-right: 0.5rem;
+	}
+}
 
 
 
@@ -3814,12 +3831,13 @@ span.hover__alt-text {
 	.recall-section__form #wpcf7-f129-o1 .wpcf7-form {
 		display: grid;
 		width: 100%;
-		grid-template-columns: 40% 60%;
+		grid-template-columns: 50% 50%;
 		grid-template-areas: "recall-section__form-item recall-section__form-item-name recall-section__form-item recall-section__form-item-phonenumber";
 		align-self: flex-end;
 		line-height: initial;
 		margin: 0 auto;
 		padding-left: 2.0rem;
+		padding-left: 0.0rem;
 		padding-right: 2.0rem;
 	}
 

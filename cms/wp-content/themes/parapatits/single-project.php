@@ -8,14 +8,6 @@ get_header();
 
 <main class="site-main">
 	<div class="single-project site-content">
-		<h1 class="single-project__title site-title h1__title">
-			<?php the_title();?>
-		</h1>
-
-		<div class="single-project__container wrapper">
-			<p class="single-project__meta h2__subheading"><?php the_field('project-city');?> - <?php the_field('project-date');?></p>
-			<p class="single-project__summary"><?php the_field('project-summary');?></p>
-		</div>
 
 		<?php
 			$image_id = get_post_thumbnail_id(get_the_ID());
@@ -23,7 +15,17 @@ get_header();
 			$alt_text = get_post_meta($image_id , '_wp_attachment_image_alt', true);
 		?>
 
-		<img class="single-project__img lazyload" src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text ;?>">
+		<section class="site-intro box--left-aligned unstacked-wrapper">
+			<div class="unstacked-left">
+				<article class="wrapper">
+					<h1 class="site-title h1__title"><?php the_title();?></h1>
+					<p class="single-project__meta h2__subheading site-subtitle h1__subtitle h1__subtitle--left-aligned"><?php the_field('project-city');?> - <?php the_field('project-date');?></p>
+				</article>
+			</div>
+			<div class="unstacked-right">
+				<img class="single-project__img img--fullwidth lazyload" src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text ;?>">
+			</div>
+		</section>
 
 		<div class="single-project__content-wrapper wrapper">
 			<blockquote class="single-project__quote">

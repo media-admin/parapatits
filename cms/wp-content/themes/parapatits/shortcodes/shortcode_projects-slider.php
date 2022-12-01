@@ -3,7 +3,7 @@
 		<?php
 			$args = array(
 				'post_status' => 'publish',
-				'posts_per_page' => 999,
+				'posts_per_page' => 5,
 				'post_type' => 'project'
 			);
 

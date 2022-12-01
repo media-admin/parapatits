@@ -82,7 +82,7 @@ get_header();
 								Werde Teil unseres Teams!
 							</p>
 						</div>
-						<a class="btn btn--red btn--centered-aligned" role="button" href="/jobs" target="_blank">Offene Stellen anzeigen</a>
+						<a class="btn btn--red btn--centered-aligned" role="button" href="/jobs">Offene Stellen anzeigen</a>
 					</article>
 				</div>
 				<div class="unstacked-left">

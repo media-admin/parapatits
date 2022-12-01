@@ -95,7 +95,7 @@ get_header();
 
 
 			<section class="contact__data-map">
-				<article class="wrapper">
+				<article class="">
 					<h2 class="h2__heading">Betriebsstandort</h2>
 					<div class="route__map-wrapper" style="background-image: url( '' );">
 

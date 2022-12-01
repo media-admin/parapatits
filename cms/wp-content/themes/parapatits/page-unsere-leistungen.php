@@ -54,7 +54,7 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-1-DSC03338_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Platzhalter-Bild">
 				</div>
 			</section>
 
@@ -125,6 +125,14 @@ get_header( 'bestattung' );
 				</div>
 			</section>
 
+			<section class="box--centered">
+				<article class="">
+					<div class="unstacked-left">
+						<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-15-DSC03351_web.jpg" alt="Platzhalter-Bild">
+					</div>
+				</article>
+			</section>
+
 			<section class="box--left-aligned unstacked-wrapper">
 				<div class="unstacked-right">
 					<article class="wrapper">
@@ -136,7 +144,7 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-15-DSC03351_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-10-DSC03314_web.jpg" alt="Platzhalter-Bild">
 				</div>
 			</section>
 
