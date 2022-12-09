@@ -21,8 +21,8 @@ get_header();
 				</div>
 			</section>
 
-			<section class="info-section box--left-aligned">
-				<article class="wrapper">
+			<section class="info-section box--left-aligned unstacked-left--content">
+				<article class="wrapper content-wrapper">
 					<h2 class="h2__title info-section__title h2__title--left-aligned">Warum machen wir das, was wir machen?</h2>
 					<p class="h2__subtitle info-section__subtitle h2__subtitle--left-aligned">Eine Herzensangelegenheit.</p>
 					<div class="info-section__content">
@@ -37,8 +37,8 @@ get_header();
 			</section>
 
 			<section class="box--right-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<div class="">
 							<h2 class="h2__heading">Tischlerei</h2>
 							<p class="h2__subtitle h2__subtitle--left-aligned">Wir gestalten Lebensräume.</p>
@@ -57,8 +57,8 @@ get_header();
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-left">
-					<article class="wrapper">
+				<div class="unstacked-left unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Bestattung</h2>
 						<p class="h2__subtitle h2__subtitle--left-aligned">Wir begleiten Sie.</p>
 						<div class="">
@@ -73,9 +73,9 @@ get_header();
 				</div>
 			</section>
 
-			<section class="box--right-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+			<section class="box--centered unstacked-wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 							<h2 class="h2__heading">Jobs</h2>
 						<div class="">
 							<p class="">

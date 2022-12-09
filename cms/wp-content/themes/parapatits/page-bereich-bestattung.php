@@ -28,8 +28,8 @@ get_header( 'bestattung' );
 			</section>
 
 			<section class="box--right-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Unser Arbeitsfeld</h2>
 						<p class="">
 							Als Bestatter ist es unsere Aufgabe, Verstorbene in der richtigen Form zur letzten Ruhe zu geleiten und die Hinterbliebenen mit Erfahrung und Feingefühl zu begleiten.
@@ -42,8 +42,8 @@ get_header( 'bestattung' );
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-left">
-					<article class="wrapper">
+				<div class="unstacked-left unstacked-left--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Wir unterstützen Sie ganzheitlich</h2>
 						<p class="">
 							In intensivem, persönlichem Kontakt leiten wir Sie durch diese schwere Zeit und versuchen, Ihnen das Abschiednehmen zu erleichtern. Wir übernehmen die behördlichen Wege und organisieren in enger Abstimmung mit Ihnen alles rund um die Bestattung und Trauerfeier. Sie können sich voll und ganz auf Ihre Trauer und das Abschiednehmen einlassen.
@@ -57,8 +57,8 @@ get_header( 'bestattung' );
 			</section>
 
 			<section class="box--right-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Was ist Ihre Aufgabe?</h2>
 						<p class="">
 							Nachdem Sie vom Sterbefall erfahren, sollten Sie uns umgehend kontaktieren. Näheres besprechen wir mit Ihnen in aller Ruhe und Schritt für Schritt.
@@ -72,9 +72,9 @@ get_header( 'bestattung' );
 
 			<?php echo do_shortcode("[shortcode_just_call]"); ?>
 
-			<section class="box--right-aligned unstacked-wrapper">
+			<section class="box--centered unstacked-wrapper">
 				<div class="unstacked-right">
-					<article class="wrapper">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Leitfaden im Todesfall</h2>
 						<p class="">
 							Was tun, wenn ein Familienmitglied stirbt?

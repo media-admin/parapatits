@@ -21,8 +21,8 @@ get_header( 'bestattung' );
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Leitfaden</h2>
 						<div class="">
 							<p class="">
@@ -38,8 +38,8 @@ get_header( 'bestattung' );
 			</section>
 
 			<section class="box--right-aligned unstacked-wrapper">
-				<div class="unstacked-left">
-					<article class="wrapper">
+				<div class="unstacked-left unstacked-left--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Unsere Leistungen</h2>
 						<div class="">
 							<p class="">

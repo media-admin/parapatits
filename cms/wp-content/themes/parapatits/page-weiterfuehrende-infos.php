@@ -21,7 +21,7 @@ get_header( 'bestattung' );
 				</section>
 
 			<div id="wichtige-dokumente"></div>
-			<section id="accordion" class="wrapper">
+			<section id="accordion" class="wrapper content-wrapper">
 				<article class="accordion__item">
 					<button class="accordion">Wichtige Dokumente für die Bestattung<p class="accordion__pointer"><i class="arrow down"></i></p></button>
 					<div class="panel">
@@ -169,9 +169,9 @@ get_header( 'bestattung' );
 				</article>
 			</section>
 
-			<section class="box--right-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+			<section class="box--centered unstacked-wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Leitfaden im Todesfall</h2>
 						<p class="">
 							Was tun, wenn ein Familienmitglied stirbt?

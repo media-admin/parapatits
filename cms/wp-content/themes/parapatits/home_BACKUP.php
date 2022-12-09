@@ -15,27 +15,23 @@ get_header();
 				</div>
 				<div class="unstacked-right">
 					<ul class="intro__company-listing">
-						<a href="/tischlerei/">
-							<li class="intro__list-item intro__list-item--tischlerei">
-								<img class="intro__list-img img--wood-square img--wood-square-red lazyload" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/oak-wood-red.png" alt="Platzhalter-Bild">
-								<div class="intro__list-content">
-									<h2 class="intro__list-title h2__title h2__title--left-aligned">Tischlerei</h2>
-									<p class="intro__list-subtitle h2__subtitle h2__subtitle--left-aligned"><span class="hover__default-text">Wir gestalten Lebensräume.</span><span class="hover__alt-text">Wir gestalten Lebensträume.</span></p>
-								</div>
-							</li>
-						</a>
+						<li class="intro__list-item intro__list-item--tischlerei">
+							<img class="intro__list-img img--wood-square img--wood-square-red lazyload" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/oak-wood-red.png" alt="Platzhalter-Bild">
+							<div class="intro__list-content">
+								<h2 class="intro__list-title h2__title h2__title--left-aligned">Tischlerei</h2>
+								<p class="intro__list-subtitle h2__subtitle h2__subtitle--left-aligned"><span class="hover__default-text">Wir gestalten Lebensräume.</span><span class="hover__alt-text">Wir gestalten Lebensträume.</span></p>
+							</div>
+						</li>
 					</ul>
 					<hr class="intro__company-listing-separator"></hr>
 					<ul class="intro__company-listing">
-						<a href="/bestattung/">
-							<li class="intro__list-item intro__list-item--bestattung">
-								<div class="intro__list-content">
-									<h2 class="intro__list-title h2__title h2__title--left-aligned">Bestattung</h2>
-									<p class="intro__list-subtitle h2__subtitle h2__subtitle--right-aligned"><span class="hover__default-text">Wir begleiten Sie.</span><span class="hover__alt-text">Wir geleiten Sie.</p>
-								</div>
-								<img class="intro__list-img img--wood-square img--wood-square-gray lazyload" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/oak-wood-gray.png" alt="Platzhalter-Bild">
-							</li>
-						</a>
+						<li class="intro__list-item intro__list-item--bestattung">
+							<div class="intro__list-content">
+								<h2 class="intro__list-title h2__title h2__title--left-aligned">Bestattung</h2>
+								<p class="intro__list-subtitle h2__subtitle h2__subtitle--right-aligned"><span class="hover__default-text">Wir begleiten Sie.</span><span class="hover__alt-text">Wir geleiten Sie.</p>
+							</div>
+							<img class="intro__list-img img--wood-square img--wood-square-gray lazyload" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/oak-wood-gray.png" alt="Platzhalter-Bild">
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -47,7 +43,7 @@ get_header();
 				</div>
 
 				<div class="unstacked-right">
-					<article class="news-section__container wrapper content-wrapper">
+					<article class="news-section__container wrapper">
 						<h2 class="h2__title news-section__title wrapper">Aktuelles</h2>
 
 						<?php
@@ -80,7 +76,7 @@ get_header();
 			</section>
 
 			<section class="info-section box--left-aligned">
-				<article class="wrapper content-wrapper">
+				<article class="wrapper">
 					<h2 class="h2__title info-section__title h2__title--left-aligned">Tischlerei und Bestattung Parapatits</h2>
 					<p class="h2__subtitle info-section__subtitle h2__subtitle--left-aligned">Eine Herzensangelegenheit.</p>
 					<div class="info-section__content">
@@ -96,8 +92,8 @@ get_header();
 					<img class="details-section__branch-item--tischlerei__img img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/cut-for-web_highres-28-DSC03514_web.jpg" alt="Platzhalter-Bild">
 				</div>
 
-				<div class="unstacked-left unstacked-left--content">
-					<article class="wrapper content-wrapper">
+				<div class="unstacked-left">
+					<article class="wrapper">
 						<h2 class="details-section__branch-item--tischlerei__title h2__title h2__title--right-aligned">Tischlerei</h2>
 						<div class="">
 							<p class="details-section__branch-item--tischlerei__text h2__subtitle h2__subtitle--right-aligned">Wir gestalten Lebens<span class="letter-colored--red">t</span>räume aus Holz. Von der gut durchdachten Küche bis zum liebevoll gestalteten Kinderzimmer, vom gemütlichen Bad bis zum praktischen Abstellraum.</p>
@@ -111,8 +107,8 @@ get_header();
 				<div class="unstacked-left">
 					<img class="details-section__branch-item--bestattung__img img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/cut-for-web_highres-6-DSC03299_web.jpg" alt="Platzhalter-Bild">
 				</div>
-				<div class="unstacked-right unstacked-right--content">
-					<article class="wrapper content-wrapper">
+				<div class="unstacked-right">
+					<article class="wrapper">
 						<h2 class="details-section__branch-item--bestattung__title h2__title h2__title--left-aligned">Bestattung</h2>
 						<div class="">
 							<p class="details-section__branch-item__text h2__subtitle h2__subtitle--left-aligned">Mit viel Feingefühl und persönlichem Kontakt führen wir Sie durch die schwierige Zeit und schaffen eine ehrende Abschiednahme.</p>

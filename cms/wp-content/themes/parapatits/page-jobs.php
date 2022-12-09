@@ -88,8 +88,8 @@ get_header();
 
 
 		<section class="box--left-aligned unstacked-wrapper">
-			<div class="unstacked-left">
-				<article class="box--left-aligned wrapper">
+			<div class="unstacked-left unstacked-left--content">
+				<article class="box--left-aligned wrapper content-wrapper">
 					<div class="">
 						<h2 class="h2__heading">Betrieb ansehen</h2>
 						<p class="">

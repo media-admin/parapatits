@@ -27,8 +27,8 @@ get_header( 'bestattung' );
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Kontaktaufnahme</h2>
 						<div class="wrapper">
 							<p class="">
@@ -43,8 +43,8 @@ get_header( 'bestattung' );
 			</section>
 
 			<section class="box--right-aligned unstacked-wrapper">
-				<div class="unstacked-left">
-					<article class="wrapper">
+				<div class="unstacked-left unstacked-left--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Abholung und Überführung</h2>
 						<div class="wrapper">
 							<p class="">
@@ -59,8 +59,8 @@ get_header( 'bestattung' );
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Rund um die Trauerfeier</h2>
 						<p class="">
 								Die gesamte Trauerfeier wird in Zusammenarbeit mit den Angehörigen gestaltet.
@@ -84,8 +84,8 @@ get_header( 'bestattung' );
 			</section>
 
 			<section class="box--right-aligned unstacked-wrapper">
-				<div class="unstacked-left">
-					<article class="wrapper">
+				<div class="unstacked-left unstacked-left--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Sterbe&shy;dokumente</h2>
 						<p class="">
 							Besorgung der Sterbedokumente am zuständigen Standesamt.
@@ -98,8 +98,8 @@ get_header( 'bestattung' );
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Todesanzeigen</h2>
 						<p class="">
 							Aufgabe von Todesanzeigen in Zeitungen.
@@ -112,8 +112,8 @@ get_header( 'bestattung' );
 			</section>
 
 			<section class="box--right-aligned unstacked-wrapper">
-				<div class="unstacked-left">
-					<article class="wrapper">
+				<div class="unstacked-left unstacked-left--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Vorsorge&shy;versicherungen</h2>
 						<p class="">
 							Abwicklung mit Vorsorgeversicherungen <strong>(Wiener&nbsp;Verein)</strong>
@@ -134,8 +134,8 @@ get_header( 'bestattung' );
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Weiterführende Informationen</h2>
 						<p class="">
 							Alle wichtigen Informationen, übersichtlich für Sie zusammengestellt.

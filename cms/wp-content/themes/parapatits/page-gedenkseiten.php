@@ -25,9 +25,9 @@ get_header( 'bestattung' );
 				</div>
 			</div>
 
-			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+			<section class="box--centered unstacked-wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="">Unsere Leistungen</h2>
 						<div class="">
 							<p class="">

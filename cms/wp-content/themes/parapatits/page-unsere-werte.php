@@ -21,8 +21,8 @@ get_header( 'tischlerei' );
 			</section>
 
 			<section class="box--right-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Hochwertigkeit</h2>
 						<div class="">
 							<p class="">
@@ -37,8 +37,8 @@ get_header( 'tischlerei' );
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-left">
-					<article class="wrapper">
+				<div class="unstacked-left unstacked-left--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Gesamtkonzept</h2>
 						<div class="">
 							<p class="">
@@ -53,8 +53,8 @@ get_header( 'tischlerei' );
 			</section>
 
 			<section class="box--right-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Nachhaltigkeit</h2>
 						<div class="">
 							<p class="">
@@ -70,8 +70,8 @@ get_header( 'tischlerei' );
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-left">
-					<article class="wrapper">
+				<div class="unstacked-left unstacked-left--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Tradition</h2>
 						<div class="">
 							<p class="">
@@ -86,8 +86,8 @@ get_header( 'tischlerei' );
 			</section>
 
 			<section class="box--right-aligned unstacked-wrapper">
-				<div class="unstacked-right">
-					<article class="wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Verlässlichkeit</h2>
 						<div class="">
 							<p class="">
@@ -102,8 +102,8 @@ get_header( 'tischlerei' );
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-left">
-					<article class="wrapper">
+				<div class="unstacked-left unstacked-left--content">
+					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Alles aus einer Hand</h2>
 						<div class="">
 							<p class="">
