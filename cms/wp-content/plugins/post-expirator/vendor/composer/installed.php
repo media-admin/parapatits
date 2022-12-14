@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'publishpress/publishpress-future',
-        'pretty_version' => 'dev-develop',
-        'version' => 'dev-develop',
-        'reference' => '037fdeee62c973b80c1adec3681bf5db266cbb96',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '877693b9778065b2188f159e4a5e909e811a5aee',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'publishpress/publishpress-future' => array(
-            'pretty_version' => 'dev-develop',
-            'version' => 'dev-develop',
-            'reference' => '037fdeee62c973b80c1adec3681bf5db266cbb96',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '877693b9778065b2188f159e4a5e909e811a5aee',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

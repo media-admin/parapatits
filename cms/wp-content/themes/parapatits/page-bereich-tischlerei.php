@@ -74,11 +74,9 @@ get_header( 'tischlerei' );
 			<?php echo do_shortcode("[shortcode_projects_slider]"); ?>
 
 			<section class="box--centered">
-				<article class="wrapper">
 					<div class="unstacked-left">
 						<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-20-DSC03422_web.jpg" alt="Platzhalter-Bild">
 					</div>
-				</article>
 			</section>
 
 			<?php echo do_shortcode("[shortcode_testimonials_tischlerei]"); ?>

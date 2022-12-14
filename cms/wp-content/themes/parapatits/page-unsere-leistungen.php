@@ -5,9 +5,9 @@
 
 get_header( 'bestattung' );
 ?>
+
 	<main class="site-main">
 		<div class="site-content">
-
 			<section class="site-intro box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left">
 					<article class="wrapper">
@@ -30,7 +30,7 @@ get_header( 'bestattung' );
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Kontaktaufnahme</h2>
-						<div class="wrapper">
+						<div class="">
 							<p class="">
 								Kontaktaufnahme mit Krankenhaus oder Pflegeheim, Behörden, Botschaften, Ämtern usw.
 							</p>
@@ -133,7 +133,7 @@ get_header( 'bestattung' );
 				</article>
 			</section>
 
-			<section class="box--left-aligned unstacked-wrapper">
+			<section class="box--centered unstacked-wrapper">
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Weiterführende Informationen</h2>

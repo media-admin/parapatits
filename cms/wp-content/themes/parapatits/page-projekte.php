@@ -9,7 +9,7 @@ get_header( 'tischlerei' );
 	<main class="site-main">
 		<div class="site-content">
 			<section class="projects site-intro box--left-aligned unstacked-wrapper">
-				<div class="unstacked-left">
+				<div class="unstacked-left unstacked-left--content">
 					<article class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title();?></h1>
 						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Räume zum Durchstöbern</p>
@@ -28,9 +28,8 @@ get_header( 'tischlerei' );
 
 			<?php echo do_shortcode("[shortcode_projects_overview]"); ?>
 
-
-			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-left">
+			<section class="box--centered unstacked-wrapper">
+				<div class="unstacked-left unstacked-left--content">
 					<?php echo do_shortcode("[shortcode_faqs]"); ?>
 				</div>
 				<div class="unstacked-right">

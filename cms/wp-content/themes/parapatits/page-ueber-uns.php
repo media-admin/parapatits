@@ -8,7 +8,6 @@ get_header();
 
 	<main class="site-main">
 		<div class="site-content">
-
 			<section class="site-intro box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left">
 					<article class="wrapper">

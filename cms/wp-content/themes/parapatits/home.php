@@ -91,7 +91,7 @@ get_header();
 				</article>
 			</section>
 
-			<section class="details-section box--right-aligned unstacked-wrapper">
+			<section class="box--right-aligned unstacked-wrapper">
 				<div class="unstacked-right">
 					<img class="details-section__branch-item--tischlerei__img img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/cut-for-web_highres-28-DSC03514_web.jpg" alt="Platzhalter-Bild">
 				</div>

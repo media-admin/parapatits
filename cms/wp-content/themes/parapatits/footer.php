@@ -1,36 +1,45 @@
 	<footer class="site-footer">
-
-			<section class="site-footer__contact">
-				<p class="site-footer__contact-data">
+		<div class="site-footer__row">
+			<section class="site-footer__contact-data">
+				<p class="">
 					Peter Parapatits<br>
 					Angergasse 10<br>
 					7341 Markt Sankt Martin<br>
 					<a href="tel:+4326182221">+43 2618/2221</a><br>
 					<a href="mailto:tischlerei@parapatits.at">tischlerei@parapatits.at</a><br>
 				</p>
+			</section>
+
+			<section class="site-footer__contact-social-media">
 				<ul class="site-footer__contact-social-media-area">
 					<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--facebook" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>
 					<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--instragram" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/instagram-icon.svg" alt="Instagram Logo"></a></li>
 				</ul>
 			</section>
 
-			<nav class="site-footer__navigation">
-				<ul class="site-footer__navigation-list">
-					<?php
-						wp_nav_menu(array(
-							'walker' => new Footer_Walker(),
-							'menu' => 'Footermenü',
-							'theme_location'=> 'nav-menu-footer',
-							'container'=> '<ul>',
-							'menu_class' => 'footer-navigation__list',
-							'items_wrap'=> '%3$s',
-							'fallback_cb'=> false
-						));
-					?>
-				</ul>
-			</nav>
+			<section class="site-footer__navigation">
+				<nav class="">
+					<ul class="site-footer__navigation-list">
+						<?php
+							wp_nav_menu(array(
+								'walker' => new Footer_Walker(),
+								'menu' => 'Footermenü',
+								'theme_location'=> 'nav-menu-footer',
+								'container'=> '<ul>',
+								'menu_class' => 'footer-navigation__list',
+								'items_wrap'=> '%3$s',
+								'fallback_cb'=> false
+							));
+						?>
+					</ul>
+				</nav>
+				<p class="site-footer__copyright">alle Rechte vorbehalten ©&nbsp;<?php echo date("Y");?></p>
+			</section>
+		</div>
 
-			<p class="site-footer__copyright">alle Rechte vorbehalten ©&nbsp;2022</p>
+			<!-- <div class="site-footer__copyright">
+				<p class="site-footer__copyright">alle Rechte vorbehalten ©&nbsp;2022</p>
+			</div> -->
 
 		</footer>
 
