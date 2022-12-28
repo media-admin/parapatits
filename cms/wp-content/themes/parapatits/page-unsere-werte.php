@@ -113,7 +113,7 @@ get_header( 'tischlerei' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-39651277054_a0cf16a1c3_o_web.jpg" alt="Alles aus einer Hand">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-39651277054_a0cf16a1c3_o_web.jpg" alt="Alles aus einer Hand">
 				</div>
 			</section>
 

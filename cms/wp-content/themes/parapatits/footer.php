@@ -198,10 +198,10 @@
 					x=4;
 					jQuery('.projects-overview__project-container a').slice(0, 4).show();
 					jQuery('#loadMore').on('click', function (e) {
-							e.preventDefault();
-							x = x+2;
-							/* jQuery('.projects-overview__project-container a').slice(0, x).slideDown(); */
-							jQuery('.projects-overview__project-container a').slice(0, x).show();
+						e.preventDefault();
+						x = x+2;
+						/* jQuery('.projects-overview__project-container a').slice(0, x).slideDown(); */
+						jQuery('.projects-overview__project-container a').slice(0, x).show();
 					});
 			});
 		</script>
@@ -213,10 +213,10 @@
 					x=2;
 					jQuery('.project-overview-box .project-overview-box__container').slice(0, 2).show();
 					jQuery('#loadMoreProjects').on('click', function (e) {
-							e.preventDefault();
-							x = x+2;
-							/* jQuery('.projects-overview__project-container a').slice(0, x).slideDown(); */
-							jQuery('.projects-overview__project-container a').slice(0, x).show();
+						e.preventDefault();
+						x = x+2;
+						/* jQuery('.projects-overview__project-container a').slice(0, x).slideDown(); */
+						jQuery('.projects-overview__project-container a').slice(0, x).show();
 					});
 			});
 		</script>

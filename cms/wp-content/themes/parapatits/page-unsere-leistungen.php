@@ -126,11 +126,9 @@ get_header( 'bestattung' );
 			</section>
 
 			<section class="box--centered">
-				<article class="">
 					<div class="unstacked-left">
 						<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-15-DSC03351_web.jpg" alt="Alle Formen der Bestattung">
 					</div>
-				</article>
 			</section>
 
 			<section class="box--centered unstacked-wrapper">
