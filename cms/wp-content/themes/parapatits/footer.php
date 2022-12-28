@@ -13,7 +13,7 @@
 			<section class="site-footer__contact-social-media">
 				<ul class="site-footer__contact-social-media-area">
 					<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--facebook" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>
-					<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--instragram" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/instagram-icon.svg" alt="Instagram Logo"></a></li>
+					<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--instagram" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/instagram-icon.svg" alt="Instagram Logo"></a></li>
 				</ul>
 			</section>
 
@@ -200,7 +200,8 @@
 					jQuery('#loadMore').on('click', function (e) {
 							e.preventDefault();
 							x = x+2;
-							jQuery('.projects-overview__project-container a').slice(0, x).slideDown();
+							/* jQuery('.projects-overview__project-container a').slice(0, x).slideDown(); */
+							jQuery('.projects-overview__project-container a').slice(0, x).show();
 					});
 			});
 		</script>
@@ -214,7 +215,8 @@
 					jQuery('#loadMoreProjects').on('click', function (e) {
 							e.preventDefault();
 							x = x+2;
-							jQuery('.project-overview-box .project-overview-box__container').slice(0, x).slideDown();
+							/* jQuery('.projects-overview__project-container a').slice(0, x).slideDown(); */
+							jQuery('.projects-overview__project-container a').slice(0, x).show();
 					});
 			});
 		</script>

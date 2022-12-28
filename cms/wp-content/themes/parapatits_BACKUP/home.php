@@ -65,7 +65,7 @@ get_header('');
 				<section class="details-section">
 						<ul class="details-section__branches wrapper">
 							<li class="details-section__branch-item details-section__branch-item--tischlerei">
-								<img class="details-section__branch-item--tischlerei__img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-47-DSC03514.png" alt="Platzhalter-Bild">
+								<img class="details-section__branch-item--tischlerei__img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-47-DSC03514.png" alt="Holz und andere Materialien">
 								<div class="details-section__branch-item--tischlerei__container">
 									<h2 class="details-section__branch-item--tischlerei__title h2__title h2__title--right-aligned">Tischlerei</h2>
 									<p class="details-section__branch-item--tischlerei__text h2__subtitle h2__subtitle--right-aligned">Wir gestalten Lebens<span class="letter-colored--red">t</span>räume aus Holz. Von der gut durchdachten Küche bis zum liebevoll gestalteten Kinderzimmer, vom gemütlichen Bad bis zum praktischen Abstellraum.</p>
@@ -74,7 +74,7 @@ get_header('');
 							</li>
 
 							<li class="details-section__branch-item details-section__branch-item--bestattung">
-								<img class="details-section__branch-item--bestattung__img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-bestattung_komp-DSC03299t.png" alt="Platzhalter-Bild">
+								<img class="details-section__branch-item--bestattung__img lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-bestattung_komp-DSC03299t.png" alt="Alle Formen der Bestattung">
 								<div class="details-section__branch-item--bestattung__container">
 									<h2 class="details-section__branch-item--bestattung__title h2__title h2__title--left-aligned">Bestattung</h2>
 									<p class="details-section__branch-item__text h2__subtitle h2__subtitle--left-aligned">Mit viel Feingefühl und persönlichem Kontakt führen wir Sie durch die schwierige Zeit und schaffen eine ehrende Abschiednahme.</p>

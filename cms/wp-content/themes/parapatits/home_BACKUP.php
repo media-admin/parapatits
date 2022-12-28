@@ -39,7 +39,7 @@ get_header();
 			<section id="news-section" class="news-section unstacked-wrapper" data-matching-link="#news-section-link">
 
 				<div class="unstacked-left">
-					<img class="news-section__img img--fullwidth" src="<?php bloginfo( 'template_directory' ); 	?>/assets/images/home/cut-for-web_highres-30-DSC03554_web.jpg" alt="Platzhalter-Bild">
+					<img class="news-section__img img--fullwidth" src="<?php bloginfo( 'template_directory' ); 	?>/assets/images/home/cut-for-web_highres-30-DSC03554_web.jpg" alt="Traditioneller Familienbetrieb">
 				</div>
 
 				<div class="unstacked-right">
@@ -89,7 +89,7 @@ get_header();
 
 			<section class="details-section box--right-aligned unstacked-wrapper">
 				<div class="unstacked-right">
-					<img class="details-section__branch-item--tischlerei__img img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/cut-for-web_highres-28-DSC03514_web.jpg" alt="Platzhalter-Bild">
+					<img class="details-section__branch-item--tischlerei__img img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/cut-for-web_highres-28-DSC03514_web.jpg" alt="Holz und andere Materialien">
 				</div>
 
 				<div class="unstacked-left">

@@ -8,7 +8,6 @@ get_header();
 
 	<main class="site-main">
 		<div class="site-content">
-
 			<section class="site-intro box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left">
 					<article class="wrapper">
@@ -17,7 +16,7 @@ get_header();
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/cut-for-web_highres-4-DSC03241_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/cut-for-web_highres-4-DSC03241_web.jpg" alt="Wir freuen uns auf Ihre Anfrage!">
 				</div>
 			</section>
 

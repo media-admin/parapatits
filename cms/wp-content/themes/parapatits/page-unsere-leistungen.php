@@ -13,7 +13,7 @@ get_header( 'bestattung' );
 					<article class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title();?></h1>
 						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Erfahren Sie, wie wir Sie unterstützen können.</p>
-						<div class="wrapper">
+						<div class="">
 							<p class="">
 								Wir wollen Ihnen in diesen schweren Stunden Beistand leisten und stehen Ihnen bei der Planung, Organisation und Durchführung einer Trauerfeier diskret und zuverlässig zur Seite.
 								Gemeinsam wickeln wir alle Schritte bis zur Beisetzung ab.
@@ -22,11 +22,11 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-13-DSC03330_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-13-DSC03330_web.jpg" alt="Beistand in schweren Stunden">
 				</div>
 			</section>
 
-			<section class="box--left-aligned unstacked-wrapper">
+			<section class="box--right-aligned unstacked-wrapper">
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Kontaktaufnahme</h2>
@@ -38,15 +38,15 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-1-DSC03131_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-1-DSC03131_web.jpg" alt="Kontaktaufnahme mit Krankenhaus oder Pflegeheim, Behörden, Botschaften, Ämtern usw.">
 				</div>
 			</section>
 
-			<section class="box--right-aligned unstacked-wrapper">
+			<section class="box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left unstacked-left--content">
 					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Abholung und Überführung</h2>
-						<div class="wrapper">
+						<div class="">
 							<p class="">
 								Abholung und Überführung vom Sterbeort (natürlich auch aus dem Ausland) in die jeweilige Aufbahrungshalle.
 							</p>
@@ -54,12 +54,26 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Abholung und Überführung vom Sterbeort in die Aufbahrungshalle.">
+				</div>
+			</section>
+
+			<section class="box--right-aligned unstacked-wrapper">
+				<div class="unstacked-right unstacked-right--content">
+					<article class="wrapper content-wrapper">
+						<h2 class="h2__heading">Sterbe&shy;dokumente</h2>
+						<p class="">
+							Besorgung der Sterbedokumente am zuständigen Standesamt.
+						</p>
+					</article>
+				</div>
+				<div class="unstacked-left">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-3-DSC03382_web.jpg" alt="Besorgung der Sterbedokumente am zuständigen Standesamt.">
 				</div>
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-right unstacked-right--content">
+				<div class="unstacked-left unstacked-left--content">
 					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Rund um die Trauerfeier</h2>
 						<p class="">
@@ -78,26 +92,12 @@ get_header( 'bestattung' );
 						</p>
 					</article>
 				</div>
-				<div class="unstacked-left">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-1-DSC03338_web.jpg" alt="Platzhalter-Bild">
+				<div class="unstacked-right">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-1-DSC03338_web.jpg" alt="Rund um die Trauerfeier von Terminfindung bis Kondolenzbuch">
 				</div>
 			</section>
 
 			<section class="box--right-aligned unstacked-wrapper">
-				<div class="unstacked-left unstacked-left--content">
-					<article class="wrapper content-wrapper">
-						<h2 class="h2__heading">Sterbe&shy;dokumente</h2>
-						<p class="">
-							Besorgung der Sterbedokumente am zuständigen Standesamt.
-						</p>
-					</article>
-				</div>
-				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-3-DSC03382_web.jpg" alt="Platzhalter-Bild">
-				</div>
-			</section>
-
-			<section class="box--left-aligned unstacked-wrapper">
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Todesanzeigen</h2>
@@ -107,11 +107,11 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-4-DSC03385_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-4-DSC03385_web.jpg" alt="Aufgabe von Todesanzeigen in Zeitungen.">
 				</div>
 			</section>
 
-			<section class="box--right-aligned unstacked-wrapper">
+			<section class="box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left unstacked-left--content">
 					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Vorsorge&shy;versicherungen</h2>
@@ -121,14 +121,14 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-6-DSC03389_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-6-DSC03389_web.jpg" alt="Abwicklung mit Vorsorgeversicherungen (Wiener Verein)">
 				</div>
 			</section>
 
 			<section class="box--centered">
 				<article class="">
 					<div class="unstacked-left">
-						<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-15-DSC03351_web.jpg" alt="Platzhalter-Bild">
+						<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-15-DSC03351_web.jpg" alt="Alle Formen der Bestattung">
 					</div>
 				</article>
 			</section>
@@ -144,7 +144,7 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-10-DSC03314_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-10-DSC03314_web.jpg" alt="Trauerfeier oder und Beisetzung">
 				</div>
 			</section>
 

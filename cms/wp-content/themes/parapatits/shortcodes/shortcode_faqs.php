@@ -1,5 +1,4 @@
-<section class="faqs box--centered">
-	<article class="wrapper">
+	<article class="wrapper content-wrapper">
 		<h2 class="h2__heading">Häufig gestellte Fragen</h2>
 		<div class="">
 			Fragen, welche wir schon mehr als einmal beantworten durften.
@@ -9,4 +8,3 @@
 
 		</div>
 	</article>
-</section>

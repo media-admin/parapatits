@@ -19,7 +19,7 @@ get_header( 'bestattung' );
 					</div>
 				</article>
 				<div class="img--wood-square-before-gray">
-					<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-28-DSC03400_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-28-DSC03400_web.jpg" alt="Persönliche Bestattung">
 				</div>
 			</section>
 
@@ -30,8 +30,8 @@ get_header( 'bestattung' );
 						Als Bestatter ist es unsere Aufgabe, Verstorbene in der richtigen Form zur letzten Ruhe zu geleiten und die Hinterbliebenen mit Erfahrung und Feingefühl zu begleiten.
 					</p>
 				</article>
-				<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-4-DSC03310_web.jpg" alt="Platzhalter-Bild">
-				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-6-DSC03314_web.jpg" alt="Platzhalter-Bild">
+				<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-4-DSC03310_web.jpg" alt="Wir begleiten und geleiten Sie.">
+				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-6-DSC03314_web.jpg" alt="Begleitung mit Feingefühl von alt bis jung.">
 			</section>
 
 			<section class="box--left-aligned">
@@ -42,7 +42,7 @@ get_header( 'bestattung' );
 						Oft fehlt den Erwachsenen die Zeit und Kraft, um Minderjährigen zu erklären, was vor sich geht. Wir haben dazu spezielle Weiterbildungen absolviert und kümmern uns einfühlsam um Kinder und Jugendliche.
 					</p>
 				</article>
-				<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-19-DSC03376_web.jpg" alt="Platzhalter-Bild">
+				<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-19-DSC03376_web.jpg" alt="Persönliche Bestattung">
 			</section>
 
 			<section class="box--right-aligned">
@@ -56,7 +56,7 @@ get_header( 'bestattung' );
 
 			<?php echo do_shortcode("[shortcode_just_call]"); ?>
 
-			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-tischlerei_komp-8-DSC03191_web.jpg" alt="Platzhalter-Bild">
+			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-tischlerei_komp-8-DSC03191_web.jpg" alt="Rufen Sie uns an. Wir kümmern uns um alles Weitere.">
 
 			<section class="box--right-aligned">
 				<article class="wrapper">
@@ -64,7 +64,7 @@ get_header( 'bestattung' );
 					<p class="">Was tun, wenn ein Familienmitglied stirbt?</p>
 					<a class="btn btn--red btn--centered-aligned" role="button" href="/leitfaden-im-todesfall">Leitfaden anzeigen</a>
 				</article>
-				<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-10-DSC03332_web.jpg" alt="Platzhalter-Bild">
+				<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/bestattung/parapatits-bestattung_highres-10-DSC03332_web.jpg" alt="Schritt für Schritt, in aller Ruhe">
 			</section>
 
 			<section class="box--left-aligned">

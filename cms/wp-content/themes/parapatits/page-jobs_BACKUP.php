@@ -20,8 +20,7 @@ get_header();
 				</div>
 			</section>
 
-			<section class="job__container box--left-aligned">
-				<h2 class="h2__heading">Offene Stellen</h2>
+			<section class="job__container box--left-aligned unstacked-wrapper">
 			<?php
 
 				$args = array(
@@ -39,11 +38,20 @@ get_header();
 						global $post;
 						$content = apply_filters('the_content', wpautop($post->post_content)); ?>
 
-						<article class="job__description">
-							<h3 class="job__title h3__heading"><?php the_title();?></h3>
-							<?php echo $content; ?>
-							<a class="job__application-button btn btn--red" role="button" href="mailto:bewerbung@parapatits.at?subject='Bewerbung über die Website'">Bewerbung mailen</a>
-						</article>
+						<div class="unstacked-left">
+							<article class="wrapper">
+								<h2 class="h2__heading">Offene Stellen</h2>
+							</article>
+							<?php the_post_thumbnail('full', ['class' => '']); ?>
+						</div>
+
+						<div class="unstacked-right unstacked-right--content">
+							<article class="job__description wrapper">
+								<h3 class="job__title h3__heading"><?php the_title();?></h3>
+								<?php echo $content; ?>
+								<a class="job__application-button btn btn--red" role="button" href="mailto:bewerbung@parapatits.at?subject='Bewerbung über die Website'">Bewerbung mailen</a>
+							</article>
+						</div>
 
 					<?php endwhile; ?>
 
@@ -52,6 +60,9 @@ get_header();
 
 				} else { ?>
 
+					<div class="unstacked-left">
+						<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/jobs/cut-for-web_highres-22-DSC03450_web.jpg" alt="Bild">
+					</div>
 					<article class="job__container wrapper">
 						<div class="job__description wrapper">
 							<h3 class="job__title h3__heading">Aktuell ist unser Team komplett</h3>

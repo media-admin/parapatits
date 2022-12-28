@@ -1,7 +1,7 @@
 <section class="jobs-section box--centered">
 	<article class="">
 		<div class="unstacked-left">
-			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-43-DSC03482_web.jpg" alt="Platzhalter-Bild">
+			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/parapatits-tischlerei_komp-43-DSC03482_web.jpg" alt="Teamarbeit im Familienbetrieb">
 		</div>
 		<div class="jobs-section__container">
 			<h2 class="jobs-section__title h2__title h2__title--left-aligned">Jobs</h2>

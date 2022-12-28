@@ -1,7 +1,7 @@
 <section class="testimonials box--centered">
 	<article class="testimonials__container wrapper">
 		<div class="">
-			<h2 class="testimonials__title h2__title h2__title--left-aligned"">Was unsere Kunden sagen</h2>
+			<h2 class="testimonials__title h2__title h2__title--left-aligned h2__heading">Was unsere Kunden sagen</h2>
 			<div class="testimonials-carousel single-item">
 
 				<?php

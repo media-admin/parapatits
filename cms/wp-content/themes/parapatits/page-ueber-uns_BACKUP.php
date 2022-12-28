@@ -24,7 +24,7 @@ get_header();
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-31-DSC03572_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-31-DSC03572_web.jpg" alt="Team Parapatits">
 				</div>
 			</section>
 
@@ -38,7 +38,7 @@ get_header();
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-5-DSC03248_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-5-DSC03248_web.jpg" alt="Wir lieben das Arbeiten mit dem Naturwerkstoff Holz.">
 				</div>
 			</section>
 
@@ -58,7 +58,7 @@ get_header();
 						</article>
 					</div>
 					<div class="unstacked-right">
-						<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-19-DSC03400_web.jpg" alt="Platzhalter-Bild">
+						<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-19-DSC03400_web.jpg" alt="Bestattung aus Nächstenliebe">
 					</div>
 			</section>
 
@@ -76,7 +76,7 @@ get_header();
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-11-DSC03440_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-11-DSC03440_web.jpg" alt="Werde ein Teil unserer familiären Mannschaft!">
 				</div>
 			</section>
 

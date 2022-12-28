@@ -13,14 +13,14 @@ get_header( 'bestattung' );
 					<article class="wrapper">
 						<h1 class="site-title h1__title">Gedenkseiten auf Viternity</h1>
 						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Zünden Sie eine Kerze für Ihre Liebsten an.</p>
-						<div class="wrapper">
+						<div class="">
 							<a class="btn btn--red btn--centered-aligned" role="button" href="https://www.viternity.org/de/gedenkseiten/gedenkseiten-nach-kategorie/bestattung-parapatits-9.html" target="_blank">Gedenkseiten aufrufen</a>
 						</div>
 					</article>
 				</div>
 				<div class="unstacked-right">
 					<div class="img--centered lazyload">
-						<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-11-DSC03317_web.jpg" alt="Platzhalter-Bild">
+						<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-11-DSC03317_web.jpg" alt="Denken Sie mit Viternity an Ihre Liebsten">
 					</div>
 				</div>
 			</section>
@@ -38,7 +38,7 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-7-DSC03394_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-7-DSC03394_web.jpg" alt="Persönliche Bestattung">
 				</div>
 			</section>
 

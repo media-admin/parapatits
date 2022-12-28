@@ -43,7 +43,7 @@ get_header();
 				</article>
 			</section>
 
-			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/parapatits-tischlerei_komp-12-DSC03241_web.jpg" alt="Platzhalter-Bild">
+			<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/kontakt/parapatits-tischlerei_komp-12-DSC03241_web.jpg" alt="Wir freuen uns auf Ihre Anfrage!">
 
 			<section class="contact__data-map">
 				<article class="">

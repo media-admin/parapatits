@@ -16,7 +16,7 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-7-DSC03302_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-7-DSC03302_web.jpg" alt="Trauerarbeit durch intensive Gespräche">
 				</div>
 				</section>
 
@@ -180,7 +180,7 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Trauerarbeit durch intensive Gespräche">
 				</div>
 			</section>
 

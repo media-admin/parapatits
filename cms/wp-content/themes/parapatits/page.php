@@ -6,12 +6,12 @@ get_header();
 ?>
 	<main class="site-main">
 		<div class="site-content">
-			<section class="site-intro box--left-aligned">
-				<article class="wrapper">
+			<section class="info-section box--left-aligned">
+				<article class="wrapper content-wrapper">
 					<h1 class="site-title h1__title">
 						<?php the_title();?>
 					</h1>
-					<div class="page__content-container wrapper">
+					<div class="wrapper">
 						<?php
 							global $post;
 							$content = apply_filters('the_content',$post->post_content);

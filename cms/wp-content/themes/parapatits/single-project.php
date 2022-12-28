@@ -23,7 +23,7 @@ get_header();
 				</article>
 			</div>
 			<div class="unstacked-right">
-				<img class="single-project__img img--fullwidth lazyload" src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text ;?>">
+				<img class="single-project__img img--centered lazyload" src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text ;?>">
 			</div>
 		</section>
 
@@ -44,12 +44,7 @@ get_header();
 			</div>
 		</div>
 
-		<section class="single-project__more-projects">
-			<article class="wrapper">
-				<h2 class="h2__heading">Weitere Projekte</h2>
-				<?php echo do_shortcode("[shortcode_projects_slider]"); ?>
-			</article>
-		</section>
+		<?php echo do_shortcode("[shortcode_projects_slider]"); ?>
 
 		<?php echo do_shortcode("[shortcode_recall]"); ?>
 

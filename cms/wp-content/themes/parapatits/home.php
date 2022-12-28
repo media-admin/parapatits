@@ -17,7 +17,7 @@ get_header();
 					<ul class="intro__company-listing">
 						<a href="/tischlerei/">
 							<li class="intro__list-item intro__list-item--tischlerei">
-								<img class="intro__list-img img--wood-square img--wood-square-red lazyload" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/oak-wood-red.png" alt="Platzhalter-Bild">
+								<img class="intro__list-img img--wood-square img--wood-square-red lazyload" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/oak-wood-red.png" alt="Link zu Tischlerei Parapatits">
 								<div class="intro__list-content">
 									<h2 class="intro__list-title h2__title h2__title--left-aligned">Tischlerei</h2>
 									<p class="intro__list-subtitle h2__subtitle h2__subtitle--left-aligned"><span class="hover__default-text">Wir gestalten Lebensräume.</span><span class="hover__alt-text">Wir gestalten Lebensträume.</span></p>
@@ -33,7 +33,7 @@ get_header();
 									<h2 class="intro__list-title h2__title h2__title--left-aligned">Bestattung</h2>
 									<p class="intro__list-subtitle h2__subtitle h2__subtitle--right-aligned"><span class="hover__default-text">Wir begleiten Sie.</span><span class="hover__alt-text">Wir geleiten Sie.</p>
 								</div>
-								<img class="intro__list-img img--wood-square img--wood-square-gray lazyload" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/oak-wood-gray.png" alt="Platzhalter-Bild">
+								<img class="intro__list-img img--wood-square img--wood-square-gray lazyload" srcset="<?php bloginfo( 'template_directory' ); ?>/assets/images/oak-wood-gray.png" alt="Link zu Bestattung Parapatits">
 							</li>
 						</a>
 					</ul>
@@ -43,7 +43,7 @@ get_header();
 			<section id="news-section" class="news-section unstacked-wrapper" data-matching-link="#news-section-link">
 
 				<div class="unstacked-left">
-					<img class="news-section__img img--fullwidth" src="<?php bloginfo( 'template_directory' ); 	?>/assets/images/home/cut-for-web_highres-30-DSC03554_web.jpg" alt="Platzhalter-Bild">
+					<img class="news-section__img img--fullwidth" src="<?php bloginfo( 'template_directory' ); 	?>/assets/images/home/cut-for-web_highres-30-DSC03554_web.jpg" alt="Traditioneller Familienbetrieb">
 				</div>
 
 				<div class="unstacked-right">
@@ -93,7 +93,7 @@ get_header();
 
 			<section class="box--right-aligned unstacked-wrapper">
 				<div class="unstacked-right">
-					<img class="details-section__branch-item--tischlerei__img img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/cut-for-web_highres-28-DSC03514_web.jpg" alt="Platzhalter-Bild">
+					<img class="details-section__branch-item--tischlerei__img img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/cut-for-web_highres-28-DSC03514_web.jpg" alt="Holz und andere Materialien">
 				</div>
 
 				<div class="unstacked-left unstacked-left--content">
@@ -109,7 +109,7 @@ get_header();
 
 			<section class="box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left">
-					<img class="details-section__branch-item--bestattung__img img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/cut-for-web_highres-6-DSC03299_web.jpg" alt="Platzhalter-Bild">
+					<img class="details-section__branch-item--bestattung__img img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/home/cut-for-web_highres-6-DSC03299_web.jpg" alt="Alle Formen der Bestattung">
 				</div>
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">

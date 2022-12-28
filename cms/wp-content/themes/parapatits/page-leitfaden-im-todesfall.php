@@ -16,11 +16,11 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/leitfaden-im-todesfall/cut-for-web_highres-12-DSC03325_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/leitfaden-im-todesfall/cut-for-web_highres-12-DSC03325_web.jpg" alt="Rufen Sie uns an. Wir kümmern uns um alles Weitere.">
 				</div>
 			</section>
 
-			<section class="box--left-aligned unstacked-wrapper">
+			<section class="box--right-aligned unstacked-wrapper">
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Leitfaden</h2>
@@ -33,11 +33,11 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/leitfaden-im-todesfall/cut-for-web_highres-17-DSC03396_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/leitfaden-im-todesfall/cut-for-web_highres-17-DSC03396_web.jpg" alt="Begleitung mit Feingefühl">
 				</div>
 			</section>
 
-			<section class="box--right-aligned unstacked-wrapper">
+			<section class="box--centered unstacked-wrapper">
 				<div class="unstacked-left unstacked-left--content">
 					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Unsere Leistungen</h2>
@@ -50,7 +50,7 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/leitfaden-im-todesfall/cut-for-web_highres-5-DSC03387_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/leitfaden-im-todesfall/cut-for-web_highres-5-DSC03387_web.jpg" alt="Umfassende Begleitung">
 				</div>
 			</section>
 		</div>

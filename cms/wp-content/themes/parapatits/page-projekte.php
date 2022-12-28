@@ -12,16 +12,16 @@ get_header( 'tischlerei' );
 				<div class="unstacked-left unstacked-left--content">
 					<article class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title();?></h1>
-						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Räume zum Durchstöbern</p>
+						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Wahrgewordene Lebens(t)räume.</p>
 						<div class="">
-							<p class="wrapper">
-								Hier zeigen wir her was wir können. Wir bieten einige Räume zum Durchstöbern. Von Wohnküchen über Wohlfühlbüros bis hin zum ganz persönlichen Rückzugsort.
+							<p class="">
+								Hier zeigen wir, was wir können. Werfen Sie einen Blick in von uns umgesetzte Wohnträume, von Wohnküchen über Wohlfühlbüros bis hin zu ganz persönlichen Rückzugsorten.
 							</p>
 						</div>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/cut-for-web_highres-8-DOC002_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/cut-for-web_highres-8-DOC002_web.jpg" alt="Wohlfühlräume mit Herz">
 				</div>
 
 			</section>
@@ -33,7 +33,7 @@ get_header( 'tischlerei' );
 					<?php echo do_shortcode("[shortcode_faqs]"); ?>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/cut-for-webhighres-23-DSC03459_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/cut-for-webhighres-23-DSC03459_web.jpg" alt="Werkstatt die für Besichtigung der Möbel offen steht">
 				</div>
 			</section>
 

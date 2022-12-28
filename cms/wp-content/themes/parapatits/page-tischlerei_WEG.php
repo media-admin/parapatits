@@ -22,7 +22,7 @@ get_header( 'tischlerei' );
 				</div>
 				<div class="unstacked-right">
 					<div class="img--wood-square-before-red">
-						<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/26490815358_55c0a42b07_o_web.jpg" alt="Platzhalter-Bild">
+						<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/26490815358_55c0a42b07_o_web.jpg" alt="Wohlfühlräume mit Herz">
 					</div>
 				</div>
 			</section>
@@ -34,10 +34,10 @@ get_header( 'tischlerei' );
 						Einen Raum zu gestalten und dabei die eigene Persönlichkeit einfließen zu lassen, ist ein wunderschönes Projekt. Sie haben schon konkrete Ideen? Wir freuen uns, alles darüber zu erfahren – wie ausgefallen Ihre Wünsche auch sein mögen. Sie haben noch keine konkrete Vorstellung? Erzählen Sie uns von sich und Ihren Anforderungen und wir plaudern über die verschiedenen Möglichkeiten. Gemeinsam machen wir den ersten Schritt, um Ihre individuellen Lebens(t)räume Wirklichkeit werden zu lassen.
 					</p>
 				</article>
-				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/DOC002_web.jpg" alt="Platzhalter-Bild">
+				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/DOC002_web.jpg" alt="Idee">
 			</section>
 
-			<img class="box--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/Pallisch Küche 1_gerade_web.jpg" alt="Platzhalter-Bild">
+			<img class="box--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/Pallisch Küche 1_gerade_web.jpg" alt="Visualisierung und Planung">
 
 			<section class="box--left-aligned">
 				<article class="wrapper">
@@ -46,7 +46,7 @@ get_header( 'tischlerei' );
 						Danach gehts auch schon an die Planung und Ideen, die zuvor nur in den Köpfen existiert haben, werden zu Papier gebracht und diskutiert. Oft entstehen in diesem Schritt der Visualisierung neue Ideen, andere werden wieder verworfen. Jedes Detail wird präzise ausgefeilt, denn das Endergebnis soll nicht nur schön sein, sondern auch praktisch und funktionell.
 					</p>
 				</article>
-				<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/parapatits-tischlerei_komp-42-DSC03479.JPG" alt="Platzhalter-Bild">
+				<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/parapatits-tischlerei_komp-42-DSC03479.JPG" alt="Durchführung und Montage">
 			</section>
 
 			<section class="box--right-aligned">
@@ -84,7 +84,7 @@ get_header( 'tischlerei' );
 			<?php echo do_shortcode("[shortcode_our-values]"); ?>
 
 			<section class="box--right-aligned">
-				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/parapatits-tischlerei_komp-31-DSC03422_web.jpg" alt="Platzhalter-Bild">
+				<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/tischlerei/parapatits-tischlerei_komp-31-DSC03422_web.jpg" alt="Erfahrung und Präzision">
 			</section>
 
 

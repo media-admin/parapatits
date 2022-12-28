@@ -16,7 +16,7 @@ get_header( 'tischlerei' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/haeufig-gestellte-fragen/parapatits-tischlerei_highres-19-DSC03271_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/haeufig-gestellte-fragen/parapatits-tischlerei_highres-19-DSC03271_web.jpg" alt="Durch präzise Planung steht einer reibungslosen Umsetzung nichts im Weg.">
 				</div>
 			</section>
 
@@ -25,7 +25,6 @@ get_header( 'tischlerei' );
 					$args = array(
 						'post_status' => 'publish',
 						'posts_per_page' => 999,
-						'offset' => 1,
 						'post_type' => 'faq',
 						'faq-category' => 'allgemeine-frage'
 					);

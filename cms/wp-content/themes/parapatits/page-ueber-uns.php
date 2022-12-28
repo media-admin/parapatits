@@ -16,7 +16,7 @@ get_header();
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-31-DSC03572_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-31-DSC03572_web.jpg" alt="Team Parapatits">
 				</div>
 			</section>
 
@@ -51,7 +51,7 @@ get_header();
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-5-DSC03248_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-5-DSC03248_web.jpg" alt="Wir lieben das Arbeiten mit dem Naturwerkstoff Holz.">
 				</div>
 			</section>
 
@@ -64,11 +64,12 @@ get_header();
 							<p class="">
 								Unsere Bestattung betreiben wir aus Nächstenliebe. Wir legen großen Wert darauf, dass jeder Mensch eine würdevolle Beisetzung bekommt. Außerdem ist es uns wichtig, Angehörigen Trost und Zuspruch in dieser schwierigen Zeit zu geben.
 							</p>
+							<a class="btn btn--red btn--centered-aligned" role="button" href="/bestattung">Bestattung anzeigen</a>
 						</div>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-19-DSC03400_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-19-DSC03400_web.jpg" alt="Bestattung aus Nächstenliebe">
 				</div>
 			</section>
 
@@ -85,7 +86,7 @@ get_header();
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-11-DSC03440_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/ueber-uns/cut-for-web_highres-11-DSC03440_web.jpg" alt="Werde ein Teil unserer familiären Mannschaft!">
 				</div>
 			</section>
 

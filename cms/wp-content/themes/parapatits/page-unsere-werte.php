@@ -16,7 +16,7 @@ get_header( 'tischlerei' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-24-DSC03462_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-24-DSC03462_web.jpg" alt="Genauigkeit bei der Fertigung">
 			</div>
 			</section>
 
@@ -32,7 +32,7 @@ get_header( 'tischlerei' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-2-DSC01492_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-2-DSC01492_web.jpg" alt="Hochwertigkeit von Planung bis Umsetzung">
 				</div>
 			</section>
 
@@ -48,7 +48,7 @@ get_header( 'tischlerei' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-6-Pallisch-Kueche-2_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-6-Pallisch-Kueche-2_web.jpg" alt="Gesamtkonzept bis ins Detail">
 				</div>
 			</section>
 
@@ -65,7 +65,7 @@ get_header( 'tischlerei' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-1-DSC01457_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-1-DSC01457_web.jpg" alt="Nachhaltigkeit beim Einkauf">
 				</div>
 			</section>
 
@@ -81,7 +81,7 @@ get_header( 'tischlerei' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/parapatits-tischlerei_komp-50-DSC03548_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/parapatits-tischlerei_komp-50-DSC03548_web.jpg" alt="Tradition im Familienbetrieb">
 				</div>
 			</section>
 
@@ -97,7 +97,7 @@ get_header( 'tischlerei' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-DSC03221_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--right-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-DSC03221_web.jpg" alt="Verlässlichkeit durch persönliche Ansprechpartner">
 				</div>
 			</section>
 
@@ -113,21 +113,11 @@ get_header( 'tischlerei' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-39651277054_a0cf16a1c3_o_web.jpg" alt="Platzhalter-Bild">
+					<img class="img--fullwidth lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-39651277054_a0cf16a1c3_o_web.jpg" alt="Alles aus einer Hand">
 				</div>
 			</section>
 
-			<section class="box--centered">
-				<article class="wrapper">
-					<h2 class="h2__heading">Projekte</h2>
-					<p class="h2__subheading">Wahrgewordene Lebens(t)räume.</p>
-					<p class="">
-						Hier zeigen wir, was wir können. Werfen Sie einen Blick in von uns umgesetzte Wohnträume, von Wohnküchen über Wohlfühlbüros bis hin zu ganz persönlichen Rückzugsorten.
-					</p>
-					<?php echo do_shortcode("[shortcode_projects_slider]"); ?>
-				</article>
-
-			</section>
+			<?php echo do_shortcode("[shortcode_projects_slider]"); ?>
 
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
 

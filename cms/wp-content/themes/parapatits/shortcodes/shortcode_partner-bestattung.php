@@ -1,6 +1,6 @@
 <section class="partner box--centered">
 	<article class="wrapper">
-		<h2 class="h2__heading">Unsere Partner</h2>
+		<h2 class="partner__title h2__title h2__heading">Unsere Partner</h2>
 		<div class="partner__container">
 			<ul class="partner__listing">
 
