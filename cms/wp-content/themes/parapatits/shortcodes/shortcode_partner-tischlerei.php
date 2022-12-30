@@ -1,7 +1,7 @@
 <section class="partner box--centered">
-	<article class="wrapper">
+	<article class="">
 		<h2 class="partner__title h2__title h2__heading">Unsere Partner</h2>
-		<p class="partner__intro">
+		<p class="partner__intro wrapper">
 			Die Zusammenarbeit mit verlässlichen Partnern und Lieferanten, ein um und auf.
 		</p>
 		<div class="partner__container">
