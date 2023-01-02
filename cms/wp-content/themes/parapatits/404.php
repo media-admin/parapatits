@@ -11,7 +11,7 @@ get_header();
 			<div class="unstacked-left">
 				<article class="wrapper">
 					<h1 class="site-title h1__title">Fehler</h1>
-					<div class="page404__content wrapper">
+					<div class="page404__content">
 						<p class="page404__message">Die angeforderte Seite konnte nicht gefunden werden.</p>
 						<p class="page404__additional-info">Hier sind Sie leider auf dem Holzweg.</p>
 						<a class="btn btn--red btn--centered-aligned" role="button" href="<?php echo get_home_url(); ?>">Zur Startseite</a>
@@ -24,6 +24,9 @@ get_header();
 				</div>
 			</div>
 		</section>
+
+		<?php echo do_shortcode("[shortcode_recall]"); ?>
+
 	</div>
 </main>
 

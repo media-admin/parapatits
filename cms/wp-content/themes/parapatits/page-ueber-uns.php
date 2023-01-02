@@ -40,7 +40,7 @@ get_header();
 					<article class="wrapper content-wrapper">
 						<div class="">
 							<h2 class="h2__heading">Tischlerei</h2>
-							<p class="h2__subtitle h2__subtitle--left-aligned">Wir gestalten Lebensräume.</p>
+							<p class="h2__subheading h2__subtitle--left-aligned">Wir gestalten Lebensräume.</p>
 						<div class="">
 							<p class="">
 								Als Tischlerbetrieb haben wir die Mission, die Umgebung unserer Mitmenschen zu verschönern und ihnen den Alltag zu erleichtern – durch funktionelle Räume mit Wohlfühlcharakter.
@@ -56,10 +56,10 @@ get_header();
 			</section>
 
 			<section class="box--left-aligned unstacked-wrapper">
-				<div class="unstacked-left unstacked-right--content">
+				<div class="unstacked-left unstacked-left--content">
 					<article class="wrapper content-wrapper">
 						<h2 class="h2__heading">Bestattung</h2>
-						<p class="h2__subtitle h2__subtitle--left-aligned">Wir begleiten Sie.</p>
+						<p class="h2__subheading h2__subtitle--left-aligned">Wir begleiten Sie.</p>
 						<div class="">
 							<p class="">
 								Unsere Bestattung betreiben wir aus Nächstenliebe. Wir legen großen Wert darauf, dass jeder Mensch eine würdevolle Beisetzung bekommt. Außerdem ist es uns wichtig, Angehörigen Trost und Zuspruch in dieser schwierigen Zeit zu geben.

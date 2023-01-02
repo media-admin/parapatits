@@ -12,6 +12,7 @@ get_header();
 			<div class="unstacked-left">
 				<article class="wrapper">
 					<h1 class="site-title h1__title"><?php the_title();?></h1>
+					<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Allgemeine Geschäftsbedingungen der Tischlerwerkstätte Parapatits</p>
 				</article>
 			</div>
 			<div class="unstacked-right">
@@ -27,6 +28,9 @@ get_header();
 				</div>
 			</article>
 		</section>
+
+		<?php echo do_shortcode("[shortcode_recall]"); ?>
+
 	</div>
 </main>
 

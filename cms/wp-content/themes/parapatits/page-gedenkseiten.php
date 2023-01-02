@@ -33,7 +33,8 @@ get_header( 'bestattung' );
 							<p class="">
 								Erfahren Sie, wie wir Sie unterstützen können.
 							</p>
-							<button class="btn btn--red btn--centered-aligned" type="button" onklick="window.open('/leistungen.html', '_blank')">Leistungen anzeigen</button>
+							<!-- <button class="btn btn--red btn--centered-aligned" type="button" onklick="window.open('/leistungen.html', '_blank')">Leistungen anzeigen</button> -->
+							<a class="btn btn--red btn--centered-aligned" role="button" href="/unsere-leistungen">Leistungen anzeigen</a>
 						</div>
 					</article>
 				</div>

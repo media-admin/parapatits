@@ -42,7 +42,9 @@ get_header();
 						<article class="job__description">
 							<h3 class="job__title h3__heading"><?php the_title();?></h3>
 							<?php echo $content; ?>
-							<a class="job__application-button btn btn--red" role="button" href="mailto:bewerbung@parapatits.at?subject='Bewerbung über die Website'">Bewerbung mailen</a>
+							<div class="job__application-button-wrapper">
+								<a class="job__application-button btn btn--red" role="button" href="mailto:bewerbung@parapatits.at?subject='Bewerbung über die Website'">Bewerbung mailen</a>
+							</div>
 						</article>
 
 					<?php endwhile; ?>

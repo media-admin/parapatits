@@ -27,6 +27,7 @@ get_header();
 				</div>
 			</article>
 		</section>
+		<?php echo do_shortcode("[shortcode_recall]"); ?>
 	</div>
 </main>
 
