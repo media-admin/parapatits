@@ -1,26 +1,27 @@
 <?php
 /**
-* Template Name: Seite Weiterführende Infos
-*/
+ * Template Name: Seite Weiterführende Infos
+ */
 
-get_header( 'bestattung' );
-?>
+get_header("bestattung"); ?>
 
 	<main class="site-main">
 		<div class="site-content">
 			<section class="site-intro box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left">
 					<article class="wrapper">
-						<h1 class="site-title h1__title"><?php the_title();?></h1>
+						<h1 class="site-title h1__title"><?php the_title(); ?></h1>
 						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Alle wichtigen Informationen, übersichtlich für Sie zusammengestellt.</p>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-7-DSC03302_web.jpg" alt="Trauerarbeit durch intensive Gespräche">
+					<img class="img--centered lazyload" src="<?php bloginfo(
+       "template_directory"
+     ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-7-DSC03302_web.jpg" alt="Trauerarbeit durch intensive Gespräche">
 				</div>
 				</section>
 
-			<div id="wichtige-dokumente"></div>
+			<div id="wichtige-dokumente" class="wichtige-dokumente"></div>
 			<section id="accordion" class="wrapper content-wrapper">
 				<article class="accordion__item">
 					<button class="accordion">Wichtige Dokumente für die Bestattung<p class="accordion__pointer"><i class="arrow down"></i></p></button>
@@ -46,7 +47,7 @@ get_header( 'bestattung' );
 						<ul class="listing">
 							<li>Nachweis des akademischen Grades</li>
 						</ul>
-						<p><span class="text--underlined">Bei einer Vorsorgeversicherung</span> <strong>(Wiener Verein)</strong></p>
+						<p><span class="text--underlined">Bei einer Vorsorgeversicherung</span> (Wiener Verein)</p>
 						<ul class="listing">
 							<li>Versicherungspolizze</li>
 						</ul>
@@ -81,7 +82,7 @@ get_header( 'bestattung' );
 						</p>
 						<p>
 							<span class="text--underlined">Im Krankenhaus oder Pflegeheim</span><br/>
-							Die Todesnachricht erhalten Sie vom Krankenhaus/Pflegeheim. Wir werden, nachdem Sie uns angerufen haben, kontakt mir der Prosektur aufnehmen.
+							Die Todesnachricht erhalten Sie vom Krankenhaus/Pflegeheim. Wir werden, nachdem Sie uns angerufen haben, Kontakt mit der Prosektur aufnehmen.
 						</p>
 						<p>
 							<span class="text--underlined">Öffentlicher Ort (Unfall)</span><br/>
@@ -113,10 +114,10 @@ get_header( 'bestattung' );
 						</p>
 						<p>
 							Unter bestimmten Voraussetzungen ist auch eine Beisetzung der Urne außerhalb des Friedhofs möglich.<br/>
-							Die Beisetzung am <strong>Parkfriedhof Lutzmannsburg</strong> ist eine gute Alternative, um der ewigen Ruhe ein einen neuen, zeitgemäßen und würdevollen Rahmen zu geben, der ein weniger beschwertes Erinnern und Gedenken ermöglicht.
+							Die Beisetzung am Parkfriedhof Lutzmannsburg ist eine gute Alternative, um der ewigen Ruhe ein einen neuen, zeitgemäßen und würdevollen Rahmen zu geben, der ein weniger beschwertes Erinnern und Gedenken ermöglicht.
 						</p>
 						<p>
-							Weitere Infos erhalten Sie hier: <a href="" target="_blank">Parkfriedhof Lutzmannsburg</a>
+							Weitere Infos erhalten Sie hier: <a href="https://www.parkfriedhof.at" target="_blank">Parkfriedhof Lutzmannsburg</a>
 						</p>
 					</div>
 				</article>
@@ -137,10 +138,10 @@ get_header( 'bestattung' );
 					<button class="accordion">Eigenvorsorge</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p></button>
 					<div class="panel">
 						<p>
-							In Zusammenarbeit mit dem <strong>Wiener Verein</strong> kann für sämtliche Aufwendungen und Kosten einer Bestattung bereits zu Lebzeiten vorgesorgt werden. Außerdem kann festgelegt werden, wie die Bestattung zu passieren hat. Der Abschluss einer individuellen Versicherung ist in jedem Alter möglich.
+							In Zusammenarbeit mit dem Wiener Verein kann für sämtliche Aufwendungen und Kosten einer Bestattung bereits zu Lebzeiten vorgesorgt werden. Außerdem kann festgelegt werden, wie die Bestattung zu passieren hat. Der Abschluss einer individuellen Versicherung ist in jedem Alter möglich.
 						</p>
 						<p>
-							Weiteres erfahren Sie hier: <a href="" target="_blank">Wiener Verein</a>
+							Weiteres erfahren Sie hier: <a href="https://www.wienerverein.at" target="_blank">Wiener Verein</a>
 						</p>
 						<p>
 							Bei Abschluss einer solchen Vorsorge sollte die Versicherungspolizze an einem sinnvollen Ort aufbewahrt werden, am besten gleich mit dem Testament.
@@ -153,17 +154,17 @@ get_header( 'bestattung' );
 					<div class="panel">
 						<p>
 							<span class="text--underlined">Fingerabdruck</span><br/>
-							In Zusammenarbeit mit der Firma <strong>LIV'S MEMORIES</strong> wird eine Halskette mit einem Fingerabdruck gefertigt. Dazu wird der Abdruck des oder der Verstorbenen abgenommen.
+							In Zusammenarbeit mit der Firma LIV'S MEMORIES wird eine Halskette mit einem Fingerabdruck gefertigt. Dazu wird der Abdruck des oder der Verstorbenen abgenommen.
 						</p>
 						<p>
-							Weiteres erfahren Sie hier: <a href="" target="_blank">LIV'S MEMORIES</a>
+							Weiteres erfahren Sie hier: <a href="https://www.livsmemories.com" target="_blank">LIV'S MEMORIES</a>
 						</p>
 						<p>
 							<span class="text--underlined">Erinnerungsdiamant</span><br/>
-							Aus einem Teil der Asche kann ein Erinnerungsdiamant erzeugt werden. Dies geschieht in Zusammenarbeit mit der Firma <strong>ALGORDANZA</strong>.
+							Aus einem Teil der Asche kann ein Erinnerungsdiamant erzeugt werden. Dies geschieht in Zusammenarbeit mit der Firma ALGORDANZA.
 						</p>
 						<p>
-							Weiteres erfahren Sie hier: <a href="" target="_blank">ALGORDANZA</a>
+							Weiteres erfahren Sie hier: <a href="https://www.algordanza.com/de/" target="_blank">ALGORDANZA</a>
 						</p>
 					</div>
 				</article>
@@ -180,7 +181,9 @@ get_header( 'bestattung' );
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Trauerarbeit durch intensive Gespräche">
+					<img class="img--left-aligned lazyload" src="<?php bloginfo(
+       "template_directory"
+     ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Trauerarbeit durch intensive Gespräche">
 				</div>
 			</section>
 

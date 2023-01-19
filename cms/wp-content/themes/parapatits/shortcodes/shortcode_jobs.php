@@ -7,9 +7,9 @@
 <section class="jobs-section box--centered">
 	<article class="">
 		<div class="jobs-section__container">
-			<h2 class="jobs-section__title h2__title h2__title--left-aligned">Jobs</h2>
-			<p class="jobs-section__text h2__subtitle h2__subtitle--left-aligned">Werde Teil unseres Teams!</p>
-			<a class="btn btn--red jobs-section__btn btn--centered-aligned" role="button" href="/jobs">Offene Stellen anzeigen</a>
+			<h2 class="jobs-section__title h2__title h2__title--left-aligned entrance-fade-bottom">Jobs</h2>
+			<p class="jobs-section__text h2__subtitle h2__subtitle--left-aligned entrance-fade-bottom">Werde Teil unseres Teams!</p>
+			<a class="btn btn--red jobs-section__btn btn--centered-aligned entrance-fade-bottom" role="button" href="/jobs">Offene Stellen anzeigen</a>
 		</div>
 	</article>
 </section>

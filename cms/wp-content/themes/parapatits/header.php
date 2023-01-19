@@ -125,7 +125,7 @@
 	<?php if (is_front_page() ) : ?>
 
 		<section>
-			<div class="home-slider">
+			<div class="home-slider entrance-fade-center">
 			<?php
 				$args = array(
 					'post_status' => 'publish',
@@ -148,9 +148,9 @@
 						<picture>
 							<source media="(min-width: 38em)" srcset=" <?php echo esc_url($image_desktop_url); ?> ">
 							<source srcset=" <?php echo esc_url($image_smartphone_url); ?> ">
-							<img src=" <?php echo esc_url($image_smartphone_url); ?> ">
+							<img class="" src=" <?php echo esc_url($image_smartphone_url); ?> ">
 						</picture>
-						<p class="home-slider__text"><?php the_content();?>
+						<p class="home-slider__text entrance-fade-bottom rellax" data-rellax-speed="4"><?php the_content();?>
 					</div>
 					<?php endwhile; ?>
 				<?php wp_reset_postdata(); ?>

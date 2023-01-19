@@ -10,7 +10,7 @@ get_header( 'tischlerei' );
 		<div class="site-content">
 			<section class="projects site-intro box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left unstacked-left--content">
-					<article class="wrapper">
+					<article class="wrapper entrance-fade-right">
 						<h1 class="site-title h1__title"><?php the_title();?></h1>
 						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Wahrgewordene Lebens(t)räume.</p>
 						<div class="">
@@ -21,7 +21,7 @@ get_header( 'tischlerei' );
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/cut-for-web_highres-8-DOC002_web.jpg" alt="Wohlfühlräume mit Herz">
+					<img class="img--centered lazyload entrance-fade-center" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/cut-for-web_highres-8-DOC002_web.jpg" alt="Wohlfühlräume mit Herz">
 				</div>
 
 			</section>
@@ -33,7 +33,7 @@ get_header( 'tischlerei' );
 					<?php echo do_shortcode("[shortcode_faqs]"); ?>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/cut-for-webhighres-23-DSC03459_web.jpg" alt="Werkstatt die für Besichtigung der Möbel offen steht">
+					<img class="img--centered lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/tischlerei/projekte/cut-for-webhighres-23-DSC03459_web.jpg" alt="Werkstatt die für Besichtigung der Möbel offen steht">
 				</div>
 			</section>
 

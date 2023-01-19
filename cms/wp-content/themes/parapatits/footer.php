@@ -285,6 +285,56 @@
 			});
 		</script>
 
+
+
+		<!-- Checks if the element is in view-->
+		<script type="text/javascript">
+			// function to detect if an element is scrolled into view
+			function isScrolledIntoView(elem) {
+				var docViewTop = jQuery(window).scrollTop();
+				var docViewBottom = docViewTop + $(window).height();
+
+				var elemTop = jQuery(elem).offset().top;
+				var elemBottom = elemTop + jQuery(elem).height();
+
+				return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+			};
+
+			// listen for scroll event
+			jQuery(window).scroll(function () {
+				// check if element is scrolled into view
+				if (isScrolledIntoView($('#animated_text'))) {
+					// element is scrolled into view, add animation class
+					jQuery('#animated_text').addClass('animation');
+				}
+			});
+		</script>
+
+
+		<!-- Rellax Effect -->
+
+		<script src="assets/scripts/rellax.min.js"></script>
+
+		<script>
+			var rellax = new Rellax('.rellax');
+		</script>
+
+
+		<!-- Jumping Square -->
+		<script type="text/javascript">
+			jQuery(function($) {
+				jQuery('#jumping-img').mouseover(function() {
+					var dWidth = $(document).width() - 100, // 100 = image width
+							dHeight = $(document).height() - 100, // 100 = image height
+							nextX = Math.floor(Math.random() * dWidth),
+							nextY = Math.floor(Math.random() * dHeight);
+					jQuery(this).animate({ left: nextX + 'px', top: nextY + 'px' });
+				});
+			});
+		</script>
+
+
+
 		<!-- END SCRIPTS AREA -->
 
 	</body>

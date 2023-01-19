@@ -2,7 +2,7 @@
 
 	<div class="projects-overview__search-area">
 
-		<div id="projects-overview__project">
+		<div id="projects-overview__project entrance-fade-bottom">
 
 			<!-- filter  ----------------------->
 			<ul class="projects-overview__project-filters">
@@ -18,7 +18,7 @@
 			</ul>
 
 			<!-- container  ----------------------->
-			<div class="projects-overview__project-container">
+			<div class="projects-overview__project-container entrance-fade-bottom">
 
 				<?php
 					$args = array(
@@ -39,7 +39,7 @@
 
 
 					<!-- box ----------------------->
-					<a class="projects-overview__project-box
+					<a class="projects-overview__project-box entrance-scale-backward-center-reverse
 						<?php
 					if ($posttags) {
 						foreach($posttags as $tag) {
@@ -64,7 +64,7 @@
 
 			</div>
 
-			<div id="loadMore" class="projects-overview__button btn btn--red btn--centered-aligned">Weitere Projekte laden</div>
+			<div id="loadMore" class="projects-overview__button btn btn--red btn--centered-aligned entrance-fade-bottom">Weitere Projekte laden</div>
 
 		</div>
 

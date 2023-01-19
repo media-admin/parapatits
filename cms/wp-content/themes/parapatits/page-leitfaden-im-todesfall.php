@@ -26,7 +26,7 @@ get_header( 'bestattung' );
 						<h2 class="h2__heading">Leitfaden</h2>
 						<div class="">
 							<p class="">
-								Die erste und wichtigste Aktion ist die <strong>Kontaktaufnahme</strong> mit uns. Danach werden wir Sie um ein persönliches Treffen bei uns bitten. Bitte bringen Sie dabei die <strong>benötigen Dokumente</strong> mit. Alle weiteren Schritte besprechen wir gemeinsam in aller Ruhe, mit Umsicht und Feingefühl.
+								Die erste und wichtigste Aktion ist die Kontaktaufnahme mit uns. Danach werden wir Sie um ein persönliches Treffen bei uns bitten. Bitte bringen Sie dabei die benötigen Dokumente mit. Alle weiteren Schritte besprechen wir gemeinsam in aller Ruhe, mit Umsicht und Feingefühl.
 							</p>
 							<a class="btn btn--red btn--centered-aligned" role="button" href="/weiterfuehrende-infos/#wichtige-dokumente">Dokumente anzeigen</a>
 						</div>

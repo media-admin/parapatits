@@ -1,10 +1,12 @@
 <section class="partner box--centered">
 	<article class="">
-		<h2 class="partner__title h2__title h2__heading">Unsere Partner</h2>
-		<p class="partner__intro wrapper">
+		<div class="entrance-fade-bottom">
+			<h2 class="partner__title h2__title h2__heading">Unsere Partner</h2>
+			<p class="partner__intro wrapper">
 			Die Zusammenarbeit mit verlässlichen Partnern und Lieferanten, ein um und auf.
-		</p>
-		<div class="partner__container">
+			</p>
+		</div>
+		<div class="partner__container entrance-fade-bottom">
 			<ul class="partner__listing">
 
 				<?php

@@ -1982,6 +1982,7 @@ img {
 
 .btn:hover {
 	background-color: #A42347;
+	transition: 0.75s;
 }
 
 
@@ -1994,6 +1995,7 @@ img {
 		background-color: #B6274F;
 		margin-top: 2.0rem;
 		margin-bottom: 2.0rem;
+		transition: 0.75s;
 	}
 
 
@@ -2007,11 +2009,13 @@ img {
 	color: #B6274F;
 	background-color: #FFFFFF;
 	margin: 1.25rem 0;
+	transition: 0.75s;
 }
 
 
 .btn--white:hover {
 	background-color: #e5e5e5 !important;
+	transition: 0.75s;
 }
 
 
@@ -4470,6 +4474,20 @@ span.hover__alt-text {
 
 
 
+/* === PAGE WEITERFÜHRENDE INFOS === */
+
+.wichtige-dokumente {
+	visibility: hidden;
+	height: 0px !important;
+	position: absolute;
+	margin: -100px;
+	transition: all ease-in-out 0.3;
+}
+
+
+
+
+
 
 /* === PAGE CONTACT === */
 
@@ -6182,14 +6200,14 @@ margin-left: auto;
 
 
 .job__title {
-	padding-top: 0.25rem;
+	padding-top: 1.25rem;
 	padding-bottom: 0.25rem;
 }
 
 @media (min-width: 800px) {
 	.job__title {
 		margin-top: 0.0rem;
-		padding-bottom: 1.25rem;
+		padding-bottom: 1.0rem;
 	}
 }
 
@@ -6515,11 +6533,160 @@ margin-left: auto;
 	}
 
 .social-icons__icon img {
-			display: block;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+/* === ANIMATIONEN === */
+
+
+
+
+
+
+
+/* --- 1) Parallax Effekt ein bisschen schneller als normale Geschwindigkeit --- */
+
+
+
+/* --- 2) Entrance Fade Bottom --- */
+
+.entrance-fade-bottom {
+	animation: EntranceFadeBottom 1.5s ease 0s 1 normal none;
+}
+
+
+@keyframes EntranceFadeBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+
+/* --- 3) Entrance Fade Top --- */
+
+.entrance-fade-top {
+	animation: EntranceFadeTop 1.5s ease 0s 1 normal none;
+}
+
+@keyframes EntranceFadeTop {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+
+/* --- 4) Entrance Fade Center --- */
+
+.entrance-fade-center {
+	animation: EntranceFadeCenter 1.5s ease 0s 1 normal none;
+}
+
+@keyframes EntranceFadeCenter {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+/* --- 5) Parallax Effekt ein bisschen langsamer als normale Geschwindigkeit --- */
+
+
+
+/* --- 6) Entrance Fade Left --- */
+
+.entrance-fade-left {
+	animation: EntranceFadeLeft 1.5s ease 0s 1 normal none;
+}
+
+@keyframes EntranceFadeLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+
+
+/* --- 7) Entrance Fade Right --- */
+
+.entrance-fade-right {
+	animation: EntranceFadeRight 1.5s ease 0s 1 normal none;
+}
+
+@keyframes EntranceFadeRight {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+
+
+
+/* --- 8) Entrance Scale Backward Center (reverse) --- */
+
+.entrance-scale-backward-center-reverse:hover {
+	animation: EntranceScaleBackwardCenterReverse 1.5s ease-out 0s 1 reverse forwards;
+}
+
+@keyframes EntranceScaleBackwardCenterReverse {
+	0% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+
+/* --- 9) Butten/Text Link --- */
+
+
+
+
+
+
+/* --- 10) Mouse (not) follow --- */
 
 

@@ -2,11 +2,11 @@
 	<article class="wrapper">
 		<div class="your-opinion-section__container wrapper">
 			<h2 class="h2__title your-opinion-section__title wrapper">Wir würden auch Ihre Meinung gerne hören</h2>
-			<div class="your-opinion-section__content">
+			<div class="your-opinion-section__content entrance-fade-bottom">
 				<p>
 					Lassen Sie uns Ihr Feedback zukommen!
 				</p>
-				<a class="btn btn--red btn--centered-aligned" href="https://g.page/r/CVpT6XCa9L20EAg/review">Feedback schreiben</a>
+				<a class="btn btn--red btn--centered-aligned entrance-fade-bottom" href="https://g.page/r/CVpT6XCa9L20EAg/review">Feedback schreiben</a>
 			</div>
 		</div>
 	</article>

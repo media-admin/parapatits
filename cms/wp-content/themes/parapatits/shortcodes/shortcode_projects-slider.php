@@ -1,7 +1,7 @@
 <section class="project-carousel box--centered">
 	<article class="wrapper">
-		<h2 class="h2__heading">Projekte</h2>
-		<div class="project-carousel__projects-container">
+		<h2 class="h2__heading entrance-fade-bottom">Projekte</h2>
+		<div class="project-carousel__projects-container entrance-fade-bottom">
 			<?php
 				$args = array(
 					'post_status' => 'publish',
@@ -19,7 +19,7 @@
 
 					<div>
 						<a href="<?php the_permalink() ?>">
-							<img class="project-carousel__thumbnail" src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text ;?>">
+							<img class="project-carousel__thumbnail entrance-scale-backward-center-reverse" src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text ;?>">
 						</a>
 						<div class="project-carousel__content">
 							<h2 class="project-carousel__title h2__heading"><?php the_title();?></h2>
