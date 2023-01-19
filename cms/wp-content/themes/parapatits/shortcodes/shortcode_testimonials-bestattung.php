@@ -5,28 +5,28 @@
 			<div class="testimonials-carousel single-item">
 
 				<?php
+    $args = [
+      "post_status" => "publish",
+      "posts_per_page" => -1,
+      "post_type" => "testimonial",
+      "testimonial-category" => "bestattung",
+    ];
 
-				$args = array(
-					'post_status' => 'publish',
-					'posts_per_page' => -1,
-					'post_type' => 'testimonial',
-					'testimonial-category' => 'bestattung'
-				);
+    $loop = new WP_Query($args);
 
-				$loop = new WP_Query( $args );
-
-					while ( $loop->have_posts() ) : $loop->the_post(); ?>
+    while ($loop->have_posts()):
+      $loop->the_post(); ?>
 
 					<div class="testimonials-carousel__container">
 						<p class="testimonials-carousel__content"><?php the_content(); ?></p>
 						<p class="testimonials-carousel__title"><?php the_title(); ?></p>
 					</div>
 
-					<?php endwhile; ?>
-
 					<?php
-					wp_reset_postdata();
-					?>
+    endwhile;
+    ?>
+
+					<?php wp_reset_postdata(); ?>
 
 			</div>
 

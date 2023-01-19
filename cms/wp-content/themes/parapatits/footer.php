@@ -12,28 +12,32 @@
 
 			<section class="site-footer__contact-social-media">
 				<ul class="site-footer__contact-social-media-area">
-					<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--facebook" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>
-					<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--instagram" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/instagram-icon.svg" alt="Instagram Logo"></a></li>
+					<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--facebook" src="<?php bloginfo(
+       "template_directory"
+     ); ?>/assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>
+					<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--instagram" src="<?php bloginfo(
+       "template_directory"
+     ); ?>/assets/images/icons/instagram-icon.svg" alt="Instagram Logo"></a></li>
 				</ul>
 			</section>
 
 			<section class="site-footer__navigation">
 				<nav class="">
 					<ul class="site-footer__navigation-list">
-						<?php
-							wp_nav_menu(array(
-								'walker' => new Footer_Walker(),
-								'menu' => 'Footermenü',
-								'theme_location'=> 'nav-menu-footer',
-								'container'=> '<ul>',
-								'menu_class' => 'footer-navigation__list',
-								'items_wrap'=> '%3$s',
-								'fallback_cb'=> false
-							));
-						?>
+						<?php wp_nav_menu([
+        "walker" => new Footer_Walker(),
+        "menu" => "Footermenü",
+        "theme_location" => "nav-menu-footer",
+        "container" => "<ul>",
+        "menu_class" => "footer-navigation__list",
+        "items_wrap" => '%3$s',
+        "fallback_cb" => false,
+      ]); ?>
 					</ul>
 				</nav>
-				<p class="site-footer__copyright">alle Rechte vorbehalten ©&nbsp;<?php echo date("Y");?></p>
+				<p class="site-footer__copyright">alle Rechte vorbehalten ©&nbsp;<?php echo date(
+      "Y"
+    ); ?></p>
 			</section>
 		</div>
 
@@ -43,7 +47,7 @@
 
 		</footer>
 
-		<?php wp_footer();?>
+		<?php wp_footer(); ?>
 
 		<!-- START SCRIPTS AREA -->
 
@@ -62,6 +66,8 @@
 		</script>
 
 
+
+
 		<!-- Accordion -->
 		<script>
 			var acc = document.getElementsByClassName("accordion");
@@ -74,11 +80,20 @@
 					if (panel.style.maxHeight) {
 						panel.style.maxHeight = null;
 					} else {
-						panel.style.maxHeight = panel.scrollHeight + "px";
+						panel.style.maxHeight = panel.scrollHeight + 50 + "px";
 					}
 				});
 			}
 		</script>
+
+
+
+
+
+
+
+
+
 
 		<!-- Slick Sliders -->
 
@@ -256,8 +271,10 @@
 		</script>
 
 
+
+
 		<!-- Button Load More -->
-		<script type="text/javascript">
+		<!-- <script type="text/javascript">
 			jQuery(function () {
 					x=4;
 					jQuery('.projects-overview__project-container a').slice(0, 4).show();
@@ -266,13 +283,38 @@
 						x = x+2;
 						/* jQuery('.projects-overview__project-container a').slice(0, x).slideDown(); */
 						jQuery('.projects-overview__project-container a').slice(0, x).show();
+
 					});
+			});
+		</script> -->
+
+
+		<!-- Button Load More -->
+		<script type="text/javascript">
+			jQuery(function () {
+				jQuery(".projects-overview__project-container a").slice(0, 4).show();
+				jQuery("#loadMore").on('click', function (e) {
+						e.preventDefault();
+						jQuery(".projects-overview__project-container a").slice(0, 4).slideDown();
+
+						x = x+2;
+						/* jQuery('.projects-overview__project-container a').slice(0, x).slideDown(); */
+						jQuery('.projects-overview__project-container a').slice(0, x).show();
+
+						/* jQuery('html,body').animate({
+							scrollTop: jQuery(this).offset().top
+						}, 1500); */
+
+						if (jQuery(".projects-overview__project-container a:hidden").length == 0) {
+								jQuery("#loadMore").hide();
+						}
+				});
 			});
 		</script>
 
 
 		<!-- Button Load More Projects -->
-		<script type="text/javascript">
+		<!-- 		<script type="text/javascript">
 			jQuery(function () {
 					x=2;
 					jQuery('.project-overview-box .project-overview-box__container').slice(0, 2).show();
@@ -283,16 +325,49 @@
 						jQuery('.projects-overview__project-container a').slice(0, x).show();
 					});
 			});
+		</script> -->
+
+
+		<!-- Button Load More Projects -->
+		<script type="text/javascript">
+			jQuery(function () {
+				jQuery(".project-overview-box .project-overview-box__container").slice(0, 4).show();
+				jQuery("#loadMoreProjects").on('click', function (e) {
+						e.preventDefault();
+						jQuery(".project-overview-box .project-overview-box__container").slice(0, 4).slideDown();
+
+						x = x+2;
+						/* jQuery('.projects-overview__project-container a').slice(0, x).slideDown(); */
+						jQuery('.projects-overview__project-container a').slice(0, x).show();
+
+
+						/* jQuery('html,body').animate({
+							scrollTop: jQuery(this).offset().top
+						}, 1500); */
+
+						if (jQuery(".projects-overview__project-container a:hidden").length == 0) {
+								jQuery("#loadMoreProjects").hide();
+						}
+				});
+			});
 		</script>
 
 
 
+
+
+
+
+
+
+
+
 		<!-- Checks if the element is in view-->
-		<script type="text/javascript">
+<!-- 		<script type="text/javascript">
 			// function to detect if an element is scrolled into view
 			function isScrolledIntoView(elem) {
 				var docViewTop = jQuery(window).scrollTop();
-				var docViewBottom = docViewTop + $(window).height();
+				var docViewBottom = docViewTop + jQuery(window).height();
 
 				var elemTop = jQuery(elem).offset().top;
 				var elemBottom = elemTop + jQuery(elem).height();
@@ -303,20 +378,103 @@
 			// listen for scroll event
 			jQuery(window).scroll(function () {
 				// check if element is scrolled into view
-				if (isScrolledIntoView($('#animated_text'))) {
+				if (isScrolledIntoView(jQuery('.entrance-fade-bottom'))) {
 					// element is scrolled into view, add animation class
-					jQuery('#animated_text').addClass('animation');
+					jQuery('.entrance-fade-bottom').addClass('animation');
 				}
+
+				if (isScrolledIntoView(jQuery('.entrance-fade-top'))) {
+					// element is scrolled into view, add animation class
+					jQuery('.entrance-fade-top').addClass('animation');
+				}
+
+				if (isScrolledIntoView(jQuery('.entrance-fade-center'))) {
+					// element is scrolled into view, add animation class
+					jQuery('.entrance-fade-center').addClass('animation');
+				}
+
+				if (isScrolledIntoView(jQuery('.entrance-fade-left'))) {
+					// element is scrolled into view, add animation class
+					jQuery('.entrance-fade-left').addClass('animation');
+				}
+
+				if (isScrolledIntoView(jQuery('.entrance-fade-right'))) {
+					// element is scrolled into view, add animation class
+					jQuery('.entrance-fade-right').addClass('animation');
+				}
+
+			});
+		</script> -->
+
+
+
+
+
+
+
+		<!-- Checks if the element is in view - ALTERNATIVE WAY -->
+		<!-- <script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function(event) {
+					document.addEventListener("scroll", function(event) {
+							const animatedBoxes = document.getElementsByClassName("a-fade-bottom");
+							const windowOffsetTop = window.innerHeight + window.scrollY;
+
+							Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
+									const animatedBoxOffsetTop = animatedBox.offsetTop;
+
+									if (windowOffsetTop >= animatedBoxOffsetTop) {
+											addClass(animatedBox, "entrance-fade-bottom");
+									}
+							});
+					});
+			});
+
+			function addClass(element, className) {
+					const arrayClasses = element.className.split(" ");
+					if (arrayClasses.indexOf(className) === -1) {
+							element.className += " " + className;
+					}
+			}
+		</script> -->
+
+
+
+
+
+
+
+
+
+
+		<!-- Checks if the element is in view - ALTERNATIVE WAY #2 -->
+		<script type="text/javascript">
+			const inViewport = (entries, observer) => {
+				entries.forEach(entry => {
+					entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+				});
+			};
+
+			const Obs = new IntersectionObserver(inViewport);
+			const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+			// Attach observer to every [data-inviewport] element:
+			const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
+			ELs_inViewport.forEach(EL => {
+				Obs.observe(EL, obsOptions);
 			});
 		</script>
 
 
+
+
+
+
 		<!-- Rellax Effect -->
 
-		<script src="assets/scripts/rellax.min.js"></script>
+		<script src="https://parapatits.dev/cms/wp-content/themes/parapatits/assets/scripts/rellax.min.js"></script>
 
 		<script>
-			var rellax = new Rellax('.rellax');
+			var rellax = new Rellax('.rellaxx');
 		</script>
 
 

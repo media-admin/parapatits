@@ -1878,6 +1878,7 @@ img {
 	left: calc(50% - 80px);
 	content: url(assets/images/oak-wood-red.png);
 	transform: scale(.5);
+	transition: all 0.75s;
 }
 
 @media (min-width: 800px) {
@@ -1887,6 +1888,7 @@ img {
 		top: calc(325px - 80px);
 		left: -80px;
 		transform: scale(.5);
+		transition: all 0.75s;
 	}
 }
 
@@ -1915,6 +1917,7 @@ img {
 	left: calc(50% - 80px);
 	content: url(assets/images/oak-wood-gray.png);
 	transform: scale(.5);
+	transition: all 0.75s;
 }
 
 @media (min-width: 800px) {
@@ -1924,6 +1927,7 @@ img {
 		top: calc(325px - 80px);
 		left: -80px;
 		transform: scale(.5);
+		transition: all 0.75s;
 	}
 }
 
@@ -1982,7 +1986,7 @@ img {
 
 .btn:hover {
 	background-color: #A42347;
-	transition: 0.75s;
+	transition: all 0.75s;
 }
 
 
@@ -1995,7 +1999,7 @@ img {
 		background-color: #B6274F;
 		margin-top: 2.0rem;
 		margin-bottom: 2.0rem;
-		transition: 0.75s;
+		transition: all 0.75s;
 	}
 
 
@@ -2015,7 +2019,7 @@ img {
 
 .btn--white:hover {
 	background-color: #e5e5e5 !important;
-	transition: 0.75s;
+	transition: all 0.75s;
 }
 
 
@@ -2386,6 +2390,7 @@ input[type=checkbox], input[type=radio] {
 		color: #b6274f;
 		background-color: #ffffff;
 		border: 1px solid #b6274f;
+		transition: all 0.75s;
 }
 
 
@@ -3088,13 +3093,14 @@ menu.site-menu {
   	/*margin-left: -16px;
     padding-left: 16px */
 		padding-left: 16px;
+		transition: all 0.75s;
 	}
 }
 
 
 .navbar-item--submenu-button:hover .navbar-item__submenu {
   display: block;
-
+	transition: all 0.75s;
 }
 
 @media (min-width: 800px) {
@@ -3327,7 +3333,7 @@ menu.site-menu {
 				outline: none;
 				background: #B6274F;
 				color: transparent;
-
+				transition: all 0.75s;
 		}
 
 .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
@@ -3437,11 +3443,13 @@ menu.site-menu {
 
 .slick-dots li button:hover, .slick-dots li button:focus {
 	outline: none;
+	transition: all 0.75s;
 }
 
 
 .slick-dots li button:hover:before, .slick-dots li button:focus:before {
 	opacity: 1 !important;
+	transition: all 0.75s;
 }
 
 
@@ -3735,6 +3743,7 @@ menu.site-menu {
 .intro__list-subtitle span.hover__default-text {
 	position: relative;
 	text-align: right;
+	transition: all 0.75s;
 }
 
 
@@ -3744,12 +3753,14 @@ span.hover__alt-text {
 
 .intro__list-subtitle:hover span.hover__default-text {
 	display: none;
+	transition: all 0.75s;
 }
 
 .intro__list-subtitle:hover span.hover__alt-text {
 	display: block;
 	opacity: 1;
 	transition-duration: .3s;
+	transition: all 0.75s;
 }
 
 
@@ -4816,7 +4827,8 @@ span.hover__alt-text {
 .options li:hover {
 	background-color: red;
 	color: white;
-} */
+	transition: all 0.75s;
+}
 
 
 
@@ -4909,6 +4921,7 @@ span.hover__alt-text {
 
 .contact-form-section__btn:hover {
 	color: white !important;
+	transition: all 0.75s;
 }
 
 
@@ -5036,6 +5049,7 @@ button.active .accordion__pointer {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
 	background-color: rgba(112, 113, 115, 0.1);
+	transition: all 0.75s;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -5056,7 +5070,7 @@ button.active .panel {
 
 
 button.accordion.active .panel {
-	max-height: content !important;
+	/* max-height: content !important; */
 	padding: 2.0rem 1.0rem !important;
 	margin-top: 2.0rem !important;
 	margin-bottom: 2.0rem !important;
@@ -5064,7 +5078,7 @@ button.accordion.active .panel {
 
 
 .accordion__item button.active .panel {
-	max-height: content !important;
+	/* max-height: content !important; */
 	padding: 2.0rem 1.0rem !important;
 	margin-top: 2.0rem !important;
 	margin-bottom: 2.0rem !important;
@@ -5082,6 +5096,13 @@ button.active .panel p {
 	margin-top: 2.0rem !important;
 	margin-bottom: 2.0rem !important;
 }
+
+
+#accordion article .panel p {
+	margin-top: 1.0rem !important;
+	margin-bottom: 1.0rem !important;
+}
+
 
 
 /* --- Pure CSS Arrow --- */
@@ -5217,7 +5238,7 @@ button.active .panel p {
 		border: 1px solid rgba(0,0,0,0.5);
 		flex-wrap: wrap;
 		margin: 20px;
-
+		transition: all 0.5s;
 	}
 
 @media (min-width: 800px) {
@@ -5244,6 +5265,7 @@ button.active .panel p {
 .projects-overview__project-filter--active {
 		color: #272727;
 		background-color: #f0f0f0;
+		transition: all 0.75s;
 	}
 
 .projects-overview__project-container {
@@ -5589,6 +5611,7 @@ margin-left: auto;
 
 .contact__data-social-media-icon:hover {
 	opacity: 0.8;
+	transition: all 0.75s;
 }
 
 
@@ -5835,6 +5858,7 @@ margin-left: auto;
 
 		.button--load-more:hover {
 			cursor: pointer;
+			transition: all 0.75s;
 		}
 
 
@@ -6396,6 +6420,7 @@ margin-left: auto;
 
 .footer-contact__social-media-icon--facebook:hover {
 	background-color: #A42347;
+	transition: all 0.75s;
 }
 
 
@@ -6405,6 +6430,7 @@ margin-left: auto;
 
 
 .footer-contact__social-media-icon--instagram:hover {
+	transition: all 0.75s;
 	background-color: #A42347;
 }
 
@@ -6510,6 +6536,7 @@ margin-left: auto;
 
 .modal:hover {
 		color: green;
+		transition: all 0.75s;
 	}
 
 .social-icons {
@@ -6545,21 +6572,15 @@ margin-left: auto;
 /* === ANIMATIONEN === */
 
 
-
-
-
-
-
 /* --- 1) Parallax Effekt ein bisschen schneller als normale Geschwindigkeit --- */
 
 
 
 /* --- 2) Entrance Fade Bottom --- */
 
-.entrance-fade-bottom {
+[data-inviewport="entrance-fade-bottom"].is-inViewport {
 	animation: EntranceFadeBottom 1.5s ease 0s 1 normal none;
 }
-
 
 @keyframes EntranceFadeBottom {
 	0% {
@@ -6578,7 +6599,7 @@ margin-left: auto;
 
 /* --- 3) Entrance Fade Top --- */
 
-.entrance-fade-top {
+[data-inviewport="entrance-fade-top"].is-inViewport {
 	animation: EntranceFadeTop 1.5s ease 0s 1 normal none;
 }
 
@@ -6599,7 +6620,7 @@ margin-left: auto;
 
 /* --- 4) Entrance Fade Center --- */
 
-.entrance-fade-center {
+[data-inviewport="entrance-fade-center"].is-inViewport {
 	animation: EntranceFadeCenter 1.5s ease 0s 1 normal none;
 }
 
@@ -6621,7 +6642,7 @@ margin-left: auto;
 
 /* --- 6) Entrance Fade Left --- */
 
-.entrance-fade-left {
+[data-inviewport="entrance-fade-left"].is-inViewport {
 	animation: EntranceFadeLeft 1.5s ease 0s 1 normal none;
 }
 
@@ -6641,8 +6662,7 @@ margin-left: auto;
 
 
 /* --- 7) Entrance Fade Right --- */
-
-.entrance-fade-right {
+[data-inviewport="entrance-fade-right"].is-inViewport {
 	animation: EntranceFadeRight 1.5s ease 0s 1 normal none;
 }
 
@@ -6664,9 +6684,15 @@ margin-left: auto;
 
 /* --- 8) Entrance Scale Backward Center (reverse) --- */
 
-.entrance-scale-backward-center-reverse:hover {
-	animation: EntranceScaleBackwardCenterReverse 1.5s ease-out 0s 1 reverse forwards;
+[data-inviewport="entrance-scale-backward-center-reverse"].is-inViewport {
+	/* animation: EntranceScaleBackwardCenterReverse 1.5s ease-out 0s 1 reverse forwards; */
+	transition: transform 2000ms ease-in-out;
 }
+
+/* .entrance-scale-backward-center-reverse:hover {
+	animation: EntranceScaleBackwardCenterReverse 1.5s ease-out 0s 1 reverse forwards;
+} */
+
 
 @keyframes EntranceScaleBackwardCenterReverse {
 	0% {
@@ -6674,7 +6700,7 @@ margin-left: auto;
 	}
 
 	100% {
-		transform: scale(1);
+		transform: scale(1.0);
 	}
 }
 
