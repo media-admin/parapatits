@@ -1563,7 +1563,6 @@ img {
 }
 
 
-
 .site-intro .box--left-aligned .unstacked-left article {
 	padding-left: 5.0rem !important;
 }
@@ -1761,15 +1760,18 @@ img {
 
 
 .box--left-aligned .unstacked-right article {
-	padding-left: 5.0rem !important;
-	padding-left: 20% !important;
+	padding-left: 1.5rem;
 }
 
 
-.box--right-aligned .unstacked-right article {
-	padding-right: 5.0rem !important;
-	padding-right: 20% !important;
+@media (min-width: 800px) {
+	.box--left-aligned .unstacked-right article {
+		padding-left: 5.0rem;
+		padding-left: 20%;
+	}
 }
+
+
 
 
 .unstacked-right .h2__heading {
@@ -3663,9 +3665,17 @@ menu.site-menu {
 	}
 
 .intro__company-listing {
-		list-style-image: none;
+	list-style-image: none;
+}
+
+
+@media (min-width: 800px) {
+	.intro__company-listing {
 		padding-left: 10px !important;
 	}
+}
+
+
 
 .intro__list-item {
 		display: grid;
@@ -3719,22 +3729,26 @@ menu.site-menu {
 	line-height: 1.6rem;
 	color: #707173;
 	margin-bottom: auto;
-	margin-top: 1.5rem;
+	margin-top: 1.0rem;
 	margin-bottom: 0.5rem;
 }
 
 .intro__list-subtitle {
-		position: relative;
-		width: 100%;
-		font-size: 1.0rem;
-		font-weight: 500;
-		letter-spacing: 0.1rem;
-		color: #B6274F;
-		margin: 0;
+	position: relative;
+	width: 100%;
+	font-size: 1.0rem;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	line-height: 1.5rem;
+	color: #B6274F;
+	margin: 0;
+}
+
+@media (min-width: 800px) {
+	.intro__list-subtitle {
 		margin-bottom: 1.5rem;
 	}
-
-
+}
 
 
 
@@ -3787,12 +3801,12 @@ span.hover__alt-text {
 
 .intro__company-listing {
 	list-style-type: none;
-	padding-left: 1.0rem;
-	padding-right: 1.0rem;
+	margin-left: 0.0rem;
 }
 
 @media (min-width: 800px) {
-
+	padding-left: 1.0rem;
+	padding-right: 1.0rem;
 }
 
 
@@ -3867,22 +3881,26 @@ span.hover__alt-text {
 /* === INFO SECTION === */
 
 .info-section {
-	width: 75%;
-
-	margin-top: 3.0rem;
-	margin-bottom: 3.0rem;
-
-
-
+	width: 95%;
+	margin-left: 0;
+	margin-right: auto;
+	overflow: hidden !important;
 }
 
 
 @media (min-width: 800px) {
-
 	.info-section {
+		width: 75%;
 		margin: 0.0rem auto !important;
 		margin-bottom: 4.375rem !important;
 	}
+
+
+
+
+
+
+
 
 	.info-section.box--left-aligned {
 		min-height: inherit !important;
