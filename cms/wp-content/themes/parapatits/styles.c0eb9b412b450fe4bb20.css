@@ -1041,10 +1041,19 @@ ul.listing {
 }
 
 
+
+/* @media (min-width: 800px) {
+.box--right-aligned .unstacked-right article {
+	padding-right: 5.0rem;
+	padding-right: 20%;
+} */
+
+
+
 .box--centered {
-	position: relative;
-	display: block;
-	width: 100%;
+	position: relative !important;
+	display: block !important;
+	width: 100% !important;
 	height: auto;
 	text-align: center;
 	margin: 0;
@@ -1058,10 +1067,8 @@ ul.listing {
 
 
 .box--centered article {
-	position: relative;
-	width: 95%;
-	margin-left: 0;
-	margin-right: auto;
+	position: relative !important;
+	width: calc(100%-3.0rem) !important;
 	overflow: hidden !important;
 }
 
@@ -1070,6 +1077,8 @@ ul.listing {
 	.box--centered article {
 		width: 100%;
 		height: 100%;
+		margin-left: 0;
+		margin-right: auto;
 		padding-left: 3.0rem;
 		padding-right: 3.0rem;
 	}
@@ -1103,7 +1112,7 @@ img {
 	max-width: inherit;
 	width: 100vw !important;
 	position: relative;
-	left: 50%;
+	left: 0%;
 	right: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
@@ -1137,7 +1146,13 @@ img {
 
 
 @media (min-width: 800px) {
+	.img--fullwidth {
+		left: 50%;
+		right: 50%;
 	}
+}
+
+
 
 .img--centered {
 	position: relative;
@@ -1641,7 +1656,7 @@ img {
 	}
 
 
-	.unstacked-left .img--left-aligned {
+/* 	.unstacked-left .img--left-aligned {
 		position: inherit !important;
 		max-width: unset !important;
 		width: 100% !important;
@@ -1652,8 +1667,26 @@ img {
 		-o-object-fit: cover !important;
 			 object-fit: cover !important;
 		object-position: center center !important;
+	} */
 
+
+
+
+	.unstacked-left .img--left-aligned {
+		position: inherit !important;
+		max-width: unset !important;
+		width: 100% !important;
+		left: 0% !important;
+		right: 0% !important;
+		margin-left: 0vw !important;
+		margin-right: 0vw !important;
+		height: 500px !important;
+		-o-object-fit: cover !important;
+			 object-fit: cover !important;
+		object-position: center center !important;
 	}
+
+
 
 
 	@media (min-width: 800px) {
@@ -1663,6 +1696,16 @@ img {
 	}
 
 
+/* 	.unstacked-left .img--right-aligned {
+		position: inherit !important;
+		max-width: unset !important;
+		width: 100% !important;
+		left: 0% !important;
+		right: 0% !important;
+		margin-left: 0vw !important;
+		margin-right: 0vw !important;
+	} */
+
 	.unstacked-left .img--right-aligned {
 		position: inherit !important;
 		max-width: unset !important;
@@ -1671,6 +1714,10 @@ img {
 		right: 0% !important;
 		margin-left: 0vw !important;
 		margin-right: 0vw !important;
+		height: 500px !important;
+		-o-object-fit: cover !important;
+			 object-fit: cover !important;
+		object-position: center center !important;
 	}
 
 
@@ -1745,18 +1792,18 @@ img {
 }
 
 
-
+/*
 
 .unstacked-right img {
 	height: 500px;
-}
+} */
 
-.unstacked-right .img--right-aligned {
+/* .unstacked-right .img--right-aligned {
 	height: 500px;
 	text-align: left;
 	margin: 0.0rem;
 	margin-right: inherit !important;
-}
+} */
 
 
 .box--left-aligned .unstacked-right article {
@@ -1808,6 +1855,10 @@ img {
 	object-position: center center !important;
 
 }
+
+
+
+
 
 
 .site-intro .unstacked-right .img--fullwidth {
@@ -1988,7 +2039,7 @@ img {
 
 .btn:hover {
 	background-color: #A42347;
-	transition: all 0.75s;
+	transition: all 0.5s;
 }
 
 
@@ -2001,7 +2052,7 @@ img {
 		background-color: #B6274F;
 		margin-top: 2.0rem;
 		margin-bottom: 2.0rem;
-		transition: all 0.75s;
+		transition: all 0.5s;
 	}
 
 
@@ -2015,13 +2066,13 @@ img {
 	color: #B6274F;
 	background-color: #FFFFFF;
 	margin: 1.25rem 0;
-	transition: 0.75s;
+	transition: 0.5s;
 }
 
 
 .btn--white:hover {
 	background-color: #e5e5e5 !important;
-	transition: all 0.75s;
+	transition: all 0.5s;
 }
 
 
@@ -2375,7 +2426,6 @@ input[type=checkbox], input[type=radio] {
 
 
 
-
 /* --- BUTTON LOAD MORE PROJECTS --- */
 
 .project-overview-box__container {
@@ -2484,7 +2534,14 @@ ul {
 	.home .h1__title--left-aligned {
 		padding-left: 0.0rem;
 	}
+
+	.wrap-here::after {
+		content: '\A';
+		white-space: pre;
+	}
+
 }
+
 
 
 .h1__title--right-aligned {
@@ -2648,26 +2705,27 @@ ul {
 	margin-left: -50vw;
 	margin-right: -50vw; */
 
-
+	position: fixed;
+	top: 0px;
+	height: 70px;
 
 }
 
 @media (min-width: 800px) {
 	}
 
-	.site-header--is-active {
-    background-color: rgba(#FFFFFF, 0.55) !important;
-  }
+.site-header--is-active {
+  background-color: rgba(#FFFFFF, 0.55) !important;
+}
 
 @media (min-width: 800px) {
-
-.site-header {
+	.site-header {
     position: fixed;
     top: 0px;
 		height: 70px;
     background-color: rgba(#FFFFFF, 0.75) !important;
   }
-	}
+}
 
 @media (min-width: 1200px) {
 
@@ -3129,26 +3187,31 @@ menu.site-menu {
 
 .line {
   position: absolute;
+	position: relative;
   display: block;
   height: 3px;
   width: 30px;
-  left: -10px;
+  /* left: -10px; */
   background: #707173;
   margin-top: 0;
   transition: 0.5s;
   transform-origin: center;
 }
 
+
 .line:nth-child(1) {
   top: 10px;
+	top: 8px;
 }
 
 .line:nth-child(2) {
   top: 20px;
+	top: 16px;
 }
 
 .line:nth-child(3) {
   top: 30px;
+	top: 24px;
 }
 
 /* --- Burger Menu Animation  --- */
@@ -3162,7 +3225,7 @@ menu.site-menu {
 }
 
 .burger-menu.checked .line:nth-child(3) {
-  transform: translateY(-10px) rotate(45deg);
+  transform: translateY(-12px) rotate(45deg);
 }
 
 
@@ -4122,7 +4185,8 @@ span.hover__alt-text {
 .section__just-call {
 	position: relative;
 	width: 100%;
-	max-height: 500px;
+	height: 500px;
+
 	height: 100%;
 	color: #FFFFFF;
 	text-align: left !important;
@@ -4131,6 +4195,14 @@ span.hover__alt-text {
 	padding-top: 0.0rem;
 	padding-bottom: 0.0rem;
 }
+
+
+
+
+
+
+
+
 
 /* @media (min-width: 800px) {
 	.section__just-call {
@@ -4153,15 +4225,24 @@ span.hover__alt-text {
 .section__just-call article {
 	position: relative;
 	width: 100% !important;
-	padding-left: 20% !important;
-	padding-right: 20% !important;
+	padding-left: 1.5rem !important;
+	padding-right: 1.5rem !important;
 }
+
+
+@media (min-width: 800px) {
+	.section__just-call article {
+		position: relative;
+		width: 100% !important;
+		padding-left: 20% !important;
+		padding-right: 20% !important;
+	}
+}
+
 
 .section__just-call-intro {
 	text-align: justify;
 }
-
-
 
 
 
@@ -4183,7 +4264,19 @@ span.hover__alt-text {
 
 .hours-available {
 	font-size: 0.9rem;
+	padding-bottom: 1.5rem;
 }
+
+@media (min-width: 800px) {
+	.hours-available {
+		padding-bottom: inherit;
+	}
+
+}
+
+
+
+
 
 /* === RECALL SECTION === */
 
@@ -5005,7 +5098,6 @@ span.hover__alt-text {
 /* --- Accordion --- */
 .accordion__item {
 	position: relative;
-	display: block;
 	border-bottom: 2px solid #707173;
 	background: #FFFFFF;
 	-webkit-transition: height 2s ease-out;
@@ -5013,6 +5105,15 @@ span.hover__alt-text {
 	-o-transition: height 2s ease-out;
 	transition: height 2s ease-out;
 }
+
+
+@media (min-width: 800px) {
+	.accordion__item {
+		display: block;
+	}
+}
+
+
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -5027,7 +5128,9 @@ span.hover__alt-text {
 	transition: 0.4s;
 }
 
+
 .accordion__item button {
+	display: flex;
 	font-size: 1.6rem;
 	font-weight: 700;
 	color: #707173;
@@ -5036,32 +5139,59 @@ span.hover__alt-text {
 	text-transform: lowercase;
 	text-decoration: none;
 	margin: 0;
+	align-items: center;
 	padding-top: 2.0rem;
 	padding-bottom: 2.0rem;
 }
 
 
+@media (min-width: 800px) {
+	.accordion__item button {
+		display: inherit;
+	}
+}
+
+
+
 .accordion__pointer {
 	position: relative;
-	position: absolute;
-	top: 20px;
-	right: 30px;
 	width: 10px;
 	height: 10px;
 	color: #707173;
 	line-height: 20px;
-	margin: 20px 0 10px 20px;
+	margin: -20px 0 0px 20px;
 	transition: all 0.5s ease-in-out;
-
 }
+
+
+@media (min-width: 800px) {
+	.accordion__pointer {
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		margin: 20px 0 10px 20px;
+	}
+}
+
+
 
 button.active .accordion__pointer {
 	display: inline-block;
 	transform: rotate(90deg);
-	top: 30px;
-	right: 20px;
 	padding: 0;
 }
+
+
+@media (min-width: 800px) {
+	button.active .accordion__pointer {
+		display: inline-block;
+		transform: rotate(90deg);
+		top: 30px;
+		right: 20px;
+		padding: 0;
+	}
+}
+
 
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -5117,8 +5247,8 @@ button.active .panel p {
 
 
 #accordion article .panel p {
-	margin-top: 1.0rem !important;
-	margin-bottom: 1.0rem !important;
+	margin-top: 2.0rem !important;
+	margin-bottom: 2.0rem !important;
 }
 
 
@@ -5139,6 +5269,12 @@ button.active .panel p {
 }
 
 
+@media (min-width: 800px) {
+	.down {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	}
+}
 
 
 
@@ -5749,12 +5885,15 @@ margin-left: auto;
 	}
 
 	.contact__data-map h2 {
-		padding-left: 5.0rem;
+		padding-left: 1.5rem;
 		margin-bottom: 0.5rem;
 	}
 
 	@media (min-width: 800px) {
-
+		.contact__data-map h2 {
+			padding-left: 5.0rem;
+			margin-bottom: 0.5rem;
+		}
 	}
 
 
@@ -6103,13 +6242,26 @@ margin-left: auto;
 	margin-top: 0.0rem;
 }
 
+
 .testimonials-carousel {
 	position: relative !important;
-	width: 75% !important;
+	width: 90% !important;
 	margin: 2.0rem auto;
 	margin-bottom: 0.0rem !important;
-	padding: 0.0rem 1.0rem;
+	padding: 0.0rem 1.5rem;
 }
+
+
+@media (min-width: 800px) {
+	.testimonials-carousel {
+		position: relative !important;
+		width: 75% !important;
+		margin: 2.0rem auto;
+		margin-bottom: 0.0rem !important;
+		padding: 0.0rem 1.0rem;
+	}
+}
+
 
 
 
@@ -6175,6 +6327,8 @@ margin-left: auto;
 	flex-direction: column;
 	margin: 0px auto;
 	margin-bottom: 4.375rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 	display: block;
 }
 
@@ -6330,17 +6484,25 @@ margin-left: auto;
 	letter-spacing: 0.05rem;
 	margin-top: 4.0rem;
 	margin-top: 0.0rem;
-
-
-
-/* 	width: 100vw;
+	padding-bottom: 1.5rem;
+	/*
+	width: 100vw;
 	position: relative;
 	left: 50%;
 	right: 50%;
 	margin-left: -50vw;
-	margin-right: -50vw; */
-
+	margin-right: -50vw;
+	*/
 }
+
+
+@media (min-width: 800px) {
+	.site-footer {
+		padding-bottom: initial;
+	}
+}
+
+
 
 @media (min-width: 800px) {
 	.site-footer__row {
@@ -6353,10 +6515,7 @@ margin-left: auto;
 		margin: 0 auto;
 		margin-bottom: 4.375rem;
 	}
-
-
-
-	}
+}
 
 .site-footer__contact-data {
 		margin-top: 3.0rem;
@@ -6371,7 +6530,7 @@ margin-left: auto;
 		margin-bottom: auto;
 
 	}
-	}
+}
 
 .site-footer__contact-data a {
 		font-weight: 600;
@@ -6433,23 +6592,25 @@ margin-left: auto;
 
 .footer-contact__social-media-icon--facebook {
 	background-color: #B6274F;
+	transition: all 0.5s;
 }
 
 
 .footer-contact__social-media-icon--facebook:hover {
 	background-color: #A42347;
-	transition: all 0.75s;
+	transition: all 0.5s;
 }
 
 
 .footer-contact__social-media-icon--instagram {
 	background-color: #B6274F;
+	transition: all 0.5s;
 }
 
 
 .footer-contact__social-media-icon--instagram:hover {
-	transition: all 0.75s;
 	background-color: #A42347;
+	transition: all 0.5s;
 }
 
 
@@ -6589,8 +6750,8 @@ margin-left: auto;
 
 /* === ANIMATIONEN === */
 
-
 /* --- 1) Parallax Effekt ein bisschen schneller als normale Geschwindigkeit --- */
+
 
 
 
@@ -6598,6 +6759,7 @@ margin-left: auto;
 
 [data-inviewport="entrance-fade-bottom"].is-inViewport {
 	animation: EntranceFadeBottom 1.5s ease 0s 1 normal none;
+	animation-iteration-count: 1;
 }
 
 @keyframes EntranceFadeBottom {
@@ -6638,8 +6800,13 @@ margin-left: auto;
 
 /* --- 4) Entrance Fade Center --- */
 
-[data-inviewport="entrance-fade-center"].is-inViewport {
-	animation: EntranceFadeCenter 1.5s ease 0s 1 normal none;
+/* [data-inviewport="entrance-fade-center"].is-inViewport  */
+/* .entrance-fade-center	*/
+[data-inviewport="entrance-fade-center"].is-inViewport
+
+ {
+	animation: EntranceFadeCenter 1.5s ease 0.0s 1 normal none;
+	transition: all 0.75s;
 }
 
 @keyframes EntranceFadeCenter {
@@ -6702,14 +6869,87 @@ margin-left: auto;
 
 /* --- 8) Entrance Scale Backward Center (reverse) --- */
 
+.img-wrapper--wood-square {
+	width: 92px;
+	height: 92px;
+	overflow: hidden;
+}
+
+
+.img-wrapper--project-thumb {
+	width: 100%;
+	max-height: 500px;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+.img-wrapper--partner__logo {
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.img-wrapper--wood-square img {
+	width: 100%;
+	height: auto;
+}
+
+.img-wrapper--project-thumb img {
+	width: 100%;
+}
+
+
+.img-wrapper--partner__logo img {
+	width: 100%;
+}
+
+
+.img-wrapper--wood-square img,
+.img-wrapper--project-thumb img,
+.img-wrapper--partner__logo img {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+
+}
+
+
+
+.img-wrapper--wood-square img:hover,
+.img-wrapper--project-thumb img:hover,
+.img-wrapper--partner__logo img:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+
+
+
+
+/*
 [data-inviewport="entrance-scale-backward-center-reverse"].is-inViewport {
-	/* animation: EntranceScaleBackwardCenterReverse 1.5s ease-out 0s 1 reverse forwards; */
+	animation: EntranceScaleBackwardCenterReverse 1.5s ease-out 0s 1 reverse forwards;
 	transition: transform 2000ms ease-in-out;
 }
 
-/* .entrance-scale-backward-center-reverse:hover {
+.entrance-scale-backward-center-reverse:hover {
 	animation: EntranceScaleBackwardCenterReverse 1.5s ease-out 0s 1 reverse forwards;
-} */
+	transition: transform 2000ms ease;
+
+
+}
 
 
 @keyframes EntranceScaleBackwardCenterReverse {
@@ -6722,7 +6962,7 @@ margin-left: auto;
 	}
 }
 
-
+*/
 
 /* --- 9) Butten/Text Link --- */
 
@@ -6732,5 +6972,4 @@ margin-left: auto;
 
 
 /* --- 10) Mouse (not) follow --- */
-
 

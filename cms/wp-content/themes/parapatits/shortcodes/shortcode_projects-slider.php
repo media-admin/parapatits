@@ -22,7 +22,9 @@
 
 					<div>
 						<a href="<?php the_permalink(); ?>">
-							<img data-inviewport="entrance-scale-backward-center-reverse" class="project-carousel__thumbnail" src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text; ?>">
+							<div class="img-wrapper--project-thumb">
+								<img data-inviewport="entrance-scale-backward-center-reverse" class="project-carousel__thumbnail" src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text; ?>">
+							</div>
 						</a>
 						<div class="project-carousel__content">
 							<h2 class="project-carousel__title h2__heading"><?php the_title(); ?></h2>

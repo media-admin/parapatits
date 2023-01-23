@@ -122,62 +122,94 @@
 
 	<body <?php body_class("site-body"); ?>>
 
-		<header class="site-header">
-		<div class="site-header__branding">
-			<div class="site-header__logo">
-				<a class="header-logo__link wrapper" href="<?php echo get_home_url(); ?>">
-					<img class="site-header__logo-img lazyload" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/logos/logo_parapatits-peter-tischlerwerkstaette.svg" alt="Logo Tischlerwerkstätte Parapatits Peter">
-				</a>
+		<header data-inviewport="entrance-fade-top" class="site-header">
+			<div class="site-header__branding">
+				<div class="site-header__logo">
+					<a class="header-logo__link wrapper" href="<?php echo get_home_url(); ?>">
+						<img class="site-header__logo-img lazyload" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/logos/logo_parapatits-peter-neutral.svg" alt="Logo Paraptits Peter">
+					</a>
+				</div>
 			</div>
+
+			<!-- Hamburger Menu Toggle -->
+			<nav class="main-navigation">
+
+				<menu class="site-menu">
+					<div class="burger-menu">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</div>
+				</menu>
+
+				<!-- Main Navigation -->
+				<div class="navbar">
+					<ul class="navbar__navigation-list">
+						<?php
+      $defaults = [
+        "walker" => new Custom_Navwalker(),
+        "menu" => "Hauptnavigation",
+        "theme_location" => "nav-menu-main",
+        "depth" => 2,
+        "container" => false,
+        "container_class" => "",
+        "menu_class" => "",
+        "items_wrap" => '%3$s',
+        "fallback_cb" => "NavWalker::fallback",
+      ];
+      wp_nav_menu($defaults);
+      ?>
+					</ul>
+				</div>
+
+			</nav>
+
 		</div>
 
-		<!-- Hamburger Menu Toggle -->
-				<nav class="main-navigation">
+	</header>
 
-					<menu class="site-menu">
-						<div class="burger-menu">
-							<span class="line"></span>
-							<span class="line"></span>
-							<span class="line"></span>
-						</div>
-					</menu>
+	<?php if (is_front_page()): ?>
 
-					<!-- Main Navigation -->
-					<div class="navbar">
-						<ul class="navbar__navigation-list">
-							<?php
-       $defaults = [
-         "walker" => new Custom_Navwalker(),
-         "menu" => "Hauptnavigation",
-         "theme_location" => "nav-menu-main",
-         "depth" => 2,
-         "container" => false,
-         "container_class" => "",
-         "menu_class" => "",
-         "items_wrap" => '%3$s',
-         "fallback_cb" => "NavWalker::fallback",
-       ];
-       wp_nav_menu($defaults);
-       ?>
-						</ul>
+		<section>
+			<div class="home-slider entrance-fade-center">
+			<?php
+   $args = [
+     "post_status" => "publish",
+     "posts_per_page" => -1,
+     "post_type" => "slider",
+   ];
+
+   $loop = new WP_Query($args);
+
+   while ($loop->have_posts()):
+
+     $loop->the_post();
+
+     $image_smartphone = get_field("image_square");
+     $image_desktop = get_field("image_landscape");
+
+     $image_smartphone_url = $image_smartphone["url"];
+     $image_desktop_url = $image_desktop["url"];
+     ?>
+
+					<div>
+						<picture>
+							<source media="(min-width: 38em)" srcset=" <?php echo esc_url(
+         $image_desktop_url
+       ); ?> ">
+							<source srcset=" <?php echo esc_url($image_smartphone_url); ?> ">
+							<img class="" src=" <?php echo esc_url($image_smartphone_url); ?> ">
+						</picture>
+						<p data-inviewport="entrance-fade-bottom" class="home-slider__text rellax" data-rellax-speed="4"><?php the_content(); ?>
 					</div>
+					<?php
+   endwhile;
+   ?>
+				<?php wp_reset_postdata(); ?>
+				</div>
+		</section>
 
-				</nav>
-
-				<?php if (is_front_page()): ?>
-
-				<section class="large-hero">
-					<img class="large-hero__img lazyload" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/home/hero-home.png" alt="Hero Image">
-					<p class="large-hero__title wrapper">Willkommen, hereinspaziert</p>
-					<p class="large-hero__text wrapper"></p>
-				</section>
-
-				<?php endif; ?>
-
-			</div>
-
-		</header>
+	<?php endif;
+?>

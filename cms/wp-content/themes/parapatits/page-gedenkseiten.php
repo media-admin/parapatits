@@ -1,16 +1,15 @@
 <?php
 /**
-* Template Name: Seite Gedenkseiten
-*/
+ * Template Name: Seite Gedenkseiten
+ */
 
-get_header( 'bestattung' );
-?>
+get_header("bestattung"); ?>
 
 	<main class="site-main">
 		<div class="site-content">
 			<section class="site-intro box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left">
-					<article class="wrapper">
+					<article data-inviewport="entrance-fade-right" class="wrapper">
 						<h1 class="site-title h1__title">Gedenkseiten auf Viternity</h1>
 						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Zünden Sie eine Kerze für Ihre Liebsten an.</p>
 						<div class="">
@@ -20,7 +19,9 @@ get_header( 'bestattung' );
 				</div>
 				<div class="unstacked-right">
 					<div class="img--centered lazyload">
-						<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-11-DSC03317_web.jpg" alt="Denken Sie mit Viternity an Ihre Liebsten">
+						<img data-inviewport="entrance-fade-center" class="img--centered lazyload" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-11-DSC03317_web.jpg" alt="Denken Sie mit Viternity an Ihre Liebsten">
 					</div>
 				</div>
 			</section>
@@ -28,18 +29,20 @@ get_header( 'bestattung' );
 			<section class="box--centered unstacked-wrapper">
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">
-						<h2 class="">Unsere Leistungen</h2>
-						<div class="">
+						<h2 data-inviewport="entrance-fade-bottom" class="">Unsere Leistungen</h2>
+						<div data-inviewport="entrance-fade-bottom" class="">
 							<p class="">
 								Erfahren Sie, wie wir Sie unterstützen können.
 							</p>
 							<!-- <button class="btn btn--red btn--centered-aligned" type="button" onklick="window.open('/leistungen.html', '_blank')">Leistungen anzeigen</button> -->
-							<a class="btn btn--red btn--centered-aligned" role="button" href="/unsere-leistungen">Leistungen anzeigen</a>
+							<a data-inviewport="entrance-fade-bottom" class="btn btn--red btn--centered-aligned" role="button" href="/unsere-leistungen">Leistungen anzeigen</a>
 						</div>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-7-DSC03394_web.jpg" alt="Persönliche Bestattung">
+					<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo(
+       "template_directory"
+     ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-7-DSC03394_web.jpg" alt="Persönliche Bestattung">
 				</div>
 			</section>
 

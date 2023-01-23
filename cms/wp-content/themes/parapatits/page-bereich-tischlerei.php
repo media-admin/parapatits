@@ -21,7 +21,7 @@ get_header("tischlerei"); ?>
 				</div>
 				<div class="unstacked-right">
 					<div class="img--wood-square-before-red">
-						<img [data-inviewport="entrance-fade-center"].is-inViewportid="jumping-img" class="img--centered img--wood-square-before lazyload" src="<?php bloginfo(
+						<img data-inviewport="entrance-fade-center" id="jumping-img" class="img--centered img--wood-square-before lazyload" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-5-26490815358_55c0a42b07_o_web.jpg" alt="Wohlfühlräume mit Herz">
 					</div>

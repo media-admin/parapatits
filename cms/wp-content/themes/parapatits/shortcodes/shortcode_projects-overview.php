@@ -52,7 +52,9 @@
         }
       } ?>
 					" href="<?php the_permalink(); ?>">
+                    <div class="img-wrapper--project-thumb">
 						<img src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text; ?>">
+                    </div>
 
 						<div class="">
 							<h2 class="project-overview-box__title h2__heading"><?php the_title(); ?></h2>

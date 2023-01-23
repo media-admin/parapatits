@@ -3,24 +3,26 @@
  * Template Name: Startseite
  */
 
-get_header(); ?>
+get_header("neutral"); ?>
 
 	<main class="site-main">
 		<div class="site-content">
 			<section class="intro wrapper unstacked-wrapper">
 				<div class="unstacked-left ">
-					<h1 data-inviewport="entrance-fade-bottom" class="site-title h1__title intro__headline h1__title--left-aligned">Parapatits – Ihr starker Partner</h1>
+					<h1 data-inviewport="entrance-fade-bottom" class="site-title h1__title intro__headline h1__title--left-aligned">Parapatits – <span class="wrap-here"></span>Ihr starker Partner</h1>
 					<p data-inviewport="entrance-fade-bottom" class="intro__subtitle h1__subtitle h1__subtitle--left-aligned">herzlich, verlässlich, echt.</p>
 				</div>
 				<div class="unstacked-right">
 					<ul class="intro__company-listing">
 						<a href="/tischlerei/">
 							<li class="intro__list-item intro__list-item--tischlerei">
-								<img data-inviewport="entrance-scale-backward-center-reverse" class="intro__list-img img--wood-square img--wood-square-red lazyload" srcset="<?php bloginfo(
-          "template_directory"
-        ); ?>/assets/images/oak-wood-red.png" alt="Link zu Tischlerei Parapatits">
-								<div class="intro__list-content">
-									<h2 data-inviewport="entrance-fade-right" class="intro__list-title h2__title h2__title--left-aligned">Tischlerei</h2>
+								<div class="img-wrapper--wood-square">
+									<img data-inviewport="entrance-scale-backward-center-reverse" class="intro__list-img img--wood-square img--wood-square-red lazyload entrance-scale-backward-center-reverse" srcset="<?php bloginfo(
+           "template_directory"
+         ); ?>/assets/images/oak-wood-red.png" alt="Link zu Tischlerei Parapatits">
+			 					</div>
+								<div data-inviewport="entrance-fade-right" class="intro__list-content">
+									<h2 class="intro__list-title h2__title h2__title--left-aligned">Tischlerei</h2>
 									<p class="intro__list-subtitle h2__subtitle h2__subtitle--left-aligned"><span class="hover__default-text">Wir gestalten Lebensräume.</span><span class="hover__alt-text">Wir gestalten Lebensträume.</span></p>
 								</div>
 							</li>
@@ -30,13 +32,15 @@ get_header(); ?>
 					<ul class="intro__company-listing">
 						<a href="/bestattung/">
 							<li class="intro__list-item intro__list-item--bestattung">
-								<div class="intro__list-content">
-									<h2 data-inviewport="entrance-fade-left" class="intro__list-title h2__title h2__title--left-aligned">Bestattung</h2>
+								<div data-inviewport="entrance-fade-left" class="intro__list-content">
+									<h2 class="intro__list-title h2__title h2__title--left-aligned">Bestattung</h2>
 									<p class="intro__list-subtitle h2__subtitle h2__subtitle--right-aligned"><span class="hover__default-text">Wir begleiten Sie.</span><span class="hover__alt-text">Wir geleiten Sie.</p>
 								</div>
-								<img data-inviewport="entrance-scale-backward-center-reverse" class="intro__list-img img--wood-square img--wood-square-gray lazyload" srcset="<?php bloginfo(
-          "template_directory"
-        ); ?>/assets/images/oak-wood-gray.png" alt="Link zu Bestattung Parapatits">
+								<div class="img-wrapper--wood-square">
+									<img data-inviewport="entrance-scale-backward-center-reverse" class="intro__list-img img--wood-square img--wood-square-gray lazyload entrance-scale-backward-center-reverse" srcset="<?php bloginfo(
+           "template_directory"
+         ); ?>/assets/images/oak-wood-gray.png" alt="Link zu Bestattung Parapatits">
+								</div>
 							</li>
 						</a>
 					</ul>
@@ -46,13 +50,13 @@ get_header(); ?>
 			<section id="news-section" class="news-section unstacked-wrapper" data-matching-link="#news-section-link">
 
 				<div class="unstacked-left">
-					<img class="news-section__img img--fullwidth rellax" data-rellax-speed="-2" src="<?php bloginfo(
+					<img class="<!-- news-section__img --> img--fullwidth rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/home/cut-for-web_highres-30-DSC03554_web.jpg" alt="Traditioneller Familienbetrieb">
 				</div>
 
 				<div class="unstacked-right">
-					<article class="news-section__container wrapper content-wrapper">
+					<article data-inviewport="entrance-fade-bottom" class="news-section__container wrapper content-wrapper">
 						<h2 class="h2__title news-section__title wrapper ">Aktuelles</h2>
 
 						<?php
@@ -118,7 +122,7 @@ get_header(); ?>
 
 			<section class="box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left">
-					<img class="details-section__branch-item--bestattung__img img--right-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+					<img class="details-section__branch-item--bestattung__img img--fullwidth lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/home/cut-for-web_highres-6-DSC03299_web.jpg" alt="Alle Formen der Bestattung">
 				</div>

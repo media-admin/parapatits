@@ -292,13 +292,13 @@
 		<!-- Button Load More -->
 		<script type="text/javascript">
 			jQuery(function () {
+				x=4;
 				jQuery(".projects-overview__project-container a").slice(0, 4).show();
 				jQuery("#loadMore").on('click', function (e) {
 						e.preventDefault();
-						jQuery(".projects-overview__project-container a").slice(0, 4).slideDown();
-
 						x = x+2;
 						/* jQuery('.projects-overview__project-container a').slice(0, x).slideDown(); */
+						jQuery(".projects-overview__project-container a").slice(0, 4).slideDown();
 						jQuery('.projects-overview__project-container a').slice(0, x).show();
 
 						/* jQuery('html,body').animate({
@@ -329,12 +329,13 @@
 
 
 		<!-- Button Load More Projects -->
-		<script type="text/javascript">
+		<!-- <script type="text/javascript">
 			jQuery(function () {
+				x=4;
 				jQuery(".project-overview-box .project-overview-box__container").slice(0, 4).show();
 				jQuery("#loadMoreProjects").on('click', function (e) {
 						e.preventDefault();
-						jQuery(".project-overview-box .project-overview-box__container").slice(0, 4).slideDown();
+
 
 						x = x+2;
 						/* jQuery('.projects-overview__project-container a').slice(0, x).slideDown(); */
@@ -350,7 +351,7 @@
 						}
 				});
 			});
-		</script>
+		</script> -->
 
 
 
@@ -441,12 +442,7 @@
 
 
 
-
-
-
-
-
-		<!-- Checks if the element is in view - ALTERNATIVE WAY #2 -->
+		<!-- Checks if the element is in view - WORKING WAY -->
 		<script type="text/javascript">
 			const inViewport = (entries, observer) => {
 				entries.forEach(entry => {
@@ -466,6 +462,15 @@
 
 
 
+		<!-- Checks if the element is in view - ALTERNATIVE WAY -->
+		<script type="text/javascript">
+
+		</script>
+
+
+
+
+
 
 
 
@@ -482,8 +487,8 @@
 		<script type="text/javascript">
 			jQuery(function($) {
 				jQuery('#jumping-img').mouseover(function() {
-					var dWidth = $(document).width() - 100, // 100 = image width
-							dHeight = $(document).height() - 100, // 100 = image height
+					var dWidth = jQuery(document).width() - 100, // 100 = image width
+							dHeight = jQuery(document).height() - 100, // 100 = image height
 							nextX = Math.floor(Math.random() * dWidth),
 							nextY = Math.floor(Math.random() * dHeight);
 					jQuery(this).animate({ left: nextX + 'px', top: nextY + 'px' });

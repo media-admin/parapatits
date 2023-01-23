@@ -9,13 +9,13 @@ get_header("bestattung"); ?>
 		<div class="site-content">
 			<section class="site-intro box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left">
-					<article class="wrapper">
+					<article data-inviewport="entrance-fade-right" class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title(); ?></h1>
 						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Alle wichtigen Informationen, übersichtlich für Sie zusammengestellt.</p>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo(
+					<img data-inviewport="entrance-fade-center" class="img--centered lazyload" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-7-DSC03302_web.jpg" alt="Trauerarbeit durch intensive Gespräche">
 				</div>
@@ -23,7 +23,7 @@ get_header("bestattung"); ?>
 
 			<div id="wichtige-dokumente" class="wichtige-dokumente"></div>
 			<section id="accordion" class="wrapper content-wrapper">
-				<article class="accordion__item">
+				<article data-inviewport="entrance-fade-bottom" class="accordion__item">
 					<button class="accordion">Wichtige Dokumente für die Bestattung<p class="accordion__pointer"><i class="arrow down"></i></p></button>
 					<div class="panel">
 						<p>Folgende Dokumente sollten bei einem Sterbefall vorbereitet werden:</p>
@@ -54,7 +54,7 @@ get_header("bestattung"); ?>
 					</div>
 				</article>
 
-				<article class="accordion__item">
+				<article data-inviewport="entrance-fade-bottom" class="accordion__item">
 					<button class="accordion">Trauerarbeit<p class="accordion__pointer"><i class="arrow down"></i></p></button>
 					<div class="panel">
 						<p>
@@ -69,7 +69,7 @@ get_header("bestattung"); ?>
 					</div>
 				</article>
 
-				<article class="accordion__item">
+				<article data-inviewport="entrance-fade-bottom" class="accordion__item">
 					<button class="accordion">Sterbeort<p class="accordion__pointer"><i class="arrow down"></i></p></button>
 					<div class="panel">
 						<p>
@@ -95,7 +95,7 @@ get_header("bestattung"); ?>
 					</div>
 				</article>
 
-				<article class="accordion__item">
+				<article data-inviewport="entrance-fade-bottom" class="accordion__item">
 					<button class="accordion">Bestattungsarten<p class="accordion__pointer"><i class="arrow down"></i></p></button>
 					<div class="panel">
 						<p>
@@ -122,7 +122,7 @@ get_header("bestattung"); ?>
 					</div>
 				</article>
 
-				<article class="accordion__item">
+				<article data-inviewport="entrance-fade-bottom" class="accordion__item">
 					<button class="accordion">Religion<p class="accordion__pointer"><i class="arrow down"></i></p></button>
 					<div class="panel">
 						<p>
@@ -134,7 +134,7 @@ get_header("bestattung"); ?>
 					</div>
 				</article>
 
-				<article class="accordion__item">
+				<article data-inviewport="entrance-fade-bottom" class="accordion__item">
 					<button class="accordion">Eigenvorsorge</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p></button>
 					<div class="panel">
 						<p>
@@ -149,7 +149,7 @@ get_header("bestattung"); ?>
 					</div>
 				</article>
 
-				<article class="accordion__item">
+				<article data-inviewport="entrance-fade-bottom" class="accordion__item">
 					<button class="accordion">Erinnerungen</a></h2><p class="accordion__pointer"><i class="arrow down"></i></p></button>
 					<div class="panel">
 						<p>
@@ -173,11 +173,11 @@ get_header("bestattung"); ?>
 			<section class="box--centered unstacked-wrapper">
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">
-						<h2 class="h2__heading">Leitfaden im Todesfall</h2>
-						<p class="">
+						<h2 data-inviewport="entrance-fade-bottom" class="h2__heading">Leitfaden im Todesfall</h2>
+						<p data-inviewport="entrance-fade-bottom" class="">
 							Was tun, wenn ein Familienmitglied stirbt?
 						</p>
-						<a class="btn btn--red btn--centered-aligned" role="button" href="/leitfaden-im-todesfall">Leitfaden anzeigen</a>
+						<a data-inviewport="entrance-fade-bottom" class="btn btn--red btn--centered-aligned" role="button" href="/leitfaden-im-todesfall">Leitfaden anzeigen</a>
 					</article>
 				</div>
 				<div class="unstacked-left">
@@ -187,10 +187,10 @@ get_header("bestattung"); ?>
 				</div>
 			</section>
 
-
 			<?php echo do_shortcode("[shortcode_recall]"); ?>
 
 		</div>
 	</main>
 
-<?php get_footer(); ?>
+<?php get_footer();
+?>
