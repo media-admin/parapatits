@@ -1758,6 +1758,8 @@ img {
 	.unstacked-right--content {
 		margin-top: 275px !important;
 		/* margin-bottom: inherit; */
+		padding-right: 20%;
+
 	}
 }
 
