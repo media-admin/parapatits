@@ -8,9 +8,9 @@ get_header("neutral"); ?>
 	<main class="site-main">
 		<div class="site-content">
 			<section class="intro wrapper unstacked-wrapper">
-				<div class="unstacked-left ">
-					<h1 data-inviewport="entrance-fade-bottom" class="site-title h1__title intro__headline h1__title--left-aligned">Parapatits – <span class="wrap-here"></span>Ihr starker Partner</h1>
-					<p data-inviewport="entrance-fade-bottom" class="intro__subtitle h1__subtitle h1__subtitle--left-aligned">herzlich, verlässlich, echt.</p>
+				<div data-inviewport="entrance-fade-bottom" class="unstacked-left ">
+					<h1 class="site-title h1__title intro__headline h1__title--left-aligned">Parapatits – <span class="wrap-here"></span>Ihr starker Partner</h1>
+					<p class="intro__subtitle h1__subtitle h1__subtitle--left-aligned">herzlich, verlässlich, echt.</p>
 				</div>
 				<div class="unstacked-right">
 					<ul class="intro__company-listing">

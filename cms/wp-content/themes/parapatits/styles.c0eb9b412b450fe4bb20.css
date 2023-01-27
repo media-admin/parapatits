@@ -880,6 +880,12 @@ ul.listing {
 	margin-right: -50vw; */
 }
 
+
+.home .site-main {
+	top: 70px;
+}
+
+
 .site-content {
 	position: relative;
 	padding-top: 0px;
@@ -1019,7 +1025,7 @@ ul.listing {
 	margin-top: 0.0rem;
 
 	/* margin-bottom: 3.0rem; */
-	margin-bottom: 4.375rem;
+	/* margin-bottom: 4.375rem; */
 
 	padding: 0;
 	overflow: hidden !important;
@@ -1166,6 +1172,13 @@ img {
 
 }
 
+
+.img--margin-bottom {
+	margin-bottom: 4.375rem !important;
+}
+
+
+
 @media (min-width: 800px) {
 	}
 
@@ -1178,6 +1191,7 @@ img {
 	   object-fit: cover;
 	text-align: left;
 	margin: 2.0rem 0;
+	margin: 0.0rem;
 	margin-left: -36px !important;
 	padding: 0;
 	-o-object-fit: cover !important;
@@ -1401,6 +1415,7 @@ img {
 	position: relative;
 	width: 100%;
 	height: 100%; */
+	margin-bottom: 4.375rem;
 }
 
 @media (min-width: 800px) {
@@ -1562,7 +1577,7 @@ img {
 
 
 .box--left-aligned .unstacked-left article {
-	padding-left: 1.0rem;
+	padding-left: 1.5rem;
 }
 
 @media (min-width: 800px) {
@@ -1604,7 +1619,7 @@ img {
 
 	.unstacked-left .h2__heading {
 		margin-top: inherit;
-		padding-top: 1.5rem;
+		padding-top: 1.0rem;
 	}
 
 
@@ -1751,6 +1766,8 @@ img {
 	/* min-height: 500px !important; */
 	height: auto;
 	/* margin-bottom: 4.375rem; */
+	margin-bottom: 4.375rem;
+	padding-right: .5rem;
 }
 
 
@@ -1930,7 +1947,7 @@ img {
 	position: relative;
 	display: inline-block;
 	top: 5px;
-	left: calc(50% - 80px);
+	left: calc(75% - 80px);
 	content: url(assets/images/oak-wood-red.png);
 	transform: scale(.5);
 	transition: all 0.75s;
@@ -1969,7 +1986,7 @@ img {
 	position: relative;
 	display: inline-block;
 	top: 5px;
-	left: calc(50% - 80px);
+	left: calc(75% - 80px);
 	content: url(assets/images/oak-wood-gray.png);
 	transform: scale(.5);
 	transition: all 0.75s;
@@ -2403,6 +2420,7 @@ input[type=checkbox], input[type=radio] {
 	position: fixed;
 	bottom: -10px;
 	right: 25px;
+	right: 0px;
 	padding: 1.5em 2.0em;
 	z-index: 1000;
 	opacity: 1.0;
@@ -3255,12 +3273,12 @@ menu.site-menu {
 }
 
 .slick-list {
-		position: relative;
-		overflow: hidden;
-		max-height: 750px;
-		display: block;
-		margin: 0;
-		padding: 0;
+	position: relative;
+	overflow: hidden;
+	max-height: 750px;
+	display: block;
+	margin: 0;
+	padding: 0;
 }
 
 .slick-list:focus {
@@ -3305,6 +3323,7 @@ menu.site-menu {
 		height: 100%;
 		min-height: 1px;
 		padding: 0.5rem;
+		padding-top: 0.0rem;
 		padding-left: 0.0rem;
 		padding-right: 0.0rem;
 }
@@ -3618,9 +3637,18 @@ menu.site-menu {
 }
 
 
+.home-slider-section {
+	position: relative;
+	display: block;
+	margin-bottom: 4.375 !important;
+}
+
+
 .home-slider {
 	position: relative;
 	overflow: hidden;
+	top: 70px;
+
 
 	/* width: 100vw !important;
 
@@ -3635,9 +3663,18 @@ menu.site-menu {
 }
 
 
+@media (min-width: 530px) {
+	.home-slider {
+
+	}
+}
+
+
+
 .home-slider .slick-slide img {
 	width: 100% !important;
 	max-height: 750px;
+	max-height: 680px;
 	object-fit: cover !important;
 	object-position: center center !important;
 
@@ -3654,7 +3691,6 @@ menu.site-menu {
 
 .home-slider img {
 	object-fit: cover !important;
-
 }
 
 
@@ -3697,6 +3733,8 @@ menu.site-menu {
 	min-height: inherit !important;
 	margin-top: -2.0rem;
 	margin-bottom: 4.375rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 }
 
 @media (min-width: 800px) {
@@ -3705,6 +3743,8 @@ menu.site-menu {
 		margin: 0.0rem auto;
 		margin-top: 0.0rem;
 		margin-bottom: 4.375rem;
+		padding-left: initial;
+		padding-right: initial;
 	}
 }
 
@@ -3802,7 +3842,7 @@ menu.site-menu {
 	position: relative;
 	width: 100%;
 	font-size: 1.0rem;
-	font-weight: 500;
+	font-weight: 400;
 	letter-spacing: 0.1rem;
 	line-height: 1.5rem;
 	color: #B6274F;
@@ -3946,9 +3986,10 @@ span.hover__alt-text {
 /* === INFO SECTION === */
 
 .info-section {
-	width: 95%;
+	/* width: 95%; */
 	margin-left: 0;
 	margin-right: auto;
+	padding-left: 0.5rem;
 	overflow: hidden !important;
 }
 
@@ -3958,6 +3999,7 @@ span.hover__alt-text {
 		width: 75%;
 		margin: 0.0rem auto !important;
 		margin-bottom: 4.375rem !important;
+		padding-left: initial;
 	}
 
 
@@ -4043,8 +4085,8 @@ span.hover__alt-text {
 		height: auto;
 		overflow: hidden;
 		margin-left: 35%;
+		margin-bottom: 4.375rem;
 		padding-right: -18px !important;
-
 	}
 
 @media (min-width: 800px) {
@@ -4557,11 +4599,11 @@ span.hover__alt-text {
 
 
 .values-section__container {
-	width: 95%;
+	/* width: 95%; */
 	height: 100%;
 	color: #FFFFFF;
 	background-color: #838282;
-	margin: 0px 0.5rem;
+	margin: 0px 1.5rem;
 	padding: 15% 1.0rem;
 }
 
@@ -4580,15 +4622,20 @@ span.hover__alt-text {
 	height: calc(100%-4.8rem);
 }
 
-.values-section__content {
+/* .values-section__content {
 	width: 80%;
 	font-size: 1.0rem;
 	font-weight: 500;
 	line-height: 1.2rem;
 	line-height: 2.0rem;
 	margin: auto;
-	margin-bottom: 1.5rem;
-}
+	/* margin-bottom: 1.5rem; */
+} */
+
+
+
+
+
 
 .values-section__content .btn {
 	margin-top: 2.0rem;
@@ -5381,7 +5428,17 @@ button.active .panel p {
 	align-items: center;
 	flex-direction: column;
 	margin: 50px 0px;
+	margin: 0.0rem;
+	margin-top: -3.0rem;
 }
+
+@media (min-width: 800px) {
+	#projects-overview__project {
+		margin: 50px 0px;
+		margin: 2.0rem 0px;
+	}
+}
+
 
 
 .projects-overview__project-filters {
@@ -5395,12 +5452,19 @@ button.active .panel p {
 		flex-wrap: wrap;
 		margin: 20px;
 		transition: all 0.5s;
+
+		background-color: inherit;
+		border: 0px solid rgba(237,237,237,0.6);
+
+		border-bottom: 2px solid #707173;
+		padding-bottom: 1.0rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 	}
 
 @media (min-width: 800px) {
 	.projects-overview__project-filters {
 		background-color: inherit;
-		border: 0px solid rgba(237,237,237,0.6)
 	}
 }
 
@@ -5414,9 +5478,16 @@ button.active .panel p {
 		   -moz-user-select: none;
 		    -ms-user-select: none;
 		        user-select: none;
-		margin: 10px;
 		padding: 5px 20px;
 	}
+
+
+@media (min-width: 800px) {
+		.projects-overview__project-filters li {
+			margin: 10px;
+		}
+	}
+
 
 .projects-overview__project-filter--active {
 		color: #272727;
@@ -6080,7 +6151,7 @@ margin-left: auto;
 .project-overview-box__img {}
 
 .project-overview-box__title {
-	height: 3.2rem;
+	height: 4.8rem;
 	font-size: 1.2rem;
 	line-height: 1.6rem;
 	margin-top: 0.5rem !important;
@@ -6089,6 +6160,13 @@ margin-left: auto;
 	padding-left: 0.0rem !important;
 	padding-bottom: 0.0rem;
 }
+
+@media (min-width: 800px) {
+	.project-overview-box__title {
+		height: 3.2rem;
+	}
+}
+
 
 .project-overview-box__meta {}
 
@@ -6502,6 +6580,11 @@ margin-left: auto;
 	.site-footer {
 		padding-bottom: initial;
 	}
+}
+
+
+.site-footer__row {
+	margin-bottom: 4.375rem;
 }
 
 

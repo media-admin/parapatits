@@ -9,7 +9,7 @@ get_header(); ?>
 		<div class="site-content">
 			<section class="site-intro box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left">
-					<article data-inviewport="entrance-fade-bottom" class="wrapper">
+					<article data-inviewport="entrance-fade-right" class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title(); ?></h1>
 						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Wir freuen uns auf Ihren Anruf, Ihr E-Mail oder Ihre Postkarte.</p>
 					</article>

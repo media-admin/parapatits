@@ -172,8 +172,8 @@
 
 	<?php if (is_front_page()): ?>
 
-		<section>
-			<div class="home-slider entrance-fade-center">
+		<section class="home-slider-section">
+			<div class="home-slider">
 			<?php
    $args = [
      "post_status" => "publish",

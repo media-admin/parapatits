@@ -63,7 +63,7 @@ get_header(); ?>
 
 			<section class="box--left-aligned unstacked-wrapper">
 				<div class="unstacked-right">
-							<img class="img--right-aligned lazyload" src="<?php bloginfo(
+							<img class="img--right-aligned img--margin-bottom lazyload" src="<?php bloginfo(
          "template_directory"
        ); ?>/assets/images/ueber-uns/cut-for-web_highres-19-DSC03400_web.jpg" alt="Bestattung aus Nächstenliebe">
 						</div>
