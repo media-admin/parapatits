@@ -168,7 +168,6 @@
 							slidesToShow: 1,
 							slidesToScroll: 1,
 							arrows: false,
-							centerMode: true,
 							centerPadding: '40px',
 						}
 					}
@@ -442,7 +441,7 @@
 
 
 
-		<!-- Checks if the element is in view - WORKING WAY -->
+		<!-- Checks if the element is in view - WORKING INFINIT
 		<script type="text/javascript">
 			const inViewport = (entries, observer) => {
 				entries.forEach(entry => {
@@ -459,13 +458,34 @@
 				Obs.observe(EL, obsOptions);
 			});
 		</script>
+		-->
 
 
-
-		<!-- Checks if the element is in view - ALTERNATIVE WAY -->
+		<!-- Checks if the element is in view - WORKING ONCE -->
 		<script type="text/javascript">
+			const elements = document.querySelectorAll('[data-inviewport]');
+			const callback = str => { console.log(str); };
+			const observer = new IntersectionObserver(handleIntersection);
 
+			elements.forEach(obs => {
+				observer.observe(obs);
+			});
+
+			function handleIntersection(entries, observer){
+				entries.forEach(entry => {
+					if (entry.intersectionRatio > 0) {
+						entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+						observer.unobserve(entry.target);
+					}
+				});
+			}
 		</script>
+
+
+
+
+
+
 
 
 
