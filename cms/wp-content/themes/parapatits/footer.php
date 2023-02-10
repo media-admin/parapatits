@@ -484,12 +484,70 @@
 
 
 
+	<!-- Dancing Square
+	<script type="text/javascript">
+		let lastX, lastY, lastScrolled = 0;;
+		jQuery(document).on('mousemove', function(e) {
+			lastX = e.pageX - 30;
+			lastY = e.pageY - 25;
+			jQuery('#jumping-img').css({
+				left: e.pageX - 30,
+				top: e.pageY - 25,
+				pointerEvents: 'none'
+			});
+		});
+
+		jQuery(window).scroll(function(event) {
+			if (lastScrolled != $(window)
+				.scrollTop()) {
+				lastY -= lastScrolled;
+				lastScrolled = $(window)
+					.scrollTop();
+				lastY += lastScrolled;
+			}
+			jQuery('#jumping-img').css({
+				left: lastX,
+				top: lastY,
+				pointerEvents: 'none'
+			});
+		});
+	</script>
+	-->
 
 
+	<!-- Jumping Square
+	<script type="text/javascript">
+		jQuery(function($) {
+			jQuery('#jumping-img').mouseover(function() {
+				var dWidth = jQuery(document).width() - 100, // 100 = image width
+						dHeight = jQuery(document).height() - 100, // 100 = image height
+						nextX = Math.floor(Math.random() * dWidth),
+						nextY = Math.floor(Math.random() * dHeight);
+				jQuery(this).animate({ left: nextX + 'px', top: nextY + 'px' });
+			});
+		});
+	</script>
+	-->
 
 
+	<!-- Jumping Square -->
+	<script type="text/javascript">
+	function moveImg(e){
+		// get page X and Y axis.
+		let lastX, lastY, lastScrolled = 0;
+		lastX = e.pageX - 5;
+		lastY = e.pageY - 5;
 
 
+		jQuery('#jumping-img').css({
+			left: e.pageX - 5,
+			top: e.pageY - 5,
+			pointerEvents: 'none'
+		});
+
+
+	}
+	</script>
 
 
 
@@ -503,18 +561,6 @@
 		</script>
 
 
-		<!-- Jumping Square -->
-		<script type="text/javascript">
-			jQuery(function($) {
-				jQuery('#jumping-img').mouseover(function() {
-					var dWidth = jQuery(document).width() - 100, // 100 = image width
-							dHeight = jQuery(document).height() - 100, // 100 = image height
-							nextX = Math.floor(Math.random() * dWidth),
-							nextY = Math.floor(Math.random() * dHeight);
-					jQuery(this).animate({ left: nextX + 'px', top: nextY + 'px' });
-				});
-			});
-		</script>
 
 
 

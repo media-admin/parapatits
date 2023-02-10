@@ -40,7 +40,7 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--centered img--wood-square-before lazyload" src="<?php bloginfo(
+					<img class="img--centered lazyload" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-7-DSC03394_web.jpg" alt="Persönliche Bestattung">
 				</div>
@@ -51,4 +51,5 @@ get_header("bestattung"); ?>
 		</div>
 	</main>
 
-<?php get_footer(); ?>
+<?php get_footer();
+?>

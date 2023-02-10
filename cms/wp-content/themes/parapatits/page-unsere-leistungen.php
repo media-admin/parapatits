@@ -106,7 +106,7 @@ get_header("bestattung"); ?>
 				</div>
 			</section>
 
-			<section class="box--right-aligned unstacked-wrapper">
+			<section class="box--right-aligned unstacked-wrapper add-margin-bottom--large">
 				<div class="unstacked-right unstacked-right--content">
 					<article data-inviewport="entrance-fade-bottom" class="wrapper content-wrapper">
 						<h2 class="h2__heading">Todesanzeigen</h2>

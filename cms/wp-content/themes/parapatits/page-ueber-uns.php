@@ -61,7 +61,7 @@ get_header(); ?>
 
 			</section>
 
-			<section class="box--left-aligned unstacked-wrapper">
+			<section class="box--left-aligned unstacked-wrapper no-margin-bottom--small">
 				<div class="unstacked-right">
 							<img class="img--right-aligned img--margin-bottom lazyload" src="<?php bloginfo(
          "template_directory"

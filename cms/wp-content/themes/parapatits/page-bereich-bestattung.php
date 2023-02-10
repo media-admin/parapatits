@@ -7,7 +7,7 @@ get_header("bestattung"); ?>
 
 	<main class="site-main">
 		<div class="site-content">
-			<section class="site-intro box--left-aligned unstacked-wrapper">
+			<section class="site-intro box--left-aligned unstacked-wrapper" onmousemove="moveImg(event)"">
 				<div class="unstacked-left">
 					<article data-inviewport="entrance-fade-right" class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title(); ?></h1>
@@ -28,7 +28,7 @@ get_header("bestattung"); ?>
 				</div>
 			</section>
 
-			<section class="box--right-aligned unstacked-wrapper">
+			<section class="box--right-aligned unstacked-wrapper add-margin-bottom--large">
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">
 						<h2 data-inviewport="entrance-fade-bottom" class="h2__heading">Unser Arbeitsfeld</h2>
@@ -61,7 +61,7 @@ get_header("bestattung"); ?>
 				</div>
 			</section>
 
-			<section class="box--right-aligned unstacked-wrapper">
+			<section class="box--right-aligned unstacked-wrapper add-margin-bottom--large">
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">
 						<h2 data-inviewport="entrance-fade-bottom" class="h2__heading">Was ist Ihre Aufgabe?</h2>
