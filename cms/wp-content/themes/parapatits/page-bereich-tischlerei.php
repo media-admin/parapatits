@@ -19,13 +19,25 @@ get_header("tischlerei"); ?>
 						</div>
 					</article>
 				</div>
+
+
+
+
+
+
+
 				<div class="unstacked-right">
-					<div class="img--wood-square-before-red">
-						<img data-inviewport="entrance-fade-center" id="jumping-img" class="img--centered img--wood-square-before lazyload" src="<?php bloginfo(
-        "template_directory"
-      ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-5-26490815358_55c0a42b07_o_web.jpg" alt="Wohlfühlräume mit Herz">
+						<div class="img--wood-square-red">
+							<img class="img--wood-square-before img--wood-square-before-red" src="<?php bloginfo(
+         "template_directory"
+       ); ?>/assets/images/oak-wood-red.png" alt="Gray Wood Square">
+							<img data-inviewport="entrance-fade-center" id="jumping-img" class="img--centered img--wood-square lazyload" src="<?php bloginfo(
+         "template_directory"
+       ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-5-26490815358_55c0a42b07_o_web.jpg" alt="Wohlfühlräume mit Herz">
+						</div>
 					</div>
-				</div>
+
+
 			</section>
 
 			<section class="box--right-aligned unstacked-wrapper">

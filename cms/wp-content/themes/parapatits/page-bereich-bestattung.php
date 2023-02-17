@@ -7,7 +7,7 @@ get_header("bestattung"); ?>
 
 	<main class="site-main">
 		<div class="site-content">
-			<section class="site-intro box--left-aligned unstacked-wrapper" onmousemove="moveImg(event)"">
+			<section class="site-intro box--left-aligned unstacked-wrapper">
 				<div class="unstacked-left">
 					<article data-inviewport="entrance-fade-right" class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title(); ?></h1>
@@ -20,15 +20,18 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<div class="img--wood-square-before-gray">
-						<img data-inviewport="entrance-fade-center" id="jumping-img" class="img--centered img--wood-square-before lazyload" src="<?php bloginfo(
+					<div class="img--wood-square-gray">
+						<img class="img--wood-square-before img--wood-square-before-gray" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/oak-wood-gray.png" alt="Gray Wood Square">
+						<img data-inviewport="entrance-fade-center" id="jumping-img" class="img--centered img--wood-square lazyload" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-18-DSC03400_web.jpg" alt="Persönliche Bestattung">
 					</div>
 				</div>
 			</section>
 
-			<section class="box--right-aligned unstacked-wrapper add-margin-bottom--large">
+			<section class="box--right-aligned unstacked-wrapper">
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">
 						<h2 data-inviewport="entrance-fade-bottom" class="h2__heading">Unser Arbeitsfeld</h2>

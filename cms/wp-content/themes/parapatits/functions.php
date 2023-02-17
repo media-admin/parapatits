@@ -168,7 +168,7 @@ function parapatits_register_scripts()
   );
   wp_enqueue_script("vendors");
 
-  /* --- Import Modal Scripts --- */
+  /* --- Import Modal Scripts ---
   wp_register_script(
     "modal",
     get_template_directory_uri() . "/modal.86995f46e4f29a4ce8c3.js",
@@ -177,6 +177,7 @@ function parapatits_register_scripts()
     true
   );
   wp_enqueue_script("modal");
+  */
 
   /* --- Import Rellax --- */
   wp_register_script(

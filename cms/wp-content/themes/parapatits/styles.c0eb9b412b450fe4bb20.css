@@ -1194,7 +1194,7 @@ img {
 	margin-left: -50vw;
 	margin-right: -50vw;
 	height: auto;
-	height: 500px;
+	height: 250px;
 
 	/*
 	margin-top: 2.0rem;
@@ -1224,6 +1224,7 @@ img {
 
 @media (min-width: 800px) {
 	.img--fullwidth {
+		height: 500px;
 		left: 50%;
 		right: 50%;
 	}
@@ -1273,6 +1274,11 @@ img {
 
 
 
+.unstacked-right .img--left-aligned {
+	max-height: 250px;
+}
+
+
 @media (min-width: 800px) {
 
 	.unstacked-right .img--left-aligned {
@@ -1300,11 +1306,10 @@ img {
 
 
 
-@media (min-width: 800px) {
-	}
+
 
 .img--right-aligned {
-	max-height: 500px;
+	max-height: 250px;
 	position: relative;
 	width: 100%;
 	height: auto;
@@ -1318,6 +1323,12 @@ img {
 	object-position: center center !important;
 }
 
+@media (min-width: 800px) {
+	.img--right-aligned {
+		max-height: 500px;
+	}
+}
+
 
 @media (min-width: 800px) {
 	.unstacked-left img {
@@ -1329,6 +1340,7 @@ img {
 			 object-fit: cover !important;
 		object-position: center center !important;
 	}
+
 
 	.unstacked-left .img--right-aligned {
 		max-height: 500px;
@@ -1352,29 +1364,7 @@ img {
 @media (min-width: 800px) {
 	}
 
-.img--wood-square-red {
-	position: relative;
-	display: block;
-	min-width: 92px;
-	max-width: 100%;
-	/* min-height: 250px; */
-	height: auto;
 
-}
-
-@media (min-width: 800px) {
-	}
-
-.img--wood-square-gray {
-	display: inline-block;
-	min-width: 92px;
-	max-width: 100%;
-	height: auto;
-
-}
-
-@media (min-width: 800px) {
-	}
 
 /* --- Project Images --- */
 
@@ -1496,6 +1486,10 @@ img {
 		width: 100%;
 		/* min-height: 500px; */
 		height: auto !important;
+
+		/* SCROLL EFFECT
+		height: 500px !important;  */
+
 		grid-area: div1 ;
 		align-content: end;
 		margin-bottom: 0.0rem;
@@ -1582,7 +1576,6 @@ img {
 	align-self: start;
 	min-height: initial !important;
 	margin-top: 70px !important;
-	*/
 }
 
 
@@ -1611,9 +1604,17 @@ img {
 	}
 
 	.site-intro .unstacked-right .img--centered {
-		height: 500px !important;
-		height: 650px !important;
+		height: 250px !important;
 	}
+
+	@media (min-width: 800px) {
+		.site-intro .unstacked-right .img--centered {
+			height: 500px !important;
+			height: 650px !important;
+		}
+	}
+
+
 
 	.home .site-intro .unstacked-left {
 		height: 500px !important;
@@ -1706,7 +1707,7 @@ img {
 		right: 0% !important;
 		margin-left: 0vw !important;
 		margin-right: 0vw !important;
-		height: 500px;
+		height: 250px;
 
 		/*
 		margin-top: 2.0rem;
@@ -1724,6 +1725,17 @@ img {
 		/* margin-bottom: 4.375rem; */
 	}
 
+	@media (min-width: 800px) {
+		.unstacked-left .img--fullwidth {
+			height: 500px;
+
+			/* SCROLL EFFECT
+			min-height: 800px;
+			overflow: hidden;
+			*/
+		}
+	}
+
 
 	.site-intro .unstacked-left .img--fullwidth {
 		margin-top: 0.0rem !important;
@@ -1739,10 +1751,16 @@ img {
 		right: 0% !important;
 		margin-left: 0vw !important;
 		margin-right: 0vw !important;
-		height: 500px;
+		height: 250px;
 		-o-object-fit: cover !important;
 			 object-fit: cover !important;
 		object-position: center center !important;
+	}
+
+	@media (min-width: 800px) {
+		.unstacked-left .img--centered {
+			height: 500px !important;
+		}
 	}
 
 
@@ -1770,7 +1788,7 @@ img {
 		right: 0% !important;
 		margin-left: 0vw !important;
 		margin-right: 0vw !important;
-		height: 500px !important;
+		height: 250px !important;
 		-o-object-fit: cover !important;
 			 object-fit: cover !important;
 		object-position: center center !important;
@@ -1779,7 +1797,7 @@ img {
 
 	@media (min-width: 800px) {
 		.unstacked-left .img--left-aligned {
-			/* margin: 0.0rem; */
+			height: 500px !important;
 		}
 	}
 
@@ -1802,10 +1820,16 @@ img {
 		right: 0% !important;
 		margin-left: 0vw !important;
 		margin-right: 0vw !important;
-		height: 500px !important;
+		height: 250px !important;
 		-o-object-fit: cover !important;
 			 object-fit: cover !important;
 		object-position: center center !important;
+	}
+
+	@media (min-width: 800px) {
+		.unstacked-left .img--right-aligned {
+			height: 500px !important;
+		}
 	}
 
 
@@ -1868,6 +1892,7 @@ img {
 		width: 100% !important;
 		height: 100% !important;
 		margin-top: 0px !important;
+		padding-right: 0%;
 	}
 }
 
@@ -1912,14 +1937,9 @@ img {
 }
 
 
-
-
 .unstacked-right .h2__heading {
 	margin-top: inherit;
 	padding-top: 1.0rem;
-}
-
-
 }
 
 
@@ -1931,7 +1951,7 @@ img {
 	right: 0% !important;
 	margin-left: 0vw !important;
 	margin-right: 0vw !important;
-	height: 500px;
+	height: 250px;
 
 	/*
 	margin-top: 2.0rem;
@@ -1949,15 +1969,24 @@ img {
 
 }
 
-
-
+@media (min-width: 800px) {
+	.unstacked-right .img--fullwidth {
+		height: 500px;
+	}
+}
 
 
 
 .site-intro .unstacked-right .img--fullwidth {
-	height: 650px;
+	height: 250px;
 	margin-top: 0.0rem !important;
 	margin-bottom: 0.0rem !important;
+}
+
+@media (min-width: 800px) {
+	.site-intro .unstacked-right .img--fullwidth {
+		height: 650px;
+	}
 }
 
 
@@ -1969,10 +1998,16 @@ img {
 	right: 0% !important;
 	margin-left: 0vw !important;
 	margin-right: 0vw !important;
-	height: 500px !important;
+	height: 250px !important;
 	-o-object-fit: cover !important;
 		 object-fit: cover !important;
 	object-position: center center !important;
+}
+
+@media (min-width: 800px) {
+	.unstacked-right .img--centered {
+		height: 500px !important;
+	}
 }
 
 
@@ -1984,19 +2019,17 @@ img {
 	right: 0% !important;
 	margin-left: 0vw !important;
 	margin-right: 0vw !important;
-	height: 500px !important;
+	height: 250px !important;
 	-o-object-fit: cover !important;
 		 object-fit: cover !important;
 	object-position: center center !important;
 }
 
-
-	@media (min-width: 800px) {
+@media (min-width: 800px) {
 	.unstacked-right .img--left-aligned {
-		/* margin: 0.0rem; */
+		height: 500px !important;
 	}
 }
-
 
 
 .unstacked-right .img--right-aligned {
@@ -2007,86 +2040,53 @@ img {
 	right: 0% !important;
 	margin-left: 0vw !important;
 	margin-right: 0vw !important;
-	height: 500px !important;
+	height: 250px !important;
 	-o-object-fit: cover !important;
 		 object-fit: cover !important;
 	object-position: center center !important;
 }
 
-
-
-
-
-
-
-
-
-
-/* --- Wood Square Images --- */
-
-/* --- Red Square --- */
-.img--wood-square-before-red:before {
-	position: relative;
-	display: inline-block;
-	top: 5px;
-	left: calc(75% - 80px);
-	content: url(assets/images/oak-wood-red.png);
-	transform: scale(.5);
-	transition: all 0.75s;
-}
-
 @media (min-width: 800px) {
-	.img--wood-square-before-red:before {
-		position: absolute;
-		/* top: 25%; */
-		top: calc(325px - 80px);
-		left: -80px;
-		transform: scale(.5);
-		transition: all 0.75s;
+	.unstacked-right .img--right-aligned {
+		height: 500px !important;
 	}
 }
 
 
+
+
+
+
+
+/* === Wood Square Images === */
+
+/* --- Red Square NEW --- */
 .img--wood-square-before-red {
 	position: relative;
-	display: block;
-	width: 100%;
+	display: inline-block;
+	min-width: 92px;
+	max-width: 100%;
 	height: auto;
-	margin-top: -20px !important;
+	top: 10px;
+	left: calc(75% - 80px);
+	/* content: url(assets/images/oak-wood-gray.png); */
+	transform: scale(.5);
+	transition: all 0.5s ease;
 }
-
 
 @media (min-width: 800px) {
 	.img--wood-square-before-red {
-		margin-top: 0px !important;
-	}
-}
-
-
-/* --- Gray Square --- */
-.img--wood-square-before-gray:before {
-	position: relative;
-	display: inline-block;
-	top: 5px;
-	left: calc(75% - 80px);
-	content: url(assets/images/oak-wood-gray.png);
-	transform: scale(.5);
-	transition: all 0.75s;
-}
-
-@media (min-width: 800px) {
-	.img--wood-square-before-gray:before {
 		position: absolute;
 		/* top: 25%; */
 		top: calc(325px - 80px);
 		left: -80px;
 		transform: scale(.5);
-		transition: all 0.75s;
+		transition: all 0.5s ease;
 	}
 }
 
 
-.img--wood-square-before-gray {
+.img--wood-square-red {
 	position: relative;
 	display: block;
 	width: 100%;
@@ -2094,17 +2094,65 @@ img {
 	margin-top: -20px !important;
 }
 
-
 @media (min-width: 800px) {
-	.img--wood-square-before-gray {
+	.img--wood-square-red {
 		margin-top: 0px !important;
 	}
 }
 
 
-/* --- All Squares --- */
 
-.img--wood-square-before {
+
+
+
+
+
+
+/* --- Gray Square NEW --- */
+.img--wood-square-before-gray {
+	position: relative;
+	display: inline-block;
+	min-width: 92px;
+	max-width: 100%;
+	height: auto;
+	top: 10px;
+	left: calc(75% - 80px);
+	/* content: url(assets/images/oak-wood-gray.png); */
+	transform: scale(.5);
+	transition: all 0.5s ease;
+}
+
+@media (min-width: 800px) {
+	.img--wood-square-before-gray {
+		position: absolute;
+		/* top: 25%; */
+		top: calc(325px - 80px);
+		left: -80px;
+		transform: scale(.5);
+		transition: all 0.5s ease;
+	}
+}
+
+
+.img--wood-square-gray {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-top: -20px !important;
+}
+
+@media (min-width: 800px) {
+	.img--wood-square-gray {
+		margin-top: 0px !important;
+	}
+}
+
+
+
+/* --- All Squares NEW --- */
+
+.img--wood-square {
 	position: relative;
 	display: block;
 	height: auto;
@@ -2113,10 +2161,12 @@ img {
 }
 
 @media (min-width: 800px) {
-	.img--wood-square-before {
+	.img--wood-square {
 		margin-top: 0px !important;
 	}
 }
+
+
 
 
 /* === Button Styles === */
@@ -2318,7 +2368,7 @@ img {
 #dywc > .content > div .accept_wrap > a.accept {
 	color: #ffffff;
 	font-family: 'Esphimere Bold Italic';
-	background-color: #95161C;;
+	background-color: #95161C;
 	padding: 8px 18px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -3221,9 +3271,13 @@ menu.site-menu {
 .is-active .navbar-item__submenu .navbar-item a {
   /*
 	font-size: 1.2rem;
-	*/
 	font-size: 1.5rem !important;
   line-height: 2.25rem;
+	*/
+
+	font-size: 1.25rem !important;
+	line-height: 1.75rem;
+
   font-weight: 300;
 }
 
@@ -3815,6 +3869,8 @@ menu.site-menu {
 
 @media (min-width: 800px) {
 	.home .intro {
+		min-height: inherit !important;
+		height: inherit !important;
 		width: 75% !important;
 		margin: 0.0rem auto;
 		margin-top: 0.0rem;
@@ -3831,6 +3887,10 @@ menu.site-menu {
 		min-height: inherit !important;
 		margin-bottom: 2.0rem;
 		margin-top: auto;
+	}
+
+	.home .intro .unstacked-right {
+		height: inherit !important;
 	}
 }
 
@@ -4318,8 +4378,13 @@ span.hover__alt-text {
 }
 
 
-
-
+.section__just-call-box {
+	position: relative;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 4.375rem;
+	padding-bottom: 4.375rem;
+}
 
 
 
@@ -5413,7 +5478,15 @@ button.active .panel p {
 	position: relative;
 	display: block;
 	width: 100%;
+	margin-bottom: 4.375rem;
 }
+
+@media (min-width: 800px) {
+	.partner {
+		margin-bottom: inherit;
+	}
+}
+
 
 
 .partner article {
@@ -5517,7 +5590,6 @@ button.active .panel p {
 }
 
 
-
 .projects-overview__project-filters {
 		display: flex;
 		justify-content: center;
@@ -5597,8 +5669,9 @@ button.active .panel p {
 
 @media (min-width: 800px) {
 	.projects-overview__project-box {
+		min-width: 500px;
 		width: 45%;
-		padding: 15px;
+		/* padding: 15px; */
 	}
 }
 
@@ -6938,24 +7011,22 @@ margin-left: auto;
 /* --- 1) Parallax Effekt ein bisschen schneller als normale Geschwindigkeit --- */
 
 [data-inviewport="scroll-image"].is-inViewport {
-	animation: ScrollImage;
-	animation-duration: 4s;
+	animation: ScrollImage 2.5s ease 0.4s 1 normal none;
 	animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-timing-function: ease-in-out;
 }
 
 @keyframes ScrollImage {
-	from {
-		/* transform: translateY(0%); */
-		transform: matrix3d();
+	0% {
+		transform: translateY(10%);
+		-webkit-transform: translateY(10%);
 	}
 
-	to {
-		/* transform: translateY(10%); */
-		transform: matrix3d();
+	100% {
+		transform: translateY(0%);
+		-webkit-transform: translateY(0%);
 	}
 }
+
 
 
 /* --- 2) Entrance Fade Bottom --- */
@@ -7087,8 +7158,17 @@ margin-left: auto;
 }
 
 
+@media (min-width: 530px) {
+	.img-wrapper--project-thumb {
+	}
+}
+
+
+
 .img-wrapper--partner__logo {
 	width: 100%;
+	max-height: 330px;
+	height: 100%;
 	overflow: hidden;
 }
 
@@ -7096,6 +7176,7 @@ margin-left: auto;
 .img-wrapper--wood-square img {
 	width: 100%;
 	height: auto;
+	heigth: 100%;
 }
 
 .img-wrapper--project-thumb img {

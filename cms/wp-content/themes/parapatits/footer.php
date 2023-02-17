@@ -530,7 +530,7 @@
 	-->
 
 
-	<!-- Jumping Square -->
+	<!-- Jumping Square NOT WORKING
 	<script type="text/javascript">
 	function moveImg(e){
 		// get page X and Y axis.
@@ -539,30 +539,56 @@
 		lastY = e.pageY - 5;
 
 
-		jQuery('#jumping-img').css({
+		jQuery('#jumping-img:before').css({
 			left: e.pageX - 5,
 			top: e.pageY - 5,
 			pointerEvents: 'none'
 		});
 
-
 	}
+	</script>
+	-->
+
+
+	<!-- Jumping Square SECOND TRY -->
+	<script type="text/javascript">
+
+		var startMove;
+
+		jQuery(document).mousemove(function(e){
+				var difLeft = jQuery('.img--wood-square-before').offset().left - e.pageX;
+				var difTop = jQuery('.img--wood-square-before').offset().top - e.pageY;
+
+				if(difLeft < 10 && difLeft > -10 && difTop < 10 && difTop > -10 ){
+					startMove = true;
+				}
+				if(startMove){
+					jQuery(".img--wood-square-before").css({
+						left: e.pageX -750,
+						top: e.pageY -50,
+					});
+				}
+		});
+
+		/* jQuery(document).mouseleave(function(){
+				startMove = false;
+		}) */
+
 	</script>
 
 
 
 
-		<!-- Rellax Effect -->
+	<!-- Rellax Effect -->
+	<script src="<?php bloginfo(
+   "template_directory"
+ ); ?>/assets/scripts/rellax.min.js"></script>
 
-		<script src="https://parapatits.dev/cms/wp-content/themes/parapatits/assets/scripts/rellax.min.js"></script>
-
-		<script>
-			var rellax = new Rellax('.rellaxx');
-		</script>
-
-
-
-
+	<script type="text/javascript">
+		var rellax = new Rellax('.rellax', {
+			breakpoints:[576, 768, 1201]
+		});
+	</script>
 
 		<!-- END SCRIPTS AREA -->
 

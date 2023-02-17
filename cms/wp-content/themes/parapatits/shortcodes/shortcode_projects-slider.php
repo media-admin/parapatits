@@ -1,6 +1,6 @@
 <section class="project-carousel box--centered">
 	<article class="">
-		<h2 class="h2__heading entrance-fade-bottom">Projekte</h2>
+		<h2 data-inviewport="entrance-fade-bottom" class="h2__heading entrance-fade-bottom">Projekte</h2>
 		<div data-inviewport="entrance-fade-bottom" class="project-carousel__projects-container">
 			<?php
    $args = [

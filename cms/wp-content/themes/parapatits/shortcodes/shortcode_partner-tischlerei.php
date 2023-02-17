@@ -29,7 +29,7 @@
           "partner-url"
         ); ?>" target="_blank">
 									<div class="img-wrapper--partner__logo">
-										<img class="partner__logo lazyload" src="<?php echo $featured_img_url; ?>" alt="">
+										<img data-inviewport="entrance-scale-backward-center-reverse" class="partner__logo lazyload" src="<?php echo $featured_img_url; ?>" alt="">
 									</div>
 								</a>
 							</li>

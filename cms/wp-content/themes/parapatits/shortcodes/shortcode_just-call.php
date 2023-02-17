@@ -1,5 +1,5 @@
 <section class="section__just-call box--centered unstacked-wrapper">
-	<div class="unstacked-left unstacked-right--content">
+	<div class="section__just-call-box unstacked-left unstacked-right--content">
 		<article class="wrapper content-wrapper">
 			<h2 class="h2__heading">Einfach anrufen</h1>
 			<p class="section__just-call-intro">Wenn Sie einen Sterbefall haben, rufen Sie uns an und wir kümmern uns um alles Weitere.</p>
