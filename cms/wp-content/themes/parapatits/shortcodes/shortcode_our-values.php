@@ -2,7 +2,7 @@
 	<div class="unstacked-left unstacked-left--fullwidth">
 		<article class="">
 			<div class="values-section__container">
-				<h2 class="h2__title values-section__title wrapper">Unsere Werte</h2>
+				<h2 class="h2__heading values-section__title wrapper">Unsere Werte</h2>
 				<div class="values-section__content">
 					<p>
 						Erfahren Sie was unsere Arbeit ausmacht.

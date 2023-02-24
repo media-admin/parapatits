@@ -15,7 +15,7 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img data-inviewport="entrance-fade-center" class="img--centered lazyload" src="<?php bloginfo(
+					<img class="img--centered lazyload" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/leitfaden-im-todesfall/cut-for-web_highres-12-DSC03325_web.jpg" alt="Rufen Sie uns an. Wir kümmern uns um alles Weitere.">
 				</div>
@@ -53,7 +53,7 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo(
+					<img class="img--fullwidth add-margin-bottom--small lazyload" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/leitfaden-im-todesfall/cut-for-web_highres-5-DSC03387_web.jpg" alt="Umfassende Begleitung">
 				</div>

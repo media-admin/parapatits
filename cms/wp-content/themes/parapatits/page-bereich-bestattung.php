@@ -24,7 +24,7 @@ get_header("bestattung"); ?>
 						<img class="img--wood-square-before img--wood-square-before-gray" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/oak-wood-gray.png" alt="Gray Wood Square">
-						<img data-inviewport="entrance-fade-center" id="jumping-img" class="img--centered img--wood-square lazyload" src="<?php bloginfo(
+						<img id="jumping-img" class="img--centered img--wood-square lazyload" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-18-DSC03400_web.jpg" alt="Persönliche Bestattung">
 					</div>

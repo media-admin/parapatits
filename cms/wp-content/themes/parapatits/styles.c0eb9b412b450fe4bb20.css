@@ -867,6 +867,18 @@ template {
 
 
 
+.img-invisible--small {
+	display: none !important;
+}
+
+@media (min-width: 800px) {
+	.img-invisible--small {
+		display: initial !important;
+	}
+}
+
+
+
 
 
 /* === GLOBAL STYLES === */
@@ -953,6 +965,7 @@ ul.listing {
 	position: relative;
 	padding-top: 0px;
 	overflow: hidden;
+
 
 /* 	width: 100vw;
 	position: relative;
@@ -1133,8 +1146,6 @@ ul.listing {
 	overflow: hidden !important;
 }
 
-
-
 @media (min-width: 800px) {
 	.box--centered {
 		margin-bottom: 4.375rem !important;
@@ -1142,13 +1153,11 @@ ul.listing {
 }
 
 
-
 .box--centered article {
 	position: relative !important;
 	width: calc(100%-3.0rem) !important;
 	overflow: hidden !important;
 }
-
 
 @media (min-width: 800px) {
 	.box--centered article {
@@ -1162,9 +1171,10 @@ ul.listing {
 }
 
 
-
-
-
+.box--centered article.content-wrapper {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
 
 
 
@@ -1239,7 +1249,7 @@ img {
 	height: auto;
 	-o-object-fit: cover;
 	   object-fit: cover;
-	margin: 0 auto !important;
+	margin: 0 auto;
 	overflow: hidden !important;
 
 }
@@ -1728,6 +1738,7 @@ img {
 	@media (min-width: 800px) {
 		.unstacked-left .img--fullwidth {
 			height: 500px;
+			height: 800px; /* RELLAX */
 
 			/* SCROLL EFFECT
 			min-height: 800px;
@@ -1829,6 +1840,7 @@ img {
 	@media (min-width: 800px) {
 		.unstacked-left .img--right-aligned {
 			height: 500px !important;
+			height: 800px !important; /* RELLAX */
 		}
 	}
 
@@ -1980,7 +1992,7 @@ img {
 .site-intro .unstacked-right .img--fullwidth {
 	height: 250px;
 	margin-top: 0.0rem !important;
-	margin-bottom: 0.0rem !important;
+	margin-bottom: 0.0rem;
 }
 
 @media (min-width: 800px) {
@@ -2028,6 +2040,7 @@ img {
 @media (min-width: 800px) {
 	.unstacked-right .img--left-aligned {
 		height: 500px !important;
+		height: 800px !important; /* RELLAX */
 	}
 }
 
@@ -2049,6 +2062,7 @@ img {
 @media (min-width: 800px) {
 	.unstacked-right .img--right-aligned {
 		height: 500px !important;
+		height: 800px !important; /* RELLAX */
 	}
 }
 
@@ -2162,6 +2176,18 @@ img {
 
 @media (min-width: 800px) {
 	.img--wood-square {
+		margin-top: 0px !important;
+	}
+}
+
+
+
+.home .img--wood-square {
+	margin-top: 0px !important;
+}
+
+@media (min-width: 800px) {
+	.home .img--wood-square {
 		margin-top: 0px !important;
 	}
 }
@@ -2779,7 +2805,7 @@ ul {
 
 .h2__subheading {
 	font-size: 1.0rem;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 1.4rem;
 	letter-spacing: 0.05rem;
 	/* text-transform: lowercase; */
@@ -3828,11 +3854,12 @@ menu.site-menu {
 	position: relative;
 	display: block;
 	width: 100% !important;
+	height: 25px;
 	font-size: 1.4rem;
 	text-align: center;
 	color: #ffffff;
 	padding: 0.25rem;
-	bottom: 80px;
+	bottom: 100px;
 	z-index: 1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.70);
 }
@@ -4115,8 +4142,8 @@ span.hover__alt-text {
 
 
 .news-section__content {
-	font-size: 0.9rem;
-	line-height: 1.8rem;
+/* 	font-size: 0.9rem;
+	line-height: 1.8rem; */
 }
 
 /* === INFO SECTION === */
@@ -4368,11 +4395,11 @@ span.hover__alt-text {
 	width: 100%;
 	height: 500px;
 
-	height: 100%;
+	/* height: 100%; */
 	color: #FFFFFF;
 	text-align: left !important;
-	background: #707173;
-	margin-bottom: 4.375rem;
+	/* background: #707173; */
+	/* margin-bottom: 4.375rem; */
 	padding-top: 0.0rem;
 	padding-bottom: 0.0rem;
 }
@@ -4387,6 +4414,26 @@ span.hover__alt-text {
 }
 
 
+.section-just-call__container {
+	/* width: 95%; */
+	height: 100%;
+	color: #FFFFFF;
+	background-color: #838282;
+/* 	margin: 0px 1.5rem;
+	padding: 15% 1.0rem; */
+}
+
+@media (min-width: 800px) {
+	.section-just-call__container {
+		position: relative;
+		/* width: 95%; */
+
+		color: #FFFFFF;
+		background-color: #838282;
+		/* margin: 0px 1.5rem; */
+		padding: 8% 1.0rem;
+	}
+}
 
 
 
@@ -4411,8 +4458,8 @@ span.hover__alt-text {
 .section__just-call article {
 	position: relative;
 	width: 100% !important;
-	padding-left: 1.5rem !important;
-	padding-right: 1.5rem !important;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 }
 
 
@@ -4420,8 +4467,14 @@ span.hover__alt-text {
 	.section__just-call article {
 		position: relative;
 		width: 100% !important;
+
+		height: 500px !important;
+		padding: 2.4rem;
+
+		/*
 		padding-left: 20% !important;
-		/* padding-right: 20% !important; */
+		padding-right: 20% !important;
+		*/
 	}
 }
 
@@ -4449,8 +4502,8 @@ span.hover__alt-text {
 }
 
 .hours-available {
-	font-size: 0.9rem;
-	padding-bottom: 1.5rem;
+	font-size: 1.0rem;
+	padding-bottom: 1.6rem;
 }
 
 @media (min-width: 800px) {
@@ -5243,17 +5296,17 @@ span.hover__alt-text {
 	}
 
 .your-opinion-section__title {
-		font-size: 1.6rem;
-		line-height: 1.8rem;
+		/* font-size: 1.6rem;
+		line-height: 1.8rem; */
 		margin-bottom: 1.5rem;
 		text-transform: lowercase;
 	}
 
 .your-opinion-section__content {
-		font-size: 1.0rem;
+		/* font-size: 1.0rem;
 		font-weight: 500;
 		line-height: 1.2rem;
-		line-height: 2.0rem;
+		line-height: 2.0rem; */
 		margin: auto;
 		margin-bottom: 1.5rem;
 	}
@@ -5274,13 +5327,16 @@ span.hover__alt-text {
 
 /* === ACCORDION SECTION === */
 
+#accordion {
+	margin-bottom: 4.375rem;
+}
+
 @media (min-width: 800px) {
 	#accordion {
 		position: relative;
 		width: 75%;
-		margin: 0 auto;
+		margin: 0 auto 4.375rem auto;
 		/* margin-top: 6.0rem; */
-		margin-bottom: 4.375rem;
 	}
 }
 
@@ -5322,6 +5378,7 @@ span.hover__alt-text {
 
 .accordion__item button {
 	display: flex;
+	justify-content: space-between;
 	font-size: 1.6rem;
 	font-weight: 700;
 	color: #707173;
@@ -5534,7 +5591,8 @@ button.active .panel p {
 
 @media (min-width: 800px) {
 	.partner__listing {
-
+		column-gap: 10px;
+		row-gap: 20px;
 	}
 }
 
@@ -5564,7 +5622,7 @@ button.active .panel p {
 			flex: 3;
 			flex-grow: 0;
 			flex-shrink: 0;
-			flex-basis: 30%;
+			flex-basis: 29%;
 	}
 }
 
@@ -5580,12 +5638,14 @@ button.active .panel p {
 	margin: 50px 0px;
 	margin: 0.0rem;
 	margin-top: -3.0rem;
+	margin-bottom: 4.375rem;
 }
 
 @media (min-width: 800px) {
 	#projects-overview__project {
 		margin: 50px 0px;
 		margin: 2.0rem 0px;
+		margin-bottom: 4.375rem;
 	}
 }
 
@@ -5811,10 +5871,14 @@ button.active .panel p {
 .special-question {
 	width: 100%;
 	/* margin-top: 10.0rem; */
-	margin-bottom: 4.375rem;
-
-
+	margin-top: 4.375rem;
 }
+
+@media (min-width: 800px) {
+	.special-question {
+	}
+}
+
 
 .special-question__container {
 
@@ -6481,12 +6545,13 @@ margin-left: auto;
 .testimonials__container {
 	position: relative !important;
 	width: 100% !important;
-
 }
 
 .testimonials__title {
 	margin: 2.0rem auto;
 	margin-top: 0.0rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
 }
 
 
@@ -6494,8 +6559,16 @@ margin-left: auto;
 	position: relative !important;
 	width: 90% !important;
 	margin: 2.0rem auto;
+
+	width: 100% !important;
+/* 	margin: 2.0rem 0;
+
 	margin-bottom: 0.0rem !important;
-	padding: 0.0rem 1.5rem;
+	padding: 0.0rem 1.5rem; */
+
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+
 }
 
 
@@ -6511,8 +6584,19 @@ margin-left: auto;
 
 
 
+.testimonials-carousel .slick-list {
+	display: grid;
+}
 
-.testimonials-carousel .slick-slider {
+
+
+.testimonials-carousel .slick-slide {
+	display: grid;
+	align-items: center;
+	align-content: center;
+
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
 
 }
 
@@ -6523,11 +6607,28 @@ margin-left: auto;
 }
 
 
-.testimonials-carousel__container {
-	position: relative !important;
+
+
+.testimonials-carousel .slick-list .slick-track {
+	position: relative;
+
 }
 
+
+
+.testimonials-carousel__container {
+
+}
+
+
 .testimonials-carousel__content {
+	overflow: auto;
+/* 	display: grid !important;
+	align-items: center; */
+
+}
+
+.testimonials-carousel__content p {
 
 }
 
@@ -6725,7 +6826,7 @@ margin-left: auto;
 /* === FOOTER === */
 
 .site-footer {
-	font-size: 0.9rem;
+	font-size: 1.0rem;
 	line-height: 1.6rem;
 	text-align: center !important;
 	letter-spacing: 0.05rem;
@@ -6740,6 +6841,11 @@ margin-left: auto;
 	margin-left: -50vw;
 	margin-right: -50vw;
 	*/
+}
+
+
+.home .site-footer {
+	padding-top: 4.375rem;
 }
 
 
@@ -7143,10 +7249,13 @@ margin-left: auto;
 
 /* --- 8) Entrance Scale Backward Center (reverse) --- */
 
-.img-wrapper--wood-square {
-	width: 92px;
-	height: 92px;
-	overflow: hidden;
+@media (min-width: 530px) {
+	.tischlerei .img-wrapper--wood-square,
+	.bestattung .img-wrapper--wood-square {
+		width: 92px;
+		height: 92px;
+		overflow: hidden;
+	}
 }
 
 
@@ -7171,6 +7280,15 @@ margin-left: auto;
 	height: 100%;
 	overflow: hidden;
 }
+
+@media (min-width: 800px) {
+	.img-wrapper--partner__logo {
+		max-height: 435px;
+	}
+}
+
+
+
 
 
 .img-wrapper--wood-square img {

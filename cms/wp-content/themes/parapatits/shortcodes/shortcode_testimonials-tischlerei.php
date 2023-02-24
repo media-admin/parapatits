@@ -18,8 +18,8 @@
       $loop->the_post(); ?>
 
 					<div class="testimonials-carousel__container">
-						<p class="testimonials-carousel__content"><?php the_content(); ?></p>
-						<p class="testimonials-carousel__title"><?php the_title(); ?></p>
+						<div class="testimonials-carousel__content"><?php the_content(); ?>
+						<p class="testimonials-carousel__title"><?php the_title(); ?></p></div>
 					</div>
 
 					<?php

@@ -1,30 +1,30 @@
 <section class="testimonials box--centered">
 	<article class="testimonials__container wrapper">
 		<div class="">
-			<h2 class="testimonials__title h2__title h2__title--left-aligned h2__heading">Was unsere Kunden sagen</h2>
-			<div class="testimonials-carousel single-item">
+			<h2 data-inviewport="entrance-fade-bottom" class="testimonials__title h2__title h2__title--left-aligned h2__heading">Was unsere Kunden sagen</h2>
+			<div data-inviewport="entrance-fade-bottom" class="testimonials-carousel single-item">
 
-				<?php
-    $args = [
-      "post_status" => "publish",
-      "posts_per_page" => -1,
-      "post_type" => "testimonial",
-      "testimonial-category" => "bestattung",
-    ];
+			<?php
+   $args = [
+     "post_status" => "publish",
+     "posts_per_page" => -1,
+     "post_type" => "testimonial",
+     "testimonial-category" => "bestattung",
+   ];
 
-    $loop = new WP_Query($args);
+   $loop = new WP_Query($args);
 
-    while ($loop->have_posts()):
-      $loop->the_post(); ?>
+   while ($loop->have_posts()):
+     $loop->the_post(); ?>
 
 					<div class="testimonials-carousel__container">
-						<p class="testimonials-carousel__content"><?php the_content(); ?></p>
-						<p class="testimonials-carousel__title"><?php the_title(); ?></p>
+						<div class="testimonials-carousel__content"><?php the_content(); ?>
+						<p class="testimonials-carousel__title"><?php the_title(); ?></p></div>
 					</div>
 
 					<?php
-    endwhile;
-    ?>
+   endwhile;
+   ?>
 
 					<?php wp_reset_postdata(); ?>
 

@@ -15,7 +15,7 @@ get_header(); ?>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img data-inviewport="entrance-fade-center" class="img--centered lazyload" src="<?php bloginfo(
+					<img class="img--centered lazyload" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/jobs/cut-for-web_highres-21-DSC03424_web.jpg" alt="Kleinstrukturierter Familienbetrieb">
 				</div>

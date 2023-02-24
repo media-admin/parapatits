@@ -15,7 +15,7 @@ get_header("tischlerei"); ?>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img data-inviewport="entrance-fade-center" class="img--centered lazyload" src="<?php bloginfo(
+					<img class="img--centered lazyload" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/tischlerei/haeufig-gestellte-fragen/parapatits-tischlerei_highres-19-DSC03271_web.jpg" alt="Durch präzise Planung steht einer reibungslosen Umsetzung nichts im Weg.">
 				</div>

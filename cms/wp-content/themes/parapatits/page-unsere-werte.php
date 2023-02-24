@@ -15,7 +15,7 @@ get_header("tischlerei"); ?>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img data-inviewport="entrance-fade-center" class="img--centered lazyload" src="<?php bloginfo(
+					<img class="img--centered lazyload" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-24-DSC03462_web.jpg" alt="Genauigkeit bei der Fertigung">
 			</div>
@@ -137,4 +137,5 @@ get_header("tischlerei"); ?>
 		</div>
 	</main>
 
-<?php get_footer(); ?>
+<?php get_footer();
+?>

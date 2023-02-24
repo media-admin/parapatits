@@ -1,12 +1,14 @@
-<section class="section__just-call box--centered unstacked-wrapper">
-	<div class="section__just-call-box unstacked-left unstacked-right--content">
-		<article class="wrapper content-wrapper">
-			<h2 class="h2__heading">Einfach anrufen</h1>
-			<p class="section__just-call-intro">Wenn Sie einen Sterbefall haben, rufen Sie uns an und wir kümmern uns um alles Weitere.</p>
-			<div class="just-call__contact-data">
-				<a href="tel:004326182221">+43 2618 / 22 21</a>
-				<a href="tel:004326182221">+43 664 / 307 98 28</a>
-				<p class="hours-available">Wir sind 24 Stunden am Tag erreichbar.</p>
+<section data-inviewport="entrance-fade-bottom" class="section__just-call container--darkgray box--centered unstacked-wrapper">
+	<div class="unstacked-left unstacked-left--fullwidth">
+		<article class="">
+			<div class="section-just-call__container">
+				<h2 class="h2__heading wrapper">Einfach anrufen</h2>
+				<p class="section__just-call-intro wrapper">Wenn Sie einen Sterbefall haben, rufen Sie uns an und wir kümmern uns um alles Weitere.</p>
+				<div class="just-call__contact-data wrapper">
+					<a href="tel:004326182221">+43 2618 / 22 21</a>
+					<a href="tel:004326182221">+43 664 / 307 98 28</a>
+					<p class="hours-available">Wir sind 24 Stunden am Tag erreichbar.</p>
+				</div>
 			</div>
 		</article>
 	</div>

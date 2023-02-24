@@ -21,7 +21,7 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img data-inviewport="entrance-fade-center" class="img--centered lazyload" src="<?php bloginfo(
+					<img class="img--centered lazyload" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-13-DSC03330_web.jpg" alt="Beistand in schweren Stunden">
 				</div>
@@ -140,7 +140,7 @@ get_header("bestattung"); ?>
 
 			<section class="box--centered">
 					<div class="unstacked-left">
-						<img class="img--fullwidth lazyload" src="<?php bloginfo(
+						<img class="img--fullwidth img-invisible--small lazyload" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-15-DSC03351_web.jpg" alt="Alle Formen der Bestattung">
 					</div>

@@ -202,7 +202,7 @@
 							<source srcset=" <?php echo esc_url($image_smartphone_url); ?> ">
 							<img class="" src=" <?php echo esc_url($image_smartphone_url); ?> ">
 						</picture>
-						<p data-inviewport="entrance-fade-bottom" class="home-slider__text rellax" data-rellax-speed="4"><?php the_content(); ?>
+						<p class="home-slider__text rellax" data-rellax-speed="-2"><?php the_content(); ?>
 					</div>
 					<?php
    endwhile;

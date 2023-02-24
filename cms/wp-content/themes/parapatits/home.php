@@ -50,7 +50,7 @@ get_header("neutral"); ?>
 			<section id="news-section" class="news-section unstacked-wrapper" data-matching-link="#news-section-link">
 
 				<div class="unstacked-left">
-					<img class="<!-- news-section__img --> img--fullwidth rellax"  data-rellax-speed="1" src="<?php bloginfo(
+					<img class="<!-- news-section__img --> img--fullwidth rellax"  data-rellax-speed="-2" data-rellax-mobile-speed="-1" data-rellax-tablet-speed="-8" data-rellax-desktop-speed="3"src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/home/cut-for-web_highres-30-DSC03554_web.jpg" alt="Traditioneller Familienbetrieb">
 				</div>

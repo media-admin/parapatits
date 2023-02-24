@@ -19,7 +19,7 @@ get_header("bestattung"); ?>
 				</div>
 				<div class="unstacked-right">
 					<div class="img--centered lazyload">
-						<img data-inviewport="entrance-fade-center" class="img--centered lazyload" src="<?php bloginfo(
+						<img class="img--centered lazyload" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-11-DSC03317_web.jpg" alt="Denken Sie mit Viternity an Ihre Liebsten">
 					</div>
@@ -29,7 +29,7 @@ get_header("bestattung"); ?>
 			<section class="box--centered unstacked-wrapper">
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">
-						<h2 data-inviewport="entrance-fade-bottom" class="">Unsere Leistungen</h2>
+						<h2 data-inviewport="entrance-fade-bottom" class="h2__heading">Unsere Leistungen</h2>
 						<div data-inviewport="entrance-fade-bottom" class="">
 							<p class="">
 								Erfahren Sie, wie wir Sie unterstützen können.

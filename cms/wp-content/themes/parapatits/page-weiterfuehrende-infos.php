@@ -15,14 +15,14 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img data-inviewport="entrance-fade-center" class="img--centered lazyload" src="<?php bloginfo(
+					<img class="img--centered lazyload" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-7-DSC03302_web.jpg" alt="Trauerarbeit durch intensive Gespräche">
 				</div>
 				</section>
 
 			<div id="wichtige-dokumente" class="wichtige-dokumente"></div>
-			<section id="accordion" class="wrapper content-wrapper">
+			<section id="accordion" class="wrapper">
 				<article data-inviewport="entrance-fade-bottom" class="accordion__item">
 					<button class="accordion">Wichtige Dokumente für die Bestattung<p class="accordion__pointer"><i class="arrow down"></i></p></button>
 					<div class="panel">
