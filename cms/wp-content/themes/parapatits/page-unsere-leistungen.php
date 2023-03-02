@@ -20,7 +20,7 @@ get_header("bestattung"); ?>
 						</div>
 					</article>
 				</div>
-				<div class="unstacked-right">
+				<div class="unstacked-right no-margin-bottom--small">
 					<img class="img--centered lazyload" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-13-DSC03330_web.jpg" alt="Beistand in schweren Stunden">
@@ -39,7 +39,7 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--centered lazyload" src="<?php bloginfo(
+					<img class="img--centered lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-1-DSC03131_web.jpg" alt="Kontaktaufnahme mit Krankenhaus oder Pflegeheim, Behörden, Botschaften, Ämtern usw.">
 				</div>
@@ -56,8 +56,8 @@ get_header("bestattung"); ?>
 						</div>
 					</article>
 				</div>
-				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo(
+				<div class="unstacked-right no-margin-bottom--small">
+					<img class="img--centered lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Abholung und Überführung vom Sterbeort in die Aufbahrungshalle.">
 				</div>
@@ -73,7 +73,7 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--centered lazyload" src="<?php bloginfo(
+					<img class="img--centered lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-3-DSC03382_web.jpg" alt="Besorgung der Sterbedokumente am zuständigen Standesamt.">
 				</div>
@@ -99,8 +99,8 @@ get_header("bestattung"); ?>
 						</p>
 					</article>
 				</div>
-				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo(
+				<div class="unstacked-right no-margin-bottom--small">
+					<img class="img--centered lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-1-DSC03338_web.jpg" alt="Rund um die Trauerfeier von Terminfindung bis Kondolenzbuch">
 				</div>
@@ -116,7 +116,7 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--centered lazyload" src="<?php bloginfo(
+					<img class="img--centered lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-4-DSC03385_web.jpg" alt="Aufgabe von Todesanzeigen in Zeitungen.">
 				</div>
@@ -131,8 +131,8 @@ get_header("bestattung"); ?>
 						</p>
 					</article>
 				</div>
-				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo(
+				<div class="unstacked-right no-margin-bottom--small">
+					<img class="img--centered lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-6-DSC03389_web.jpg" alt="Abwicklung mit Vorsorgeversicherungen (Wiener Verein)">
 				</div>
@@ -140,7 +140,7 @@ get_header("bestattung"); ?>
 
 			<section class="box--centered">
 					<div class="unstacked-left">
-						<img class="img--fullwidth img-invisible--small lazyload" src="<?php bloginfo(
+						<img class="img--fullwidth img-invisible--small lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-15-DSC03351_web.jpg" alt="Alle Formen der Bestattung">
 					</div>
@@ -157,7 +157,7 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo(
+					<img class="img--right-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/unsere-leistungen/cut-for-web_highres-10-DSC03314_web.jpg" alt="Trauerfeier oder und Beisetzung">
 				</div>

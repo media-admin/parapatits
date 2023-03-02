@@ -1,9 +1,8 @@
 <?php
 /**
-* Template Name: Seite Fehler 404
-*/
-get_header();
-?>
+ * Template Name: Seite Fehler 404
+ */
+get_header(); ?>
 
 <main class="site-main">
 	<div class="site-content">
@@ -19,8 +18,10 @@ get_header();
 				</article>
 			</div>
 			<div class="unstacked-right">
-				<div class="img--centered lazyload">
-					<img class="img--centered lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/404/cut-for-web_highres-2-DSC03464_web.jpg" alt="dunkle Holzoberfläche">
+				<div class="img--centered">
+					<img class="img--centered lazyload" src="<?php bloginfo(
+       "template_directory"
+     ); ?>/assets/images/404/cut-for-web_highres-2-DSC03464_web.jpg" alt="dunkle Holzoberfläche">
 				</div>
 			</div>
 		</section>

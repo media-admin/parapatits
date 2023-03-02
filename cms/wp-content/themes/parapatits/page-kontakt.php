@@ -7,14 +7,14 @@ get_header(); ?>
 
 	<main class="site-main">
 		<div class="site-content">
-			<section class="site-intro box--left-aligned unstacked-wrapper">
+			<section class="site-intro box--left-aligned unstacked-wrapper no-margin-bottom--small">
 				<div class="unstacked-left">
 					<article data-inviewport="entrance-fade-right" class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title(); ?></h1>
 						<p class="site-subtitle h1__subtitle h1__subtitle--left-aligned">Wir freuen uns auf Ihren Anruf, Ihr E-Mail oder Ihre Postkarte.</p>
 					</article>
 				</div>
-				<div class="unstacked-right">
+				<div class="unstacked-right no-margin-bottom--small">
 					<img class="img--centered lazyload" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/kontakt/cut-for-web_highres-4-DSC03241_web.jpg" alt="Wir freuen uns auf Ihre Anfrage!">
@@ -22,7 +22,7 @@ get_header(); ?>
 			</section>
 
 			<section class="contact box--right-aligned unstacked-wrapper">
-				<div class="unstacked-left">
+				<div class="unstacked-left no-margin-bottom--small">
 					<article class="wrapper">
 						<?php
       $args = [

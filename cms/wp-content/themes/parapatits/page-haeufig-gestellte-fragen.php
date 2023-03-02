@@ -7,7 +7,7 @@ get_header("tischlerei"); ?>
 
 	<main class="site-main">
 		<div class="site-content">
-			<section class="faqs site-intro box--left-aligned unstacked-wrapper">
+			<section class="faqs site-intro box--left-aligned unstacked-wrapper no-margin-bottom--small">
 				<div class="unstacked-left">
 					<article data-inviewport="entrance-fade-right" class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title(); ?></h1>

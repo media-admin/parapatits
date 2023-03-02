@@ -48,7 +48,7 @@ get_header("tischlerei"); ?>
 				</div>
 			</section>
 
-			<section class="box--left-aligned unstacked-wrapper">
+			<section class="box--left-aligned unstacked-wrapper no-margin-bottom--small">
 				<div class="unstacked-left unstacked-left--content">
 					<article class="wrapper content-wrapper">
 						<h2 data-inviewport="entrance-fade-bottom" class="h2__heading">gefolgt von viel Planung …</h2>

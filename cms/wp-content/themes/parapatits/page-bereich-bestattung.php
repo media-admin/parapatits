@@ -31,7 +31,7 @@ get_header("bestattung"); ?>
 				</div>
 			</section>
 
-			<section class="box--right-aligned unstacked-wrapper">
+			<section class="box--right-aligned unstacked-wrapper add-margin-bottom--large">
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">
 						<h2 data-inviewport="entrance-fade-bottom" class="h2__heading">Unser Arbeitsfeld</h2>
@@ -41,7 +41,7 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo(
+					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-8-DSC03310_web.jpg" alt="Wir begleiten und geleiten Sie.">
 				</div>
@@ -57,8 +57,8 @@ get_header("bestattung"); ?>
 						</p>
 					</article>
 				</div>
-				<div class="unstacked-right">
-					<img class="img--right-aligned lazyload" src="<?php bloginfo(
+				<div class="unstacked-right no-margin-bottom--small">
+					<img class="img--right-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-10-DSC03314_web.jpg" alt="Begleitung mit Feingefühl von alt bis jung.">
 				</div>
@@ -74,7 +74,7 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo(
+					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-16-DSC03376_web.jpg" alt="Persönliche Bestattung">
 				</div>
@@ -93,7 +93,7 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo(
+					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-14-DSC03332_web.jpg" alt="Schritt für Schritt, in aller Ruhe">
 				</div>

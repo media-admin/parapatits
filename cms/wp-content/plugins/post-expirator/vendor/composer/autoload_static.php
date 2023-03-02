@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit008d5fbba23d4487431bb48cd9baaa3e
+class ComposerStaticInit69685a1a3c98f3b837517bc52ea3a4d2
 {
     public static $files = array (
         '0078757fbd019a5f202f2be6585c3626' => __DIR__ . '/..' . '/publishpress/wordpress-banners/BannersMain.php',
@@ -53,10 +53,10 @@ class ComposerStaticInit008d5fbba23d4487431bb48cd9baaa3e
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit008d5fbba23d4487431bb48cd9baaa3e::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit008d5fbba23d4487431bb48cd9baaa3e::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit008d5fbba23d4487431bb48cd9baaa3e::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit008d5fbba23d4487431bb48cd9baaa3e::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit69685a1a3c98f3b837517bc52ea3a4d2::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit69685a1a3c98f3b837517bc52ea3a4d2::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit69685a1a3c98f3b837517bc52ea3a4d2::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit69685a1a3c98f3b837517bc52ea3a4d2::$classMap;
 
         }, null, ClassLoader::class);
     }

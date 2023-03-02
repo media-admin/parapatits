@@ -7,7 +7,7 @@ get_header("bestattung"); ?>
 
 	<main class="site-main">
 		<div class="site-content">
-			<section class="site-intro box--left-aligned unstacked-wrapper">
+			<section class="site-intro box--left-aligned unstacked-wrapper no-margin-bottom--small">
 				<div class="unstacked-left">
 					<article data-inviewport="entrance-fade-right" class="wrapper">
 						<h1 class="site-title h1__title">Gedenkseiten auf Viternity</h1>
@@ -40,7 +40,7 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--centered lazyload" src="<?php bloginfo(
+					<img class="img--centered lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-7-DSC03394_web.jpg" alt="Persönliche Bestattung">
 				</div>

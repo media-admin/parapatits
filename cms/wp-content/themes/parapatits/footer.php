@@ -550,7 +550,7 @@
 	-->
 
 
-	<!-- Jumping Square SECOND TRY -->
+	<!-- Jumping Square SECOND TRY
 	<script type="text/javascript">
 
 		var startMove;
@@ -570,14 +570,12 @@
 				}
 		});
 
+
 		/* jQuery(document).mouseleave(function(){
 				startMove = false;
 		}) */
-
 	</script>
-
-
-
+	-->
 
 	<!-- Rellax Effect -->
 	<script src="<?php bloginfo(
@@ -586,12 +584,13 @@
 
 	<script type="text/javascript">
 		var rellax = new Rellax('.rellax', {
-
-			center: true,
-
-			breakpoints:[576, 768, 1201]
-
+			breakpoints:[576, 768, 1201],
+			center: true
 		});
+/*
+		var rellaxNonCentered = new Rellax('.rellax-non-centered', {
+			center: false
+		}); */
 	</script>
 
 		<!-- END SCRIPTS AREA -->

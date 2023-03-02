@@ -33,13 +33,13 @@ get_header("tischlerei"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--right-aligned lazyload" src="<?php bloginfo(
+					<img class="img--right-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-2-DSC01492_web.jpg" alt="Hochwertigkeit von Planung bis Umsetzung">
 				</div>
 			</section>
 
-			<section class="box--left-aligned unstacked-wrapper">
+			<section class="box--left-aligned unstacked-wrapper no-margin-bottom--small">
 				<div class="unstacked-left unstacked-left--content">
 					<article class="wrapper content-wrapper">
 						<h2 data-inviewport="entrance-fade-bottom" class="h2__heading">Gesamtkonzept</h2>
@@ -51,7 +51,7 @@ get_header("tischlerei"); ?>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--centered lazyload" src="<?php bloginfo(
+					<img class="img--centered lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-6-Pallisch-Kueche-2_web.jpg" alt="Gesamtkonzept bis ins Detail">
 				</div>
@@ -70,13 +70,13 @@ get_header("tischlerei"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--right-aligned lazyload" src="<?php bloginfo(
+					<img class="img--right-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-1-DSC01457_web.jpg" alt="Nachhaltigkeit beim Einkauf">
 				</div>
 			</section>
 
-			<section class="box--left-aligned unstacked-wrapper">
+			<section class="box--left-aligned unstacked-wrapper no-margin-bottom--small">
 				<div class="unstacked-left unstacked-left--content">
 					<article class="wrapper content-wrapper">
 						<h2 data-inviewport="entrance-fade-bottom" class="h2__heading">Tradition</h2>
@@ -88,7 +88,7 @@ get_header("tischlerei"); ?>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo(
+					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/tischlerei/unsere-werte/parapatits-tischlerei_komp-50-DSC03548_web.jpg" alt="Tradition im Familienbetrieb">
 				</div>
@@ -106,13 +106,13 @@ get_header("tischlerei"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--right-aligned lazyload" src="<?php bloginfo(
+					<img class="img--right-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-DSC03221_web.jpg" alt="Verlässlichkeit durch persönliche Ansprechpartner">
 				</div>
 			</section>
 
-			<section class="box--left-aligned unstacked-wrapper">
+			<section class="box--left-aligned unstacked-wrapper no-margin-bottom--small">
 				<div class="unstacked-left unstacked-left--content">
 					<article class="wrapper content-wrapper">
 						<h2 data-inviewport="entrance-fade-bottom" class="h2__heading">Alles aus einer Hand</h2>
@@ -124,7 +124,7 @@ get_header("tischlerei"); ?>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo(
+					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-39651277054_a0cf16a1c3_o_web.jpg" alt="Alles aus einer Hand">
 				</div>

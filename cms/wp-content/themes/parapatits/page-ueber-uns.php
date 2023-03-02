@@ -7,7 +7,7 @@ get_header(); ?>
 
 	<main class="site-main">
 		<div class="site-content">
-			<section class="site-intro box--left-aligned unstacked-wrapper">
+			<section class="site-intro box--left-aligned unstacked-wrapper no-margin-bottom--small">
 				<div class="unstacked-left">
 					<article data-inviewport="entrance-fade-right" class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title(); ?></h1>
@@ -39,7 +39,7 @@ get_header(); ?>
 			<section class="box--right-aligned unstacked-wrapper">
 
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo(
+					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/ueber-uns/cut-for-web_highres-5-DSC03248_web.jpg" alt="Wir lieben das Arbeiten mit dem Naturwerkstoff Holz.">
 				</div>
@@ -63,7 +63,7 @@ get_header(); ?>
 
 			<section class="box--left-aligned unstacked-wrapper no-margin-bottom--small">
 				<div class="unstacked-right">
-							<img class="img--right-aligned img--margin-bottom lazyload" src="<?php bloginfo(
+							<img class="img--right-aligned img--margin-bottom lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
          "template_directory"
        ); ?>/assets/images/ueber-uns/cut-for-web_highres-19-DSC03400_web.jpg" alt="Bestattung aus Nächstenliebe">
 						</div>
@@ -83,7 +83,7 @@ get_header(); ?>
 
 			<section class="box--centered unstacked-wrapper">
 				<div class="unstacked-left">
-							<img class="img--left-aligned lazyload" src="<?php bloginfo(
+							<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
          "template_directory"
        ); ?>/assets/images/ueber-uns/cut-for-web_highres-11-DSC03440_web.jpg" alt="Werde ein Teil unserer familiären Mannschaft!">
 						</div>

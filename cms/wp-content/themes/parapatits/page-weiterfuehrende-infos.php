@@ -7,7 +7,7 @@ get_header("bestattung"); ?>
 
 	<main class="site-main">
 		<div class="site-content">
-			<section class="site-intro box--left-aligned unstacked-wrapper">
+			<section class="site-intro box--left-aligned unstacked-wrapper no-margin-bottom--small">
 				<div class="unstacked-left">
 					<article data-inviewport="entrance-fade-right" class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title(); ?></h1>
@@ -181,7 +181,7 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload" src="<?php bloginfo(
+					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Trauerarbeit durch intensive Gespräche">
 				</div>

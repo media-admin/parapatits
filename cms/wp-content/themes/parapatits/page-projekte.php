@@ -24,7 +24,6 @@ get_header("tischlerei"); ?>
        "template_directory"
      ); ?>/assets/images/tischlerei/projekte/cut-for-web_highres-8-DOC002_web.jpg" alt="Wohlfühlräume mit Herz">
 				</div>
-
 			</section>
 
 			<?php echo do_shortcode("[shortcode_projects_overview]"); ?>

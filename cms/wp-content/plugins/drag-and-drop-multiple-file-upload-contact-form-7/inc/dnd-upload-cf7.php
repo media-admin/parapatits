@@ -455,7 +455,7 @@
 				'disable_btn'		=>	( get_option('drag_n_drop_disable_btn') == 'yes' ? true : false )
 			)
 		);
-
+        
 		// enque style
 		wp_enqueue_style( 'dnd-upload-cf7', plugins_url ('/assets/css/dnd-upload-cf7.css', dirname(__FILE__) ), '', $version );
 	}
@@ -794,9 +794,9 @@
         $size_limit = dnd_cf7_get_size_limit( $cf7_id );
 
 		// check and verify ajax request
-		if( is_user_logged_in() ) {
-			check_ajax_referer( 'dnd-cf7-security-nonce', 'security' );
-		}
+        if( ! check_ajax_referer( 'dnd-cf7-security-nonce', 'security', false ) ) {
+            wp_send_json_error('The security nonce is invalid or expired.');
+        }
 
         // Get blacklist Types
         $blacklist_types = ( isset( $_POST['blacklist-types'] ) ?  explode( '|', sanitize_text_field( $_POST['blacklist-types'] ) ) : '' );
@@ -832,8 +832,30 @@
 
 		// validate file type
 		if ( ( ! preg_match( $file_type_pattern, $file['name'] ) || ! dnd_cf7_validate_type( $extension, $supported_type ) ) && $supported_type != '*' ) {
-			wp_send_json_error( get_option('drag_n_drop_error_invalid_file') ? get_option('drag_n_drop_error_invalid_file') : dnd_cf7_error_msg('invalid_type') );
+		    wp_send_json_error( get_option('drag_n_drop_error_invalid_file') ? get_option('drag_n_drop_error_invalid_file') : dnd_cf7_error_msg('invalid_type') );
 		}
+
+        // validate mime type
+        if( $supported_type && $supported_type != '*' ){
+
+            // wheather if we validate mime type
+            $validate_mime = apply_filters('dnd_cf7_validate_mime', false );
+
+            if( $validate_mime ){
+
+                if( ! function_exists('wp_check_filetype_and_ext') ){
+                    require_once ABSPATH .'wp-admin/includes/file.php'; 
+                }
+
+                // Get file type and extension name
+                $wp_filetype = wp_check_filetype_and_ext( $file['tmp_name'], $file['name'] ); //[ext, type]
+                $valid_mimes = explode('|', $supported_type); // array[png, jpg]
+
+                if( empty( $wp_filetype['type'] ) || empty( $wp_filetype['ext'] ) || ! in_array( $wp_filetype['ext'], $valid_mimes ) ){
+                    wp_send_json_error( get_option('drag_n_drop_error_invalid_file') ? get_option('drag_n_drop_error_invalid_file') : dnd_cf7_error_msg('invalid_type') );
+                }
+            }
+        }
 
 		// validate file size limit
 		if( isset( $size_limit["$cf7_upload_name"] ) && $file['size'] > $size_limit["$cf7_upload_name"] ) {
@@ -900,10 +922,11 @@
 		// Get folder directory
 		$dir = dnd_get_upload_dir();
 
-		// check and verify ajax request
-		if( is_user_logged_in() ) {
-			check_ajax_referer( 'dnd-cf7-security-nonce', 'security' );
-		}
+		// check and verify ajax request);
+        if( ! check_ajax_referer( 'dnd-cf7-security-nonce', 'security', false ) ) {
+            wp_send_json_error('The security nonce is invalid or expired.');
+        }
+
 
 		// Sanitize Path
 		$get_path = ( isset( $_POST['path'] ) ? sanitize_text_field( $_POST['path'] ) : null );

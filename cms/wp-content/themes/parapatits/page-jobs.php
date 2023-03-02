@@ -7,7 +7,7 @@ get_header(); ?>
 
 	<main class="site-main">
 		<div class="site-content">
-			<section class="site-intro box--left-aligned unstacked-wrapper">
+			<section class="site-intro box--left-aligned unstacked-wrapper no-margin-bottom--small">
 				<div class="unstacked-left">
 					<article data-inviewport="entrance-fade-right" class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title(); ?></h1>
@@ -85,7 +85,7 @@ get_header(); ?>
 				</div>
 
 				<div class="unstacked-right">
-					<img class="img--fullwidth lazyload" src="<?php bloginfo(
+					<img class="img--fullwidth lazyload rellax" data-rellax-speed="-2" data-rellax-mobile-speed="-3"  src="<?php bloginfo(
        "template_directory"
      ); ?>/assets/images/jobs/cut-for-web_highres-29-DSC03529_web.jpg" alt="Werde ein Teil unserer familiären Mannschaft!">
 				</div>

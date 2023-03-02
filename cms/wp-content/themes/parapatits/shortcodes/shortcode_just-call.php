@@ -13,8 +13,8 @@
 		</article>
 	</div>
 	<div class="unstacked-right">
-		<img class="img--right-aligned img--right-aligned lazyload" src="<?php bloginfo(
+		<img class="img--right-aligned img--right-aligned lazyload rellax" src="<?php bloginfo(
     "template_directory"
-  ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-2-DSC03191_web.jpg" alt="Rufen Sie uns an. Wir kümmern uns um alles Weitere.">
+  ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-2-DSC03191_web.jpg" data-rellax-speed="-2" alt="Rufen Sie uns an. Wir kümmern uns um alles Weitere.">
 	</div>
 </section>
