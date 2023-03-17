@@ -37,7 +37,7 @@ get_header(); ?>
         $loop->the_post(); ?>
 
 						<div class="contact__wrapper">
-							<p data-inviewport="entrance-fade-bottom" class="contact__data">
+							<p class="contact__data">
 								<strong>Peter Parapatits</strong><br>
 								<?php the_field("company-adress"); ?>
 								<a class="contact__data-phone" href="tel:<?php the_field(
@@ -86,8 +86,8 @@ get_header(); ?>
 
 						<article class="wrapper">
 							<div class="">
-								<h2 data-inviewport="entrance-fade-bottom" class="h2__heading">Bürozeiten</h2>
-								<div data-inviewport="entrance-fade-bottom" class="contact__data-opening-hours-table">
+								<h2 data-inviewport="entrance-fade-right" class="h2__heading">Bürozeiten</h2>
+								<div data-inviewport="entrance-fade-right" class="contact__data-opening-hours-table">
 									<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Mo:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_monday; ?></div>
 									<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Di:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_tuesday; ?></div>
 									<div class="contact__data-opening-hours-table-row contact__data-opening-hours-table-row-day">Mi:</div><div class="contact__data-opening-hours-table-row-hours"><?php echo $hours_wednesday; ?></div>
@@ -106,7 +106,7 @@ get_header(); ?>
 			<section class="contact__data-map">
 				<article class="">
 					<h2 data-inviewport="entrance-fade-bottom" class="h2__heading">Betriebsstandort</h2>
-					<div data-inviewport="entrance-fade-bottom" class="route__map-wrapper" style="background-image: url( '' );">
+					<div class="route__map-wrapper" style="background-image: url( '' );">
 
 						<div class="route__map-trigger" data-source="!1m18!1m12!1m3!1d22550.780849488412!2d16.063376692936323!3d47.69719917264329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476dd1eccdefdf47%3A0x6aac0b095cb49c95!2sChristian%20Wei%C3%9Fenb%C3%B6ck%20-%20Fliesenverlegung!5e0!3m2!1sde!2sat!4v1601657589291!5m2!1sde!2sat" data-type="google-maps" loading="lazy"  width="100%" height="100%" allowfullscreen="" aria-hidden="false" tabindex="0">
 

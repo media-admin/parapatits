@@ -41,9 +41,11 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-8-DSC03310_web.jpg" alt="Wir begleiten und geleiten Sie.">
+					<div class="img--left-aligned">
+						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-8-DSC03310_web.jpg" alt="Wir begleiten und geleiten Sie.">
+					</div>
 				</div>
 			</section>
 
@@ -58,9 +60,11 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-right no-margin-bottom--small">
-					<img class="img--right-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-10-DSC03314_web.jpg" alt="Begleitung mit Feingefühl von alt bis jung.">
+					<div class="img--right-aligned">
+						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-10-DSC03314_web.jpg" alt="Begleitung mit Feingefühl von alt bis jung.">
+					</div>
 				</div>
 			</section>
 
@@ -74,9 +78,11 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-16-DSC03376_web.jpg" alt="Persönliche Bestattung">
+					<div class="img--left-aligned">
+						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-16-DSC03376_web.jpg" alt="Persönliche Bestattung">
+					</div>
 				</div>
 			</section>
 
@@ -93,9 +99,11 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-14-DSC03332_web.jpg" alt="Schritt für Schritt, in aller Ruhe">
+					<div class="img--left-aligned">
+						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-14-DSC03332_web.jpg" alt="Schritt für Schritt, in aller Ruhe">
+					</div>
 				</div>
 			</section>
 

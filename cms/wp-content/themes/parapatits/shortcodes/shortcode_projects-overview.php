@@ -1,21 +1,18 @@
 <section class="projects-overview">
-
-	<div class="projects-overview__search-area">
-
-		<div data-inviewport="entrance-fade-bottom" id="projects-overview__project">
-
-			<!-- filter  ----------------------->
-			<ul class="projects-overview__project-filters">
-				<li class="projects-overview__list projects-overview__project-filter--active" data-filter="alle">Alle</li>
+    <div class="projects-overview__search-area">
+	   <div data-inviewport="entrance-fade-bottom" id="projects-overview__project">
+		<!-- filter  ----------------------->
+		<ul class="projects-overview__project-filters">
+			<li class="projects-overview__list projects-overview__project-filter--active" data-filter="alle">Alle</li>
 				<?php
     $tags = get_tags();
     if ($tags):
       foreach ($tags as $tag): ?>
-							<?php echo '<li class="projects-overview__list" data-filter="' .
-         $tag->name .
-         '">' .
-         $tag->name .
-         "</li>";endforeach;
+			<?php echo '<li class="projects-overview__list" data-filter="' .
+     $tag->name .
+     '">' .
+     $tag->name .
+     "</li>";endforeach;
     endif;
     ?>
 			</ul>

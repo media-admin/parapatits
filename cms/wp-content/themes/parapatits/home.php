@@ -50,9 +50,11 @@ get_header("neutral"); ?>
 			<section id="news-section" class="news-section unstacked-wrapper" data-matching-link="#news-section-link">
 
 				<div class="unstacked-left">
-					<img class="<!-- news-section__img --> img--right-aligned rellax" data-rellax-speed="-2" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/home/cut-for-web_highres-30-DSC03554_web.jpg" alt="Traditioneller Familienbetrieb">
+					<div class="img--right-aligned">
+						<img class="rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/home/cut-for-web_highres-30-DSC03554_web.jpg" alt="Traditioneller Familienbetrieb">
+					</div>
 				</div>
 
 				<div class="unstacked-right">
@@ -104,9 +106,11 @@ get_header("neutral"); ?>
 
 			<section class="box--right-aligned unstacked-wrapper">
 				<div class="unstacked-right">
-					<img class="details-section__branch-item--tischlerei__img img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/home/cut-for-web_highres-28-DSC03514_web.jpg" alt="Holz und andere Materialien">
+					<div class="img--left-aligned">
+						<img class="details-section__branch-item--tischlerei__img  lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/home/cut-for-web_highres-28-DSC03514_web.jpg" alt="Holz und andere Materialien">
+					</div>
 				</div>
 
 				<div class="unstacked-left unstacked-left--content add-margin-bottom--large">
@@ -122,9 +126,11 @@ get_header("neutral"); ?>
 
 			<section class="box--left-aligned unstacked-wrapper no-margin-bottom">
 				<div class="unstacked-left">
-					<img class="details-section__branch-item--bestattung__img img--right-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/home/cut-for-web_highres-6-DSC03299_web.jpg" alt="Alle Formen der Bestattung">
+					<div class="img--right-aligned">
+						<img class="details-section__branch-item--bestattung__img lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/home/cut-for-web_highres-6-DSC03299_web.jpg" alt="Alle Formen der Bestattung">
+					</div>
 				</div>
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">

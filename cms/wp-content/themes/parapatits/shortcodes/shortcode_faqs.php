@@ -5,6 +5,5 @@
 			<div data-inviewport="entrance-fade-bottom" class="">
 				<a class="btn btn--red jobs-section__btn btn--centered-aligned" role="button" href="/haeufig-gestellte-fragen">Fragen anzeigen</a>
 			</div>
-
 		</div>
 	</article>

@@ -42,9 +42,11 @@ get_header("tischlerei"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--right-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-8-DOC002_web.jpg" alt="Idee">
+					<div class="img--right-aligned">
+						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-8-DOC002_web.jpg" alt="Idee">
+					</div>
 				</div>
 			</section>
 
@@ -58,9 +60,11 @@ get_header("tischlerei"); ?>
 					</article>
 				</div>
 				<div class="unstacked-right">
-					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-7-Pallisch-Kueche-1_gerade_web.jpg" alt="Visualisierung und Planung">
+					<div class="img--left-aligned">
+						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-7-Pallisch-Kueche-1_gerade_web.jpg" alt="Visualisierung und Planung">
+					</div>
 				</div>
 			</section>
 
@@ -74,9 +78,11 @@ get_header("tischlerei"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-26-DSC03479_web.jpg" alt="Durchführung und Montage">
+					<div class="img--left-aligned">
+						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-26-DSC03479_web.jpg" alt="Durchführung und Montage">
+					</div>
 				</div>
 			</section>
 
@@ -86,9 +92,11 @@ get_header("tischlerei"); ?>
 
 			<section class="box--centered">
 					<div class="unstacked-left">
-						<img class="img--fullwidth lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-        "template_directory"
-      ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-20-DSC03422_web.jpg" alt="Erfahrung und Präzision">
+						<div class="img--fullwidth">
+							<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+         "template_directory"
+       ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-20-DSC03422_web.jpg" alt="Erfahrung und Präzision">
+						</div>
 					</div>
 			</section>
 

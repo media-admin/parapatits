@@ -181,9 +181,11 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Trauerarbeit durch intensive Gespräche">
+					<div class="img--left-aligned">
+						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/bestattung/weiterfuehrende-informationen/cut-for-web_highres-9-DSC03312_web.jpg" alt="Trauerarbeit durch intensive Gespräche">
+					</div>
 				</div>
 			</section>
 

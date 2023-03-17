@@ -1,7 +1,7 @@
-<section data-inviewport="entrance-fade-bottom" id="values-section" class="values-section container--darkgray box--centered unstacked-wrapper" data-matching-link="#values-section-link">
+<section id="values-section" class="values-section container--darkgray box--centered unstacked-wrapper" data-matching-link="#values-section-link">
 	<div class="unstacked-left unstacked-left--fullwidth">
 		<article class="">
-			<div class="values-section__container">
+			<div data-inviewport="entrance-fade-bottom" class="values-section__container">
 				<h2 class="h2__heading values-section__title wrapper">Unsere Werte</h2>
 				<div class="values-section__content">
 					<p>
@@ -13,8 +13,10 @@
 		</article>
 	</div>
 	<div class="unstacked-right">
-		<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-    "template_directory"
-  ); ?>/assets/images/tischlerei/haeufig-gestellte-fragen/parapatits-tischlerei_komp-41-DSC03470_web.jpg" alt="Tischlerei Werkstatt">
+		<div class="img--left-aligned">
+			<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+     "template_directory"
+   ); ?>/assets/images/tischlerei/haeufig-gestellte-fragen/parapatits-tischlerei_komp-41-DSC03470_web.jpg" alt="Tischlerei Werkstatt">
+		</div>
 	</div>
 </section>

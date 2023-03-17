@@ -40,9 +40,11 @@ get_header("bestattung"); ?>
 					</article>
 				</div>
 				<div class="unstacked-left">
-					<img class="img--centered lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-7-DSC03394_web.jpg" alt="Persönliche Bestattung">
+					<div class="img--centered">
+						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/bestattung/gedenkseiten/cut-for-web_highres-7-DSC03394_web.jpg" alt="Persönliche Bestattung">
+					</div>
 				</div>
 			</section>
 

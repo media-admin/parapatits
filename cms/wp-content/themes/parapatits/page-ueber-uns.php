@@ -39,9 +39,11 @@ get_header(); ?>
 			<section class="box--right-aligned unstacked-wrapper">
 
 				<div class="unstacked-left">
-					<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/ueber-uns/cut-for-web_highres-5-DSC03248_web.jpg" alt="Wir lieben das Arbeiten mit dem Naturwerkstoff Holz.">
+					<div class="img--left-aligned">
+						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/ueber-uns/cut-for-web_highres-5-DSC03248_web.jpg" alt="Wir lieben das Arbeiten mit dem Naturwerkstoff Holz.">
+					</div>
 				</div>
 
 				<div class="unstacked-right unstacked-right--content">
@@ -63,10 +65,12 @@ get_header(); ?>
 
 			<section class="box--left-aligned unstacked-wrapper no-margin-bottom--small">
 				<div class="unstacked-right">
-							<img class="img--right-aligned img--margin-bottom lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-         "template_directory"
-       ); ?>/assets/images/ueber-uns/cut-for-web_highres-19-DSC03400_web.jpg" alt="Bestattung aus Nächstenliebe">
-						</div>
+					<div class="img--right-aligned">
+						<img class="img--margin-bottom lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/ueber-uns/cut-for-web_highres-19-DSC03400_web.jpg" alt="Bestattung aus Nächstenliebe">
+					</div>
+				</div>
 				<div class="unstacked-left unstacked-left--content">
 					<article data-inviewport="entrance-fade-bottom" class="wrapper content-wrapper">
 						<h2 class="h2__heading">Bestattung</h2>
@@ -83,10 +87,12 @@ get_header(); ?>
 
 			<section class="box--centered unstacked-wrapper">
 				<div class="unstacked-left">
-							<img class="img--left-aligned lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
-         "template_directory"
-       ); ?>/assets/images/ueber-uns/cut-for-web_highres-11-DSC03440_web.jpg" alt="Werde ein Teil unserer familiären Mannschaft!">
-						</div>
+					<div class="img--left-aligned">
+						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/ueber-uns/cut-for-web_highres-11-DSC03440_web.jpg" alt="Werde ein Teil unserer familiären Mannschaft!">
+					</div>
+				</div>
 				<div class="unstacked-right unstacked-right--content">
 					<article class="wrapper content-wrapper">
 							<h2 data-inviewport="entrance-fade-bottom" class="h2__heading">Jobs</h2>

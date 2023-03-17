@@ -85,9 +85,11 @@ get_header(); ?>
 				</div>
 
 				<div class="unstacked-right">
-					<img class="img--fullwidth lazyload rellax" data-rellax-speed="-2" data-rellax-mobile-speed="-3"  src="<?php bloginfo(
-       "template_directory"
-     ); ?>/assets/images/jobs/cut-for-web_highres-29-DSC03529_web.jpg" alt="Werde ein Teil unserer familiären Mannschaft!">
+					<div class="img--fullwidth">
+						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-mobile-speed="-3"  src="<?php bloginfo(
+        "template_directory"
+      ); ?>/assets/images/jobs/cut-for-web_highres-29-DSC03529_web.jpg" alt="Werde ein Teil unserer familiären Mannschaft!">
+					</div>
 				</div>
 			</section>
 

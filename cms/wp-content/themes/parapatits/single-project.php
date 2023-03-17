@@ -24,7 +24,7 @@ get_header(); ?>
 				</article>
 			</div>
 			<div class="unstacked-right">
-				<img class="single-project__img img--centered lazyload" src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text; ?>">
+				<img class="img--centered lazyload" src="<?php echo $featured_img_url; ?>" alt="<?php echo $alt_text; ?>">
 			</div>
 		</section>
 
