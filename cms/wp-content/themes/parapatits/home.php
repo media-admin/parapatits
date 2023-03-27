@@ -51,7 +51,7 @@ get_header("neutral"); ?>
 
 				<div class="unstacked-left">
 					<div class="img--right-aligned">
-						<img class="rellax" data-rellax-speed="-2" src="<?php bloginfo(
+						<img class="rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/home/cut-for-web_highres-30-DSC03554_web.jpg" alt="Traditioneller Familienbetrieb">
 					</div>
@@ -107,7 +107,7 @@ get_header("neutral"); ?>
 			<section class="box--right-aligned unstacked-wrapper">
 				<div class="unstacked-right">
 					<div class="img--left-aligned">
-						<img class="details-section__branch-item--tischlerei__img  lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+						<img class="details-section__branch-item--tischlerei__img  lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/home/cut-for-web_highres-28-DSC03514_web.jpg" alt="Holz und andere Materialien">
 					</div>
@@ -127,7 +127,7 @@ get_header("neutral"); ?>
 			<section class="box--left-aligned unstacked-wrapper no-margin-bottom">
 				<div class="unstacked-left">
 					<div class="img--right-aligned">
-						<img class="details-section__branch-item--bestattung__img lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+						<img class="details-section__branch-item--bestattung__img lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/home/cut-for-web_highres-6-DSC03299_web.jpg" alt="Alle Formen der Bestattung">
 					</div>

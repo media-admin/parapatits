@@ -43,7 +43,7 @@ get_header("tischlerei"); ?>
 				</div>
 				<div class="unstacked-left">
 					<div class="img--right-aligned">
-						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-8-DOC002_web.jpg" alt="Idee">
 					</div>
@@ -61,7 +61,7 @@ get_header("tischlerei"); ?>
 				</div>
 				<div class="unstacked-right">
 					<div class="img--left-aligned">
-						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-7-Pallisch-Kueche-1_gerade_web.jpg" alt="Visualisierung und Planung">
 					</div>
@@ -79,7 +79,7 @@ get_header("tischlerei"); ?>
 				</div>
 				<div class="unstacked-left">
 					<div class="img--left-aligned">
-						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-26-DSC03479_web.jpg" alt="Durchführung und Montage">
 					</div>
@@ -93,7 +93,7 @@ get_header("tischlerei"); ?>
 			<section class="box--centered">
 					<div class="unstacked-left">
 						<div class="img--fullwidth">
-							<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+							<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
          "template_directory"
        ); ?>/assets/images/tischlerei/tischlerei/cut-for-web_highres-20-DSC03422_web.jpg" alt="Erfahrung und Präzision">
 						</div>

@@ -1,8 +1,8 @@
 /**
- * CodeDropz Uploader v1.3.6.5
+ * CodeDropz Uploader v1.3.6.8
  * Copyright 2018 Glen Mongaya
  * CodeDrop Drag&Drop Uploader
- * @version 1.3.6.5
+ * @version 1.3.6.8
  * @author CodeDropz, Glen Don L. Mongaya
  * @license The MIT License (MIT)
  */
@@ -10,6 +10,16 @@
 // CodeDropz Drag and Drop Plugin
 (function($){
 	$.fn.CodeDropz_Uploader = function( settings ){
+
+        // Generate & check nonce
+        if( $('form.wpcf7-form').length > 0 ){
+            const form = $('form.wpcf7-form');
+            $.post( dnd_cf7_uploader.ajax_url, { action: '_wpcf7_check_nonce', _ajax_nonce: dnd_cf7_uploader.ajax_nonce }, function(response){
+                if( response.success && response.data ){
+                    dnd_cf7_uploader.ajax_nonce = response.data;
+                }
+            });
+        };
 
 		// Support multiple elements
 		this.each( function() {

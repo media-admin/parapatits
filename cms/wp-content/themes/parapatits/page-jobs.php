@@ -86,7 +86,7 @@ get_header(); ?>
 
 				<div class="unstacked-right">
 					<div class="img--fullwidth">
-						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-mobile-speed="-3"  src="<?php bloginfo(
+						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/jobs/cut-for-web_highres-29-DSC03529_web.jpg" alt="Werde ein Teil unserer familiären Mannschaft!">
 					</div>

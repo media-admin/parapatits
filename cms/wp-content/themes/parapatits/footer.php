@@ -155,7 +155,7 @@
 						}
 					},
 					{
-						breakpoint: 600,
+						breakpoint: 791,
 						settings: {
 							slidesToShow: 2,
 							slidesToScroll: 1,
@@ -584,7 +584,6 @@
 
 	<script type="text/javascript">
 		var rellax = new Rellax('.rellax', {
-
 			center: true
 		});
 /*

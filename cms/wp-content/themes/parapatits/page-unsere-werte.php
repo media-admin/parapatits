@@ -34,7 +34,7 @@ get_header("tischlerei"); ?>
 				</div>
 				<div class="unstacked-left">
 					<div class="img--right-aligned">
-						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-2-DSC01492_web.jpg" alt="Hochwertigkeit von Planung bis Umsetzung">
 			 		</div>
@@ -54,7 +54,7 @@ get_header("tischlerei"); ?>
 				</div>
 				<div class="unstacked-right">
 					<div class="img--centered">
-						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-6-Pallisch-Kueche-2_web.jpg" alt="Gesamtkonzept bis ins Detail">
 		 			</div>
@@ -75,7 +75,7 @@ get_header("tischlerei"); ?>
 				</div>
 				<div class="unstacked-left">
 					<div class="img--right-aligned">
-						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-1-DSC01457_web.jpg" alt="Nachhaltigkeit beim Einkauf">
 			 		</div>
@@ -95,7 +95,7 @@ get_header("tischlerei"); ?>
 				</div>
 				<div class="unstacked-right">
 					<div class="img--left-aligned">
-						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/tischlerei/unsere-werte/parapatits-tischlerei_komp-50-DSC03548_web.jpg" alt="Tradition im Familienbetrieb">
 			 		</div>
@@ -115,7 +115,7 @@ get_header("tischlerei"); ?>
 				</div>
 				<div class="unstacked-left">
 					<div class="img--right-aligned">
-						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-DSC03221_web.jpg" alt="Verlässlichkeit durch persönliche Ansprechpartner">
 					</div>
@@ -135,7 +135,7 @@ get_header("tischlerei"); ?>
 				</div>
 				<div class="unstacked-right">
 					<div class="img--left-aligned">
-						<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/tischlerei/unsere-werte/cut-for-web_highres-3-39651277054_a0cf16a1c3_o_web.jpg" alt="Alles aus einer Hand">
 			 		</div>

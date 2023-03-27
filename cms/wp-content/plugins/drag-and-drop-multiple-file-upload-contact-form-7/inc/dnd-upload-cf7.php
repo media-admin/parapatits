@@ -28,6 +28,10 @@
 	add_action('wp_ajax_nopriv_dnd_codedropz_upload_delete', 'dnd_codedropz_upload_delete');
 	add_action('wp_ajax_dnd_codedropz_upload_delete','dnd_codedropz_upload_delete');
 
+    // Ajax Nonce check
+    add_action('wp_ajax__wpcf7_check_nonce', 'dnd_wpcf7_nonce_check');
+    add_action('wp_ajax_nopriv__wpcf7_check_nonce', 'dnd_wpcf7_nonce_check');
+
 	// Hook mail cf7
 	add_filter('wpcf7_posted_data', 'dnd_wpcf7_posted_data', 10, 1);
 	add_action('wpcf7_before_send_mail','dnd_cf7_before_send_mail', 30, 1);
@@ -53,6 +57,13 @@
 
 	// Flamingo Hooks
 	add_action('before_delete_post', 'dnd_remove_uploaded_files');
+
+    // Nonce
+    function dnd_wpcf7_nonce_check(){
+        if( ! check_ajax_referer( 'dnd-cf7-security-nonce', false, false ) ){
+            wp_send_json_success( wp_create_nonce( "dnd-cf7-security-nonce" ) );
+        }
+    }
 
     // Add links to settings
     function dnd_cf7_upload_links( $actions ) {

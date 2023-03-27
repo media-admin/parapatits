@@ -50,7 +50,7 @@ get_header(); ?>
           "email-primary"
         ); ?>"><?php the_field("email-primary"); ?></a><br>
 							</p>
-							<ul data-inviewport="entrance-fade-bottom" class="contact__data-social-media-area">
+							<ul class="contact__data-social-media-area">
 								<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="contact__data-social-media-icon contact__data-social-media-icon--facebook lazyload" src="<?php bloginfo(
           "template_directory"
         ); ?>/assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>

@@ -881,6 +881,10 @@ template {
 
 
 
+
+
+
+
 /* === GLOBAL STYLES === */
 
 /* === General Areas === */
@@ -3168,7 +3172,7 @@ ul {
   position: relative;
   display: inline-block;
   /* padding-top: 18px; */
-	padding-top: 18px;
+	padding-top: 6px;
 	margin-left: -16px !important;
   transition: transform 0.3s ease-out;
 }
@@ -3177,6 +3181,7 @@ ul {
 	.site-header__logo {
     left: auto;
     transform: translateX(0);
+		padding-top: initial;
   }
 
 	@media (min-width: 1200px) {
@@ -4796,7 +4801,7 @@ span.hover__alt-text {
 .just-call__contact-data a {
 	position: relative;
 	display: block;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	line-height: 2.4rem;
 	font-weight: 700;
 	text-decoration: none;
@@ -5831,10 +5836,24 @@ button.active .accordion__pointer {
 
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+/* .active, .accordion:hover {
+	background-color: rgba(112, 113, 115, 0.1);
+	transition: all 0.75s;
+} */
+
+
+.accordion__item:hover {
 	background-color: rgba(112, 113, 115, 0.1);
 	transition: all 0.75s;
 }
+
+
+.active .accordion__item {
+	background-color: rgba(112, 113, 115, 0.1);
+	transition: all 0.75s;
+}
+
+
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
@@ -7122,7 +7141,7 @@ margin-left: auto;
 
 
 .job__description {
-	width: 100%;
+	width: 100% !important;
 	font-size: 1.0rem;
 	line-height: 1.2rem;
 	padding: 0.5rem;
@@ -7130,7 +7149,7 @@ margin-left: auto;
 
 @media (min-width: 800px) {
 	.job__description {
-		width: 50%;
+		width: 50% !important;
 		font-size: 1.0rem;
 		line-height: 1.4rem;
 		padding: 2.0rem;
@@ -7353,8 +7372,18 @@ margin-left: auto;
 	list-style-type: none;
 	margin: 2.0rem auto;
 	padding-left: 0;
-
 }
+
+
+@media (min-width: 700px) {
+	.site-footer__contact-social-media-area {
+		width: 20% !important;
+		margin: inherit;
+		margin: auto !important;
+		margin-bottom: 2.0rem !important;
+	}
+}
+
 
 
 @media (min-width: 800px) {

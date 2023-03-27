@@ -13,8 +13,8 @@
 		</article>
 	</div>
 	<div class="unstacked-right">
-		<div class="img--left-aligned">
-			<img class="lazyload rellax" data-rellax-speed="-2" src="<?php bloginfo(
+		<div class="img--centered">
+			<img class="lazyload rellax" data-rellax-mobile-speed="-8" src="<?php bloginfo(
      "template_directory"
    ); ?>/assets/images/tischlerei/haeufig-gestellte-fragen/parapatits-tischlerei_komp-41-DSC03470_web.jpg" alt="Tischlerei Werkstatt">
 		</div>
