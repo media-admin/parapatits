@@ -7,7 +7,7 @@ get_header("bestattung"); ?>
 
 	<main class="site-main">
 		<div class="site-content">
-			<section class="site-intro box--left-aligned unstacked-wrapper no-margin-bottom--small">
+			<section class="site-intro box--left-aligned unstacked-wrapper no-margin-bottom">
 				<div class="unstacked-left">
 					<article data-inviewport="entrance-fade-right" class="wrapper">
 						<h1 class="site-title h1__title"><?php the_title(); ?></h1>
@@ -35,7 +35,7 @@ get_header("bestattung"); ?>
 				</div>
 				<div class="unstacked-left">
 					<div class="img--right-aligned">
-						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
+						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/bestattung/leitfaden-im-todesfall/cut-for-web_highres-17-DSC03396_web.jpg" data-rellax-speed="-2" alt="Begleitung mit Feingefühl">
 					</div>
@@ -56,7 +56,7 @@ get_header("bestattung"); ?>
 				</div>
 				<div class="unstacked-right">
 					<div class="img--fullwidth">
-						<img class="add-margin-bottom--small lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
+						<img class="add-margin-bottom--small lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/bestattung/leitfaden-im-todesfall/cut-for-web_highres-5-DSC03387_web.jpg" alt="Umfassende Begleitung">
 					</div>

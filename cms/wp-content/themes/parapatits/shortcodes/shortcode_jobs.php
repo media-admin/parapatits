@@ -1,7 +1,7 @@
 <section class="box--centered">
 		<div class="unstacked-left">
 			<div class="img--fullwidth">
-				<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
+				<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
       "template_directory"
     ); ?>/assets/images/parapatits-tischlerei_komp-43-DSC03482_web.jpg" alt="Teamarbeit im Familienbetrieb">
 			</div>

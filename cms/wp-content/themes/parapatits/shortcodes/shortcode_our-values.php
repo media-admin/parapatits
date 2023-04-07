@@ -14,7 +14,7 @@
 	</div>
 	<div class="unstacked-right">
 		<div class="img--centered">
-			<img class="lazyload rellax" data-rellax-mobile-speed="-8" src="<?php bloginfo(
+			<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
      "template_directory"
    ); ?>/assets/images/tischlerei/haeufig-gestellte-fragen/parapatits-tischlerei_komp-41-DSC03470_web.jpg" alt="Tischlerei Werkstatt">
 		</div>

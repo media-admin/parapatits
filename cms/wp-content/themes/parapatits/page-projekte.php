@@ -31,7 +31,7 @@ get_header("tischlerei"); ?>
 			<section class="box--centered unstacked-wrapper">
 				<div class="unstacked-right">
 					<div class="img--centered">
-						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
+						<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
         "template_directory"
       ); ?>/assets/images/tischlerei/projekte/cut-for-webhighres-23-DSC03459_web.jpg" alt="Werkstatt die für Besichtigung der Möbel offen steht">
 					</div>

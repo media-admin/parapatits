@@ -14,7 +14,7 @@
 	</div>
 	<div class="unstacked-right">
 		<div class="img--right-aligned">
-			<img class="lazyload rellax" data-rellax-speed="-8" data-rellax-xs-speed="-8" data-rellax-mobile-speed="8" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
+			<img class="lazyload rellax" data-rellax-speed="-2" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" data-rellax-tablet-speed="-2" data-rellax-desktop-speed="-2" src="<?php bloginfo(
      "template_directory"
    ); ?>/assets/images/bestattung/bestattung/cut-for-web_highres-2-DSC03191_web.jpg" data-rellax-speed="-2" alt="Rufen Sie uns an. Wir kümmern uns um alles Weitere.">
 		</div>
