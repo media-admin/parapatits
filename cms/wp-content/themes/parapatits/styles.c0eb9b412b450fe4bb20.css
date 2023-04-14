@@ -1217,7 +1217,7 @@ img {
 
 	-o-object-fit: cover !important;
 		 object-fit: cover !important;
-	object-position: center center !important;
+	object-position: bottom center !important;
 	overflow: hidden;
 	padding: 0;
 	padding-left: 0px !important;
@@ -1245,7 +1245,7 @@ img {
 .img--fullwidth img {
 		-o-object-fit: cover !important;
 		 object-fit: cover !important;
-	object-position: center center !important;
+	object-position: bottom center !important;
 	height: 125%;
 }
 
@@ -1290,7 +1290,7 @@ img {
 	width: 100%;
 	-o-object-fit: cover !important;
 		 object-fit: cover !important;
-	object-position: center center !important;
+	object-position: bottom center !important;
 	height: 125%;
 }
 
@@ -1334,7 +1334,7 @@ img {
 .img--left-aligned img {
 	-o-object-fit: cover !important;
 		 object-fit: cover !important;
-	object-position: center center !important;
+	object-position: bottom center !important;
 	height: 125%;
 }
 
@@ -1376,7 +1376,7 @@ img {
 .img--right-aligned img {
 	-o-object-fit: cover !important;
 		 object-fit: cover !important;
-	object-position: center center !important;
+	object-position: bottom center !important;
 	height: 125%;
 }
 
@@ -1391,7 +1391,7 @@ img {
 		height: auto;
 		-o-object-fit: cover !important;
 			 object-fit: cover !important;
-		object-position: center center !important;
+		object-position: bottom center !important;
 	}
 
 
@@ -1410,7 +1410,7 @@ img {
 		padding: 0;
 		-o-object-fit: cover !important;
 			 object-fit: cover !important;
-		object-position: center center !important;
+		object-position: bottom center !important;
 	}
 
 }
@@ -1815,7 +1815,7 @@ img {
 	.unstacked-left .img--fullwidth img {
 		-o-object-fit: cover !important;
 			 object-fit: cover !important;
-		object-position: center center !important;
+		object-position: bottom center !important;
 		height: 125%;
 	}
 
@@ -1849,7 +1849,7 @@ img {
 		height: 250px;
 		-o-object-fit: cover !important;
 			 object-fit: cover !important;
-		object-position: center center !important;
+		object-position: bottom center !important;
 	}
 
 	@media (min-width: 800px) {
@@ -1872,7 +1872,7 @@ img {
 		height: 250px;
 		-o-object-fit: cover !important;
 			 object-fit: cover !important;
-		object-position: center center !important;
+		object-position: bottom center !important;
 	}
 
 	@media (min-width: 800px) {
@@ -1893,7 +1893,7 @@ img {
 		margin-right: 0vw !important;
 		-o-object-fit: cover !important;
 			 object-fit: cover !important;
-		object-position: center center !important;
+		object-position: bottom center !important;
 	} */
 
 
@@ -1922,7 +1922,7 @@ img {
 	.unstacked-left .img--left-aligned img {
 		-o-object-fit: cover !important;
 			 object-fit: cover !important;
-		object-position: center center !important;
+		object-position: bottom center !important;
 		height: 125%;
 	}
 
@@ -1971,7 +1971,7 @@ img {
 	.unstacked-left .img--right-aligned img {
 		-o-object-fit: cover !important;
 			 object-fit: cover !important;
-		object-position: center center !important;
+		object-position: bottom center !important;
 		height: 125%;
 	}
 
@@ -2125,7 +2125,7 @@ img {
 	margin-right: 0vw !important;
 	-o-object-fit: cover !important;
 		 object-fit: cover !important;
-	object-position: center center !important;
+	object-position: bottom center !important;
 
 }
 
@@ -2179,7 +2179,7 @@ img {
 	width: 100%;
 	-o-object-fit: cover !important;
 		 object-fit: cover !important;
-	object-position: center center !important;
+	object-position: bottom center !important;
 	height: 125%;
 }
 
@@ -2220,7 +2220,7 @@ img {
 .unstacked-right .img--left-aligned img {
 	-o-object-fit: cover !important;
 		 object-fit: cover !important;
-	object-position: center center !important;
+	object-position: bottom center !important;
 	height: 125%;
 }
 
@@ -2262,7 +2262,7 @@ img {
 	width: 100%;
 	-o-object-fit: cover !important;
 		 object-fit: cover !important;
-	object-position: center center !important;
+	object-position: bottom center !important;
 	height: 125%;
 }
 
@@ -3181,7 +3181,7 @@ ul {
 	.site-header__logo {
     left: auto;
     transform: translateX(0);
-		padding-top: initial;
+		padding-top: 16px;
   }
 
 	@media (min-width: 1200px) {
@@ -3797,7 +3797,7 @@ menu.site-menu {
 	height: 300px;
 	-o-object-fit: cover !important;
 	   object-fit: cover !important;
-	object-position: center center !important;
+	object-position: bottom center !important;
 }
 
 
@@ -3841,7 +3841,7 @@ menu.site-menu {
 /* Slider */
 
 .slick-loading .slick-list {
-				background: #fff url(assets/images/ajax-loader.gif) center center no-repeat;
+				background: #fff url(assets/images/ajax-loader.gif) bottom center no-repeat;
 		}
 
 /* Arrows */
@@ -4129,7 +4129,7 @@ menu.site-menu {
 	max-height: 750px;
 	max-height: 680px;
 	object-fit: cover !important;
-	object-position: center center !important;
+	object-position: bottom center !important;
 
 /* 	width: 100vw;
 	position: relative;
@@ -6153,7 +6153,7 @@ button.active .panel p {
 	height: 300px;
 	-o-object-fit: cover !important;
 		 object-fit: cover !important;
-	object-position: center center !important;
+	object-position: bottom center !important;
 	overflow: hidden;
 	border-radius: 0px;
 	padding: 0;
@@ -6166,7 +6166,7 @@ button.active .panel p {
 		height: 500px;
 		-o-object-fit: cover !important;
 			 object-fit: cover !important;
-		object-position: center center !important;
+		object-position: bottom center !important;
 		overflow: hidden;
 		border-radius: 0px;
 		padding: 0;
@@ -6841,7 +6841,7 @@ margin-left: auto;
 
 .projekte .box--centered .unstacked-right .img--centered img {
 	height: 180%;
-	margin-top: -135%;
+	/* margin-top: -135%; */
 }
 
 
