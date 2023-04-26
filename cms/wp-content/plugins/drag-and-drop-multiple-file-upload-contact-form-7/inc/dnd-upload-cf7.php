@@ -522,7 +522,7 @@
 		$atts['data-limit'] = $tag->get_option( 'limit','', true);
         $atts['data-min'] = $tag->get_option( 'min-file', '', true );
 		$atts['data-max'] = $tag->get_option( 'max-file','', true);
-		$atts['data-id'] = ( $form->id() ? $form->id() : 0 );
+		$atts['data-id'] = ( $form ? $form->id() : 0 );
         $atts['data-version'] = 'free version '. dnd_upload_cf7_version;
 
         // Accept data attributes

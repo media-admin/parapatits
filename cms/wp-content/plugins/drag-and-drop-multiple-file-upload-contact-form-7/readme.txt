@@ -3,15 +3,15 @@ Contributors: glenwpcoder, yordansoares
 Donate link : http://codedropz.com/donation
 Tags: drag and drop, contact form 7, ajax uploader, multiple file, upload, contact form 7 uploader
 Requires at least: 3.0.1
-Tested up to: 6.1
-Stable tag: 1.3.6.8
+Tested up to: 6.2
+Stable tag: 1.3.6.9
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-**Drag and Drop Multiple File Uploader** is a simple, straightforward WordPress plugin extension for Contact Form7, which allows the user to upload multiple files using the **drag-and-drop** feature or the common browse-file of your webform.
+The **"Drag and Drop Multiple File Uploader"** is a user-friendly WordPress plugin that functions as an extension for **Contact Form7**. With this plugin, users can effortlessly upload multiple files by either **dragging and dropping** them or by using the standard browse-file option found on your web form.
 
 Here's a little [DEMO](http://codedropz.com/contact).
 
@@ -33,11 +33,11 @@ Here's a little [DEMO](http://codedropz.com/contact).
 * Cool Progress Bar
 * Compatible with any browser
 
-**Note:** On Free version, all uploaded files moves to a temporary folder *("/wp-content/uploads/wp_dndcf7_uploads")* then attaches the file to the mail and sends it. After that **"Drag & Drop File Upload"** removes the file from the temporary folder **1 hour** after the submission. *( same process with the default **"file"** upload of Contact Form 7 - [See here](https://contactform7.com/file-uploading-and-attachment/#How-your-uploaded-files-are-managed) )*
+**Note:** On the Free version, all uploaded files move to a temporary folder *(“/wp-content/uploads/wp_dndcf7_uploads”)*, then the file is attached to the email and sent. Afterward, the **“Drag & Drop File Upload”** plugin removes the file from the temporary folder **1 hour** after submission." *( same process with the default **"file"** upload of Contact Form 7 - [See here](https://contactform7.com/file-uploading-and-attachment/#How-your-uploaded-files-are-managed) )*
 
-### ⭐ Premium Features
+### ⭐ Premium features
 
-Checkout available features on **PRO version**.
+Take a look at the features that are available on the **PRO version**.
 
 * Image Preview - Show Thumbnail for images
 * Adjust Auto Delete Files - After Form Submission
@@ -83,9 +83,6 @@ An extension for **WPForms** - Transform your simple file upload into beautiful 
 
 * [Drag & Drop Multiple File Upload - WooCommerce](https://wordpress.org/plugins/drag-and-drop-multiple-file-upload-for-woocommerce/)
 An extension for **WooCommerce** - Transform your simple file upload into beautiful **"Drag & Drop Multiple File Upload"**.
-
-* [WooCommerce Memberships](https://www.codedropz.com/woocommerce-memberships/)
-An extension for **WooCommerce** - WooCommerce Memberships is not just another plugin for restricting your site’s content: it’s an easy-to-use, site-wide membership solution that brings your content, shop, and memberships together.
 
 **PLUGIN GUIDE - FREE VERSION**
 
@@ -156,6 +153,10 @@ To install this plugin see below:
 6. Multiple Drag and Drop Fields - Front
 
 == Changelog ==
+
+= 1.3.6.9 =
+- Fixes - Quick fix ( Error: Call to a member function id() on null )
+
 = 1.3.6.8 =
 - Fixes - Added alternative solution for nonce
 

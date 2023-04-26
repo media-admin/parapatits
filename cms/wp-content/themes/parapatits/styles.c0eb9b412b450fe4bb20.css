@@ -1253,6 +1253,7 @@ img {
 @media (min-width: 800px) {
 	.img--fullwidth img {
 		height: 150% !important; /* RELLAX SOLUTION */
+		height: 125% !important; /* RELLAX SOLUTION II */
 	}
 }
 
@@ -1297,6 +1298,7 @@ img {
 @media (min-width: 800px) {
 	.img--centered img {
 		height: 150% !important; /* RELLAX SOLUTION */
+		height: 125% !important; /* RELLAX SOLUTION II */
 	}
 }
 
@@ -1341,6 +1343,7 @@ img {
 @media (min-width: 800px) {
 	.img--left-aligned img {
 		height: 150% !important; /* RELLAX SOLUTION */
+		height: 125% !important; /* RELLAX SOLUTION II */
 	}
 }
 
@@ -1402,6 +1405,7 @@ img {
 		height: auto;
 
 		height: 150%; /* RELLAX SOLUTION */
+		height: 125% !important; /* RELLAX SOLUTION II */
 
 		text-align: left;
 		margin: 2.0rem 0;
@@ -1798,6 +1802,7 @@ img {
 			min-height: 500px;
 
 			height: 150% !important; /* RELLAX SOLUTION */
+			height: 125% !important; /* RELLAX SOLUTION II */
 
 			position: absolute !important;
 			width: 50% !important;
@@ -1823,6 +1828,7 @@ img {
 		.unstacked-left .img--fullwidth img {
 			/* height: 500px !important; */
 			height: 150% !important; /* RELLAX SOLUTION */
+			height: 125% !important; /* RELLAX SOLUTION II */
 		}
 	}
 
@@ -1856,6 +1862,7 @@ img {
 		.unstacked-left .img--centered {
 			/* height: 500px !important; */
 			height: 150% ; /* RELLAX SOLUTION */
+			height: 125% !important; /* RELLAX SOLUTION II */
 		}
 	}
 
@@ -1879,6 +1886,7 @@ img {
 		.unstacked-right .img--centered {
 			/* height: 500px !important; */
 			height: 150% ; /* RELLAX SOLUTION */
+			height: 125% !important; /* RELLAX SOLUTION II */
 		}
 	}
 
@@ -1915,6 +1923,7 @@ img {
 		.unstacked-left .img--left-aligned {
 			/* height: 500px !important; */
 			height: 150% !important; /* RELLAX SOLUTION */
+			height: 125% !important; /* RELLAX SOLUTION II */
 		}
 	}
 
@@ -1963,6 +1972,7 @@ img {
 			/* height: 500px !important; */
 			/* height: 850px !important; RELLAX */
 			height: 150% !important; /* RELLAX SOLUTION */
+			height: 125% !important; /* RELLAX SOLUTION II */
 		}
 	}
 
@@ -2133,6 +2143,7 @@ img {
 	.unstacked-right .img--fullwidth {
 		/* height: 500px; */
 		height: 150% !important; /* RELLAX SOLUTION */
+		height: 125% !important; /* RELLAX SOLUTION II */
 	}
 }
 
@@ -2187,6 +2198,7 @@ img {
 	.unstacked-right .img--centered img {
 		/* height: 500px !important; */
 		height: 150% !important; /* RELLAX SOLUTION */
+		height: 125% !important; /* RELLAX SOLUTION II */
 	}
 } */
 
@@ -2213,6 +2225,7 @@ img {
 		height: 850px !important; /* RELLAX */
 
 		height: 150% !important; /* RELLAX SOLUTION */
+		height: 125% !important; /* RELLAX SOLUTION II */
 	}
 }
 
@@ -2231,6 +2244,7 @@ img {
 		height: 800px !important; /* RELLAX */
 
 		height: 150% !important; /* RELLAX SOLUTION */
+		height: 125% !important; /* RELLAX SOLUTION II */
 	}
 }
 
@@ -2255,6 +2269,7 @@ img {
 		height: 800px !important; /* RELLAX */
 
 		height: 150% !important; /* RELLAX SOLUTION */
+		height: 125% !important; /* RELLAX SOLUTION II */
 	}
 }
 
@@ -2273,6 +2288,7 @@ img {
 		height: 800px !important; /* RELLAX */
 
 		height: 150% !important; /* RELLAX SOLUTION */
+		height: 125% !important; /* RELLAX SOLUTION II */
 	}
 }
 

@@ -76,7 +76,7 @@ get_header("neutral"); ?>
 							<p class="p__subitle news-section__subtitle wrapper"><?php the_title(); ?></p>
 							<div class="news-section__content wrapper">
 								<p>
-									<?php the_excerpt(); ?>
+									<?php the_content(); ?>
 								</p>
 							</div>
 
